@@ -1,0 +1,25 @@
+COISAS PARA  IR BUSCAR E ALTERAR
+
+title
+
+photo
+
+location
+date
+username
+
+estacao
+natureza
+cultivo
+floracao
+idade
+
+usertext
+
+family
+parents
+width
+height
+
+____________________________________
+

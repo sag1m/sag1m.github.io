@@ -1,0 +1,660 @@
+/*! HTML5 Estrugido, uma versão light do HTML5 Boilerplate v7.2.0
+    https://html5boilerplate.com
+*/
+
+/* main.css 2.0.0 | Licença MIT | https://github.com/h5bp/main.css#readme */
+/*
+ * O CSS que se segue é uma compilação de investigação sobre estilos que
+ * funcionam em vários browsers. Cada parte está documentada com links para a
+ * referência original. Muitos agradecimentos a Nicolas Gallagher,
+ * Jonathan Neal, Kroc Camen, à comunidade e à equipa do H5Boilerplate.
+ */
+
+/* ==========================================================================
+   Estilos base: defaults com atitude.
+   ========================================================================== */
+
+
+
+
+html {
+  background-color: #0c0c0c;
+
+  background-image: url(https://esap.tilde.pt/~msousa/wdw/img/papyrus-dark.png);
+
+  /*NÃO É PRA USAR:/*
+  /*background-position: center;*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
+  /*position: relative;*/
+  color: #f9f9f9;
+  font-size: 100%;
+  line-height: 1.5;
+  font-family: 'Inconsolata';
+  font-weight: 300;
+  padding: 0.2rem 1rem 0 1rem;
+}
+
+#body{
+  margin: auto;
+}
+
+@font-face {
+  font-family: 'Inconsolata-Regular';
+  src: url("fonts/Inconsolata-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inconsolata-Black';
+  src: url("fonts/Inconsolata-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Inconsolata-Light';
+  src: url("fonts/Inconsolata-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+
+
+/*
+ * Retirar a sombra do texto, quando está selecionado:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Precisamos de anular a sombra, individualmente, para a classe geral
+ * (::selection) e para a classe com prefixo do browser (::-moz-selection),
+ * como explica este artigo:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Mudar esta cor de fundo de seleção de acordo com o esquema de cores do site.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * Uma hr mais elegante que a default
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Anular a distância entre os elementos audio, canvas, iframes,
+ * images, videos e o fundo do elemento que os contêm:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Permitir apenas o redimensionamento vertical das textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+
+/* ==========================================================================
+   Colocar aqui os estilos do site
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Classes pre-preparadas para resolver situações comuns
+   ========================================================================== */
+
+/*
+ * Esconder elementos (incluindo esconder dos leitores do ecrã)
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Esconder visualmente mas deixar o conteúdo acessível a leitores de ecrã:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. No caso de conteúdos longos, as quebras de linha não são interpretadas
+*    como espaços e, em larguras pequenas, o conteúdo é quebrado
+*    com uma palavra por linha:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extensão da classe .sr-only para permitir que o elemento
+* seja assinalado (focus) quando a página é navegada por teclado:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+
+/*
+* Clearfix: conter os floats
+*
+* Incluir esta classe em elementos HTML que contenham elementos floated
+*
+* Para browsers modernos
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   Media Queries para design responsivo. Acrescentar conforme necessário.
+   ========================================================================== */
+
+/* SMALL SCREENS está em baixo de tudo*/
+
+
+
+
+
+
+
+
+
+
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Estilos para impressão e aparelhos com ecrã de alta resolução */
+}
+
+/* ==========================================================================
+   Estilos para impressão base. Editar e acrescentar conforme necessário.
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Preto é a cor que imprime mais rápido (-: */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    break-inside: avoid;
+  }
+  /*
+   * Regras de impressão para tabelas:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    break-after: avoid;
+  }
+}
+
+/*CSS -------------------------------------------------------------------------------------------------------------------------*/
+
+#center{
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+
+h1{
+
+  font-family: 'Inconsolata';
+  font-weight: 100;
+  color: #d8f3dc;
+  font-size: 1.9rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#container{
+  padding: 0.5rem 2rem;
+  background-color: #242425;
+  max-width: 35rem;
+  /*min-height: 20rem;*/
+  margin: auto;
+
+  border-radius: 3px;
+  border-style: solid;
+  border-color: red;
+  border-width: 1rem;
+
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 20% 1fr; /*Vou deixar assim paa já*/
+  border: none;
+
+
+
+}
+
+#pergunta{
+    margin-top: 0.3rem;
+}
+
+#instrucoes{
+  color: white;
+  margin-top: 1rem;
+  max-width: 30rem;
+  /*max-height: 20rem;*/
+  /*border-style: solid;
+  border-color: #0d0d0d;
+  border-width: 0.001rem;*/
+  line-height: 1.5rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  font-weight: 100;
+  display: none;
+  margin: auto;
+    margin-top: 2rem;
+}
+
+#botaoRecomecar{
+  display: none;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+#esquerda{
+  /*line-height: 1.2rem;*/
+  margin: 0.5rem;
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
+
+  display: none;
+  margin-bottom: 1rem;
+}
+#esquerda p {
+
+}
+
+#data{
+  /*padding-left: 0.5rem;*/
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+
+
+}
+
+#dataColor{
+  color: #40916c;
+  font-weight: 600;
+  text-transform: uppercase;
+  /*text-decoration: underline white;*/
+}
+
+
+
+
+
+
+
+
+
+.barra{ /*ISTO É SÓ PARA POSICIONAR AS BARRAS EM SÍ*/
+  height: 0.9rem;
+
+  margin-bottom: 0.6rem;
+  /*border: 0.01rem solid lightgrey;*/
+  border-radius: 1rem;
+  text-align: left;
+  line-height: 1rem;
+  max-width: 100%;
+  transition: width 1s;
+  color: white;
+  white-space: nowrap;
+  font-size: 0.9rem;
+
+}
+
+
+/* Fiz a barra de progresso com base numa do W3Schools*/
+  #contentorRelax, #contentorEnergia, #contentorProgresso{
+    width: 100%;
+    background-color: #0e0e0e;
+    border-radius: 1rem;
+  }
+  #contentorProgresso{
+  }#contentorEnergia{
+  }#contentorRelax{
+  }
+
+
+
+  #barraProgresso, #barraEnergia, #barraRelax{
+    height: 0.9rem;
+    transition: 1.3s;
+    border-radius: 1rem;
+    padding-left: 0;
+
+    background-color: #40916c;
+
+    color: #E5E5E5;
+
+  }
+  #barraProgresso {
+  }#barraEnergia {
+  }#barraRelax {
+  }
+
+  #barraProgresso p, #barraEnergia p, #barraRelax p {
+    font-weight: 200;
+    padding-left: 0.5rem;
+    /*display: none;*/
+  }
+
+
+
+
+
+
+
+
+
+#Sair{
+  margin-top: 1rem;
+}
+
+
+button{
+    min-height: 2rem;
+}
+
+
+#direita{
+
+    font-weight: 400;
+    margin: 0.5rem;
+    line-height: 1.5rem;
+    margin-top: 0;
+}
+
+#direita p{
+  margin-bottom: 0.3rem;
+}
+
+#botoes{
+  margin-top: 1.5rem;
+  width: 100%;
+  text-align: center;
+  display: none;
+  line-height: 2.4rem;
+}
+
+#botaoIniciar{
+  margin-top: 1rem;
+}
+#botaoIniciar:hover{
+    background-color: #52b788;
+}
+
+button{
+  min-width: 30%;
+  background-color: #081c15;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 1rem;
+  font-family: 'Inconsolata';
+  font-weight: 400;
+}
+button:hover{
+  /*font-weight: 400;*/
+  background-color: #40916c;
+}
+button:active{
+  /*font-weight: 400;*/
+  background-color: #1b4332;
+}
+
+#botaoTrabalhar:hover, #botaoDormir:hover, #botaoGinasio:hover{
+  background-color: #2d6a4f;
+}
+#botaoTrabalhar:hover{
+}
+#botaoDormir:hover{
+}
+#botaoGinasio:hover{
+}
+
+#Rir{
+  margin-top: 0.4rem;
+}
+
+#okButton{
+  margin: auto;
+  margin-top: 1rem;
+}
+
+#botaoInstrucoes:hover{
+  /*background-color: #06D6A0;*/
+}
+
+
+#input{
+  /*falta editar o input*/
+  padding:0;
+  margin: 0;
+}
+
+
+
+
+
+#fraseProgresso, #fraseEnergia, #fraseRelax {
+  text-align: left;
+  padding-left: 0.7rem;
+  font-weight: 200;
+  font-weight: lighter;
+  font-weight: 100;
+  font-size: 90%;
+}
+
+.bold{
+  font-weight: 600;
+}
+
+
+
+
+#pProgresso{
+
+}
+#pEnergia{
+
+}
+#pRelax{
+
+}
+
+
+
+
+
+#center{
+  /*display: none;*/
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 639px) { /* estilos para ecrãs pequenos */
+  html {
+    font-size: 80%;
+    padding: 0;
+  }
+
+  h1{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+
+  }
+
+
+  button{
+    width: 20%;
+    min-height: 4rem;
+    margin: auto;
+
+  }
+
+#botaoIniciar{
+  margin: 0;
+  margin-top: 1.5rem;
+}
+
+#Sair{
+  text-align: center;
+  /*Devia por este botão no centro mas ia demorar a chegar lá*/
+
+}
+
+
+  #botoes{
+    text-align: center;
+    margin: auto;
+    margin-top: 1.5rem;
+  }
+
+  #center button{
+    min-width: 45%;
+  }
+
+  #instrucoes{
+    border: none;
+  }
+
+#direita{
+  padding: 0 0.5rem;
+}
+
+  #container{
+    box-sizing: border-box;
+    display: grid;
+    border: none;
+    padding: 0.2rem;
+    min-height: 5rem;
+  }
+
+}
+
+@media only screen and (min-width: 1400px) {
+  /* html {
+      font-size: 130%;
+      padding: 2rem;
+      }
+
+    #h1{
+      margin-top: 0;
+      margin-bottom: 0;
+    } */
+
+}

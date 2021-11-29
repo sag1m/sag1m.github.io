@@ -1,0 +1,121 @@
+<!doctype html>
+<html class="no-js" lang="pt">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>M I G A S</title>
+  <meta name="description" content="Portfólio Multimédia">
+  <!-- imagem de preview: colocar a url absoluta; usar imagem com mínimo 2400px largura -->
+  <meta property="og:image" content="https://esap.tilde.pt/~msousa/img/OG.jpg">
+  <meta property=”og:title” content="M I G A S" />
+  <meta property=”og:description” content="Portfólio Multimédia" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Favicon e ícones -->
+  <!-- 144 x 144 px - iPad 3a geração com ecrã de alta resolução (retina) -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon-144px.png">
+  <!-- 114 x 114px - iPhone com ecrã de alta resolução (retina) -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicon-114px.png">
+  <!-- 72 x 72 px - iPad 1a e 2a geração -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon-72px.png">
+  <!-- 57 x 57px - iPhone, iPod Touch, e Android 2.1+ -->
+  <link rel="apple-touch-icon-precomposed" href="img/favicon-57px.png">
+  <!-- favicon base: 32x32px deve estar na raiz do site, para garantir que os browsers antigos o vão mostrar -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+  <div id="screen">
+
+<!-- TOP LEFT ..........................  -->
+    <h1 ><p id="botaoMais">Migas</p></h1>
+
+
+
+
+<!-- TOP RIGHT ..........................  -->
+    <div id="topRight">
+
+      <div class="trabalhos" id="listaMais">
+        <!--<p><a onclick="teste(0)">Teste</a></p>-->
+        <p><a onclick="showWorkM(0)">Início</a></p>
+        <p><a onclick="showWorkM(1)">Sobre</a></p>
+        <p><a id="wait" onclick="showWorkM(2)">Mais</a></p>
+        <p><a onclick="randomWork(rando(1,25))">Random</a></p>
+      </div>
+
+      <div class="trabalhos" id="listaVideo">
+          <!--ADICIONAR AQUI EM CIMA-->
+        <p><a onclick="showWorkV(5)" onmouseover="showDescV(5)" onmouseout="hideDesc()">Amanhecer</a></p>
+        <p><a onclick="showWorkV(4)" onmouseover="showDescV(4)" onmouseout="hideDesc()">Traffic</a></p>
+        <p><a onclick="showWorkV(3)" onmouseover="showDescV(3)" onmouseout="hideDesc()">Fé</a></p>
+        <p><a onclick="showWorkV(2)" onmouseover="showDescV(2)" onmouseout="hideDesc()">Frank Ocean - Self Control</a></p>
+        <p><a onclick="showWorkV(1)" onmouseover="showDescV(1)" onmouseout="hideDesc()">Daily Routine</a></p>
+      </div>
+
+      <div class="trabalhos" id="listaImagem">
+        <!--ADICIONAR AQUI EM CIMA-->
+        <p><a onclick="showWorkI(5)" onmouseover="showDescI(5)" onmouseout="hideDesc()">Panorâmica</a></p>
+        <p><a onclick="showWorkI(4)" onmouseover="showDescI(4)" onmouseout="hideDesc()">Uber Hugo</a></p>
+        <p><a onclick="showWorkI(3)" onmouseover="showDescI(3)" onmouseout="hideDesc()">Spoof Ad</a></p>
+        <p><a onclick="showWorkI(2)" onmouseover="showDescI(2)" onmouseout="hideDesc()">Spoof Ad</a></p>
+        <p><a onclick="showWorkI(1)" onmouseover="showDescI(1)" onmouseout="hideDesc()">Keith Haring</a></p>
+      </div>
+
+      <div class="trabalhos" id="listaWeb">
+        <!--ADICIONAR AQUI EM CIMA-->
+        <p><a onclick="showWorkW(2)" onmouseover="showDescW(2)" onmouseout="hideDesc()">jogo WDW</a></p>
+        <p><a onclick="showWorkW(1)" onmouseover="showDescW(1)" onmouseout="hideDesc()">CrossFest</a></p>
+      </div>
+
+
+      <div class="trabalhos" id="listaOutros">
+        <!--ADICIONAR AQUI EM CIMA-->
+        <p><a onclick="showWorkO(3)" onmouseover="showDescO(3)" onmouseout="hideDesc()">Cafeína</a></p>
+        <p><a onclick="showWorkO(2)" onmouseover="showDescO(2)" onmouseout="hideDesc()">Pharmakon</a></p>
+        <p><a onclick="showWorkO(1)" onmouseover="showDescO(1)" onmouseout="hideDesc()">Teletexto</a></p>
+      </div>
+
+      <div id="descricao">
+
+      </div>
+
+    </div>
+
+
+
+<!-- BOTTOM LEFT ..........................  -->
+      <div id="categorias">
+        <p><a id="botaoVideo">Vídeo</a></p>
+        <p><a id="botaoImagem">Imagem</a></p>
+        <p><a id="botaoWeb">Web</a></p>
+        <p><a id="botaoOutros">Outros</a></p>
+      </div>
+
+
+
+
+<!-- BOTTOM RIGHT ..........................  -->
+      <div id="bottomRight">
+        <p>x</p>
+
+      </div>
+
+
+  </div>
+<script src="rando.js"></script>
+<script src="js.js"></script>
+<script src="seed.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,286 @@
+<!doctype html>
+<html class="no-js" lang="pt">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>T E L E T E X T O</title>
+  <meta name="description" content="Artigo sobre o teletexto.">
+  <!-- imagem de preview: colocar a url absoluta; usar imagem com mínimo 2400px largura -->
+  <!--<meta property="og:image" content="">-->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+<!--<div id="UC"><p>incompleto<p></div>-->
+
+<div id="hero">
+
+  <div id="esquerda0">
+
+  </div>
+
+  <div id="text">
+
+    <h1>Teletexto</h1>
+    <a href="https://esap.tilde.pt/~msousa">Miguel Sousa</a>
+
+
+
+  </div>
+
+
+</div>
+
+
+
+
+<div id="fundo">
+
+<div id="esquerda">
+
+</div>
+
+<div id="article">
+
+  <p id="first">O teletexto é um serviço informativo televisivo.<br>
+    Permite às pessoas verem informação em texto e alguns gráficos primitivos na televisão.<br>
+    Por ter sido inventado antes da internet, pode ser considerado um antecessor dela.</p>
+
+
+
+  <h2>História</h2>
+
+  <p class="texto">
+    Nos finais da década de 60, a BCC estava a trabalhar num <a href="https://pt.wikipedia.org/wiki/Sinal_anal%C3%B3gico">sistema analógico</a> experimental de transmissão de texto. O objetivo era as pessoas conseguirem imprimir uma folha com algumas informações a partir da sua televisão, no final da transmissão. Era como a televisão imprimisse uma folha com preços das ações, notícias, como uma folha de um jornal.
+  </p>
+
+      <div class="img" id="img6"><img  class="imagemEmSi" src="img/06.jpg" alt="Teste de teletexto">
+          <p class="descricao">Teste de teletexto Ceefax de 1972</p>
+        </div>
+
+  <p class="texto">
+    <span onmouseover="show(6)" onmouseout="hide(6)">No início da década de 70</span>, John Adams, designer na Philips, criou o teletexto, um serviço parecido  ao anterior mas completamente eletrónico - a informação era vista na televisão.
+  </p>
+
+      <div class="img" id="img1"><img class="imagemEmSi" src="img/01.png" alt="Ceefax">
+        <p class="descricao">Ceefax</p>
+      </div>
+
+        <div class="img" id="img3">
+            <img class="imagemEmSi"  src="img/03.jpg" alt="Exemplo de página, exemplificando o uso para ler notícias.">
+              <p class="descricao">Exemplo de página, exemplificando o uso para ler notícias.</p>
+              </div>
+
+        <div class="img" id="img7">
+                  <img  class="imagemEmSi"  src="img/07.png" alt="Ultima framde de transmissão de serviço Ceefax, a esta data">
+                  <p class="descricao">Ultima framde de transmissão de serviço Ceefax, a esta data</p>
+                </div>
+
+  <p class="texto">
+    A BBC foi a primeira companhia a ter um serviço de teletexto, em 1974, era o  <span onmouseover="show(1)" onmouseout="hide(1)">Ceefax</span> ("see-facts"). O objetivo era primeiramente permitir legendas para deficientes auditivos, mas foi usada para dar <span onmouseover="show(3)" onmouseout="hide(3)">acesso a muita informação.</span> Começou em 1974 e <span onmouseover="show(7)" onmouseout="hide(7)">acabou em 2012.</span> A certa altura, era o local onde as pessoas iam para ver informações sobre acontecimentos em tempo real, em vez dos jornais, televisão ou rádio.
+  </p>
+
+        <div class="img" id="img8">
+          <img  class="imagemEmSi"  src="img/08.jfif" alt="by DULCE FERNANDES. RTP Teletexto.">
+          <p class="descricao">by DULCE FERNANDES. RTP Teletexto.</p>
+        </div>
+
+            <div class="img" id="img11" >
+              <img class="imagemEmSi" src="img/11.png" alt="Ultima transmissão do Oracle.">
+              <p class="descricao">Ultima transmissão do Oracle.</p>
+            </div>
+
+  <p class="texto">
+    <span onmouseover="show(8)" onmouseout="hide(8)">Em Portugal,</span> o teletexto começou mais tarde, em 1997 (já depois da <span onmouseover="show(11)" onmouseout="hide(11)">morte do Oracle</span>, teletexto da BCC) na RTP. Em 99 começaram a legendar os conteúdos em Português.
+  </p>
+
+  <p class="texto">
+    O teletexto foi e é usado principalmente na Europa, pois ele funciona com a codificação <a href="https://pt.wikipedia.org/wiki/PAL">PAL</a>, mais usado na Europa.
+  </p>
+
+
+
+
+  <h2>Como Funciona</h2>
+
+      <div class="img" id="img5">
+        <img  class="imagemEmSi"  alt="Parte da transmissão PAL oculta, aqui visivel deslocando a imagem 24 linhas para baixo." src="img/05.jpg">
+        <p class="descricao">"Parte da transmissão PAL oculta, aqui visivel deslocando a imagem 24 linhas para baixo.</p>
+      </div>
+
+  <p class="texto">
+    Em cada <a href="https://pt.wikipedia.org/wiki/Fotograma">frame</a> da imagem televisiva há uma área escondida <a href="https://en.wikipedia.org/wiki/Vertical_blanking_interval">(VBI)</a>, não visível no ecrã. <span onmouseover="show(5)" onmouseout="hide(5)">Nessa zona</span> são usadas 4 linhas (2 por cada <a href="https://en.wikipedia.org/wiki/Field_(video)">field</a>) para mostrar o código (em forma de pulsações/batimentos binários) que contém as informações do teletexto. Cada linha desse código binário contém a informação de uma linha de página teletexto. <br>
+    Essas informações do teletexto vão sendo transmitidas com o sinal da televisão, um caracter de cada vez, linha a linha, página a página, por ordem.
+  </p>
+
+      <div class="img"  id="img12">
+        <img  class="imagemEmSi"  alt="Oracle" src="img/12.png">
+        <p class="descricao">Página do Oracle.</p>
+      </div>
+
+  <p class="texto">
+    Em cada página do teletexto existe um <span onmouseover="show(12)" onmouseout="hide(12)">cabeçalho</span> (1 linha) cuja estrutura é sempre semelhante. Para além do canal e da data, diz-nos o número da página que nos encontramos (que é único) e também mostra um número que está sempre a mudar, que representa o número da página que está a ser recebida no próprio momento.
+  </p>
+
+  <p class="texto">
+    Assim como na internet, cada página tem "links", ligações para outras páginas. Para acedermos à página que queremos ver, inserimos o número dessa página e esperamos que essa página seja recebida e mostrada no ecrã. Quando chega ao número, conseguimos ver a página que escolhemos. <br>
+    É como se todas as páginas estivessem constantemente a passar, mas fazemos pausa na página que escolhemos.
+  </p>
+
+
+
+  <p class="texto">
+    Se cada linha da página tiver texto ou gráficos, essa página demora 0.24 segundos a ser carregada. Se a página estiver menos preenchida, é mais rápido. A velocidade de receção não depende do número de pessoas a usar o teletexto, ao contrário da internet.<br>
+    Cada sistema de teletexto pode ter até 800 páginas diferentes. No entanto, quanto mais páginas ele tiver, mais tempo demora a mostrar a página que queremos, por isso normalmente têm menos páginas.
+  </p>
+
+        <div  class="img" id="img10">
+          <img  class="imagemEmSi"  alt="Com um descodificador especial, é possível ver os caracteres especiais, que indicam a cor. Em baixo, a transmissão normal, com os caracteres ocultos." src="img/10.png">
+          <p class="descricao">Com um descodificador especial, é possível ver os caracteres especiais, que indicam a cor. Em baixo, a transmissão normal, com os caracteres ocultos.</p>
+        </div>
+
+  <p class="texto">
+    Cada página de teletexto tem 24 filas e 40 colunas de caracteres. Há logicamente caracteres de letras e números, mas também caracteres especiais, para indicar a cor ou fazer gráficos. Os <span onmouseover="show(10)" onmouseout="hide(10)">caracteres que indicam a cor </span>são invisíveis e estão antes de palavra a colorir, no espaço entre as palavras. Poupar espaço (para transmitir mais conteudo mais rapidamente) foi sempre um objetivo.
+  </p>
+
+        <div class="img" id="img13">
+        <img   class="imagemEmSi"  alt="Como os caracteres são desenhados." src="img/13.jpg">
+        <p class="descricao">Como os caracteres são desenhados.</p>
+      </div>
+
+  <p class="texto">
+    Cada caracter é composto por 8 bits e é desenhado numa <span onmouseover="show(13)" onmouseout="hide(13)">grelha de 7 por 5 pontos</span>, normalmente sendo "refinados" por um arredondamento dos cantos.<br>
+    40 caracteres x 8 bits = 320 bits por linha. Depois de contas feitas, a velocidade do teletexto era basicamente 7 Mbps.<br>
+  </p>
+
+
+
+
+
+
+
+
+
+
+<h2>Evolução e Atualidade</h2>
+
+      <div class="img" id="img14">
+        <img   class="imagemEmSi" alt="O início do Oracle. Oracle significaba Optional Reception of Announcements by Coded Line Electronics" src="img/14.jpg">
+        <p class="descricao">O início do Oracle. Oracle significava Optional Reception of Announcements by Coded Line Electronics</p>
+      </div>
+
+        <div class="img"  id="img15">
+          <img   class="imagemEmSi" alt="Página de testes para engenheiros." src="img/15.gif">
+          <p class="descricao">Página de testes para engenheiros.</p>
+        </div>
+
+        <div class="img" id="img16" >
+          <img class="imagemEmSi" alt="Página de 1993, onde são usados gráficos." src="img/16.jpg">
+          <p class="descricao">Página de 1993, onde são usados gráficos.</p>
+        </div>
+
+  <p class="texto">
+    Desde que começou, o teletexto foi evoluindo.<br>
+    <span onmouseover="show(14)" onmouseout="hide(14)">No início</span>, o serviço Oracle, um dos primeiros, permitia apenas 50 páginas com só uma cor. A base técnica do teletexto não se alterou muito, mas mesmo assim conseguiu-se desenvolver a tecnologia:<br>
+    Permitiu cada vez mais páginas;<br>
+    Permitiu <span onmouseover="show(15)" onmouseout="hide(15)" >mais cores</span>;<br>
+    Permitiu <span onmouseover="show(16)" onmouseout="hide(16)">mais gráficos</span>;<br>
+    Algumas televisões tinham memória, o que fazia o acesso a qualquer página ser basicamente instantâneo;</p>
+
+        <div  class="img" id="img18" >
+          <img class="imagemEmSi" alt="Página index - inicial" src="img/18.jpg">
+          <p class="descricao">Página index - inicial</p>
+        </div>
+
+        <div class="img" id="img17">
+          <img  class="imagemEmSi"  alt="Página da TVI" src="img/17.jpg">
+          <p class="descricao">Página da TVI</p>
+        </div>
+
+    <p class="texto">
+      O teletexto continua a ser o <span onmouseover="show(18)" onmouseout="hide(18)" >meio de comunicação mais rápido e acessível</span> para muita gente. Embora muitos países e estações de televisão tenham já acabado com o teletexto, em Portugal ele ainda existe. A RTP ainda considera que o investimento vale a pena, visto que o serviço é público e ainda é útil para muita gente.
+    </p>
+
+
+
+
+    <p class="texto">
+      Em Portugal, grande parte de quem usa tem mais de 50 anos.
+      <span onmouseover="show(17)" onmouseout="hide(17)" >Procura informações específicas</span>, sobre futebol, lotaria, metereologia, farmácias de serviço, bolsa de valores... Ou usa o teletexto para aceder aos serviços de conteúdos adaptados, como cegos ou surdos. Na RTP, o teletexto é basicamente gerido e produzido apenas por funcionários dos Serviços Adaptados.<br>
+      Não é possível saber quantas pessoas acedem ao teletexto, por causa da meneira como ele funciona.
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+
+
+<div id="gridRefs">
+<ul>Fontes e Links interessantes:
+  <li><a href="https://www.youtube.com/watch?v=YwfQ8Y8l4Fo">BBC/OU Teletext (video)</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Teletext">Wikipedia - Teletext</a></li>
+  <li><a href="https://www.rtp.pt/play/p3305/e356668/voz-do-cidadao">RTP - Voz do Cidadão 14 Jul. 2018</a></li>
+  <li><a href="http://teletext.mb21.co.uk/timeline/this-is-oracle-0180.shtml"></a></li>
+  <li><a href=""></a></li>
+  <li><a href="http://teletext.mb21.co.uk/gallery/oracle/main1.shtml">The Teletext Museum - TELETEXT GALLERY</a></li>
+  <li><a href="https://www.cmjornal.pt/tv-media/detalhe/rtp-com-rumo-por-definir">CM - RTP com rumo por definir</a></li>
+  <li><a href="https://www.jn.pt/arquivo/2004/rtp-encerra-servico-de-chat-do-teletexto-468927.html">JN - RTP encerra serviço de chat do teletexto</a></li>
+</ul>
+
+
+<ul id="refs">Imagens:
+  <li><a href="https://freeimages.com/">Free Images</a></li>
+  <li><a href="https://commons.wikimedia.org/wiki/Main_Page">Wikipedia commons</a></li>
+  <li><a href="https://www.theguardian.com/media/gallery/2009/jul/16/television-itv">The Guardian</a></li>
+  <li><a href="http://www.stepro.pt/sysmedia.htm">SysMedia</a></li>
+  <li><a href="https://www.publico.pt/2019/07/21/tecnologia/noticia/internet-nao-matou-teletexto-1880162">Público</a></li>
+</ul>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="js.js"></script>
+</body>
+
+</html>

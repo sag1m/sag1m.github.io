@@ -1,0 +1,558 @@
+/*DROPDOWN---------------------------------------------------------------*/
+.dropdown-content {
+    display: none;
+
+    
+}
+
+.show{
+    display: block;
+}
+
+/*CSS RESET----------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1,5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*WEBSITE-------------------------------------------------------------------------------------*/
+
+body{
+    background: #E6E6E6;
+    width: 100%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    
+}
+
+hr{
+    width: 775px;
+    border-color: #335687;
+}
+
+/*CORPO------------------------------------*/
+#corpo{
+    width: 1024px;
+    margin: auto;
+}
+
+.fundoAzul{
+    background: #335687;
+    color: white;
+}
+.fundoAzul a:link {
+     text-decoration: none;
+     color: white;
+ }
+ .fundoAzul a:visited {
+    text-decoration: none;
+    color: white; 
+}
+.fundoAzul a:hover {
+     text-decoration: none;
+     color: white;
+     font-weight: bold;
+ }
+.fundoAzul a:active {
+      text-decoration: none;
+      color: white;
+}
+
+.fundoBranco{
+    background: white;
+    color: #333333;
+    }
+
+.fundoBranco a:link {
+    text-decoration: none;
+    color: #335687;
+}
+.fundoBranco a:visited {
+    text-decoration: none;
+    color: #335687;
+}
+.fundoBranco a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+.fundoBranco a:active {
+     text-decoration: none;
+     color: #335687;
+ }
+
+
+
+
+
+/*HEADER------------------------------------*/
+#header{
+    width: 1024px;
+    height: 134px;
+    font-size: 17px;
+    margin: 0 0 1px 0;
+    
+}
+#logo{
+    position:relative;
+    top:38px;
+    left:84px;
+}
+
+#header #titulo{
+    position:relative;
+    top: -20px;
+    left: 251px;
+    line-height: 20px;
+}
+
+#header #lingua{
+    position:relative;
+    top: -20px;
+    left: 850px;
+}
+
+/*MENU------------------------------------*/
+#menu{
+    /*
+    display: flex;
+    justify-content: space-between;
+    */
+    height: 36px;
+    font-size: 11pt;
+    font-weight: medium;
+    text-transform: uppercase;
+    border-radius: 0 0 20px 20px;
+    padding: 13px 20px 0px 20px;
+    text-align: center;
+    
+    
+}
+
+
+
+#menu li {
+
+    display: inline;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+#menuSelected{
+    font-weight: bold;
+}
+
+/*MENU EXTENDED------------------------------------*/
+#menuExtended{
+    height: 655px;
+    border-radius: 0 0 20px 20px;
+
+}
+/*MENU EXTENDED MENU------------------------------------*/
+#menuExtendedMenu{
+    width: 242px;
+    font-size: 12pt;
+    
+    padding: 26px 20px 26px 20px;
+    float: left;
+    line-height: 1.95;
+  
+}
+
+#menu2Selected{
+    font-weight: bold;
+}
+
+
+.subList {
+
+	padding-left: 10px;
+}
+
+
+    
+
+
+/*MENU EXTENDED CORPO------------------------------------*/
+#menuExtendedCorpo{
+    width: 697px;
+    float: right;
+    padding: 26px 20px 26px 20px;
+    height: 603px;
+    overflow: auto;
+}
+
+h1{
+    font-size: 20pt;
+}
+
+#menuExtendedCorpo p{
+    padding: 22px 0 40px 0;
+    line-height: 1.6;
+}
+
+/*SLIDESHOW------------------------------------*/
+
+#slideshow{
+    margin-top: 63px;
+    margin-bottom: 63px;
+    width: 1024px;
+    height: 569px;
+    border-radius: 20px;
+    background-image: url('../img/sideshow.jpg');
+
+}
+
+#slideshowTexto{
+    width: 1024x;
+    padding: 20px;
+    background: rgba(51, 86, 135, 0.51);
+    border-radius: 0 0 20px 20px;
+    height: 98px;
+    
+    position: relative;
+    bottom: -432px;
+}
+
+    
+
+
+#slideshowTexto p{
+    color: white;
+    font-size: 18pt;
+    line-height: 30pt;
+    width: 778px;
+}
+
+/*SUBSCRIBE AND FOLLOW------------------------------------*/
+
+#subFollow{
+    color: #335687;
+    font-size: 18pt;
+    margin: auto;
+    text-align: center;
+    width: 500px;
+    height: 90px;
+
+    
+}
+
+.wrap{
+    width: 500px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+   
+}
+
+.left{
+    float: left;
+
+}
+
+.right{
+    float: right;
+}
+
+.margin{
+    margin-bottom: 20px;
+}
+
+/*THEMES------------------------------------*/
+#exploreTheme{
+    text-transform: uppercase;
+    font-size: 18pt;
+    color: #335687;
+    text-align: center;
+    margin: 63px;
+}
+
+.theme{
+    border-radius: 20px;
+}
+
+#themes{
+    display: flex;
+    justify-content: space-between;
+
+    
+    
+}
+
+.topText{
+    position: relative;
+    text-align: center;
+    color: #335687;
+    font-weight: bold;
+}
+
+.centered{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1;
+}
+
+a:link {
+    text-decoration: none;
+    color: #335687;
+}
+a:visited {
+    text-decoration: none;
+    color: #335687;
+}
+a:hover {
+    text-decoration: none;
+    color: #335687;
+ }
+a:active {
+    text-decoration: none;
+    color: #335687;
+   }
+
+/*THEMES EXTENDED------------------------------------*/
+
+
+#themeDropdown{
+    background: white;
+    
+}
+
+#themeArticles{
+    height: 300px;
+    padding: 20px;
+    overflow: auto;
+}
+
+#themeDescription{
+    background:#335687;
+    background-image: url('../img/BGhealth.jpg');
+    color: white;
+    line-height: 1,5;
+    height: 167px;
+    border-radius: 0 0 20px 20px;
+    padding: 20px;
+    padding-right: 50px;
+}
+#themeDescription p{
+    margin: 20px;
+    width: 800px;
+    
+}
+
+#healthWrap{
+    padding: 20px;
+    border-radius: 20px;
+    border-radius: 0 0 20px 20px;
+    height: auto;
+    
+    
+}
+
+#articleExtended{
+    display: none;
+    border-radius: 0 0 20px 20px;
+    padding: 20px 20px 20px 40px;
+    height: 500px;
+    background-color: white;
+    
+}
+
+.article{
+ 
+border-bottom: 25px;
+    
+}
+
+.articleContent{
+    height: 100px;
+    margin-left: 10px;
+}
+
+.articleTitle{
+    font-size: 20px;
+    color: #335687;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+    
+.articleDetails{
+    font-size: 15px;
+    color: #4e4e4e;
+    margin: 5px 0 10px 10px;
+}
+
+
+
+.imgArticles{
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+#img1{
+    background-image: url(../img/health1.jpg);
+    
+}
+
+#img2{
+    background-image: url(../img/health2.jpg);
+    
+}
+
+#img3{
+    background-image: url(../img/health3.jpg);
+    
+}
+
+#img4{
+    background-image: url(../img/health4.jpg);
+    
+}
+
+/*------------------------artigo pra ler------------------------------------*/
+#articleExtendedLeft{
+    float: left;
+    height: 500px;
+    margin-right: 35px;
+    line-height: 25px;
+}
+
+
+#articleLeftImg{
+    background-image: url(../img/RoomForImprovement.jpg);
+    width: 150px;
+    height: 150px;
+    margin: 20px 0 30px 0;
+}
+
+
+#articleLeftSource{
+    width: 149px;
+    height: 31px;
+    background-color: #335687;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 20px;
+    margin: 30px 0 0 10px;
+    
+}
+
+.leftTitle{
+    font-weight: 700;
+}
+
+.leftLink{
+    padding-left: 10px;
+}
+
+
+
+#articleExtendedRight{
+    line-height: 30px;
+    height: 500px;
+    overflow: scroll;
+}
+
+.articleTitle{
+    
+}
+
+.author{
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+
+.artigoParagrafo{
+    margin: 15px;
+}
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------SPONSOR*/
+#marginTop{
+        margin-top: 92px;
+}
+
+#supported{
+    margin-bottom: 20px;
+    
+}
+
+#containerSponsors{
+    margin: auto;
+    text-align: center;
+    width: 300px;
+    height: 110px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#sponsors{
+
+    
+}
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------FOOTER*/
+.center{
+    text-align: center;
+    margin: 20px 0 5px 0;
+
+}
+
+
+
+
+
+
+
+

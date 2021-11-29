@@ -1,0 +1,127 @@
+<!doctype html>
+<html class="no-js" lang="pt">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Web Designer Week</title>
+  <meta name="description" content="WDW é um jogo de perguntas interativo onde tens de acabar de fazer um website enquanto web-designer.">
+  <!-- imagem de preview: colocar a url absoluta; usar imagem com mínimo 2400px largura -->
+  <meta property="og:image" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!--A fonte não funciona no telemovel, com este código talvez-->
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <!-- Favicon e ícones -->
+  <!-- 144 x 144 px - iPad 3a geração com ecrã de alta resolução (retina) -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon-144px.png">
+  <!-- 114 x 114px - iPhone com ecrã de alta resolução (retina) -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicon-114px.png">
+  <!-- 72 x 72 px - iPad 1a e 2a geração -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon-72px.png">
+  <!-- 57 x 57px - iPhone, iPod Touch, e Android 2.1+ -->
+  <link rel="apple-touch-icon-precomposed" href="img/favicon-57px.png">
+  <!-- favicon base: 32x32px deve estar na raiz do site,
+  para garantir que os browsers antigos o vão mostrar -->
+  <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body ><!-- onload="esperar()"  -->
+
+  <h1>Web Designer Week</h1>
+
+  <div id="container">
+
+
+
+
+
+    <div id="esquerda">
+
+
+        <p class="bold">Progresso</p>
+        <div class="barra">
+          <div id="contentorProgresso">
+            <div id="barraProgresso"></div>
+          </div></div>
+          <p id="fraseProgresso">frase</p>
+
+        <p class="bold">Energia</p>
+        <div class="barra">
+          <div id="contentorEnergia">
+            <div id="barraEnergia"></div>
+          </div></div>
+          <p id="fraseEnergia">frase</p>
+
+        <p class="bold">Relax</p>
+        <div class="barra">
+          <div id="contentorRelax" >
+            <div id="barraRelax"></div>
+        </div></div>
+        <p id="fraseRelax">frase</p>
+
+    </div>
+
+    <div id="direita">
+
+
+      <p id="data">data</p>
+
+
+
+
+      <div id="pergunta">
+        <p>
+          Estás fechado numa sala pouco iluminada. Há uma janela. Espreitando pela janela parece que estás dentro de algum castelo medieval.
+        </p>
+        <p>
+          Não estás nada... <br>Tu não entras num castelo há anos. <br>És só um web-designer ansioso e estás na tua cama a dormir. Tens de te levantar não tarda nada...
+        </p>
+      </div>
+
+      <div id="center">
+      <button id="botaoIniciar" onclick="iniciar" class="botao">Jogar</button>
+      <button id="botaoInstrucoes" onclick="instrucoes" class="botao">Instruções</button>
+      <button id="botaoRecomecar" onclick="recomecar" class="botao">Tentar outra vez</button>
+      <button id="okButton"></button>
+      </div>
+
+
+      <div id="botoes">
+        <button id="botaoTrabalhar">Trabalhar</button>
+        <button id="botaoDormir">Dormir</button>
+        <button id="botaoGinasio">Ginásio</button>
+
+      </div>
+
+
+
+    </div>
+  </div>
+
+  <div id="instrucoes">
+    <ul>
+      <li>Tens 7 dias para completar 100% do trabalho.</li>
+      <li>Cada dia tem 3 fases: manhã, tarde e noite.</li>
+      <li>Em cada fase tens de decidir entre Trabalhar, Dormir ou ir ao Ginásio.</li>
+      <li>Tens de controlar a tua Energia e o teu Relax dormindo e indo ao ginásio.</li>
+      <li>Quanto melhor te sentes, mais provável é as ações correrem bem.</li>
+    </ul>
+  </div>
+
+
+
+
+
+
+
+<script src="rando.js"></script>
+<script src="dicionario.js"></script>
+<script src="js.js"></script>
+</body>
+
+</html>

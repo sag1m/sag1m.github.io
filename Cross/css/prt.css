@@ -1,0 +1,249 @@
+@media print {
+
+  body {
+    color: #171717;
+    background-color: transparent;
+    font-size: 12px;
+  }
+
+
+  html, body {
+      /*height: 100%;
+      margin: 0 !important;
+      padding: 0 !important;
+      overflow: hidden;*/
+    }
+
+  /*.parent {
+      overflow: scroll;
+      display: block;
+    }
+*/
+body {
+  height: auto;
+}
+
+
+  /*#descricao, #descricao *{
+    visibility: visible;
+  }*/
+
+
+  /* retirar espaçamentos que
+  na impressão não são necessários
+  */
+  /*
+  .wrap > * {
+
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .wrap .grid {
+    display: block;
+    width: 100%;
+  }
+  /*
+
+
+  /* Como é para impressão, podemos especificar medidas
+     em centímetros */
+  h1, h2, h3, h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+h1 a:visited {
+  text-decoration: none;
+}
+  /* Usamos as regras break-inside e break-after para
+     assegurar que as listas e outros elementos não quebram
+     linhas onde não deviam */
+     /*
+  .wrap .wrap {
+    break-inside: avoid;
+*/
+    /* alterar a cor das linhas horizontais
+    para uma cor com contraste para impressão
+    */
+
+    /*
+    border-color: #212B44;
+  }
+  .wrap h4 + ul {
+    break-after: avoid;
+  }
+*/
+#hero, #title, #cruz1 h2, #data{
+  display: inline;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#generos, #artistasCruz, #cruz1, #cruz2 {
+  display: none;
+}
+
+
+
+#data{
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a::after{
+  content: attr(href);
+}
+
+/*a{
+  content: attr(href);
+}*/
+
+
+/*#ecra, #hero, .ecra, #nav, body, h1, h2, h3, h4, ul, li, #botaoinfo{
+  break-after: avoid;
+  break-before: avoid;
+  break-inside: avoid;
+}*/
+
+.ecra{
+  height: auto;
+  min-height: auto;
+}
+
+#ecra{
+  height: auto;
+  min-height: auto;
+}
+
+/*@page :first {
+  display: none;
+}*/
+
+
+
+ /*
+ {}
+ */
+
+ #textodescricao {
+   /*transform: rotate(-8deg);*/
+   margin-bottom: 1.5rem;
+   font-size: 1rem;
+   text-align: left;
+   font-weight: normal;
+   line-height: normal;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+
+ }
+
+h1, h2, h3, h4{
+  text-align: left;
+}
+
+
+
+
+.mapouter{
+  display: none;
+}
+ /**
+  * Making intergated videos disappear, and removing the iframes' whitespace to zero.
+  */
+
+ iframe, ins {
+     display: none;
+     width: 0 !important;
+     height: 0 !important;
+     overflow: hidden !important;
+     line-height: 0pt !important;
+     white-space: nowrap;
+ }
+
+  #nav, .logo, .pub, nav, #titulodescricao   {
+     display: none;
+
+ }
+
+#nav{
+  display: inline;
+}
+#nav li{
+  font-size: 12px;
+  text-align: left;
+}
+
+.descricaopalco2, #info {
+  width: 10cm;
+}
+
+
+#programa {
+  display: block;
+  font-size: 12px;
+
+}
+.vertical{
+  writing-mode: horizontal-tb;
+  font-size: 13px;
+}
+
+
+
+  h3{
+    font-size: 15px;
+  }
+
+  h4{
+    font-size: 12px;
+  }
+
+
+
+
+
+
+#gridinfo{
+  display: inline;
+  text-align: left;
+}
+
+#info ul{
+  text-align: left;
+  font-size: 12px;
+}
+
+
+
+
+/*
+.caixaartista{
+  display: grid;
+  grid-template-columns: 2;
+  margin: 0;
+}
+
+.fotoartista{
+  width: 5rem;
+  margin: 0;
+}
+
+.hora, .caixaartista h4, .fotoartista{
+  grid-column: 1;
+  margin: 0;
+}
+
+.artistsbox{
+  width: auto;
+  overflow: visible;
+  display: inline-block;
+  margin: 0;
+}
+
+*/
+
+
+/*
+{}
+*/
+}
