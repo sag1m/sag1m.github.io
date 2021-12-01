@@ -1,0 +1,292 @@
+<!doctype html>
+<html class="no-js" lang="eng">
+
+<head>
+  <meta charset="utf-8">
+
+  <title></title>
+  <meta name="description" content="">
+  <!-- imagem de preview: colocar a url absoluta; usar imagem com mínimo 2400px largura -->
+  <meta property="og:image" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Favicon e ícones -->
+  <!-- 144 x 144 px - iPad 3a geração com ecrã de alta resolução (retina) -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/logo144.png">
+  <!-- 114 x 114px - iPhone com ecrã de alta resolução (retina) -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/logo114.png">
+  <!-- 72 x 72 px - iPad 1a e 2a geração -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/logo72.png">
+  <!-- 57 x 57px - iPhone, iPod Touch, e Android 2.1+ -->
+  <link rel="apple-touch-icon-precomposed" href="img/logo57.png">
+  <!-- favicon base: 32x32px deve estar na raiz do site,
+  para garantir que os browsers antigos o vão mostrar -->
+  <link rel="shortcut icon" href="logo.ico">
+
+  <!-- GOOGLE FONTS (tenho de fazer upload da fonte definitiva depois) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Recursive:wght,CASL,CRSV@300..1000,0..1,0..1&display=swap" rel="stylesheet"></head>
+
+<body>
+
+  <div id="sidebar">
+    <img id="logo" src="img/logoIcon.svg" alt="succulentsSymbol"></img>
+
+    <div>
+      <a href="#"><img class="menuIcon" id="home" src="img/homeMenuIcon.svg" alt="home"></img></a>
+      <a href="#"><img class="menuIcon" id="create" src="img/createMenuIcon.svg" alt="create card"></img></a>
+      <a href="#"><img class="menuIcon" id="collection" src="img/collectionMenuIcon.svg" alt="my collection"></img></a>
+      <a href="#"><img class="menuIcon" id="profile" src="img/profileMenuIcon.svg" alt="my profile"></img></a>
+      <a href="#"><img class="menuIcon" id="achievements" src="img/achievementsMenuIcon.svg" alt="my achievements"></img></a>
+      <a href="#"><img class="menuIcon" id="community" src="img/communityMenuIcon.svg" alt="community"></img></a>
+      <a href="#"><img class="menuIcon" id="forum" src="img/forumMenuIcon.svg" alt="forum"></img></a>
+      <a href="#"><img class="menuIcon" id="rankings" src="img/rankingsMenuIcon.svg" alt="rankings"></img></a>
+    </div>
+
+    <div id="bottom">
+    <a href="#"><img class="menuIcon" id="signUp" src="img/signUpMenuIcon.svg" alt="sign Up"></img></a>
+    <a href="#"><img class="menuIcon" id="signIn" src="img/signInMenuIcon.svg" alt="sign In"></img></a>
+    <a href="#"><img class="menuIcon" id="menu" src="img/menuMenuIcon.svg" alt="menu"></img></a>
+  </div>
+  </div>
+
+
+
+
+  <!-- O conteúdo entra aqui -->
+  <div id="container">
+
+    <h1 id="pageTitle">Create Card</h1>
+
+
+
+
+<!--<p class="exp"></p>-->
+
+
+
+<!-- FFOORRMMUULLÁÁRRIIOO F O R M U L A R I O   F O R M U L A R I O  -->
+<!--
+  <div id="intro">
+  <p class="exp">Aqui é possível <span class="bold">criar cartas/cromos digitais</span> de suculentas.</p>
+<p class="exp">Isto é só uma demonstração, um raschunho, de uma funcionalidade de uma app/site.</p>
+<br>
+  <p class="exp">As cartas têm informação inserida pelos criadores das cartas.</p>
+  <p class="exp">Também terão informação geral da espécie, como alguns cuidados a ter - esta informação será adicionada automaticamente à carta.</p>
+  <p class="exp">O objetivo 1 do site onde isto está inserido é <span class="bold">colecionar cartas das nossa coleção de suculentas</span>, para saber os cuidados, nomes e não esquecer nenhuma.</p>
+  <p class="exp">O objetivo 2 é <span class="bold">"observar"/procurar o maior número de suculentas na natureza.</span> Quem encontrar mais diferentes, ganha.</p>
+  <br>
+  <p class="exp">Nem tudo funciona nesta demonstração mas todas as informações que as pessoas dão estarão na carta em forma de ícones.</p>
+</div>
+
+  <br><br>-->
+
+<div id="formulario">
+
+  <form>
+    <fieldset id="f1">
+
+      <input class="semFundo" type="file" id="file" name="photo1" value="photo1">
+      <br>
+
+      <form id="auto" autocomplete="off" action="">
+        <div class="autocomplete" style="width:161px;">
+          <input placeholder="Genre (ex:Echeveria)" id="genus1" type="text" name="genus1" placeholder="">
+        </div>
+      </form>
+
+
+    <input placeholder="Species (ex:agavoides)" id="species1" type="text" name="species1" placeholder="">
+          <br>
+
+    <input id="commonName1" placeholder='Common name (ex: "Donkey Tale")' id="streetName1" type="text" value="">
+    <br>
+
+
+    <input type="text" id="userName1" name="userName1" placeholder="Your name" >
+    <br>
+
+    <input placeholder="Country" id="country1" type="text" value="">
+    <input placeholder="Location" id="local1" type="text" value="">
+    <br>
+
+    <input class="semFundo" id="date1" type="date" value="2021-04-01">
+    <br>
+
+
+
+
+    <br>
+    <textarea placeholder="Comments" maxlength="200" type="text" id="userText1" name="userText1" cols="40" rows="5"></textarea>
+    <!--<input placeholder="comments" maxlength="200" type="text" id="userText1" name="userText1"></input>-->
+
+
+
+
+    <!--Make sure the form has the autocomplete function switched off:-->
+
+
+<br>
+
+</fieldset>
+
+<fieldset id="f2">
+
+    <div id="alturaCerta">
+    <label for="nature1">Wild</label>
+    <input  onclick="hideNature()" type="radio" id="wild1" name="nature1" value="wild1">
+    <br>
+    <label for="nature1">Cultivated</label>
+    <input onclick="showNature()" type="radio" id="cultivated1" name="nature1" value="cultivated1">
+    <br>
+
+    <div id="natureSH">
+      <br>
+      <label for="owned1">My specimen</label>
+      <input type="checkbox" id="owned1" name="owned1" value="owned1">
+      <br><br>
+    <label for="natureSH">Outdoor</label>
+    <input type="radio" id="outdoor1" name="inout" value="outdoor1">
+    <label for="natureSH">Indoor</label>
+    <input type="radio" id="indoor1" name="inout" value="indoor1">
+
+
+
+  </div>
+</div>
+
+    <br>
+
+    <label for="light">Shade</label>
+    <input type="radio" id="shade1" name="light" value="shade1">
+    <br>
+    <label for="light">Half-shade</label>
+    <input type="radio" id="partialShade1" name="light" value="partialShade1">
+    <br>
+    <label for="light">Full sun</label>
+    <input type="radio" id="fullSun1" name="light" value="fullSun1">
+    <br>
+    <label for="light">Artificial Light</label>
+    <input type="radio" id="artificial1" name="light" value="artificial1">
+    <br>
+
+
+
+    <p class="exp"></p>
+    <br>
+    <label for="flowering1">Flowering</label>
+    <input type="checkbox" id="flowering1" name="flowering1" value="flowering1">
+    <br>
+
+
+
+
+    <br>
+    <label for="variegate1">Variegated</label>
+    <input type="checkbox" id="variegate1" name="variegate1" value="">
+    <br>
+
+
+
+
+
+
+
+    <br>
+    <div id="estilosDiv">
+    <p class="exp"></p>
+    <p>Card Style</p>
+    <label for="estilos">1</label>
+    <input onclick="" type="radio" id="estilo1" name="estilos" value="verde">
+    <br>
+    <label for="estilos">2</label>
+    <input onclick=""  type="radio" id="estilo2" name="estilos" value="rosa">
+    <br>
+    <label for="estilos">3</label>
+    <input onclick="" type="radio" id="estilo3" name="estilos" value="black">
+
+    <br><br>
+    <input id="botaoCriar" type="submit" value="Generate Card"></input>
+    <input id="editButton" type="submit" value="Edit Card"></input>
+
+    </fieldset>
+
+  </form>
+
+
+
+
+</div>
+
+<!-- CCCAAARRRTTTAAA           CARTA CARTA CARTA CARTA CARTA CARTA CARTTA CARTA -->
+<div data-tilt id="containerTilt">
+  <div  id="card">
+    <div id="top">
+      <img id="selo2" class="icon" src="img/icon.svg" alt=""></img>
+      <div id="inline">
+        <h1 id="genus2"></h1>
+        <h2 id="species2"></h2>
+      </div>
+    </div>
+    <!--<img id="moldura" src="img/sombra2.png" alt="moldura">-->
+    <div id="photo2">
+    <!---TIREI ESTE CÓDIGHO js DE METER IMAGEM local DO STACKOVERFLOW. --></div>
+      <div id="photoInfoA">
+        <span id="local2"></span>
+        <span id="country2"></span>
+        <span id="date2"></span>
+        <span id="userName2"></span>
+      </div>
+    <div id="photoInfoB">
+      <img id="summer2" class="icon1 weather" src="img/summerIcon.svg" alt="summer"></img>
+      <img id="winter2" class="icon1 weather" src="img/winterIcon.svg" alt="winter"></img>
+      <img id="autumn2" class="icon1 weather" src="img/autumnIcon.svg" alt="autumn"></img>
+      <img id="spring2" class="icon1 weather" src="img/springIcon.svg" alt="spring"></img>
+      <img id="wild2" class="icon1" src="img/wildIcon.svg" alt="wild"></img>
+      <img id="cultivated2" class="icon1" src="img/cultivatedIcon.svg" alt="cultivated"></img>
+      <img id="owned2" class="icon1" src="img/ownedIcon.svg" alt="owned"></img>
+      <img id="indoor2" class="icon1" src="img/indoorIcon.svg" alt="indoor"></img>
+      <img id="outdoor2" class="icon1" src="img/outdoorIcon.svg" alt="outdoor"></img>
+      <img id="fullSun2" class="icon1" src="img/fullSunIcon.svg" alt="full sun"></img>
+      <img id="partialShade2" class="icon1" src="img/partialShadeIcon.svg" alt="half-shade"></img>
+      <img id="shade2" class="icon1" src="img/shadeIcon.svg" alt="shade"></img>
+      <img id="artificial2" class="icon1" src="img/artificialIcon.svg" alt=""></img>
+      <img id="flowering2" class="icon1" src="img/floweringIcon.svg" alt="flowering"></img>
+      <img id="variegate2" class="icon1" src="img/variegateIcon.svg" alt="variegated"></img>
+    </div>
+    <div>
+      <h3 id="commonName2"></h3>
+      <p id="userText2"></p>
+    </div>
+    <div id="speciesInfo2">
+      <ul>
+        <li><img class="icon2" src="img/familyIcon.svg" alt="family"></img><span id="family2">Crassulaceae</span></li>
+        <li><img class="icon2" src="img/parentsIcon.svg" alt="parents"></img><span id="parents2">Graptopetalum Paraguayense X Sedum</span></li>
+        <li>
+          <img class="icon2" src="img/widthIcon.svg" alt=""></img><span id="width2"><span>15CM</span>
+          <img class="icon2" src="img/heightIcon.svg" alt=""></img><span id="height2">20cm</span>
+          <img class="icon2" src="img/deathBloomIcon.svg" alt="death bloom"></img>
+          <img class="icon2" src="img/resistantWaterIcon.svg" alt="water resistent"></img>
+          <img class="icon2" src="img/ResistantDryIcon.svg" alt="drought tolerant"></img>  </li>  </ul>  </div>  </div></div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script src="listas.js"></script>
+<script src="js.js"></script>
+
+</body>
+
+</html>

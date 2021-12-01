@@ -1,0 +1,40 @@
+/*ESTILO 1 - COR 1*/
+
+#card{
+  background-image: url("../img/1BG.png");
+  color: #2e4c19;
+
+
+}
+
+#h1{
+  color:
+}
+
+
+#photo2{
+  box-shadow: none;
+
+
+}
+
+#photoInfoA{
+  color: white;
+}
+
+
+#commonName2{
+
+}
+#userText2{
+  background-color: ;
+  color: white;
+
+
+}
+
+
+
+.icon1,.icon2{
+filter: invert(33%) sepia(18%) saturate(1549%) hue-rotate(52deg) brightness(94%) contrast(87%);
+}

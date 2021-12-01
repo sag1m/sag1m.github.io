@@ -304,6 +304,8 @@ var descricoesWeb = ["0",
 
 'Protótipo para um jogo de escolhas, onde o jogador tem de acabar de programar um website controlando a sua ansiedade e energia. 2020',
 
+'Gerador de um website para fotografar, documentar e competir com cartas de suculentas. 2021',
+
 '',
 
 '',
@@ -512,6 +514,9 @@ var trabalhosVideo = ["0",
     '<iframe alt="Website desenvolvido para um festival de música inventado, baseado num cartaz construtivista Russo. 2019" class="youtube" frameBorder="0" src="Cross/index.html"></iframe>',
 
     '<iframe alt="Protótipo para um jogo de escolhas, onde o jogador tem de acabar de programar um website controlando a sua ansiedade e energia. 2020" class="youtube" frameBorder="0" src="wdw/index.html"></iframe>',
+
+    '<iframe alt="Gerador de um website para fotografar, documentar e competir com cartas de suculentas. 2021" class="youtube" frameBorder="0" src="gerador/index.html"></iframe>',
+
 
       ]
 

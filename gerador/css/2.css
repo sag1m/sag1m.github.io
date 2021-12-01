@@ -1,0 +1,39 @@
+/*ESTILO 1 - COR 1*/
+
+#card{
+  background-image: url("../img/2BG.png");
+  color: white;
+
+
+}
+
+#inline{ /*TÍTULO*/
+  color: white;
+}
+
+
+#photo2{
+  box-shadow: inset 5px 5px 8px rgba(255, 255, 255, 0.3), inset -5px -5px 8px rgba(0, 0, 0, 0.3)
+
+
+
+}
+
+#photoInfoA{
+  color: white;
+}
+
+
+#commonName2{
+
+}
+#userText2{
+  color: white;
+
+}
+
+
+
+.icon1,.icon2{
+filter: invert(100%) sepia(92%) saturate(0%) hue-rotate(78deg) brightness(109%) contrast(109%); /*branco*/
+}
