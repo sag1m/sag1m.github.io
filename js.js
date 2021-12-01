@@ -239,7 +239,7 @@ function hideDesc(){
 
 //INTRO E VER MAIS------------
 var mais = [
-  '<div class="">      <p id="intro">Expoerienciasa fff Aqui estão vários trabalhos que fiz principalmente para a escola.</p>     <p>Estão organizados por categorias e ordem cronológica à esquerda.</p>     <p>Em cima podes saber mais e ver ainda mais trabalhos aleatórios.</p></div>',
+  '<div class="">      <p id="intro">Aqui estão alguns trabalhos que fiz.</p>     <p>À esquerda tem algumas categorias.</p>     <p>Em cima podes saber mais e ver mais trabalhos de forma aleatória.</p></div>',
 
 
   '<p>Gosto de passar tempo no computador, andar de bicicleta e cultivar suculentas, no Porto.</p> </a><img id="introImg" src="web2.png" alt="Pixel Art"><p>migas@outlook.pt</p> ',
@@ -247,6 +247,11 @@ var mais = [
 
   '<h3></h3>'
 ]
+
+
+
+
+
 
 //MOSTRAR TEXTO DE BOAS VINDAS LOGO QUANDO SE ABRE O WEBSITE
 bottomRight.innerHTML = mais[0];
@@ -284,9 +289,9 @@ var descricoesImagem = ["0",
 
 'Spoof Ad da empresa MyProtein.',
 
-'Spoof ad do medicamento Lunesta. À esquerda é o original. Eu mudei a ordem do texto - O que no original tem mais destaque, no meu tem menos importância.',
+'Spoof ad do medicamento Lunesta. À esquerda é o original. Eu apenas mudei a ordem do texto - O que no original tem mais destaque, no meu tem menos importância.',
 
-'Desenho em Pixel Art, frame de um possível jogo inventado. O jogador seria um estafeta da Uber que teria de entregar encomendas. Ganharia bónus ao arrancar retrovisores de carros.',
+'Pixel Art, frame de um possível jogo inventado. O jogador seria um estafeta da Uber que teria de entregar encomendas. Ganharia bónus ao arrancar retrovisores de carros.',
 
 'Fotografia Panorâmica no Porto à beira rio.',
 
@@ -309,7 +314,7 @@ var descricoesWeb = ["0",
 var descricoesOutros = ["0",
 'Pequeno texto de pesquisa para blog sobre o Teletexto. 2020',
 
-'Fanzine Pharmakon com 3 números. O tema são substancias psicoativas principalmente ilegais. A nº2 foi todo escrito por mim. 2020',
+'Fanzine Pharmakon com 3 números. O tema são substancias psicoativas principalmente ilegais. A nº2 foi toda escrito por mim. 2020',
 
 'Publicação sobre a Cafeína feita em Projeto de Impressão. 2020',
 
@@ -322,9 +327,9 @@ var descricoesRandom = ["0",
 // 1
 'Pequeno vídeo que mostra uma disputa entre dois amigos por um doce. Trabalho de grupo. 2015',
 // 2
-'Animação com imagens da série south Park, sem som. 2015',
+'Animação com imagens da série South Park, sem som. 2015',
 // 3
-'Remake de uma cena do filme Blue Velvvet de 1986. Trabalho de grupo.',
+'Remake de uma cena do filme Blue Velvvet de 1986. Trabalho de grupo.  2019',
 // 4
 'Fonte Milano. Tivemos de desenhar uma fonte com base em 3 fontes diferentes.  Trabalho de grupo.',
 // 5
@@ -338,7 +343,7 @@ var descricoesRandom = ["0",
 // 9
 'Ilustração para a capa da revista sábado. 2019',
 // 10
-'Ilustração incompleta do Alexander Shulgin com citação dele. 2015? ',
+'Ilustração incompleta do Alexander Shulgin com citação dele. 2015 ',
 // 11
 'Infografia animada (Incompleto). A infografia deveria informar o número de horas no computador, o número de batidos bebidos e as horas a andar de bicicleta, por dia. 2018',
 // 12
