@@ -239,7 +239,7 @@ function hideDesc(){
 
 //INTRO E VER MAIS------------
 var mais = [
-  '<div class="">      <p id="intro">Aqui estão vários trabalhos que fiz principalmente para a escola.</p>     <p>Estão organizados por categorias e ordem cronológica à esquerda.</p>     <p>Em cima podes saber mais e ver ainda mais trabalhos aleatórios.</p></div>',
+  '<div class="">      <p id="intro">Expoerienciasa fff Aqui estão vários trabalhos que fiz principalmente para a escola.</p>     <p>Estão organizados por categorias e ordem cronológica à esquerda.</p>     <p>Em cima podes saber mais e ver ainda mais trabalhos aleatórios.</p></div>',
 
 
   '<p>Gosto de passar tempo no computador, andar de bicicleta e cultivar suculentas, no Porto.</p> </a><img id="introImg" src="web2.png" alt="Pixel Art"><p>migas@outlook.pt</p> ',
