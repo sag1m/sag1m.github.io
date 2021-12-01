@@ -375,7 +375,7 @@ var descricoesRandom = ["0",
 //25
 'Fanzine Pharmakon nº1. 2020',
 //26
-'',
+'Imagem digital que fiz no Paint.net antes de 2010. Das primeiras imagens que fiz e que consegui guardar até agora.',
 //27
 '',
 //28
@@ -449,7 +449,7 @@ var trabalhosRandom = ["0",
 //25 PHARMAKON 1
 '<iframe alt="Fanzine Pharmakon nº1. 2020" src="https://online.fliphtml5.com/dnvha/smhq/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="youtube" ></iframe>',
 //26
-'',
+'<img class="imagem" src="flor.tif" alt="Imagem digital que fiz no Paint.net antes de 2010. Das primeiras imagens que fiz e que consegui guardar até agora.">',
 //27
 '',
 //28
