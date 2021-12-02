@@ -245,7 +245,7 @@ var mais = [
   '<p>Gosto de passar tempo no computador, andar de bicicleta e cultivar suculentas, no Porto.</p> </a><img id="introImg" src="web2.png" alt="Pixel Art"><p>migas@outlook.pt</p> ',
 
 
-  '<h3></h3>'
+  '<p>estágio Santa Casa da Misericórdia do Porto</p> <p>estágio ISCAP</p>  <p>estágio Perto Design</p>'
 ]
 
 
