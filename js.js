@@ -242,7 +242,7 @@ var mais = [
   '<div class="">      <p id="intro">Aqui estão alguns trabalhos que fiz.</p>     <p>À esquerda tem algumas categorias.</p>     <p>Em cima podes saber mais e ver mais trabalhos de forma aleatória.</p></div>',
 
 
-  '<p>Gosto de passar tempo no computador, andar de bicicleta e cultivar suculentas, no Porto.</p>  <img style="height:10px;" id="introImg" src="web2.png" alt="Pixel Art"><p>migas@outlook.pt</p> ',
+  '<img style="height:50px;"id="introImg"src="web2.png"alt="Pixel Art"> <p>Gosto de passar tempo no computador, andar de bicicleta e cultivar suculentas, no Porto.</p>  <p>migas@outlook.pt</p> ',
 
 
   '<p id="CV01">2014 - estágio Santa Casa da Misericórdia do Porto</p> <p id="CV02">2016? - estágio ISCAP</p> <p id="CV03">2021 - estágio Perto Design</p> <p id="CV04">2021 - Licenciatura Design comunicação, ESAP</p>'
