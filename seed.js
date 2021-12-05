@@ -7,7 +7,7 @@ var criarSemente = document.createElement('img');
 
 var semente = document.getElementById("semente");
 
-semente.onclick = encontrar;
+//semente.onclick = encontrar;
 
 function encontrar() {
 
