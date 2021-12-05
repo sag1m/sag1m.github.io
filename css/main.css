@@ -139,6 +139,19 @@ textarea {
    ========================================================================== */
 
 
+   #cabecalho{
+     position: absolute;
+     width: 99.5%;
+     background-color: lightgrey;
+     padding: 3px;
+
+     font-family: 'Inconsolata', monospace;
+     color: black;
+
+     text-align: center;
+   }
+
+
 /*ECRA..............................................*/
 #screen{
   box-sizing: border-box;

@@ -254,7 +254,23 @@ var mais = [
 
 
 //MOSTRAR TEXTO DE BOAS VINDAS LOGO QUANDO SE ABRE O WEBSITE
+var cabecalho = document.getElementById('cabecalho');
+
 bottomRight.innerHTML = mais[0];
+
+//AVISO AVISO BARRA BARRA CABEÇALHO HEADER cabecalho pub publicidade
+setTimeout(() => {  cabecalho.style = "display:none"; }, 3000);
+
+function showGame(){
+    cabecalho.style = "display:none";
+
+  bottomRight.innerHTML = '<iframe alt="Jogo em construção" class="youtube" frameBorder="0" src="game/index.html"></iframe>';
+
+
+
+
+}
+
 
 
 
