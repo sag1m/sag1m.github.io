@@ -259,7 +259,7 @@ var cabecalho = document.getElementById('cabecalho');
 bottomRight.innerHTML = mais[0];
 
 //AVISO AVISO BARRA BARRA CABEÇALHO HEADER cabecalho pub publicidade
-setTimeout(() => {  cabecalho.style = "display:none"; }, 3000);
+setTimeout(() => {  cabecalho.style = "display:none"; }, 8000);
 
 function showGame(){
     cabecalho.style = "display:none";
