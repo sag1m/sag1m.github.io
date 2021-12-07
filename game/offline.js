@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1638811351,
+	"version": 1638918246,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -19,6 +19,7 @@
 		"images/sprite4-sheet0.png",
 		"images/sprite5-sheet0.png",
 		"images/abrirporta-sheet0.png",
+		"images/sprite6-sheet0.png",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",

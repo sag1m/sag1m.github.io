@@ -18885,8 +18885,8 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Function,
 	cr.plugins_.Keyboard,
 	cr.plugins_.Mouse,
-	cr.plugins_.TiledBg,
 	cr.plugins_.Text,
+	cr.plugins_.TiledBg,
 	cr.plugins_.Sprite,
 	cr.behaviors.Car,
 	cr.behaviors.scrollto,
@@ -18928,7 +18928,8 @@ cr.getObjectRefTable = function () { return [
 	cr.system_object.prototype.exps.random,
 	cr.plugins_.Sprite.prototype.acts.Destroy,
 	cr.plugins_.Sprite.prototype.acts.Spawn,
+	cr.system_object.prototype.acts.GoToLayout,
 	cr.plugins_.Mouse.prototype.cnds.OnClick,
 	cr.plugins_.Mouse.prototype.cnds.IsOverObject,
-	cr.system_object.prototype.acts.GoToLayout
+	cr.system_object.prototype.cnds.Every
 ];};
