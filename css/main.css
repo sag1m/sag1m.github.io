@@ -200,6 +200,20 @@ h1{
  animation-direction: alternate;
  animation-timing-function:ease-out;
 }
+
+#rotate{
+  transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+     display: inline-block;
+
+
+
+
+   }
+
+
+
 @keyframes sombra {
   0%   {text-shadow: 0px 0px 0px #7ca8ff, 0px 0px 0px #ff7c7c;}
   1%  {text-shadow: 4px 0px 0px #7ca8ff, -4px 0px 0px #ff7c7c;}
