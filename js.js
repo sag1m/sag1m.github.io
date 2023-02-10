@@ -1,3 +1,22 @@
+var title = document.querySelector('#botaoMais');
+var text = title.textContent;
+title.innerHTML = text.replace(
+  'g',
+  '<span class="letter-g">g</span>'
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
 //ELEMENTOS
 var topLeft = document.getElementById('topLeft');
 var bottomLeft = document.getElementById('bottomLeft');
