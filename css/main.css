@@ -13,7 +13,10 @@
 /* ==========================================================================
    Estilos base: defaults com atitude.
    ========================================================================== */
-   #mouse-pointer {
+
+
+/*METER UM RATO DECENTE*/
+  #mouse-pointer {
            position: absolute;
            top: 0;
            left: 0;
@@ -23,9 +26,7 @@
          }
 
 
-  #botaoMais {
-}
-
+/*LETRA G A RODAR. DEVIA SER UMA ESPIRAL.*/
 .letter-g {
   display: inline-block;
     animation: rotate 200s linear infinite;
@@ -38,13 +39,6 @@
     transform: rotate(360deg);
   }
 }
-
-
-
-
-
-
-
 
 
 
@@ -73,10 +67,14 @@ a{
 a:hover{
   font-weight: 200;
   text-shadow: 0.6px 0px 0px #7ca8ff, -0.6px 0px 0px #ff7c7c;
-
   transition: 0s;
-
 }
+
+/*Links a ativar e a desativar no topRight*/
+a.active {text-shadow: 0.6px 0px 0px #7ca8ff, -0.6px 0px 0px #ff7c7c;}
+a:not(.active):hover {}
+
+
 /*
  * Retiºrar a sombra do texto, quando está selecionado:
  * https://twitter.com/miketaylr/status/12228805301
@@ -270,6 +268,9 @@ h1{
 #botaoMais:hover{
   text-shadow: 1.4px 0px 0px #7ca8ff, -1.4px 0px 0px #ff7c7c;
 }
+#botaoMigas:hover{
+  text-shadow: 1.4px 0px 0px #7ca8ff, -1.4px 0px 0px #ff7c7c;
+}
 
 img:hover{
   animation: sombraImg 2s infinite;
@@ -337,6 +338,7 @@ a:hover,p:hover{
 }
 
 #descricao{
+  color: black;
   background-color: #ffffffE6;
   position: absolute;
   bottom:-5vh;
@@ -529,9 +531,97 @@ a:hover,p:hover{
    Media Queries para design responsivo. Acrescentar conforme necessário.
    ========================================================================== */
 
-@media only screen and (max-width: 639px) { /* estilos para ecrãs pequenos */
+@media only screen and (max-width: 1000px) { /* estilos para ecrãs pequenos */
+
+
+  html {
+    font-size: 100%;
+    line-height: 2;
+  }
+
+
+
+  h1{
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 25px;
+
+  }
+
+  #screen{
+    display: block;
+    height: 100vh;
 }
 
+#listaMais{
+  padding-bottom: 30px;
+}
+#listaAudio, #listaWeb, #listaVideo, #listaImagem, #listaOutros {
+  padding-bottom: 20px;
+}
+
+#categorias {
+  position:;
+  font-size: 200%;
+  padding: 0px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+
+}
+
+
+#categorias p{
+  padding: 0;
+  margin:0;
+}
+
+#topRight a, #topRight p{
+  font-size: 100%;
+  padding: 0px;
+  margin: 0;
+}#topRight a{padding-right: 2rem;}
+
+#listaMais, #listaAudio, #listaWeb, #listaVideo, #listaImagem, #listaOutros {
+  text-align: center;
+}
+
+#bottomRight{
+  padding-top: 30px;
+}
+
+a:active {
+  font-weight: 300;
+  text-shadow: 1.2px 0px 0px #7ca8ff, -1.2px 0px 0px #ff7c7c;
+
+}
+
+#descricao{
+  background-color: lightgrey;
+  text-align: center;
+  font-size: 1.1rem;
+
+  position: absolute;
+  bottom:-5vh;
+  padding: 0.25rem 0;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
@@ -600,4 +690,26 @@ a:hover,p:hover{
   h3 {
     break-after: avoid;
   }
+}
+
+
+
+
+.bodyDark {
+  background-color: #333;
+  color: #fff;
+}
+
+.botaoMaisDark{
+  color: lightgrey;
+}
+
+.descricaoDark{
+
+  background-color: #333;
+  color: red;
+}
+.descricaoDark{
+  background-color: #333;
+  color: red;
 }
