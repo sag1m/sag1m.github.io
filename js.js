@@ -1,14 +1,32 @@
+//G a girar, chatGPT thanks
+
 var title = document.querySelector('#botaoMais');
-var text = title.textContent;
-title.innerHTML = text.replace(
+var g = title.textContent;
+title.innerHTML = g.replace(
   'g',
   '<span class="letter-g">g</span>'
 );
 
+//
+//
+//LINK FICAR ATIVO QUANDO É CLICKADO.
+var navLinks = document.querySelectorAll("#topRight a");
+navLinks.forEach(link => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+    });
+
+    link.classList.add('active');
+  });
+});
 
 
-
-
+//
+//
+//
 
 
 
@@ -58,19 +76,26 @@ function showVideo() {
     varImagemSwitch = 0;
     varOutrosSwitch = 0;
     varMaisSwitch = 0;
-
     listaVideo.style = "display: inherit";
     listaImagem.style = "display: none";
     listaWeb.style = "display: none";
     listaOutros.style = "display: none";
     listaMais.style = "display: none";
+
+    botaoVideo.style = "font-weight: 500;text-shadow: 0.6px 0px 0px #7ca8ff, -0.6px 0px 0px #ff7c7c";
+    botaoImagem.style = "font-weight: 300";
+    botaoWeb.style = "font-weight: 300";
+    botaoOutros.style = "font-weight: 300";
+
   }
   else {
     varWebSwitch = 0;
     varImagemSwitch = 0;
     varVideoSwitch = 0;
     varOutrosSwitch = 0;
+
     listaVideo.style = "display: none";
+    botaoVideo.style = "font-weight: 300";
   }
   }
 
@@ -92,6 +117,11 @@ function showImagem() {
     listaOutros.style = "display: none";
     listaMais.style = "display: none";
 
+    botaoImagem.style = "font-weight: 500;text-shadow: 0.6px 0px 0px #7ca8ff, -0.6px 0px 0px #ff7c7c;";
+    botaoVideo.style = "font-weight: 300";
+    botaoWeb.style = "font-weight: 300";
+    botaoOutros.style = "font-weight: 300";
+
   }
   else {
     varWebSwitch = 0;
@@ -99,6 +129,7 @@ function showImagem() {
     varVideoSwitch = 0;
     varOutrosSwitch = 0;
     listaImagem.style = "display: none";
+    botaoImagem.style = "font-weight: 300";
   }
 }
 
@@ -113,16 +144,21 @@ function showWeb() {
     varImagemSwitch = 0;
     varVideoSwitch = 0;
     varMaisSwitch = 0;
-
     listaWeb.style = "display: inherit";
     listaVideo.style = "display: none";
     listaImagem.style = "display: none";
     listaOutros.style = "display: none";
     listaMais.style = "display: none";
+
+    botaoWeb.style = "font-weight: 500;text-shadow: 0.6px 0px 0px #7ca8ff, -0.6px 0px 0px #ff7c7c";
+    botaoImagem.style = "font-weight: 300";
+    botaoVideo.style = "font-weight: 300";
+    botaoOutros.style = "font-weight: 300";
   }
   else {
     varWebSwitch = 0;
     listaWeb.style = "display: none";
+    botaoWeb.style = "font-weight: 300";
   }
 }
 
@@ -141,10 +177,16 @@ function showOutros() {
     listaImagem.style = "display: none";
     listaWeb.style = "display: none";
     listaMais.style = "display: none";
+
+    botaoOutros.style = "font-weight: 500;text-shadow: 0.6px 0px 0px #7ca8ff, -0.6px 0px 0px #ff7c7c";
+    botaoImagem.style = "font-weight: 300";
+    botaoWeb.style = "font-weight: 300";
+    botaoVideo.style = "font-weight: 300";
   }
   else {
     varOutrosSwitch = 0;
     listaOutros.style = "display: none";
+    botaoOutros.style = "font-weight: 300";
   }
 }
 
@@ -163,10 +205,13 @@ function showMais() {
     listaOutros.style = "display: none";
     listaMais.style = "display: inherit";
     varMaisSwitch = 1;
+
+
   }
   else {
     varMaisSwitch = 0;
     listaMais.style = "display: none";
+    botaoMais.style = "font-weight: 300";
   }
 }
 
@@ -179,12 +224,23 @@ function showMais() {
   function showWorkM(value) {
     descricao.innerHTML = [];
     bottomRight.innerHTML = mais[value];
+
+    botaoVideo.style = "font-weight: 300";
+    botaoImagem.style = "font-weight: 300";
+    botaoWeb.style = "font-weight: 300";
+    botaoOutros.style = "font-weight: 300";
+
  }
 
  function randomWork(value) {
    descricao.style = "display: auto";
    bottomRight.innerHTML = trabalhosRandom[value];
    descricao.innerHTML = descricoesRandom[value];
+
+   botaoVideo.style = "font-weight: 300";
+   botaoImagem.style = "font-weight: 300";
+   botaoWeb.style = "font-weight: 300";
+   botaoOutros.style = "font-weight: 300";
 }
 
 
@@ -258,7 +314,9 @@ function hideDesc(){
 
 //INTRO E VER MAIS------------
 var mais = [
-  '<div class="">      <p id="intro">Aqui estão alguns trabalhos que fiz.</p>     <p>À esquerda tem algumas categorias.</p>     <p>Em cima podes saber mais e ver mais trabalhos de forma aleatória.</p></div>',
+  //'<div class="">      <p id="intro">Aqui estão alguns trabalhos que fiz.</p>    <p></p>     <p>Carregando em Migas podes ver mais informação e mais trabalhos de forma aleatória</p></div>',
+
+  ' <div id="typing-text"></div> ',
 
 
   '<img style="height:50px;"id="introImg"src="web2.png"alt="Pixel Art"> <p>Gosto de passar tempo no computador, andar de bicicleta e cultivar suculentas, no Porto.</p>  <p>migas@outlook.pt</p> ',
@@ -267,7 +325,22 @@ var mais = [
   '<p id="CV01">2014 - estágio Santa Casa da Misericórdia do Porto</p> <p id="CV02">2016? - estágio ISCAP</p> <p id="CV03">2021 - estágio Perto Design</p> <p id="CV04">2021 - Licenciatura Design comunicação, ESAP</p>'
 ]
 
+//TEXTO A SER ESCRITO!!!!!!!!!!!! o de cima
+  var typing = '.Olá. Aqui estão alguns trabalhos que fiz. Carregando em Migas podes ver mais.';
+  var delay = 10; // Delay between each letter in milliseconds
 
+  let i = 0;
+
+  function typeText() {
+
+    if (i < typing.length) {
+      document.getElementById("typing-text").innerHTML += typing.charAt(i);
+      i++;
+      setTimeout(typeText, delay);
+    }
+  }
+
+  typeText();
 
 
 
@@ -567,3 +640,18 @@ var trabalhosVideo = ["0",
         '',
 
         '']
+
+
+
+
+
+//DARK MODE EXP
+  var body = document.body;
+
+
+  body.addEventListener("dblclick", function() {
+    body.classList.toggle("bodyDark");
+    botaoMais.classList.toggle("botaoMaisDark");
+    var descricao = document.getElementById('descricao');
+    descricao.classList.toggle("descricaoDark");
+  });
