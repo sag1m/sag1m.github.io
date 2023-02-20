@@ -15,6 +15,9 @@
 
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
+  <link id="style-link" rel="stylesheet" type="text/css" href="css/style.css">
+
+
 
   <!-- Favicon e ícones -->
   <!-- 144 x 144 px - iPad 3a geração com ecrã de alta resolução (retina) -->
@@ -33,12 +36,14 @@
 
 <body>
 
+
+
+
   <!---<a onclick="showGame()"><div id="cabecalho">
     <p>Carrega aqui para experimentar uma coisa no inicio</p>
   </div></a>--->
 
   <div id="screen">
-
 
 
 <!-- TOP LEFT ..........................  -->
@@ -67,11 +72,11 @@
 
       <div class="trabalhos" id="listaMais">
         <!--<p><a onclick="teste(0)">Teste</a></p>-->
-        <p><a onclick="showWorkM(0)">Início</a></p>
+        <!--<p><a onclick="showWorkM(0)">Início</a></p>-->
         <p><a onclick="showWorkM(1)">Sobre</a></p>
         <p><a onclick="showWorkM(2)">CV</a></p>
         <!-- MUITO IMPORTANTE ATUALIZAR ESTE NÚMERO SEMPRE QUE ADICIONO UM TRABALHO RANDOM!!!-->
-        <p><a onclick="randomWork(rando(1,26))">Random</a></p>
+        <p><a onclick="randomWork(rando(1,26))">Mais</a></p>
 
       </div>
 
@@ -109,7 +114,7 @@
         <p><a onclick="showWorkO(1)" onmouseover="showDescO(1)" onmouseout="hideDesc()">Teletexto</a></p>
       </div>
 
-      <div id="descricao">
+      <div class="descricaoDark" id="descricao">
 
       </div>
 
@@ -130,12 +135,13 @@
 
 <!-- BOTTOM RIGHT ..........................  -->
       <div id="bottomRight">
-        <p>x</p>
+        <div id="typing-text"></div>
 
       </div>
 
 
   </div>
+
 <script src="rando.js"></script>
 <script src="js.js"></script>
 <script src="seed.js"></script>
