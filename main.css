@@ -1,0 +1,747 @@
+/*! HTML5 Estrugido, uma versão light do HTML5 Boilerplate v7.2.0
+    https://html5boilerplate.com
+*/
+
+/* main.css 2.0.0 | Licença MIT | https://github.com/h5bp/main.css#readme */
+/*
+ * O CSS que se segue é uma compilação de investigação sobre estilos que
+ * funcionam em vários browsers. Cada parte está documentada com links para a
+ * referência original. Muitos agradecimentos a Nicolas Gallagher,
+ * Jonathan Neal, Kroc Camen, à comunidade e à equipa do H5Boilerplate.
+ */
+
+/* ==========================================================================
+   Estilos base: defaults com atitude.
+   ========================================================================== */
+
+
+/*METER UM RATO DECENTE*/
+  #mouse-pointer {
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 50px;
+           height: 50px;
+           background: url(your-image-url.png) no-repeat;
+         }
+
+
+/*LETRA G A RODAR. DEVIA SER UMA ESPIRAL.*/
+.letter-g {
+  display: inline-block;
+    animation: rotate 500s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+html {
+
+  color: #222;
+  font-size: 100%;
+  line-height: 1.4;
+}
+
+a{
+  font-weight: 300;
+  transition: 1s;
+
+}
+a:hover{
+  font-weight: 200;
+  text-shadow: 0.6px 0px 0px #7ca8ff, -0.6px 0px 0px #ff7c7c;
+  transition: 0s;
+}
+
+/*Links a ativar e a desativar no topRight*/
+a.active {text-shadow: 0.6px 0px 0px #7ca8ff, -0.6px 0px 0px #ff7c7c;}
+a:not(.active):hover {}
+
+
+/*
+ * Retiºrar a sombra do texto, quando está selecionado:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Precisamos de anular a sombra, individualmente, para a classe geral
+ * (::selection) e para a classe com prefixo do browser (::-moz-selection),
+ * como explica este artigo:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Mudar esta cor de fundo de seleção de acordo com o esquema de cores do site.
+ */
+
+ ::-moz-selection {
+   background: #222;
+   color: white;
+   text-shadow: none;
+ }
+
+ ::selection {
+   background: #222;
+   color: white;
+   text-shadow: none;
+ }
+
+/*
+ * Uma hr mais elegante que a default
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Anular a distância entre os elementos audio, canvas, iframes,
+ * images, videos e o fundo do elemento que os contêm:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Permitir apenas o redimensionamento vertical das textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+
+/*Fontes*/
+
+@font-face {
+  font-family: 'Inconsolata-Regular';
+  src: url("fonts/Inconsolata-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inconsolata-Black';
+  src: url("fonts/Inconsolata-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;}
+@font-face {
+  font-family: 'Inconsolata-Light';
+  src: url("fonts/Inconsolata-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inconsolata-ExtraLight';
+  src: url("fonts/Inconsolata-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rolls";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../RollsFINAL.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Milan";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../milan.otf") format("opentype");
+}
+
+
+/* ==========================================================================
+   Colocar aqui os estilos do site
+   ========================================================================== */
+
+
+   /*#cabecalho{
+     position: absolute;
+     width: 99.5%;
+     background-color: lightgrey;
+     padding: 3px;
+
+     font-family: 'Inconsolata', monospace;
+     color: black;
+
+     text-align: center;
+   }
+*/
+
+/*ECRA..............................................*/
+#screen{
+  box-sizing: border-box;
+  /*border: 1px solid #222;*/
+
+  display: grid;
+
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 20% 80%;
+
+  height: 100vh;
+  min-height: 100vh;
+
+
+  font-family: 'Inconsolata', monospace;
+}
+
+h3{
+  padding-bottom: 1rem;
+}
+
+#screen p {
+  padding-bottom: 0.5rem;
+}
+
+
+
+/*TOP LEFT..................................*/
+#topLeft{
+
+}
+
+h1{
+  font-size: 3rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 5vw;
+  /*text-align: center;
+  vertical-align: middle;*/
+  color: #222;
+
+ /*transition: text-shadow 3s;*/
+
+ animation: sombra 15s infinite;
+ animation-delay: 1s;
+ animation-direction: alternate;
+ animation-timing-function:ease-out;
+}
+
+#rotate{
+  transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+     display: inline-block;
+
+
+
+
+   }
+
+
+
+@keyframes sombra {
+  0%   {text-shadow: 0px 0px 0px #7ca8ff, 0px 0px 0px #ff7c7c;}
+  1%  {text-shadow: 4px 0px 0px #7ca8ff, -4px 0px 0px #ff7c7c;}
+  3% {text-shadow: 0px 0px 0px #7ca8ff, 0px 0px 0px #ff7c7c;}
+  4%  {text-shadow: 3px 0px 0px #7ca8ff, -3px 0px 0px #ff7c7c;}
+  6% {text-shadow: 0px 0px 0px #7ca8ff, 0px 0px 0px #ff7c7c;}
+
+}
+
+#botaoMais:hover{
+  text-shadow: 1.4px 0px 0px #7ca8ff, -1.4px 0px 0px #ff7c7c;
+}
+#botaoMigas:hover{
+  text-shadow: 1.4px 0px 0px #7ca8ff, -1.4px 0px 0px #ff7c7c;
+}
+
+img:hover{
+  animation: sombraImg 2s infinite;
+  animation-delay: 10s;
+  animation-direction: alternate;
+  animation-timing-function:ease-out;
+}
+@keyframes sombraImg {
+  0%   {box-shadow: 0px 0px 0px #7ca8ff, 0px 0px 0px #ff7c7c;}
+  10%  {box-shadow: 2px 0px 0px #7ca8ff, -3px 0px 0px #ff7c7c;}
+  30% {box-shadow: 0px 0px 0px #7ca8ff, 0px 0px 0px #ff7c7c;}
+  40%  {box-shadow: 1px 0px 0px #7ca8ff, -2px 0px 0px #ff7c7c;}
+  60% {box-shadow: 0px 0px 0px #7ca8ff, 0px 0px 0px #ff7c7c;}
+
+}
+
+p:hover{
+
+}
+#wait:hover{cursor:wait;}
+
+a:hover,p:hover{
+  cursor: default;
+}
+
+
+
+
+
+
+
+/*BOTTOM LEFT.................................*/
+#categorias{
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 5vw;
+  padding-bottom: 5vh;
+
+  font-size: 2rem;
+  line-height: 6vh;
+}
+
+
+
+
+/*TOP RIGHT.................................*/
+#topRight{
+  /*grid-column: 2;
+  grid-row: 1*/
+
+  margin-bottom: auto;
+  margin-top: auto;
+
+  position: relative;
+
+  /*white-space: nowrap;*/
+
+
+}
+
+#topRight p{
+  display: inline;
+  padding-right: 3rem;
+
+}
+
+#descricao{
+  color: black;
+  background-color: #ffffffE6;
+  position: absolute;
+  bottom:-5vh;
+  padding: 0.25rem 0;
+}
+
+.data{
+  margin-right: 1rem;
+  color: red;
+}
+
+.trabalhos{
+  font-size: 1.5rem;
+}
+
+#listaVideo, #listaImagem, #listaWeb, #listaOutros, #listaAudio, #listaMais{
+  display: none;
+}
+
+
+/*bottom right.................................*/
+
+#bottomRight{
+  /*box-sizing: content-box;*/
+
+}
+
+#pan{
+  height: 100%;
+  max-height: 100%;
+  overflow-x: scroll;
+}
+#pan2{
+  height: 100%;
+  max-height: 100%;
+  overflow-x: scroll;
+}
+
+#gridsobre{
+
+}
+
+
+
+
+.janela{
+  height: 100%;
+  width: 100%;
+
+  frameBorder:0;
+}
+
+.imagem{
+  max-width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.height{
+  max-height: 100%;
+}
+
+.youtube{
+  height:100%;
+  width: 100%;
+
+  frameBorder:0;
+}
+
+
+
+
+#fontest, #fontest2{
+  background-color: transparent;
+  border: 0 solid grey;
+  color: #222;
+  width: 100%;
+  height: 9rem;
+  font-size: 9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+#fontest{  font-family: Rolls;}
+#fontest2{  font-family: Milan;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Classes pre-preparadas para resolver situações comuns
+   ========================================================================== */
+
+/*
+ * Esconder elementos (incluindo esconder dos leitores do ecrã)
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Esconder visualmente mas deixar o conteúdo acessível a leitores de ecrã:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. No caso de conteúdos longos, as quebras de linha não são interpretadas
+*    como espaços e, em larguras pequenas, o conteúdo é quebrado
+*    com uma palavra por linha:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extensão da classe .sr-only para permitir que o elemento
+* seja assinalado (focus) quando a página é navegada por teclado:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+
+/*
+* Clearfix: conter os floats
+*
+* Incluir esta classe em elementos HTML que contenham elementos floated
+*
+* Para browsers modernos
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   Media Queries para design responsivo. Acrescentar conforme necessário.
+   ========================================================================== */
+
+@media only screen and (max-width: 1000px) { /* estilos para ecrãs pequenos */
+
+
+  html {
+    font-size: 100%;
+    line-height: 2;
+    padding: 0;
+    margin: 0;
+  }
+
+  h1{
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 25px;
+  }
+
+  #screen{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 7% 10% ;
+    box-sizing: border-box;
+}
+
+#listaMais{
+  padding-bottom: 30px;
+}
+#listaAudio, #listaWeb, #listaVideo, #listaImagem, #listaOutros {
+  padding-bottom: 20px;
+}
+
+#categorias {
+  position:;
+  font-size: 200%;
+  padding: 0px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+#categorias p{
+  padding: 0;
+  margin:0;
+}
+
+#topRight a, #topRight p{
+  font-size: 100%;
+  padding: 0px;
+  margin: 0;
+}#topRight a{padding-right: 2rem;}
+
+#listaMais, #listaAudio, #listaWeb, #listaVideo, #listaImagem, #listaOutros {
+  text-align: center;
+}
+
+
+a:active {
+  font-weight: 300;
+  text-shadow: 1.2px 0px 0px #7ca8ff, -1.2px 0px 0px #ff7c7c;
+}
+
+#descricao{
+  background-color: lightgrey;
+  text-align: center;
+  font-size: 1.1rem;
+
+  position: absolute;
+  bottom:-5vh;
+  padding: 0.25rem 0;
+}
+
+
+
+
+#pan{
+  max-height: 64vh;
+}
+#pan2{
+  max-height: 64vh;
+}
+
+#gridsobre{
+
+}
+
+.janela{
+  height: 100%;
+  width: 100%;
+
+  frameBorder:0;
+}
+
+.imagem{
+  max-width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  max-height: 64vh;
+}
+
+.height{
+  max-height: 100%;
+}
+
+.youtube{
+  height:100%;
+  width: 100%;
+
+  frameBorder:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Estilos para impressão e aparelhos com ecrã de alta resolução */
+}
+
+/* ==========================================================================
+   Estilos para impressão base. Editar e acrescentar conforme necessário.
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Preto é a cor que imprime mais rápido (-: */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    break-inside: avoid;
+  }
+  /*
+   * Regras de impressão para tabelas:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    break-after: avoid;
+  }
+}
+
+
+
+
+.bodyDark {
+  background-color: #333;
+  color: #fff;
+}
+
+.botaoMaisDark{
+  color: lightgrey;
+}
+
+.descricaoDark{
+
+  background-color: #333;
+  color: red;
+}
+.descricaoDark{
+  background-color: #333;
+  color: red;
+}

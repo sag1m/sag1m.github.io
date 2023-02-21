@@ -311,7 +311,7 @@ function hideDesc(){
 
 
 
-
+//<img style="height:50px;"id="introImg"src="web2.png"alt="Pixel Art">  se quiser meter em baixo
 //INTRO E VER MAIS------------
 var mais = [
   //'<div class="">      <p id="intro">Aqui estão alguns trabalhos que fiz.</p>    <p></p>     <p>Carregando em Migas podes ver mais informação e mais trabalhos de forma aleatória</p></div>',
@@ -319,24 +319,26 @@ var mais = [
   ' <div id="typing-text"></div> ',
 
 
-  '<img style="height:50px;"id="introImg"src="web2.png"alt="Pixel Art"> <p>Gosto de passar tempo no computador, andar de bicicleta e cultivar suculentas, no Porto.</p>  <p>migas@outlook.pt</p> ',
+  '<p>Gosto de passar tempo no computador, andar de bicicleta e cultivar suculentas, no Porto.</p>  <p>migas@outlook.pt</p> ',
 
 
-  '<p id="CV01">2014 - estágio Santa Casa da Misericórdia do Porto</p> <p id="CV02">2016? - estágio ISCAP</p> <p id="CV03">2021 - estágio Perto Design</p> <p id="CV04">2021 - Licenciatura Design comunicação, ESAP</p>'
+  '<iframe alt="CV" class="youtube" frameBorder="0" src="inacabado.pdf"></iframe>'
 ]
 
 //TEXTO A SER ESCRITO!!!!!!!!!!!! o de cima
   var typing = '.Olá. Aqui estão alguns trabalhos que fiz. Carregando em Migas podes ver mais.';
-  var delay = 10; // Delay between each letter in milliseconds
+  var delay = 20; // em milisegundos
 
   let i = 0;
 
   function typeText() {
 
+
     if (i < typing.length) {
       document.getElementById("typing-text").innerHTML += typing.charAt(i);
       i++;
       setTimeout(typeText, delay);
+
     }
   }
 
@@ -346,22 +348,22 @@ var mais = [
 
 
 //MOSTRAR TEXTO DE BOAS VINDAS LOGO QUANDO SE ABRE O WEBSITE
-var cabecalho = document.getElementById('cabecalho');
+//var cabecalho = document.getElementById('cabecalho');
 
 bottomRight.innerHTML = mais[0];
 
 //AVISO AVISO BARRA BARRA CABEÇALHO HEADER cabecalho pub publicidade
-setTimeout(() => {  cabecalho.style = "display:none"; }, 8000);
+//setTimeout(() => {  cabecalho.style = "display:none"; }, 8000);
 
-function showGame(){
-    cabecalho.style = "display:none";
+//function showGame(){
+  //  cabecalho.style = "display:none";
 
-  bottomRight.innerHTML = '<iframe alt="Jogo em construção" class="youtube" frameBorder="0" src="game/index.html"></iframe>';
-
-
+  //bottomRight.innerHTML = '<iframe alt="Jogo em construção" class="youtube" frameBorder="0" src="game/index.html"></iframe>';
 
 
-}
+
+
+//}
 
 
 
@@ -559,7 +561,7 @@ var trabalhosRandom = ["0",
 //25 PHARMAKON 1
 '<iframe alt="Fanzine Pharmakon nº1. 2020" src="https://online.fliphtml5.com/dnvha/smhq/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="youtube" ></iframe>',
 //26
-'<img class="imagem" src="flor.tif" alt="Imagem digital que fiz no Paint.net antes de 2010. Das primeiras imagens que fiz e que consegui guardar até agora.">',
+'<img class="imagem" src="flor.png" alt="Imagem digital que fiz no Paint.net antes de 2010. Das primeiras imagens que fiz e que consegui guardar até agora.">',
 //27
 '',
 //28
@@ -647,8 +649,6 @@ var trabalhosVideo = ["0",
 
 //DARK MODE EXP
   var body = document.body;
-
-
   body.addEventListener("dblclick", function() {
     body.classList.toggle("bodyDark");
     botaoMais.classList.toggle("botaoMaisDark");
