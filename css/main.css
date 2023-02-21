@@ -29,7 +29,7 @@
 /*LETRA G A RODAR. DEVIA SER UMA ESPIRAL.*/
 .letter-g {
   display: inline-block;
-    animation: rotate 200s linear infinite;
+    animation: rotate 500s linear infinite;
 }
 @keyframes rotate {
   0% {
@@ -181,7 +181,7 @@ textarea {
    ========================================================================== */
 
 
-   #cabecalho{
+   /*#cabecalho{
      position: absolute;
      width: 99.5%;
      background-color: lightgrey;
@@ -192,7 +192,7 @@ textarea {
 
      text-align: center;
    }
-
+*/
 
 /*ECRA..............................................*/
 #screen{
@@ -537,20 +537,22 @@ a:hover,p:hover{
   html {
     font-size: 100%;
     line-height: 2;
+    padding: 0;
+    margin: 0;
   }
-
-
 
   h1{
     text-align: center;
     padding: 0px;
     padding-bottom: 25px;
-
   }
 
   #screen{
-    display: block;
+    display: grid;
     height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 7% 10% ;
+    box-sizing: border-box;
 }
 
 #listaMais{
@@ -567,9 +569,7 @@ a:hover,p:hover{
   margin: 0;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-
 }
-
 
 #categorias p{
   padding: 0;
@@ -586,14 +586,10 @@ a:hover,p:hover{
   text-align: center;
 }
 
-#bottomRight{
-  padding-top: 30px;
-}
 
 a:active {
   font-weight: 300;
   text-shadow: 1.2px 0px 0px #7ca8ff, -1.2px 0px 0px #ff7c7c;
-
 }
 
 #descricao{
@@ -604,10 +600,46 @@ a:active {
   position: absolute;
   bottom:-5vh;
   padding: 0.25rem 0;
+}
 
+
+
+
+#pan{
+  max-height: 64vh;
+}
+#pan2{
+  max-height: 64vh;
+}
+
+#gridsobre{
 
 }
 
+.janela{
+  height: 100%;
+  width: 100%;
+
+  frameBorder:0;
+}
+
+.imagem{
+  max-width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  max-height: 64vh;
+}
+
+.height{
+  max-height: 100%;
+}
+
+.youtube{
+  height:100%;
+  width: 100%;
+
+  frameBorder:0;
+}
 
 
 
