@@ -626,6 +626,8 @@ a:hover,p:hover{
   margin: 0;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
 }
 
 #categorias p{
