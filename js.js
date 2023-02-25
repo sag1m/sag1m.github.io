@@ -303,11 +303,8 @@ var mais = [
 
  var typing = "Aqui estão alguns trabalhos que fiz. Carregando em Migas podes ver mais.";
 
-
   var delay = 15; // em milisegundos
-
   let i = 0;
-
   function typeText() {
     if (i < typing.length) {
       document.getElementById("typing-text").innerHTML += typing.charAt(i);
@@ -346,7 +343,7 @@ function uber1(){document.getElementById("uber").src = 'UberHugo.jpg';}
 //DESCRIÇÕES
 var descricoesVideo = ["0",
 
-'Vídeo experimental sobre Rotina Diária, em específico os suplementos alimentares. Gravado com telemóvel e lente macro de 1euro. 2018',
+'Vídeo com o tema Rotina Diária, em específico os suplementos alimentares. Gravado com o telemóvel e uma lente. 2018',
 
 'Kynetic Typography - Videoclip só com tipografia cinética. 2020',
 
@@ -354,7 +351,7 @@ var descricoesVideo = ["0",
 
 'Vídeo Time Lapse sobre o Trânsito no Porto. 2020',
 
-'Vídeo com os temas Amanhecer e Solidão. 2121',
+'Vídeo com os temas Amanhecer e Solidão. Trata uma rotina matinal. 2021',
 
 '',
 
@@ -368,7 +365,7 @@ var descricoesImagem = ["0",
 
 'Spoof ad do medicamento Lunesta. À esquerda é o original. Eu apenas mudei a ordem do texto - O que no original tem mais destaque, no meu tem menos importância.',
 
-'Pixel Art, frame de um possível jogo inventado. O jogador seria um estafeta da Uber que teria de entregar encomendas. Ganharia bónus ao arrancar retrovisores de carros.',
+'Pixel Art. 1 frame de um possível jogo. O jogador seria um estafeta da Uber que teria de entregar encomendas. Ganharia bónus ao arrancar retrovisores de carros.',
 
 'Fotografia Panorâmica no Porto à beira rio.',
 
@@ -393,7 +390,7 @@ var descricoesWeb = ["0",
 var descricoesOutros = ["0",
 'Pequeno texto de pesquisa para blog sobre o Teletexto. 2020',
 
-'Fanzine Pharmakon com 3 números. O tema são substancias psicoativas principalmente ilegais. A nº2 foi toda escrito por mim. 2020',
+'Fanzine Pharmakon com 3 números. O tema são substancias psicoativas principalmente ilegais. 2020',
 
 'Publicação sobre a Cafeína feita em Projeto de Impressão. 2020',
 
@@ -408,7 +405,7 @@ var descricoesRandom = ["0",
 // 2
 'Animação com imagens da série South Park, sem som. 2015',
 // 3
-'Remake de uma cena do filme Blue Velvvet de 1986. Trabalho de grupo.  2019',
+'Remake de uma cena do filme Blue Velvvet de 1986. Trabalho de grupo. 2019',
 // 4
 'Fonte Milano. Tivemos de desenhar uma fonte com base em 3 fontes diferentes.  Trabalho de grupo.',
 // 5
