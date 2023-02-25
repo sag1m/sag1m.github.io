@@ -256,6 +256,9 @@ textarea {
 
 
   font-family: 'Inconsolata', monospace;
+
+
+
 }
 
 h3{
@@ -804,38 +807,78 @@ a:hover,p:hover{
 
 
 /*BACKGROUND*/
+body{
+  background-image:
+  radial-gradient(circle at 20% 40%, #F4FBFF, transparent),
+  radial-gradient(circle at 60% 80%, #FFE8E8, transparent),
+  url(../bg.jpg);
+
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 0 0, 100% 100%, center center;
+  background-size: 100%, 250%, cover;
+
+  animation: animateGradients 25s linear infinite alternate;
+}
+
+  @keyframes animateGradients {
+    0% {
+      background-position: 0% 0%, 100% 100%, center center;
+    }
+    20% {
+      background-position: 30% 10%, 70% 90%, center center;
+    }
+    40% {
+      background-position: 80% 70%, 20% 30%, center center;
+    }
+    60% {
+      background-position: 50% 90%, 50% 10%, center center;
+    }
+    80% {
+      background-position: 90% 30%, 10% 70%, center center;
+    }
+    100% {
+      background-position: 0% 0%, 100% 100%, center center;
+
+    }
+}
+
+
+
+/*
 body {
   background:
-    radial-gradient(circle at 20% 40%, #F4FBFF, transparent), /* Light blue gradient */
-    radial-gradient(circle at 60% 80%, #FFE8E8, transparent); /* Light red gradient */
+    radial-gradient(circle at 20% 40%, #F4FBFF, transparent),
+    radial-gradient(circle at 60% 80%, #FFE8E8, transparent);
   background-size: 200% 200%;
   animation: gradient-animation 60s ease-in-out infinite alternate;
 }
 
+
+
 @keyframes gradient-animation {
   0% {
-    background-position: 0% 0%, 100% 100%; /* Starting positions */
-    background-color: white;
+    background-position: 0% 0%, 100% 100%, center center;
   }
   20% {
-    background-position: 30% 10%, 70% 90%; /* First move */
+    background-position: 30% 10%, 70% 90%, center center;
   }
   40% {
-    background-position: 80% 70%, 20% 30%; /* Second move */
+    background-position: 80% 70%, 20% 30%, center center;
   }
   60% {
-    background-position: 50% 90%, 50% 10%; /* Third move */
+    background-position: 50% 90%, 50% 10%, center center;
   }
   80% {
-    background-position: 90% 30%, 10% 70%; /* Fourth move */
+    background-position: 90% 30%, 10% 70%, center center;
   }
   100% {
-    background-position: 0% 0%, 100% 100%; /* Starting positions */
+    background-position: 0% 0%, 100% 100%, center center;
 
   }
 }
-
+*/
 /*DARK MODE*/
+
 .bodyDark {
   background-color: #333;
   color: #F8F8F8;
@@ -849,11 +892,38 @@ body {
   background-color: #161722;
 }
 
+
 .backgroundDark{
-  background-color: black;
-  background:
-    radial-gradient(circle at 20% 40%, #000C1B, transparent), /* dark blue gradient */
-    radial-gradient(circle at 60% 80%, #1B0015, transparent); /* dark red gradient */
-  background-size: 200% 200%;
-  animation: gradient-animation 60s ease-in-out infinite alternate;
+  background-image:
+  radial-gradient(circle at 20% 40%, #000C1B, transparent),
+  radial-gradient(circle at 60% 80%, #1B0015, transparent),
+  url(../bg.jpg);
+
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 0 0, 100% 100%, center center;
+  background-size: 100%, 250%, cover;
+
+  animation: animateGradients 25s linear infinite alternate;
+}
+
+  @keyframes animateGradients {
+    0% {
+      background-position: 0% 0%, 100% 100%, center center;
+    }
+    20% {
+      background-position: 30% 10%, 70% 90%, center center;
+    }
+    40% {
+      background-position: 80% 70%, 20% 30%, center center;
+    }
+    60% {
+      background-position: 50% 90%, 50% 10%, center center;
+    }
+    80% {
+      background-position: 90% 30%, 10% 70%, center center;
+    }
+    100% {
+      background-position: 0% 0%, 100% 100%, center center;
+
+    }
 }
