@@ -365,6 +365,9 @@ a:hover,p:hover{
 
   font-size: 2rem;
   line-height: 6vh;
+
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
 }
 
 
