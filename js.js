@@ -43,7 +43,7 @@ function showVideo() {
     listaOutros.style = "display: none";
     listaMais.style = "display: none";
 
-    botaoVideo.style = "font-weight: 500;text-shadow: 0.6px 0px 0px #7ca8ff, -0.6px 0px 0px #ff7c7c";
+    botaoVideo.style = "font-weight: 300;text-shadow: 0.6px 0px 0px #7ca8ff, -0.6px 0px 0px #ff7c7c";
     botaoImagem.style = "font-weight: 300";
     botaoWeb.style = "font-weight: 300";
     botaoOutros.style = "font-weight: 300";
@@ -79,7 +79,7 @@ function showImagem() {
     listaOutros.style = "display: none";
     listaMais.style = "display: none";
 
-    botaoImagem.style = "font-weight: 500;text-shadow: 0.6px 0px 0px #7ca8ff, -0.6px 0px 0px #ff7c7c;";
+    botaoImagem.style = "font-weight: 300;text-shadow: 0.6px 0px 0px #7ca8ff, -0.6px 0px 0px #ff7c7c;";
     botaoVideo.style = "font-weight: 300";
     botaoWeb.style = "font-weight: 300";
     botaoOutros.style = "font-weight: 300";
@@ -113,7 +113,7 @@ function showWeb() {
     listaOutros.style = "display: none";
     listaMais.style = "display: none";
 
-    botaoWeb.style = "font-weight: 500;text-shadow: 0.6px 0px 0px #7ca8ff, -0.6px 0px 0px #ff7c7c";
+    botaoWeb.style = "font-weight: 300;text-shadow: 0.6px 0px 0px #7ca8ff, -0.6px 0px 0px #ff7c7c";
     botaoImagem.style = "font-weight: 300";
     botaoVideo.style = "font-weight: 300";
     botaoOutros.style = "font-weight: 300";
@@ -142,7 +142,7 @@ function showOutros() {
     listaWeb.style = "display: none";
     listaMais.style = "display: none";
 
-    botaoOutros.style = "font-weight: 500;text-shadow: 0.6px 0px 0px #7ca8ff, -0.6px 0px 0px #ff7c7c";
+    botaoOutros.style = "font-weight: 300;text-shadow: 0.6px 0px 0px #7ca8ff, -0.6px 0px 0px #ff7c7c";
     botaoImagem.style = "font-weight: 300";
     botaoWeb.style = "font-weight: 300";
     botaoVideo.style = "font-weight: 300";
@@ -610,11 +610,12 @@ var trabalhosVideo = ["0",
 
 //DARK MODE EXP. obrigado chatgpt
   var body = document.body;
+
   body.addEventListener("dblclick", function() {
     body.classList.toggle("bodyDark");
     botaoMais.classList.toggle("botaoMaisDark");
-    var descricao = document.getElementById('descricao');
     descricao.classList.toggle("descricaoDark");
+    body.classList.toggle("backgroundDark");
 
   });
 
