@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
 
+
+
   <!-- Favicon e ícones -->
   <!-- 144 x 144 px - iPad 3a geração com ecrã de alta resolução (retina) -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon-144px.png">
@@ -28,10 +30,16 @@
   <!-- favicon base: 32x32px deve estar na raiz do site, para garantir que os browsers antigos o vão mostrar -->
   <link rel="shortcut icon" href="favicon.ico">
 
-  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <!--<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700;900&display=swap" rel="stylesheet">-->
+  <link href="fonts/m.ttf" rel="stylesheet">
+  <link href="fonts/Inconsolata-Variable.ttf" rel="stylesheet">
+
 </head>
 
 <body>
+
+
+
 
   <!---<a onclick="showGame()"><div id="cabecalho">
     <p>Carrega aqui para experimentar uma coisa no inicio</p>
@@ -40,9 +48,14 @@
   <div id="screen">
 
 
-
 <!-- TOP LEFT ..........................  -->
-    <h1 ><p id="botaoMais">Miii<span class="g">g</span>as</p></h1>
+    <!--<h1 ><p id="botaoMais">Mi<span class="g">g</span>as</p></h1>-->
+
+
+
+
+<h1 ><p id="botaoMais">Mi<span class="g">g</span>as</p></h1>
+
 
     <!--<h1 ><p id="botaoMais">Mi<span id="rotate"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 164 191" style="enable-background:new 0 0 164 191;" xml:space="preserve">
@@ -67,11 +80,11 @@
 
       <div class="trabalhos" id="listaMais">
         <!--<p><a onclick="teste(0)">Teste</a></p>-->
-        <p><a onclick="showWorkM(0)">Início</a></p>
+        <!--<p><a onclick="showWorkM(0)">Início</a></p>-->
         <p><a onclick="showWorkM(1)">Sobre</a></p>
         <p><a onclick="showWorkM(2)">CV</a></p>
         <!-- MUITO IMPORTANTE ATUALIZAR ESTE NÚMERO SEMPRE QUE ADICIONO UM TRABALHO RANDOM!!!-->
-        <p><a onclick="randomWork(rando(1,26))">Random</a></p>
+        <p><a onclick="randomWork(rando(1,26))">Mais</a></p>
 
       </div>
 
@@ -130,12 +143,15 @@
 
 <!-- BOTTOM RIGHT ..........................  -->
       <div id="bottomRight">
-        <p>x</p>
+        <div id="typing-text"></div>
+
+
 
       </div>
 
-
+<div class="moving-background"></div>
   </div>
+
 <script src="rando.js"></script>
 <script src="js.js"></script>
 <script src="seed.js"></script>

@@ -1,30 +1,9 @@
-var title = document.querySelector('#botaoMais');
-var text = title.textContent;
-title.innerHTML = text.replace(
-  'g',
-  '<span class="letter-g">g</span>'
-);
-
-
-
-
-
-
-
-
-
-
-
-
-
 //ELEMENTOS
 var topLeft = document.getElementById('topLeft');
 var bottomLeft = document.getElementById('bottomLeft');
 var topRight = document.getElementById('topRight');
 var bottomRight = document.getElementById('bottomRight');
 
-
-var botaoMigas = document.getElementById('botaoMigas');
 
 var botaoVideo = document.getElementById('botaoVideo');
 var botaoImagem = document.getElementById('botaoImagem');
@@ -58,19 +37,27 @@ function showVideo() {
     varImagemSwitch = 0;
     varOutrosSwitch = 0;
     varMaisSwitch = 0;
-
     listaVideo.style = "display: inherit";
     listaImagem.style = "display: none";
     listaWeb.style = "display: none";
     listaOutros.style = "display: none";
     listaMais.style = "display: none";
+
+    botaoVideo.style = "font-weight: 300;text-shadow: 0.6px 0px 0px #7ca8ff, -0.6px 0px 0px #ff7c7c";
+    botaoImagem.style = "font-weight: 300";
+    botaoWeb.style = "font-weight: 300";
+    botaoOutros.style = "font-weight: 300";
+    botaoMais.style = "font-weight: 300";
+
   }
   else {
     varWebSwitch = 0;
     varImagemSwitch = 0;
     varVideoSwitch = 0;
     varOutrosSwitch = 0;
+
     listaVideo.style = "display: none";
+    botaoVideo.style = "font-weight: 300";
   }
   }
 
@@ -92,6 +79,12 @@ function showImagem() {
     listaOutros.style = "display: none";
     listaMais.style = "display: none";
 
+    botaoImagem.style = "font-weight: 300;text-shadow: 0.6px 0px 0px #7ca8ff, -0.6px 0px 0px #ff7c7c;";
+    botaoVideo.style = "font-weight: 300";
+    botaoWeb.style = "font-weight: 300";
+    botaoOutros.style = "font-weight: 300";
+    botaoMais.style = "font-weight: 300";
+
   }
   else {
     varWebSwitch = 0;
@@ -99,6 +92,7 @@ function showImagem() {
     varVideoSwitch = 0;
     varOutrosSwitch = 0;
     listaImagem.style = "display: none";
+    botaoImagem.style = "font-weight: 300";
   }
 }
 
@@ -113,16 +107,22 @@ function showWeb() {
     varImagemSwitch = 0;
     varVideoSwitch = 0;
     varMaisSwitch = 0;
-
     listaWeb.style = "display: inherit";
     listaVideo.style = "display: none";
     listaImagem.style = "display: none";
     listaOutros.style = "display: none";
     listaMais.style = "display: none";
+
+    botaoWeb.style = "font-weight: 300;text-shadow: 0.6px 0px 0px #7ca8ff, -0.6px 0px 0px #ff7c7c";
+    botaoImagem.style = "font-weight: 300";
+    botaoVideo.style = "font-weight: 300";
+    botaoOutros.style = "font-weight: 300";
+    botaoMais.style = "font-weight: 300";
   }
   else {
     varWebSwitch = 0;
     listaWeb.style = "display: none";
+    botaoWeb.style = "font-weight: 300";
   }
 }
 
@@ -141,10 +141,17 @@ function showOutros() {
     listaImagem.style = "display: none";
     listaWeb.style = "display: none";
     listaMais.style = "display: none";
+
+    botaoOutros.style = "font-weight: 300;text-shadow: 0.6px 0px 0px #7ca8ff, -0.6px 0px 0px #ff7c7c";
+    botaoImagem.style = "font-weight: 300";
+    botaoWeb.style = "font-weight: 300";
+    botaoVideo.style = "font-weight: 300";
+    botaoMais.style = "font-weight: 300";
   }
   else {
     varOutrosSwitch = 0;
     listaOutros.style = "display: none";
+    botaoOutros.style = "font-weight: 300";
   }
 }
 
@@ -163,10 +170,19 @@ function showMais() {
     listaOutros.style = "display: none";
     listaMais.style = "display: inherit";
     varMaisSwitch = 1;
+
+    botaoMais.style = "font-weight: 400";
+    botaoVideo.style = "font-weight: 300";
+    botaoImagem.style = "font-weight: 300";
+    botaoWeb.style = "font-weight: 300";
+    botaoOutros.style = "font-weight: 300";
+
+
   }
   else {
     varMaisSwitch = 0;
     listaMais.style = "display: none";
+    botaoMais.style = "font-weight: 300";
   }
 }
 
@@ -179,12 +195,25 @@ function showMais() {
   function showWorkM(value) {
     descricao.innerHTML = [];
     bottomRight.innerHTML = mais[value];
+
+    botaoVideo.style = "font-weight: 300";
+    botaoImagem.style = "font-weight: 300";
+    botaoWeb.style = "font-weight: 300";
+    botaoOutros.style = "font-weight: 300";
+
+
  }
 
  function randomWork(value) {
    descricao.style = "display: auto";
    bottomRight.innerHTML = trabalhosRandom[value];
    descricao.innerHTML = descricoesRandom[value];
+
+   botaoVideo.style = "font-weight: 300";
+   botaoImagem.style = "font-weight: 300";
+   botaoWeb.style = "font-weight: 300";
+   botaoOutros.style = "font-weight: 300";
+
 }
 
 
@@ -255,42 +284,50 @@ function hideDesc(){
 
 
 
-
+//<img style="height:50px;"id="introImg"src="web2.png"alt="Pixel Art">  se quiser meter em baixo
 //INTRO E VER MAIS------------
 var mais = [
-  '<div class="">      <p id="intro">Aqui estão alguns trabalhos que fiz.</p>     <p>À esquerda tem algumas categorias.</p>     <p>Em cima podes saber mais e ver mais trabalhos de forma aleatória.</p></div>',
+  //'<div class="">      <p id="intro">Aqui estão alguns trabalhos que fiz.</p>    <p></p>     <p>Carregando em Migas podes ver mais informação e mais trabalhos de forma aleatória</p></div>',
+
+  ' <div id="typing-text"></div> ',
 
 
-  '<img style="height:50px;"id="introImg"src="web2.png"alt="Pixel Art"> <p>Gosto de passar tempo no computador, andar de bicicleta e cultivar suculentas, no Porto.</p>  <p>migas@outlook.pt</p> ',
+  '<p>Gosto de passar tempo no computador, andar de bicicleta e cultivar suculentas, no Porto.</p>  <p>migas@outlook.pt</p> ',
 
 
-  '<p id="CV01">2014 - estágio Santa Casa da Misericórdia do Porto</p> <p id="CV02">2016? - estágio ISCAP</p> <p id="CV03">2021 - estágio Perto Design</p> <p id="CV04">2021 - Licenciatura Design comunicação, ESAP</p>'
+  '<iframe alt="CV" class="youtube" frameBorder="0" src="inacabado.pdf"></iframe>'
 ]
 
+//TEXTO A SER ESCRITO!!!!!!!!!!!! o de cima
+  //var typing = 'Olá. Aqui estão alguns trabalhos que fiz. Carregando em Migas podes ver mais.';
+
+ var typing = "Aqui estão alguns trabalhos que fiz. Carregando em Migas podes ver mais.";
+
+  var delay = 15; // em milisegundos
+  let i = 0;
+  function typeText() {
+    if (i < typing.length) {
+      document.getElementById("typing-text").innerHTML += typing.charAt(i);
+      i++;
+      setTimeout(typeText, delay);
+    }
+  }
+  typeText();
 
 
+//MOSTRAR TEXTO DE BOAS VINDAS LOGO QUANDO SE ABRE O WEBSITE (está inativo)
+//bottomRight.innerHTML = mais[0];
 
-
-
-//MOSTRAR TEXTO DE BOAS VINDAS LOGO QUANDO SE ABRE O WEBSITE
-var cabecalho = document.getElementById('cabecalho');
-
-bottomRight.innerHTML = mais[0];
 
 //AVISO AVISO BARRA BARRA CABEÇALHO HEADER cabecalho pub publicidade
-setTimeout(() => {  cabecalho.style = "display:none"; }, 8000);
+//var cabecalho = document.getElementById('cabecalho');
+//setTimeout(() => {  cabecalho.style = "display:none"; }, 8000);
 
-function showGame(){
-    cabecalho.style = "display:none";
+//function showGame(){
+  //  cabecalho.style = "display:none";
 
-  bottomRight.innerHTML = '<iframe alt="Jogo em construção" class="youtube" frameBorder="0" src="game/index.html"></iframe>';
-
-
-
-
-}
-
-
+  //bottomRight.innerHTML = '<iframe alt="Jogo em construção" class="youtube" frameBorder="0" src="game/index.html"></iframe>';
+//}
 
 
 //imagem do uber a fazer zoom
@@ -301,10 +338,12 @@ function uber1(){document.getElementById("uber").src = 'UberHugo.jpg';}
 
 
 
+
+
 //DESCRIÇÕES
 var descricoesVideo = ["0",
 
-'Vídeo experimental sobre Rotina Diária, em específico os suplementos alimentares. Gravado com telemóvel e lente macro de 1euro. 2018',
+'Vídeo com o tema Rotina Diária, em específico os suplementos alimentares. Gravado com o telemóvel e uma lente. 2018',
 
 'Kynetic Typography - Videoclip só com tipografia cinética. 2020',
 
@@ -312,7 +351,7 @@ var descricoesVideo = ["0",
 
 'Vídeo Time Lapse sobre o Trânsito no Porto. 2020',
 
-'Vídeo com os temas Amanhecer e Solidão. 2121',
+'Vídeo com os temas Amanhecer e Solidão. Trata uma rotina matinal. 2021',
 
 '',
 
@@ -326,7 +365,7 @@ var descricoesImagem = ["0",
 
 'Spoof ad do medicamento Lunesta. À esquerda é o original. Eu apenas mudei a ordem do texto - O que no original tem mais destaque, no meu tem menos importância.',
 
-'Pixel Art, frame de um possível jogo inventado. O jogador seria um estafeta da Uber que teria de entregar encomendas. Ganharia bónus ao arrancar retrovisores de carros.',
+'Pixel Art. 1 frame de um possível jogo. O jogador seria um estafeta da Uber que teria de entregar encomendas. Ganharia bónus ao arrancar retrovisores de carros.',
 
 'Fotografia Panorâmica no Porto à beira rio.',
 
@@ -351,7 +390,7 @@ var descricoesWeb = ["0",
 var descricoesOutros = ["0",
 'Pequeno texto de pesquisa para blog sobre o Teletexto. 2020',
 
-'Fanzine Pharmakon com 3 números. O tema são substancias psicoativas principalmente ilegais. A nº2 foi toda escrito por mim. 2020',
+'Fanzine Pharmakon com 3 números. O tema são substancias psicoativas principalmente ilegais. 2020',
 
 'Publicação sobre a Cafeína feita em Projeto de Impressão. 2020',
 
@@ -366,7 +405,7 @@ var descricoesRandom = ["0",
 // 2
 'Animação com imagens da série South Park, sem som. 2015',
 // 3
-'Remake de uma cena do filme Blue Velvvet de 1986. Trabalho de grupo.  2019',
+'Remake de uma cena do filme Blue Velvvet de 1986. Trabalho de grupo. 2019',
 // 4
 'Fonte Milano. Tivemos de desenhar uma fonte com base em 3 fontes diferentes.  Trabalho de grupo.',
 // 5
@@ -486,7 +525,7 @@ var trabalhosRandom = ["0",
 //25 PHARMAKON 1
 '<iframe alt="Fanzine Pharmakon nº1. 2020" src="https://online.fliphtml5.com/dnvha/smhq/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="youtube" ></iframe>',
 //26
-'<img class="imagem" src="flor.tif" alt="Imagem digital que fiz no Paint.net antes de 2010. Das primeiras imagens que fiz e que consegui guardar até agora.">',
+'<img class="imagem" src="flor.png" alt="Imagem digital que fiz no Paint.net antes de 2010. Das primeiras imagens que fiz e que consegui guardar até agora.">',
 //27
 '',
 //28
@@ -567,3 +606,48 @@ var trabalhosVideo = ["0",
         '',
 
         '']
+
+
+//DARK MODE EXP. obrigado chatgpt
+  var body = document.body;
+
+  body.addEventListener("dblclick", function() {
+    body.classList.toggle("bodyDark");
+    botaoMais.classList.toggle("botaoMaisDark");
+    descricao.classList.toggle("descricaoDark");
+    body.classList.toggle("backgroundDark");
+
+  });
+
+  //G a girar, chatGPT thanks
+  var title = document.querySelector('#botaoMais');
+  var g = title.textContent;
+  title.innerHTML = g.replace(
+    'g',
+    '<span class="letter-g">g</span>'
+  );
+
+  //MUDAR FONTE COM JAVASCRUPTUNXO. e mexer mais rápido, que ainda nao funciona com,o queria. obrigado chatgpt
+  var hoverLetter = title.querySelector('.letter-g');
+  title.addEventListener('mouseenter', () => {
+    hoverLetter.style.fontFamily = 'M';
+    hoverLetter.classList.toggle("letter-g2");
+  });
+  title.addEventListener('mouseleave', () => {
+    hoverLetter.style.fontFamily = 'Inconsolata';
+    hoverLetter.classList.toggle("letter-g2");
+  });
+
+  //LINK FICAR ATIVO QUANDO É CLICKADO.
+  var navLinks = document.querySelectorAll("#topRight a");
+  navLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+      });
+
+      link.classList.add('active');
+    });
+  });

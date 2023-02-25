@@ -1,3 +1,5 @@
+/* Obrigado professora Ana Isabel Carvalho e professor Ricardo Lafuente por este estrugido. E também pelo que me ensinaram, custou, mas curti totil*/
+
 /*! HTML5 Estrugido, uma versão light do HTML5 Boilerplate v7.2.0
     https://html5boilerplate.com
 */
@@ -13,7 +15,10 @@
 /* ==========================================================================
    Estilos base: defaults com atitude.
    ========================================================================== */
-   #mouse-pointer {
+
+
+/*METER UM RATO DECENTE*/
+  #mouse-pointer {
            position: absolute;
            top: 0;
            left: 0;
@@ -23,12 +28,20 @@
          }
 
 
-  #botaoMais {
-}
+
+
+
+
+
+
+
+
+
+/*LETRA G A RODAR.*/
 
 .letter-g {
   display: inline-block;
-    animation: rotate 200s linear infinite;
+  animation: rotate 500s linear infinite;
 }
 @keyframes rotate {
   0% {
@@ -38,22 +51,9 @@
     transform: rotate(360deg);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.letter-g2 {
+    animation: rotate 70s;
+}
 
 
 
@@ -73,10 +73,16 @@ a{
 a:hover{
   font-weight: 200;
   text-shadow: 0.6px 0px 0px #7ca8ff, -0.6px 0px 0px #ff7c7c;
-
   transition: 0s;
-
 }
+
+/*Links a ativar e a desativar no topRight*/
+a.active {text-shadow: 0.6px 0px 0px #7ca8ff, -0.6px 0px 0px #ff7c7c;font-weight: 300;}
+/*a:not(.active):hover {}*/
+/*Este é para os links TOP RIGHT quando estão a ser carregados, só*/
+
+
+
 /*
  * Retiºrar a sombra do texto, quando está selecionado:
  * https://twitter.com/miketaylr/status/12228805301
@@ -139,30 +145,67 @@ textarea {
 
 
 /*Fontes*/
-
+/*FALTA MNETER AQUI AS FONTES EM BOLD PARA PODER APAGAR O LINK DA GOOGLE FONTS DO HTML*/
+/*@font-face {
+  font-family: 'Inconsolata';
+  src: url("../fonts/Inconsolata-Variable.ttf") format("truetype");
+}*/
 @font-face {
-  font-family: 'Inconsolata-Regular';
-  src: url("fonts/Inconsolata-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-family: 'Inconsolata-ExtraLight';
+  src: url("../fonts/Inconsolata-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Inconsolata-Black';
-  src: url("fonts/Inconsolata-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;}
-@font-face {
   font-family: 'Inconsolata-Light';
-  src: url("fonts/Inconsolata-Light.ttf") format("truetype");
+  src: url("../fonts/Inconsolata-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Inconsolata-ExtraLight';
-  src: url("fonts/Inconsolata-ExtraLight.ttf") format("truetype");
-  font-weight: 200;
+  font-family: 'Inconsolata-Regular';
+  src: url("../fonts/Inconsolata-Regular.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Inconsolata-Regular';
+  src: url("../fonts/Inconsolata-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inconsolata-Regular';
+  src: url("../fonts/Inconsolata-SemiBold.ttf") format("truetype");
+  font-weight: 600
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inconsolata-Regular';
+  src: url("../fonts/Inconsolata-Bold.ttf") format("truetype");
+  font-weight: 700
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inconsolata-Regular';
+  src: url("../fonts/Inconsolata-ExtraBold.ttf") format("truetype");
+  font-weight: 800
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inconsolata-Black';
+  src: url("../fonts/Inconsolata-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;}
+
+@font-face {
+  font-family: "M";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Inconsolata-M.ttf") format("truetype");
+}
+
+
 
 @font-face {
   font-family: "Rolls";
@@ -178,12 +221,14 @@ textarea {
 }
 
 
+
+
 /* ==========================================================================
    Colocar aqui os estilos do site
    ========================================================================== */
 
 
-   #cabecalho{
+   /*#cabecalho{
      position: absolute;
      width: 99.5%;
      background-color: lightgrey;
@@ -194,7 +239,7 @@ textarea {
 
      text-align: center;
    }
-
+*/
 
 /*ECRA..............................................*/
 #screen{
@@ -266,10 +311,20 @@ h1{
   6% {text-shadow: 0px 0px 0px #7ca8ff, 0px 0px 0px #ff7c7c;}
 
 }
-
+#botaoMais{
+  font-weight: 300;
+}
 #botaoMais:hover{
   text-shadow: 1.4px 0px 0px #7ca8ff, -1.4px 0px 0px #ff7c7c;
+  font-weight: 300;
 }
+
+
+/*.letter-g:hover{
+  font-weight: 400;
+  font-family: M;
+}*/
+
 
 img:hover{
   animation: sombraImg 2s infinite;
@@ -336,12 +391,15 @@ a:hover,p:hover{
 
 }
 
+
+
 #descricao{
-  background-color: #ffffffE6;
   position: absolute;
   bottom:-5vh;
   padding: 0.25rem 0;
+  /*  background-color: white; esta merda sobrepoem-se ao dark mode, ao contrario das outras coisas no dark mode, nao fgaço ideia porquê*/
 }
+
 
 .data{
   margin-right: 1rem;
@@ -529,9 +587,118 @@ a:hover,p:hover{
    Media Queries para design responsivo. Acrescentar conforme necessário.
    ========================================================================== */
 
-@media only screen and (max-width: 639px) { /* estilos para ecrãs pequenos */
+@media only screen and (max-width: 1000px) { /* estilos para ecrãs pequenos */
+
+
+  html {
+    font-size: 100%;
+    line-height: 2;
+    padding: 0;
+    margin: 0;
+  }
+
+  h1{
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 25px;
+  }
+
+  #screen{
+    display: grid;
+    height: 95vh;
+    width: 95vw;
+    grid-template-columns: 100%;
+    grid-template-rows: 6% 16% 10%;
+    box-sizing: border-box;
 }
 
+#listaMais{
+  padding-bottom: 30px;
+}
+#listaAudio, #listaWeb, #listaVideo, #listaImagem, #listaOutros {
+  padding-bottom: 20px;
+}
+
+#categorias {
+  position:;
+  font-size: 200%;
+  padding: 0px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+#categorias p{
+  padding: 0;
+  margin:0;
+}
+
+#topRight a, #topRight p{
+  font-size: 100%;
+  padding: 0px;
+  margin: 0;
+}#topRight a{padding-right: 2rem;}
+
+#listaMais, #listaAudio, #listaWeb, #listaVideo, #listaImagem, #listaOutros {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+#pan{
+  max-height: 64vh;
+}
+#pan2{
+  max-height: 64vh;
+}
+
+#gridsobre{
+
+}
+
+.janela{
+  height: 100%;
+  width: 100%;
+
+  frameBorder:0;
+}
+
+.imagem{
+  max-width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  max-height: 64vh;
+}
+
+.height{
+  max-height: 100%;
+}
+
+.youtube{
+  height:100%;
+  width: 100%;
+
+  frameBorder:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
@@ -600,4 +767,77 @@ a:hover,p:hover{
   h3 {
     break-after: avoid;
   }
+}
+
+
+
+
+
+.hover-letter {
+  font-family: "M";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hover-letter:hover {
+  font-family: "M";
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+/*BACKGROUND*/
+body {
+  background:
+    radial-gradient(circle at 20% 40%, #F4FBFF, transparent), /* Light blue gradient */
+    radial-gradient(circle at 60% 80%, #FFE8E8, transparent); /* Light red gradient */
+  background-size: 200% 200%;
+  animation: gradient-animation 60s ease-in-out infinite alternate;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 0%, 100% 100%; /* Starting positions */
+    background-color: white;
+  }
+  20% {
+    background-position: 30% 10%, 70% 90%; /* First move */
+  }
+  40% {
+    background-position: 80% 70%, 20% 30%; /* Second move */
+  }
+  60% {
+    background-position: 50% 90%, 50% 10%; /* Third move */
+  }
+  80% {
+    background-position: 90% 30%, 10% 70%; /* Fourth move */
+  }
+  100% {
+    background-position: 0% 0%, 100% 100%; /* Starting positions */
+
+  }
+}
+
+/*DARK MODE*/
+.bodyDark {
+  background-color: #333;
+  color: #F8F8F8;
+}
+.botaoMaisDark{
+  color: white;
+}
+
+.descricaoDark{
+  color: lightgrey;
+  background-color: #161722;
+}
+
+.backgroundDark{
+  background-color: black;
+  background:
+    radial-gradient(circle at 20% 40%, #000C1B, transparent), /* dark blue gradient */
+    radial-gradient(circle at 60% 80%, #1B0015, transparent); /* dark red gradient */
+  background-size: 200% 200%;
+  animation: gradient-animation 60s ease-in-out infinite alternate;
 }
