@@ -1,3 +1,5 @@
+/* Obrigado professora Ana Isabel Carvalho e professor Ricardo Lafuente por este estrugido. E também pelo que me ensinaram, custou, mas curti totil*/
+
 /*! HTML5 Estrugido, uma versão light do HTML5 Boilerplate v7.2.0
     https://html5boilerplate.com
 */
@@ -26,10 +28,20 @@
          }
 
 
-/*LETRA G A RODAR. DEVIA SER UMA ESPIRAL.*/
+
+
+
+
+
+
+
+
+
+/*LETRA G A RODAR.*/
+
 .letter-g {
   display: inline-block;
-    animation: rotate 500s linear infinite;
+  animation: rotate 500s linear infinite;
 }
 @keyframes rotate {
   0% {
@@ -39,15 +51,9 @@
     transform: rotate(360deg);
   }
 }
-
-
-
-
-
-
-
-
-
+.letter-g2 {
+    animation: rotate 70s;
+}
 
 
 
@@ -137,27 +143,27 @@ textarea {
 
 
 /*Fontes*/
-
+/*FALTA MNETER AQUI AS FONTES EM BOLD PARA PODER APAGAR O LINK DA GOOGLE FONTS DO HTML*/
 @font-face {
   font-family: 'Inconsolata-Regular';
-  src: url("fonts/Inconsolata-Regular.ttf") format("truetype");
+  src: url("../fonts/Inconsolata-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Inconsolata-Black';
-  src: url("fonts/Inconsolata-Black.ttf") format("truetype");
+  src: url("../fonts/Inconsolata-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;}
 @font-face {
   font-family: 'Inconsolata-Light';
-  src: url("fonts/Inconsolata-Light.ttf") format("truetype");
+  src: url("../fonts/Inconsolata-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: 'Inconsolata-ExtraLight';
-  src: url("fonts/Inconsolata-ExtraLight.ttf") format("truetype");
+  src: url("../fonts/Inconsolata-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
 }
@@ -173,6 +179,12 @@ textarea {
   font-weight: 300;
   font-style: normal;
   src: url("../milan.otf") format("opentype");
+}
+@font-face {
+  font-family: "M";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Inconsolata-M.ttf") format("truetype");
 }
 
 
@@ -264,13 +276,20 @@ h1{
   6% {text-shadow: 0px 0px 0px #7ca8ff, 0px 0px 0px #ff7c7c;}
 
 }
-
+#botaoMais{
+  font-weight: 300;
+}
 #botaoMais:hover{
   text-shadow: 1.4px 0px 0px #7ca8ff, -1.4px 0px 0px #ff7c7c;
+  font-weight: 300;
 }
-#botaoMigas:hover{
-  text-shadow: 1.4px 0px 0px #7ca8ff, -1.4px 0px 0px #ff7c7c;
-}
+
+
+/*.letter-g:hover{
+  font-weight: 400;
+  font-family: M;
+}*/
+
 
 img:hover{
   animation: sombraImg 2s infinite;
@@ -726,14 +745,14 @@ a:active {
 
 
 
-
+/*DARK MODE*/
 .bodyDark {
   background-color: #333;
   color: #fff;
 }
 
 .botaoMaisDark{
-  color: lightgrey;
+  color: white;
 }
 
 .descricaoDark{
@@ -741,7 +760,16 @@ a:active {
   background-color: #333;
   color: red;
 }
-.descricaoDark{
-  background-color: #333;
-  color: red;
+
+
+.hover-letter {
+  font-family: "M";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hover-letter:hover {
+  font-family: "M";
+  font-weight: 400;
+  font-style: normal;
 }

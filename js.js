@@ -1,48 +1,9 @@
-//G a girar, chatGPT thanks
-
-var title = document.querySelector('#botaoMais');
-var g = title.textContent;
-title.innerHTML = g.replace(
-  'g',
-  '<span class="letter-g">g</span>'
-);
-
-//
-//
-//LINK FICAR ATIVO QUANDO É CLICKADO.
-var navLinks = document.querySelectorAll("#topRight a");
-navLinks.forEach(link => {
-  link.addEventListener('click', (event) => {
-    event.preventDefault();
-
-    navLinks.forEach(link => {
-      link.classList.remove('active');
-    });
-
-    link.classList.add('active');
-  });
-});
-
-
-//
-//
-//
-
-
-
-
-
-
-
-
 //ELEMENTOS
 var topLeft = document.getElementById('topLeft');
 var bottomLeft = document.getElementById('bottomLeft');
 var topRight = document.getElementById('topRight');
 var bottomRight = document.getElementById('bottomRight');
 
-
-var botaoMigas = document.getElementById('botaoMigas');
 
 var botaoVideo = document.getElementById('botaoVideo');
 var botaoImagem = document.getElementById('botaoImagem');
@@ -86,6 +47,7 @@ function showVideo() {
     botaoImagem.style = "font-weight: 300";
     botaoWeb.style = "font-weight: 300";
     botaoOutros.style = "font-weight: 300";
+    botaoMais.style = "font-weight: 300";
 
   }
   else {
@@ -121,6 +83,7 @@ function showImagem() {
     botaoVideo.style = "font-weight: 300";
     botaoWeb.style = "font-weight: 300";
     botaoOutros.style = "font-weight: 300";
+    botaoMais.style = "font-weight: 300";
 
   }
   else {
@@ -154,6 +117,7 @@ function showWeb() {
     botaoImagem.style = "font-weight: 300";
     botaoVideo.style = "font-weight: 300";
     botaoOutros.style = "font-weight: 300";
+    botaoMais.style = "font-weight: 300";
   }
   else {
     varWebSwitch = 0;
@@ -182,6 +146,7 @@ function showOutros() {
     botaoImagem.style = "font-weight: 300";
     botaoWeb.style = "font-weight: 300";
     botaoVideo.style = "font-weight: 300";
+    botaoMais.style = "font-weight: 300";
   }
   else {
     varOutrosSwitch = 0;
@@ -205,6 +170,12 @@ function showMais() {
     listaOutros.style = "display: none";
     listaMais.style = "display: inherit";
     varMaisSwitch = 1;
+
+    botaoMais.style = "font-weight: 400";
+    botaoVideo.style = "font-weight: 300";
+    botaoImagem.style = "font-weight: 300";
+    botaoWeb.style = "font-weight: 300";
+    botaoOutros.style = "font-weight: 300";
 
 
   }
@@ -230,6 +201,7 @@ function showMais() {
     botaoWeb.style = "font-weight: 300";
     botaoOutros.style = "font-weight: 300";
 
+
  }
 
  function randomWork(value) {
@@ -241,6 +213,7 @@ function showMais() {
    botaoImagem.style = "font-weight: 300";
    botaoWeb.style = "font-weight: 300";
    botaoOutros.style = "font-weight: 300";
+
 }
 
 
@@ -326,51 +299,45 @@ var mais = [
 ]
 
 //TEXTO A SER ESCRITO!!!!!!!!!!!! o de cima
-  var typing = '.Olá. Aqui estão alguns trabalhos que fiz. Carregando em Migas podes ver mais.';
-  var delay = 20; // em milisegundos
+  //var typing = 'Olá. Aqui estão alguns trabalhos que fiz. Carregando em Migas podes ver mais.';
+
+ var typing = "Aqui estão alguns trabalhos que fiz. Carregando em Migas podes ver mais.";
+
+
+  var delay = 15; // em milisegundos
 
   let i = 0;
 
   function typeText() {
-
-
     if (i < typing.length) {
       document.getElementById("typing-text").innerHTML += typing.charAt(i);
       i++;
       setTimeout(typeText, delay);
-
     }
   }
-
   typeText();
 
 
+//MOSTRAR TEXTO DE BOAS VINDAS LOGO QUANDO SE ABRE O WEBSITE (está inativo)
+//bottomRight.innerHTML = mais[0];
 
-
-//MOSTRAR TEXTO DE BOAS VINDAS LOGO QUANDO SE ABRE O WEBSITE
-//var cabecalho = document.getElementById('cabecalho');
-
-bottomRight.innerHTML = mais[0];
 
 //AVISO AVISO BARRA BARRA CABEÇALHO HEADER cabecalho pub publicidade
+//var cabecalho = document.getElementById('cabecalho');
 //setTimeout(() => {  cabecalho.style = "display:none"; }, 8000);
 
 //function showGame(){
   //  cabecalho.style = "display:none";
 
   //bottomRight.innerHTML = '<iframe alt="Jogo em construção" class="youtube" frameBorder="0" src="game/index.html"></iframe>';
-
-
-
-
 //}
-
-
 
 
 //imagem do uber a fazer zoom
 function uber2(){document.getElementById("uber").src = 'uber2.jpg';}
 function uber1(){document.getElementById("uber").src = 'UberHugo.jpg';}
+
+
 
 
 
@@ -644,14 +611,45 @@ var trabalhosVideo = ["0",
         '']
 
 
-
-
-
-//DARK MODE EXP
+//DARK MODE EXP. obrigado chatgpt
   var body = document.body;
   body.addEventListener("dblclick", function() {
     body.classList.toggle("bodyDark");
     botaoMais.classList.toggle("botaoMaisDark");
     var descricao = document.getElementById('descricao');
     descricao.classList.toggle("descricaoDark");
+
+  });
+
+  //G a girar, chatGPT thanks
+  var title = document.querySelector('#botaoMais');
+  var g = title.textContent;
+  title.innerHTML = g.replace(
+    'g',
+    '<span class="letter-g">g</span>'
+  );
+
+  //MUDAR FONTE COM JAVASCRUPTUNXO. e mexer mais rápido, que ainda nao funciona com,o queria. obrigado chatgpt
+  var hoverLetter = title.querySelector('.letter-g');
+  title.addEventListener('mouseenter', () => {
+    hoverLetter.style.fontFamily = 'M';
+    hoverLetter.classList.toggle("letter-g2");
+  });
+  title.addEventListener('mouseleave', () => {
+    hoverLetter.style.fontFamily = 'Inconsolata';
+    hoverLetter.classList.toggle("letter-g2");
+  });
+
+  //LINK FICAR ATIVO QUANDO É CLICKADO.
+  var navLinks = document.querySelectorAll("#topRight a");
+  navLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+      });
+
+      link.classList.add('active');
+    });
   });
