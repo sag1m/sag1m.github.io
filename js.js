@@ -1,6 +1,6 @@
 //ELEMENTOS
 var topLeft = document.getElementById('topLeft');
-var bottomLeft = document.getElementById('bottomLeft');
+var bottomLeft = document.getElementById('categorias');
 var topRight = document.getElementById('topRight');
 var bottomRight = document.getElementById('bottomRight');
 
@@ -298,12 +298,16 @@ var mais = [
   '<iframe alt="CV" class="youtube" frameBorder="0" src="inacabado.pdf"></iframe>'
 ]
 
-//TEXTO A SER ESCRITO!!!!!!!!!!!! o de cima
+//TEXTO A SER ESCRITO!!!!!!!!!!!! o de cima e também o menu bottomLeft a aparecer
   //var typing = 'Olá. Aqui estão alguns trabalhos que fiz. Carregando em Migas podes ver mais.';
+
+  setTimeout(function() {
+  bottomLeft.style.opacity = "1";
+}, 2000);
 
  var typing = "Aqui estão alguns trabalhos que fiz. Carregando em Migas podes ver mais.";
 
-  var delay = 15; // em milisegundos
+  var delay = 30; // em milisegundos
   let i = 0;
   function typeText() {
     if (i < typing.length) {
@@ -313,6 +317,8 @@ var mais = [
     }
   }
   typeText();
+
+
 
 
 //MOSTRAR TEXTO DE BOAS VINDAS LOGO QUANDO SE ABRE O WEBSITE (está inativo)
@@ -616,6 +622,7 @@ var trabalhosVideo = ["0",
     botaoMais.classList.toggle("botaoMaisDark");
     descricao.classList.toggle("descricaoDark");
     body.classList.toggle("backgroundDark");
+    bottomRight.classList.toggle("bottomRightDark");
 
   });
 

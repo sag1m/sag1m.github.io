@@ -71,15 +71,14 @@ a{
 
 }
 a:hover{
-  font-weight: 200;
+  font-weight: 300;
   text-shadow: 0.6px 0px 0px #7ca8ff, -0.6px 0px 0px #ff7c7c;
   transition: 0s;
 }
 
 /*Links a ativar e a desativar no topRight*/
 a.active {text-shadow: 0.6px 0px 0px #7ca8ff, -0.6px 0px 0px #ff7c7c;font-weight: 300;}
-/*a:not(.active):hover {}*/
-/*Este é para os links TOP RIGHT quando estão a ser carregados, só*/
+a:not(.active):hover {}
 
 
 
@@ -256,6 +255,9 @@ textarea {
 
 
   font-family: 'Inconsolata', monospace;
+
+
+
 }
 
 h3{
@@ -263,7 +265,7 @@ h3{
 }
 
 #screen p {
-  padding-bottom: 0.5rem;
+  padding-bottom: 10%;
 }
 
 
@@ -358,13 +360,16 @@ a:hover,p:hover{
 
 /*BOTTOM LEFT.................................*/
 #categorias{
-  margin-top: auto;
-  margin-bottom: auto;
+  /*margin-top: auto;
+  margin-bottom: auto;*/
   padding-left: 5vw;
   padding-bottom: 5vh;
 
   font-size: 2rem;
   line-height: 6vh;
+
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
 }
 
 
@@ -418,7 +423,9 @@ a:hover,p:hover{
 /*bottom right.................................*/
 
 #bottomRight{
-  /*box-sizing: content-box;*/
+  /*border-radius: 20px;
+  box-sizing: content-box;
+  background-color: rgba(255, 255, 255, 0.4);*/
 
 }
 
@@ -591,7 +598,7 @@ a:hover,p:hover{
 
 
   html {
-    font-size: 100%;
+    font-size: 70%;
     line-height: 2;
     padding: 0;
     margin: 0;
@@ -604,9 +611,9 @@ a:hover,p:hover{
   }
 
   #screen{
+    max-height: 100vh;
+    min-width: 100vw;
     display: grid;
-    height: 100vh;
-    width: 100vw;
     grid-template-columns: 100%;
     grid-template-rows: 6% 16% 10%;
     box-sizing: border-box;
@@ -626,6 +633,8 @@ a:hover,p:hover{
   margin: 0;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
 }
 
 #categorias p{
@@ -643,7 +652,19 @@ a:hover,p:hover{
   text-align: center;
 }
 
+#topRight{
+    text-align: center;
+}
 
+#bottomRight{
+
+  text-align: center;
+
+}
+#categorias{
+  text-align: center;
+
+}
 
 
 
@@ -788,38 +809,81 @@ a:hover,p:hover{
 
 
 /*BACKGROUND*/
+body{
+  background-image:
+  radial-gradient(circle at 20% 40%, #F4FBFF, transparent),
+  radial-gradient(circle at 60% 80%, #FFE8E8, transparent),
+  url(../bg.jpg);
+
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 0 0, 100% 100%, center center;
+  background-size: 100%, 250%, cover;
+
+  animation: animateGradients 25s linear infinite alternate;
+
+}
+
+
+
+  @keyframes animateGradients {
+    0% {
+      background-position: 0% 0%, 100% 100%, center center;
+    }
+    20% {
+      background-position: 30% 10%, 70% 90%, center center;
+    }
+    40% {
+      background-position: 80% 70%, 20% 30%, center center;
+    }
+    60% {
+      background-position: 50% 90%, 50% 10%, center center;
+    }
+    80% {
+      background-position: 90% 30%, 10% 70%, center center;
+    }
+    100% {
+      background-position: 0% 0%, 100% 100%, center center;
+
+    }
+}
+
+
+
+/*
 body {
   background:
-    radial-gradient(circle at 20% 40%, #F4FBFF, transparent), /* Light blue gradient */
-    radial-gradient(circle at 60% 80%, #FFE8E8, transparent); /* Light red gradient */
+    radial-gradient(circle at 20% 40%, #F4FBFF, transparent),
+    radial-gradient(circle at 60% 80%, #FFE8E8, transparent);
   background-size: 200% 200%;
   animation: gradient-animation 60s ease-in-out infinite alternate;
 }
 
+
+
 @keyframes gradient-animation {
   0% {
-    background-position: 0% 0%, 100% 100%; /* Starting positions */
-    background-color: white;
+    background-position: 0% 0%, 100% 100%, center center;
   }
   20% {
-    background-position: 30% 10%, 70% 90%; /* First move */
+    background-position: 30% 10%, 70% 90%, center center;
   }
   40% {
-    background-position: 80% 70%, 20% 30%; /* Second move */
+    background-position: 80% 70%, 20% 30%, center center;
   }
   60% {
-    background-position: 50% 90%, 50% 10%; /* Third move */
+    background-position: 50% 90%, 50% 10%, center center;
   }
   80% {
-    background-position: 90% 30%, 10% 70%; /* Fourth move */
+    background-position: 90% 30%, 10% 70%, center center;
   }
   100% {
-    background-position: 0% 0%, 100% 100%; /* Starting positions */
+    background-position: 0% 0%, 100% 100%, center center;
 
   }
 }
-
+*/
 /*DARK MODE*/
+
 .bodyDark {
   background-color: #333;
   color: #F8F8F8;
@@ -833,11 +897,42 @@ body {
   background-color: #161722;
 }
 
+/*.bottomRightDark{
+  background-color: rgba(0, 0, 0, 0.28);
+}*/
+
+
 .backgroundDark{
-  background-color: black;
-  background:
-    radial-gradient(circle at 20% 40%, #000C1B, transparent), /* dark blue gradient */
-    radial-gradient(circle at 60% 80%, #1B0015, transparent); /* dark red gradient */
-  background-size: 200% 200%;
-  animation: gradient-animation 60s ease-in-out infinite alternate;
+  background-image:
+  radial-gradient(circle at 20% 40%, #000C1B, transparent),
+  radial-gradient(circle at 60% 80%, #1B0015, transparent),
+  url(../bg.jpg);
+
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 0 0, 100% 100%, center center;
+  background-size: 100%, 250%, cover;
+
+  animation: animateGradients 25s linear infinite alternate;
+}
+
+  @keyframes animateGradients {
+    0% {
+      background-position: 0% 0%, 100% 100%, center center;
+    }
+    20% {
+      background-position: 30% 10%, 70% 90%, center center;
+    }
+    40% {
+      background-position: 80% 70%, 20% 30%, center center;
+    }
+    60% {
+      background-position: 50% 90%, 50% 10%, center center;
+    }
+    80% {
+      background-position: 90% 30%, 10% 70%, center center;
+    }
+    100% {
+      background-position: 0% 0%, 100% 100%, center center;
+
+    }
 }
