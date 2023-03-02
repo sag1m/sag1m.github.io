@@ -812,12 +812,12 @@ a:hover,p:hover{
 body{
   background-image:
   radial-gradient(circle at 20% 40%, #F4FBFF, transparent),
-  radial-gradient(circle at 60% 80%, #FFE8E8, transparent),
-  url(../bg.jpg);
+  radial-gradient(circle at 60% 80%, #FFE8E8, transparent);
+  /*url(../bg.jpg);*/
 
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 0 0, 100% 100%, center center;
-  background-size: 100%, 250%, cover;
+  background-repeat: no-repeat, no-repeat
+  background-position: 0 0, 100% 100%;
+  background-size: 100%, 250%;
 
   animation: animateGradients 25s linear infinite alternate;
 
@@ -905,12 +905,12 @@ body {
 .backgroundDark{
   background-image:
   radial-gradient(circle at 20% 40%, #000C1B, transparent),
-  radial-gradient(circle at 60% 80%, #1B0015, transparent),
-  url(../bg.jpg);
+  radial-gradient(circle at 60% 80%, #1B0015, transparent);
+  /*url(../bg.jpg);*/
 
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 0 0, 100% 100%, center center;
-  background-size: 100%, 250%, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 0, 100% 100%;
+  background-size: 100%, 250%;
 
   animation: animateGradients 25s linear infinite alternate;
 }
