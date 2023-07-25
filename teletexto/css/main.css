@@ -307,8 +307,7 @@ a{
 }
 body{
   background-color: grey;
-  /*background-image: url("img/hero.jpg") fixed;*/
-  background-image: url("img/hero.jpg");
+  background: url("../img/hero.jpg") fixed;
   background-position: right bottom;
   background-size: cover;
   background-repeat: no-repeat;
