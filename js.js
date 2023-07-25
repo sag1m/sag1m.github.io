@@ -18,25 +18,6 @@ var listaImagem = document.getElementById('listaImagem');
 var listaWeb = document.getElementById('listaWeb');
 var listaOutros = document.getElementById('listaOutros');
 
-//---------------------------------------------------------
-
-var gradientContainer = document.getElementById('gradientContainer');
-
-document.addEventListener('mousemove', (event) => {
-  var mouseX = event.pageX;
-  var mouseY = event.pageY;
-  var halfSize = 1000; // Half of the container size (500/2)
-
-  // Calculate the position of the gradient container to follow the mouse
-  var left = mouseX - halfSize;
-  var top = mouseY - halfSize;
-
-  // Update the position of the gradient container
-  gradientContainer.style.left = `${left}px`;
-  gradientContainer.style.top = `${top}px`;
-});
-
-
 
 
 //BOTOES.........................................
@@ -674,4 +655,22 @@ var trabalhosVideo = ["0",
 
       link.classList.add('active');
     });
+  });
+
+
+
+
+
+  //Gradiente à volta do rato, GPT
+  var gradientContainer = document.getElementById('gradientContainer');
+  document.addEventListener('mousemove', (event) => {
+    var mouseX = event.pageX;
+    var mouseY = event.pageY;
+    var halfSize = 1000; // Half of the container size (500/2)
+    // Calculate the position of the gradient container to follow the mouse:
+    var left = mouseX - halfSize;
+    var top = mouseY - halfSize;
+    // Update the position of the gradient container:
+    gradientContainer.style.left = `${left}px`;
+    gradientContainer.style.top = `${top}px`;
   });
