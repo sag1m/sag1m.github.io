@@ -17,7 +17,7 @@
    ========================================================================== */
 
 
-/*METER UM RATO DECENTE*/
+/*METER UM RATO DECENTE - 2do*/
   #mouse-pointer {
            position: absolute;
            top: 0;
@@ -31,8 +31,23 @@
 
 
 
+         #gradientContainer { /*ChatGPT*/
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 2000px;
+           height: 2000px;
+           pointer-events: none; /* Ensure the container doesn't block mouse interactions with underlying elements */
+           z-index: -1;
+         }
 
+         .gradientContainer{
+           background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, transparent 70%);
 
+         }
+         .gradientContainerDark {
+            background: radial-gradient(circle, rgba(0, 0, 0, 0.5) 0%, transparent 70%);
+         }
 
 
 

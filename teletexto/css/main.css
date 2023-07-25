@@ -307,7 +307,8 @@ a{
 }
 body{
   background-color: grey;
-  background: url(https://esap.tilde.pt/~msousa/teletexto/img/hero.jpg) fixed;
+  /*background-image: url("img/hero.jpg") fixed;*/
+  background-image: url("img/hero.jpg");
   background-position: right bottom;
   background-size: cover;
   background-repeat: no-repeat;

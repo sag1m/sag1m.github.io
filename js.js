@@ -18,9 +18,23 @@ var listaImagem = document.getElementById('listaImagem');
 var listaWeb = document.getElementById('listaWeb');
 var listaOutros = document.getElementById('listaOutros');
 
+//---------------------------------------------------------
 
+var gradientContainer = document.getElementById('gradientContainer');
 
+document.addEventListener('mousemove', (event) => {
+  var mouseX = event.pageX;
+  var mouseY = event.pageY;
+  var halfSize = 1000; // Half of the container size (500/2)
 
+  // Calculate the position of the gradient container to follow the mouse
+  var left = mouseX - halfSize;
+  var top = mouseY - halfSize;
+
+  // Update the position of the gradient container
+  gradientContainer.style.left = `${left}px`;
+  gradientContainer.style.top = `${top}px`;
+});
 
 
 
@@ -617,12 +631,15 @@ var trabalhosVideo = ["0",
 //DARK MODE EXP. obrigado chatgpt
   var body = document.body;
 
+
   body.addEventListener("dblclick", function() {
     body.classList.toggle("bodyDark");
     botaoMais.classList.toggle("botaoMaisDark");
     descricao.classList.toggle("descricaoDark");
     body.classList.toggle("backgroundDark");
     bottomRight.classList.toggle("bottomRightDark");
+    gradientContainer.classList.toggle("gradientContainerDark");
+
 
   });
 
