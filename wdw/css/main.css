@@ -314,7 +314,7 @@ h1{
   background-color: #242425;
   max-width: 35rem;
   /*min-height: 20rem;*/
-  margin: auto;
+  /*margin: auto;*/
 
 
   box-sizing: border-box;
@@ -332,7 +332,7 @@ h1{
 }
 
 #instrucoes{
-  color: white;
+  color: grey;
   margin-top: 1rem;
   max-width: 30rem;
   /*max-height: 20rem;*/
@@ -344,7 +344,6 @@ h1{
   box-sizing: border-box;
   font-weight: 100;
   display: none;
-  margin: auto;
     margin-top: 2rem;
 }
 

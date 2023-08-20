@@ -286,8 +286,11 @@ var mais = [
 
   ' <div id="typing-text"></div> ',
 
-
+  //Esta descrição é simples:
   '<p>Gosto de passar tempo no computador, andar de bicicleta e cultivar suculentas, no Porto.</p>  <p>migas@outlook.pt</p> ',
+
+  //esta decsrição é uam página externa que permitirá mais lberdade de merda e parágrafos e coisas. mas afinal não funcionou bem, que trabalheira  pra fazer isto bem.:
+  //'<iframe alt="Sobre" class="youtube" frameBorder="0" src="sobre.html"></iframe>',
 
 
   '<iframe alt="CV" class="youtube" frameBorder="0" src="inacabado.pdf"></iframe>'
@@ -300,9 +303,9 @@ var mais = [
   bottomLeft.style.opacity = "1";
 }, 2000);
 
- var typing = "Aqui estão alguns trabalhos que fiz. Carregando em Migas podes ver mais.";
+ var typing = " Aqui estão alguns trabalhos que fiz.   Carregando em cima em 'Migas' podes ver ainda mais.   Carrega duas vezes no fundo para ativar/desativar o Modo Escuro.   Os trabalhos estão ordenados por categoria e por data, com uma pequena descrição que se lê pairando o rato sobre o título do trabalho.   ";
 
-  var delay = 30; // em milisegundos
+  var delay = 20; // em milisegundos
   let i = 0;
   function typeText() {
     if (i < typing.length) {
@@ -588,7 +591,7 @@ var trabalhosVideo = ["0",
     var trabalhosWeb = ["0",
     '<iframe alt="Website desenvolvido para um festival de música inventado, baseado num cartaz construtivista Russo. 2019" class="youtube" frameBorder="0" src="Cross/index.html"></iframe>',
 
-    '<iframe alt="Protótipo para um jogo de escolhas, onde o jogador tem de acabar de programar um website controlando a sua ansiedade e energia. 2020" class="youtube" frameBorder="0" src="wdw/index.html"></iframe>',
+    '<iframe alt="Protótipo para um jogo de escolhas, onde o jogador tem de acabar de programar um website controlando a sua ansiedade e energia. 2020" class="cemporcento" frameBorder="0" src="wdw/index.html"></iframe>',
 
     '<iframe alt="Gerador de um website para fotografar, documentar e competir com cartas de suculentas. 2021" class="youtube" frameBorder="0" src="gerador/index.html"></iframe>',
 

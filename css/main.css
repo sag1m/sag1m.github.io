@@ -242,6 +242,9 @@ textarea {
    ========================================================================== */
 
 
+
+
+
    /*#cabecalho{
      position: absolute;
      width: 99.5%;
@@ -484,6 +487,13 @@ a:hover,p:hover{
   width: 100%;
 
   frameBorder:0;
+}
+
+.cemporcento{
+
+  height:100%;
+  width: 100%;
+
 }
 
 
