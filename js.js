@@ -318,6 +318,10 @@ var mais = [
 
 
 
+   var typing2 = " foda-se ";
+
+
+
 
 //MOSTRAR TEXTO DE BOAS VINDAS LOGO QUANDO SE ABRE O WEBSITE (está inativo)
 //bottomRight.innerHTML = mais[0];
