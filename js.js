@@ -293,7 +293,7 @@ var mais = [
   //'<iframe alt="Sobre" class="youtube" frameBorder="0" src="sobre.html"></iframe>',
 
 
-  '<iframe alt="CV" class="youtube" frameBorder="0" src="inacabado.pdf"></iframe>'
+  '<iframe alt="CV" class="youtube" frameBorder="0" src="cv.pdf"></iframe>'
 ]
 
 //TEXTO A SER ESCRITO!!!!!!!!!!!! o de cima e também o menu bottomLeft a aparecer
