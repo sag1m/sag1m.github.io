@@ -303,7 +303,7 @@ var mais = [
   bottomLeft.style.opacity = "1";
 }, 2000);
 
- var typing = " Aqui estão alguns trabalhos que fiz.   Carregando em cima em 'Migas' podes ver ainda mais.   Carrega duas vezes no fundo para ativar/desativar o Modo Escuro.   Os trabalhos estão ordenados por categoria e por data, com uma pequena descrição que se lê pairando o rato sobre o título do trabalho.   ";
+ var typing = " Aqui estão alguns trabalhos que fiz.  ";
 
   var delay = 20; // em milisegundos
   let i = 0;
@@ -318,8 +318,18 @@ var mais = [
 
 
 
-   var typing2 = " foda-se ";
+   var typing2 = " Carregando em cima em 'Migas' podes ver ainda mais.   Carrega duas vezes no fundo para ativar/desativar o Modo Escuro.   Os trabalhos estão ordenados por categoria e por data, com uma pequena descrição que se lê pairando o rato sobre o título do trabalho.  ";
 
+   var delay = 20; // em milisegundos
+   let i = 0;
+   function typeText2() {
+     if (i < typing2.length) {
+       document.getElementById("typing-text2").innerHTML += typing2.charAt(i);
+       i++;
+       setTimeout(typeText2, delay);
+     }
+   }
+   typeText2();
 
 
 
