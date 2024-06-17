@@ -318,19 +318,30 @@ var mais = [
 
 
 
-   var typing2 = " Carregando em cima em 'Migas' podes ver ainda mais.   Carrega duas vezes no fundo para ativar/desativar o Modo Escuro.   Os trabalhos estão ordenados por categoria e por data, com uma pequena descrição que se lê pairando o rato sobre o título do trabalho.  ";
-
+   var typing2 = "     (Carregando no topo superior esquerdo, em 'Migas', podes ver ainda mais aleatoriamente.)   ";
    var delay = 20; // em milisegundos
-   let i = 0;
+   let i2 = 0;
    function typeText2() {
-     if (i < typing2.length) {
-       document.getElementById("typing-text2").innerHTML += typing2.charAt(i);
-       i++;
+     if (i2 < typing2.length) {
+       document.getElementById("typing-text2").innerHTML += typing2.charAt(i2);
+       i2++;
        setTimeout(typeText2, delay);
      }
    }
    typeText2();
 
+
+   var typing3 = "  Os trabalhos estão ordenados por categoria e por data, com uma pequena descrição que se lê pairando o rato sobre o título do trabalho.  ";
+   var delay = 20; // em milisegundos
+   let i3 = 0;
+   function typeText3() {
+     if (i3 < typing3.length) {
+       document.getElementById("typing-text3").innerHTML += typing3.charAt(i3);
+       i3++;
+       setTimeout(typeText3, delay);
+     }
+   }
+   typeText3();
 
 
 //MOSTRAR TEXTO DE BOAS VINDAS LOGO QUANDO SE ABRE O WEBSITE (está inativo)
