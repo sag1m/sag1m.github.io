@@ -17,6 +17,10 @@
    ========================================================================== */
 
 
+
+
+
+
 /*METER UM RATO DECENTE - 2do*/
   #mouse-pointer {
            position: absolute;
@@ -282,7 +286,7 @@ h3{
   padding-bottom: 1rem;
 }
 
-#screen p {
+#screen p{
   padding-bottom: 10%;
 }
 
@@ -431,6 +435,10 @@ a:hover,p:hover{
 
 .trabalhos{
   font-size: 1.5rem;
+}
+
+.trabalhosDescricao{
+  font-size: 1rem;
 }
 
 #listaVideo, #listaImagem, #listaWeb, #listaOutros, #listaAudio, #listaMais{
@@ -961,3 +969,55 @@ body {
 
     }
 }
+
+
+
+
+
+
+.espacinho{
+  margin-bottom: 1.5rem;
+}
+
+
+
+
+
+
+
+   /*PÁGINAS SEPARADAS DE TRABALHOS*/
+
+   #screenInside{
+     max-height: 100vh;
+     box-sizing: border-box;
+     display: grid;
+     grid-template-columns: 20% 80%;
+     grid-template-rows: 20% 80%;
+     height: 100vh;
+     min-height: 100vh;
+     font-family: 'Inconsolata', monospace;
+ }
+
+ .insidepage{
+   height: 100vh;
+  overflow: scroll;
+ }
+
+
+
+   .insidepage img{
+     max-width: 25rem;
+     margin-top: 2rem;
+     margin-bottom: 2rem;
+     display: block;
+   }
+
+
+   .insidepage h2{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+   }
+
+   .insidepage p{
+     padding-bottom: 0;
+   }
