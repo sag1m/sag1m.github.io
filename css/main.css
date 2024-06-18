@@ -1018,6 +1018,10 @@ body {
   overflow: scroll;
  }
 
+#screenInside a {
+  display: contents;
+}
+
 
 
    .insidepage img{
