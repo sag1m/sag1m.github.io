@@ -287,13 +287,24 @@ var mais = [
   ' <div id="typing-text"></div> ',
 
   //Esta descrição é simples:
-  '<p>Gosto de passar tempo no computador e andar de bicicleta, no Porto.</p>  <p>migas@outlook.pt</p> ',
+  '<p>Gosto de passar tempo no computador e andar de bicicleta, no Porto.</p>  <p>mnamoras@outlook.pt</p>   <p>mais um parágrafo</p>',
 
   //esta decsrição é uam página externa que permitirá mais lberdade de merda e parágrafos e coisas. mas afinal não funcionou bem, que trabalheira  pra fazer isto bem.:
   //'<iframe alt="Sobre" class="youtube" frameBorder="0" src="sobre.html"></iframe>',
 
 
-  '<iframe alt="CV" class="youtube" frameBorder="0" src="cv.pdf"></iframe>'
+  // este é o código para o CV quando ele é um PDF:
+  //'<iframe alt="CV" class="youtube" frameBorder="0" src="cv.pdf"></iframe>',
+
+//Este é o código do CV quando ele é uma imagem:
+
+    '<a target="_blank" href="https://sag1m.github.io/cv2024.pdf"><img style="max-width="900px" src="cv2024.png"></img></a>',
+
+
+
+    //coisa nova da Vida Económica:
+    '<iframe alt="Trabalhos da Vida Económica" class="youtube" frameBorder="0" src="VE.html"></iframe>'
+
 ]
 
 //TEXTO A SER ESCRITO!!!!!!!!!!!! o de cima e também o menu bottomLeft a aparecer

@@ -301,7 +301,7 @@ h1{
   font-size: 3rem;
   margin-top: auto;
   margin-bottom: auto;
-  padding-left: 5vw;
+  /*padding-left: 5vw;*/
   /*text-align: center;
   vertical-align: middle;*/
   color: #222;
@@ -660,7 +660,7 @@ a:hover,p:hover{
 }
 
 .insidepage{
-  height: 100vh;
+  max-height: 100vh;
  overflow: scroll;
 }
 
@@ -1013,7 +1013,7 @@ body {
  }
 
  .insidepage{
-   height: 100vh;
+   max-height: 100vh;
   overflow: scroll;
  }
 
