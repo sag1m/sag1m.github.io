@@ -298,7 +298,7 @@ var mais = [
 
 //Este é o código do CV quando ele é uma imagem:
 
-    '<a target="_blank" href="https://sag1m.github.io/cv2024.pdf"><img style="max-width="900px" src="cv2024.png"></img></a>',
+    '<a alt="Carrega para ver o currículo" target="_blank" href="https://sag1m.github.io/cv2024.pdf"><img alt="Carrega para ver o currículo" class="imagem" style="" src="cv2024.png"></img></a>',
 
 
 
