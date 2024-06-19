@@ -287,7 +287,7 @@ var mais = [
   ' <div id="typing-text"></div> ',
 
   //Esta descrição é simples:
-  '<p>Gosto de passar tempo no computador e andar de bicicleta, no Porto.</p>  <p>mnamoras@outlook.pt</p>   <p>mais um parágrafo</p>',
+  '<p style="padding-bottom:1.5rem">Gosto de passar tempo no computador e andar de bicicleta, no Porto.</p>  <p style="padding-bottom:1.5rem">Disponível para Trabalhar.</p>   <p style="padding-bottom:1.5rem"><a href="mailto:mnamoras@outlook.pt">mnamoras@outlook.pt</a></p>   ',
 
   //esta decsrição é uam página externa que permitirá mais lberdade de merda e parágrafos e coisas. mas afinal não funcionou bem, que trabalheira  pra fazer isto bem.:
   //'<iframe alt="Sobre" class="youtube" frameBorder="0" src="sobre.html"></iframe>',

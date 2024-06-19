@@ -1024,18 +1024,17 @@ body {
 
 
    .insidepage img{
-     max-width: 25rem;
-     margin-top: 2rem;
+     max-width: 20rem;
      margin-bottom: 2rem;
      display: block;
    }
 
 
    .insidepage h2{
-    margin-top: 2rem;
+    /*margin-top: 2rem;*/
     margin-bottom: 1rem;
    }
 
    .insidepage p{
-     padding-bottom: 0;
+     padding-bottom: 1rem;
    }
