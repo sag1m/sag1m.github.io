@@ -409,7 +409,7 @@ var descricoesImagem = ["0",
 
 'Fotografia Panorâmica no Porto à beira rio.',
 
-'',
+'Fotografei e ajudei em vários eventos',
 
 ]
 var descricoesWeb = ["0",
@@ -420,7 +420,7 @@ var descricoesWeb = ["0",
 
 'Gerador de um website para fotografar, documentar e competir com cartas de suculentas. 2021',
 
-'',
+'Proposta de website para a Vida Económica - Um website com notícias de várias revistas e jornal e ainda livraria.',
 
 '',
 
@@ -434,7 +434,8 @@ var descricoesOutros = ["0",
 
 'Publicação sobre a Cafeína feita em Projeto de Impressão. 2020',
 
-'',
+'Publicações para as redes Sociais',
+
 '',
 ]
 
@@ -605,7 +606,7 @@ var trabalhosVideo = ["0",
 
     '<iframe alt="Amanhecer 2021" class="youtube" src="https://www.youtube.com/embed/uD2AljAy5q0?autoplay=1&enablejsapi=1&modestbranding=1&color=white&rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" rel="0" allowfullscreen></iframe>',
 
-    ''
+
 
   ];
 
@@ -620,6 +621,8 @@ var trabalhosVideo = ["0",
 
     '<div id="pan"><img class="height" src="PanSmall.jpg" alt="Fotografia Panorâmica tirada no Porto à beira rio. 2021"></div>',
 
+    '<iframe alt="Eventos" class="youtube" frameBorder="0" src="eventos.html"></iframe> ',
+
 
         '']
 
@@ -631,6 +634,7 @@ var trabalhosVideo = ["0",
 
     '<iframe alt="Gerador de um website para fotografar, documentar e competir com cartas de suculentas. 2021" class="youtube" frameBorder="0" src="gerador/index.html"></iframe>',
 
+      '<iframe alt="Porposta VE" class="youtube" frameBorder="0" src="ve/VEweb1.png"></iframe>    '
 
       ]
 
@@ -643,7 +647,7 @@ var trabalhosVideo = ["0",
     '<iframe alt="Publicação sobre a Cafeína feita em Projeto de Impressão. 2020" src="https://online.fliphtml5.com/dnvha/boah"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="youtube" ></iframe>',
 
 
-        '',
+        '<iframe alt="publicações para redes sociais" class="youtube" frameBorder="0" src="redes.html"></iframe>',
 
         '']
 
