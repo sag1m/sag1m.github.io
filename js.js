@@ -296,14 +296,13 @@ var mais = [
   // este é o código para o CV quando ele é um PDF:
   //'<iframe alt="CV" class="youtube" frameBorder="0" src="cv.pdf"></iframe>',
 
-//Este é o código do CV quando ele é uma imagem:
-
-    '<a alt="Carrega para ver o currículo" target="_blank" href="https://sag1m.github.io/cv2024.pdf"><img alt="Carrega para ver o currículo" class="imagem" style="" src="cv2024.png"></img></a>',
+  //Este é o código do CV quando ele é uma imagem:
+  '<a alt="Carrega para ver o currículo" target="_blank" href="https://sag1m.github.io/cv2024.pdf"><img alt="Carrega para ver o currículo" class="imagem" style="" src="cv2024.png"></img></a>',
 
 
 
     //coisa nova da Vida Económica:
-    '<iframe alt="Trabalhos da Vida Económica" class="youtube" frameBorder="0" src="VE.html"></iframe>'
+    //'<iframe alt="Trabalhos da Vida Económica" class="youtube" frameBorder="0" src="VE.html"></iframe>'
 
 ]
 
@@ -434,9 +433,9 @@ var descricoesOutros = ["0",
 
 'Publicação sobre a Cafeína feita em Projeto de Impressão. 2020',
 
-'Publicações para as redes Sociais',
+'Publicações para as Redes Sociais',
 
-'',
+'Logotipos desenvolvidos',
 ]
 
 
@@ -650,10 +649,12 @@ var trabalhosVideo = ["0",
 
     '<iframe alt="Publicação sobre a Cafeína feita em Projeto de Impressão. 2020" src="https://online.fliphtml5.com/dnvha/boah"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="youtube" ></iframe>',
 
+    '<iframe alt="publicações para redes sociais" class="youtube" frameBorder="0" src="redes.html"></iframe>',
 
-        '<iframe alt="publicações para redes sociais" class="youtube" frameBorder="0" src="redes.html"></iframe>',
+    '<iframe alt="logotipos desenvolvidos" class="youtube" frameBorder="0" src="logos.html"></iframe>',
 
-        '']
+    ''
+  ]
 
 
 //DARK MODE EXP. obrigado chatgpt

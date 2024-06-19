@@ -1013,7 +1013,7 @@ body {
  }
 
  .insidepage{
-   height: 100vh;
+   max-height: 100vh;
   overflow: scroll;
  }
 
@@ -1024,16 +1024,16 @@ body {
 
 
    .insidepage img{
-     max-width: 25rem;
+     max-width: 20rem;
      margin-top: 2rem;
-     margin-bottom: 2rem;
+     margin-bottom: 10rem;
      display: block;
    }
 
 
    .insidepage h2{
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    /*margin-top: 2rem;
+    margin-bottom: 1rem;*/
    }
 
    .insidepage p{
