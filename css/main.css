@@ -21,6 +21,10 @@
 
 
 
+
+
+
+
 /*METER UM RATO DECENTE - 2do*/
   /*#mouse-pointer {
            position: absolute;
@@ -287,7 +291,13 @@ textarea {
   min-height: 100vh;
 
 
-  font-family: 'Inconsolata', monospace;
+  /*font-family: 'Inconsolata', monospace;*/
+
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 
 
 
