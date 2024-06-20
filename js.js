@@ -306,16 +306,22 @@ var mais = [
 
 ]
 
-//TEXTO A SER ESCRITO!!!!!!!!!!!! o de cima e também o menu bottomLeft a aparecer
-  //var typing = 'Olá. Aqui estão alguns trabalhos que fiz. Carregando em Migas podes ver mais.';
 
-  setTimeout(function() {
-  bottomLeft.style.opacity = "1";
+
+//esperar 2 segundos anets de aparecer os menus
+setTimeout(function() {
+bottomLeft.style.opacity = "1";
 }, 2000);
 
- var typing = " Aqui estão alguns trabalhos que fiz.  ";
 
+
+
+
+
+//TEXTO A SER ESCRITO!!!!!!!!!!!! o de cima e também o menu bottomLeft a aparecer
   var delay = 20; // em milisegundos
+
+ var typing = "Aqui estão alguns trabalhos que fiz.";
   let i = 0;
   function typeText() {
     if (i < typing.length) {
@@ -326,10 +332,7 @@ var mais = [
   }
   typeText();
 
-
-
-   var typing2 = "     (Carregando no topo superior esquerdo, em 'Migas', podes ver ainda mais aleatoriamente.)   ";
-   var delay = 20; // em milisegundos
+   var typing2 = "Carregando no topo superior esquerdo, em 'Migas', podes ver ainda mais aleatoriamente.";
    let i2 = 0;
    function typeText2() {
      if (i2 < typing2.length) {
@@ -340,9 +343,7 @@ var mais = [
    }
    typeText2();
 
-
-   var typing3 = "  Os trabalhos estão ordenados por categoria e por data, com uma pequena descrição que se lê pairando o rato sobre o título do trabalho.  ";
-   var delay = 20; // em milisegundos
+   var typing3 = "Os trabalhos estão ordenados por categoria e por data, com uma pequena descrição que se lê pairando o rato sobre o título do trabalho.";
    let i3 = 0;
    function typeText3() {
      if (i3 < typing3.length) {
@@ -352,6 +353,18 @@ var mais = [
      }
    }
    typeText3();
+
+   var typing4 = "Programei este site, escrevi a maior parte do código e ele está comentado";//yes it is. yes, lots of copy paste. but also lots of fun and misery
+   let i4 = 0;
+   function typeText4() {
+     if (i4 < typing4.length) {
+       document.getElementById("typing-text4").innerHTML += typing4.charAt(i4);
+       i4++;
+       setTimeout(typeText4, delay);
+     }
+   }
+   typeText4();
+
 
 
 //MOSTRAR TEXTO DE BOAS VINDAS LOGO QUANDO SE ABRE O WEBSITE (está inativo)

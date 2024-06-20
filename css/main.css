@@ -114,16 +114,27 @@ a:not(.active):hover {}
  */
 
  ::-moz-selection {
-   background: #222;
+   /*background: #222;
    color: white;
-   text-shadow: none;
+   text-shadow: none;*/
+   color: #0d018c;
+   background: none;
  }
 
  ::selection {
-   background: #222;
+   /*background: #222;
    color: white;
-   text-shadow: none;
+   text-shadow: none;*/
+    color: #0d018c;
+    background: none;
  }
+
+
+ p, p:hover{
+   cursor: default;
+ }
+
+
 
 /*
  * Uma hr mais elegante que a default
@@ -350,6 +361,8 @@ h1{
 }*/
 
 
+
+/*
 img:hover{
   animation: sombraImg 2s infinite;
   animation-delay: 10s;
@@ -363,16 +376,20 @@ img:hover{
   40%  {box-shadow: 1px 0px 0px #7ca8ff, -2px 0px 0px #ff7c7c;}
   60% {box-shadow: 0px 0px 0px #7ca8ff, 0px 0px 0px #ff7c7c;}
 
-}
+}*/
 
+
+/*
 p:hover{
 
 }
-#wait:hover{cursor:wait;}
+#wait:hover{cursor:wait;}*/
 
+
+/*
 a:hover,p:hover{
   cursor: default;
-}
+}*/
 
 
 
