@@ -1,12 +1,9 @@
 ﻿CACHE MANIFEST
-#1719085042
+#1719098944
 data.js
 c2runtime.js
 jquery-2.1.1.min.js
 images/vaso-sheet0.png
-images/vaso-sheet1.png
-images/vaso-sheet2.png
-images/vaso-sheet3.png
 images/personagem-sheet0.png
 images/regador-sheet0.png
 images/regador-sheet1.png
@@ -14,13 +11,13 @@ images/ventoínha-sheet0.png
 images/ventoínha-sheet1.png
 images/semente-sheet0.png
 images/planta-sheet0.png
-images/planta-sheet1.png
-images/planta-sheet2.png
 images/fundo-sheet0.png
 images/lâmpada-sheet0.png
 images/blocoui-sheet0.png
 images/pc-sheet0.png
 images/close-sheet0.png
+images/sprite-sheet0.png
+images/balão-sheet0.png
 icon-16.png
 icon-32.png
 icon-114.png
