@@ -19629,6 +19629,239 @@ cr.plugins_.Touch = function(runtime)
 }());
 ;
 ;
+cr.plugins_.progressbar = function(runtime)
+{
+	this.runtime = runtime;
+};
+(function ()
+{
+	var pluginProto = cr.plugins_.progressbar.prototype;
+	pluginProto.Type = function(plugin)
+	{
+		this.plugin = plugin;
+		this.runtime = plugin.runtime;
+	};
+	var typeProto = pluginProto.Type.prototype;
+	typeProto.onCreate = function()
+	{
+	};
+	pluginProto.Instance = function(type)
+	{
+		this.type = type;
+		this.runtime = type.runtime;
+	};
+	var instanceProto = pluginProto.Instance.prototype;
+	instanceProto.onCreate = function()
+	{
+		if (this.runtime.isDomFree)
+		{
+			cr.logexport("[Construct 2] Progress Bar plugin not supported on this platform - the object will not be created");
+			return;
+		}
+		this.elem = document.createElement("progress");
+		this.value = this.properties[0];
+		this.max = this.properties[1];
+		if (this.max > 0 && this.value >= 0)
+		{
+			this.elem["max"] = this.max;
+			this.elem["value"] = this.value;
+		}
+		this.elem.id = this.properties[4];
+		this.elem.title = this.properties[2];
+		jQuery(this.elem).appendTo(this.runtime.canvasdiv ? this.runtime.canvasdiv : "body");
+		this.element_hidden = false;
+		if (this.properties[3] === 0)
+		{
+			jQuery(this.elem).hide();
+			this.visible = false;
+			this.element_hidden = true;
+		}
+		this.elem.onclick = (function (self) {
+			return function(e) {
+				e.stopPropagation();
+				self.runtime.isInUserInputEvent = true;
+				self.runtime.trigger(cr.plugins_.progressbar.prototype.cnds.OnClicked, self);
+				self.runtime.isInUserInputEvent = false;
+			};
+		})(this);
+		this.elem.addEventListener("touchstart", function (e) {
+			e.stopPropagation();
+		}, false);
+		this.elem.addEventListener("touchmove", function (e) {
+			e.stopPropagation();
+		}, false);
+		this.elem.addEventListener("touchend", function (e) {
+			e.stopPropagation();
+		}, false);
+		jQuery(this.elem).mousedown(function (e) {
+			e.stopPropagation();
+		});
+		jQuery(this.elem).mouseup(function (e) {
+			e.stopPropagation();
+		});
+		this.lastLeft = 0;
+		this.lastTop = 0;
+		this.lastRight = 0;
+		this.lastBottom = 0;
+		this.lastWinWidth = 0;
+		this.lastWinHeight = 0;
+		this.updatePosition(true);
+		this.runtime.tickMe(this);
+	};
+	instanceProto.saveToJSON = function ()
+	{
+		var o = {
+			"v": this.elem["value"],
+			"m": this.elem["max"]
+		};
+		return o;
+	};
+	instanceProto.loadFromJSON = function (o)
+	{
+		this.elem["value"] = o["v"];
+		this.elem["max"] = o["m"];
+	};
+	instanceProto.onDestroy = function ()
+	{
+		if (this.runtime.isDomFree)
+			return;
+		jQuery(this.elem).remove();
+		this.elem = null;
+	};
+	instanceProto.tick = function ()
+	{
+		this.updatePosition();
+	};
+	var last_canvas_offset = null;
+	var last_checked_tick = -1;
+	instanceProto.updatePosition = function (first)
+	{
+		if (this.runtime.isDomFree)
+			return;
+		var left = this.layer.layerToCanvas(this.x, this.y, true);
+		var top = this.layer.layerToCanvas(this.x, this.y, false);
+		var right = this.layer.layerToCanvas(this.x + this.width, this.y + this.height, true);
+		var bottom = this.layer.layerToCanvas(this.x + this.width, this.y + this.height, false);
+		var rightEdge = this.runtime.width / this.runtime.devicePixelRatio;
+		var bottomEdge = this.runtime.height / this.runtime.devicePixelRatio;
+		if (!this.visible || !this.layer.visible || right <= 0 || bottom <= 0 || left >= rightEdge || top >= bottomEdge)
+		{
+			if (!this.element_hidden)
+				jQuery(this.elem).hide();
+			this.element_hidden = true;
+			return;
+		}
+		if (left < 1)
+			left = 1;
+		if (top < 1)
+			top = 1;
+		if (right >= rightEdge)
+			right = rightEdge - 1;
+		if (bottom >= bottomEdge)
+			bottom = bottomEdge - 1;
+		var curWinWidth = window.innerWidth;
+		var curWinHeight = window.innerHeight;
+		if (!first && this.lastLeft === left && this.lastTop === top && this.lastRight === right && this.lastBottom === bottom && this.lastWinWidth === curWinWidth && this.lastWinHeight === curWinHeight)
+		{
+			if (this.element_hidden)
+			{
+				jQuery(this.elem).show();
+				this.element_hidden = false;
+			}
+			return;
+		}
+		this.lastLeft = left;
+		this.lastTop = top;
+		this.lastRight = right;
+		this.lastBottom = bottom;
+		this.lastWinWidth = curWinWidth;
+		this.lastWinHeight = curWinHeight;
+		if (this.element_hidden)
+		{
+			jQuery(this.elem).show();
+			this.element_hidden = false;
+		}
+		var offx = Math.round(left) + jQuery(this.runtime.canvas).offset().left;
+		var offy = Math.round(top) + jQuery(this.runtime.canvas).offset().top;
+		jQuery(this.elem).css("position", "absolute");
+		jQuery(this.elem).offset({left: offx, top: offy});
+		jQuery(this.elem).width(Math.round(right - left));
+		jQuery(this.elem).height(Math.round(bottom - top));
+	};
+	instanceProto.draw = function(ctx)
+	{
+	};
+	instanceProto.drawGL = function(glw)
+	{
+	};
+	function Cnds() {};
+	Cnds.prototype.OnClicked = function ()
+	{
+		return true;
+	};
+	Cnds.prototype.CompareProgress = function (cmp, x)
+	{
+		if (this.isDomFree)
+			return false;
+		return cr.do_cmp(this.elem["value"], cmp, x);
+	};
+	pluginProto.cnds = new Cnds();
+	function Acts() {};
+	Acts.prototype.SetTooltip = function (text)
+	{
+		if (this.runtime.isDomFree)
+			return;
+		this.elem.title = text;
+	};
+	Acts.prototype.SetVisible = function (vis)
+	{
+		if (this.runtime.isDomFree)
+			return;
+		this.visible = (vis !== 0);
+	};
+	Acts.prototype.SetCSSStyle = function (p, v)
+	{
+		if (this.runtime.isDomFree)
+			return;
+		jQuery(this.elem).css(p, v);
+	};
+	Acts.prototype.SetProgress = function (x)
+	{
+		if (this.runtime.isDomFree)
+			return;
+		this.value = x;
+		this.elem["max"] = this.max;
+		this.elem["value"] = this.value;
+	};
+	Acts.prototype.SetMaximum = function (x)
+	{
+		if (this.runtime.isDomFree)
+			return;
+		this.max = x;
+		this.elem["max"] = this.max;
+		this.elem["value"] = this.value;
+	};
+	Acts.prototype.SetIndeterminate = function ()
+	{
+		if (this.runtime.isDomFree)
+			return;
+		this.elem.removeAttribute("value");
+		this.elem.removeAttribute("max");
+	};
+	pluginProto.acts = new Acts();
+	function Exps() {};
+	Exps.prototype.Progress = function (ret)
+	{
+		ret.set_float(this.runtime.isDomFree ? 0 : this.elem["value"]);
+	};
+	Exps.prototype.Maximum = function (ret)
+	{
+		ret.set_float(this.runtime.isDomFree ? 0 : this.elem["max"]);
+	};
+	pluginProto.exps = new Exps();
+}());
+;
+;
 cr.behaviors.DragnDrop = function(runtime)
 {
 	this.runtime = runtime;
@@ -20756,6 +20989,7 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Button,
 	cr.plugins_.Function,
 	cr.plugins_.Mouse,
+	cr.plugins_.progressbar,
 	cr.plugins_.Touch,
 	cr.plugins_.Sprite,
 	cr.plugins_.Text,
@@ -20798,17 +21032,17 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.cnds.CompareX,
 	cr.plugins_.Sprite.prototype.exps.X,
 	cr.plugins_.Sprite.prototype.acts.SetFlipped,
-	cr.plugins_.Sprite.prototype.cnds.IsOverlappingOffset,
-	cr.system_object.prototype.acts.AddVar,
-	cr.plugins_.Sprite.prototype.cnds.IsOverlapping,
 	cr.system_object.prototype.acts.SubVar,
 	cr.plugins_.Sprite.prototype.cnds.IsBoolInstanceVarSet,
+	cr.system_object.prototype.acts.AddVar,
 	cr.system_object.prototype.cnds.Else,
 	cr.plugins_.Sprite.prototype.acts.SetBoolInstanceVar,
 	cr.plugins_.Touch.prototype.cnds.OnDoubleTapGestureObject,
 	cr.system_object.prototype.cnds.Compare,
 	cr.system_object.prototype.exps.distance,
 	cr.plugins_.Sprite.prototype.exps.Y,
+	cr.plugins_.Sprite.prototype.cnds.IsOverlappingOffset,
+	cr.plugins_.Sprite.prototype.cnds.IsOverlapping,
 	cr.behaviors.DragnDrop.prototype.cnds.OnDrop,
 	cr.plugins_.Sprite.prototype.acts.Destroy,
 	cr.plugins_.Sprite.prototype.acts.Spawn,

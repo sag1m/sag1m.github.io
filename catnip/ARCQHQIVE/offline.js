@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1719187195,
+	"version": 1719167966,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -23,9 +23,7 @@
 		"images/termometro-sheet0.png",
 		"images/computador-sheet0.png",
 		"images/computador2-sheet0.png",
-		"images/comprartermometrobotao-sheet0.png",
-		"images/ramo-sheet0.png",
-		"images/folha-sheet0.png",
+		"images/botaocomprar-sheet0.png",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",
