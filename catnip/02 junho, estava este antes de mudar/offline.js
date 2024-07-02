@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1719948978,
+	"version": 1719884965,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -10,9 +10,10 @@
 		"img/regador-sheet0.png",
 		"img/regador-sheet1.png",
 		"img/ventoínha-sheet0.png",
-		"img/ventoínha-sheet1.png",
 		"img/semente-sheet0.png",
 		"img/planta-sheet0.png",
+		"img/planta-sheet1.png",
+		"img/planta-sheet2.png",
 		"img/fundoescuro-sheet0.png",
 		"img/lâmpada-sheet0.png",
 		"img/blocoui-sheet0.png",
@@ -24,7 +25,6 @@
 		"img/close2-sheet0.png",
 		"img/ramo-sheet0.png",
 		"img/folha-sheet0.png",
-		"img/comprarventoínhabotao-sheet0.png",
 		"img/fundoclaro-sheet0.png",
 		"img/shoptitle-sheet0.png",
 		"img/welcome-sheet0.png",
