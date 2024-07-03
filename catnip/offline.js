@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1719963609,
+	"version": 1720020579,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -20,7 +20,8 @@
 		"img/close-sheet0.png",
 		"img/balão-sheet0.png",
 		"img/termometro-sheet0.png",
-		"img/computador-sheet0.png",
+		"img/telemóvel-sheet0.png",
+		"img/telemóvelecrã-sheet0.png",
 		"img/close2-sheet0.png",
 		"img/ramo-sheet0.png",
 		"img/folha-sheet0.png",
@@ -28,6 +29,9 @@
 		"img/fundoclaro-sheet0.png",
 		"img/shoptitle-sheet0.png",
 		"img/welcome-sheet0.png",
+		"img/tiledbackground.png",
+		"img/sprite-sheet0.png",
+		"img/sprite2-sheet0.png",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",
