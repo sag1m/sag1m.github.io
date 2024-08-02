@@ -21449,14 +21449,14 @@ cr.behaviors.solid = function(runtime)
 	behaviorProto.acts = new Acts();
 }());
 cr.getObjectRefTable = function () { return [
+	cr.plugins_.Arr,
 	cr.plugins_.Button,
 	cr.plugins_.Function,
 	cr.plugins_.Mouse,
+	cr.plugins_.TiledBg,
 	cr.plugins_.Sprite,
 	cr.plugins_.Text,
 	cr.plugins_.Touch,
-	cr.plugins_.TiledBg,
-	cr.plugins_.Arr,
 	cr.behaviors.bound,
 	cr.behaviors.DragnDrop,
 	cr.behaviors.Turret,
