@@ -20423,6 +20423,123 @@ cr.behaviors.Fade = function(runtime)
 }());
 ;
 ;
+cr.behaviors.Flash = function(runtime)
+{
+	this.runtime = runtime;
+};
+(function ()
+{
+	var behaviorProto = cr.behaviors.Flash.prototype;
+	behaviorProto.Type = function(behavior, objtype)
+	{
+		this.behavior = behavior;
+		this.objtype = objtype;
+		this.runtime = behavior.runtime;
+	};
+	var behtypeProto = behaviorProto.Type.prototype;
+	behtypeProto.onCreate = function()
+	{
+	};
+	behaviorProto.Instance = function(type, inst)
+	{
+		this.type = type;
+		this.behavior = type.behavior;
+		this.inst = inst;				// associated object instance to modify
+		this.runtime = type.runtime;
+	};
+	var behinstProto = behaviorProto.Instance.prototype;
+	behinstProto.onCreate = function()
+	{
+		this.ontime = 0;
+		this.offtime = 0;
+		this.stage = 0;			// 0 = on, 1 = off
+		this.stagetimeleft = 0;
+		this.timeleft = 0;
+	};
+	behinstProto.saveToJSON = function ()
+	{
+		return {
+			"ontime": this.ontime,
+			"offtime": this.offtime,
+			"stage": this.stage,
+			"stagetimeleft": this.stagetimeleft,
+			"timeleft": this.timeleft
+		};
+	};
+	behinstProto.loadFromJSON = function (o)
+	{
+		this.ontime = o["ontime"];
+		this.offtime = o["offtime"];
+		this.stage = o["stage"];
+		this.stagetimeleft = o["stagetimeleft"];
+		this.timeleft = o["timeleft"];
+	};
+	behinstProto.tick = function ()
+	{
+		if (this.timeleft <= 0)
+			return;		// not flashing
+		var dt = this.runtime.getDt(this.inst);
+		this.timeleft -= dt;
+		if (this.timeleft <= 0)
+		{
+			this.timeleft = 0;
+			this.inst.visible = true;
+			this.runtime.redraw = true;
+			this.runtime.trigger(cr.behaviors.Flash.prototype.cnds.OnFlashEnded, this.inst);
+			return;
+		}
+		this.stagetimeleft -= dt;
+		if (this.stagetimeleft <= 0)
+		{
+			if (this.stage === 0)
+			{
+				this.inst.visible = false;
+				this.stage = 1;
+				this.stagetimeleft += this.offtime;
+			}
+			else
+			{
+				this.inst.visible = true;
+				this.stage = 0;
+				this.stagetimeleft += this.ontime;
+			}
+			this.runtime.redraw = true;
+		}
+	};
+	function Cnds() {};
+	Cnds.prototype.IsFlashing = function ()
+	{
+		return this.timeleft > 0;
+	};
+	Cnds.prototype.OnFlashEnded = function ()
+	{
+		return true;
+	};
+	behaviorProto.cnds = new Cnds();
+	function Acts() {};
+	Acts.prototype.Flash = function (on_, off_, dur_)
+	{
+		this.ontime = on_;
+		this.offtime = off_;
+		this.stage = 1;		// always start off
+		this.stagetimeleft = off_;
+		this.timeleft = dur_;
+		this.inst.visible = false;
+		this.runtime.redraw = true;
+	};
+	Acts.prototype.StopFlashing = function ()
+	{
+		this.timeleft = 0;
+		this.inst.visible = true;
+		this.runtime.redraw = true;
+		return;
+	};
+	behaviorProto.acts = new Acts();
+	function Exps() {};
+	behaviorProto.exps = new Exps();
+}());
+;
+;
 cr.behaviors.Pin = function(runtime)
 {
 	this.runtime = runtime;
@@ -21403,6 +21520,328 @@ cr.behaviors.bound = function(runtime)
 }());
 ;
 ;
+cr.behaviors.custom = function(runtime)
+{
+	this.runtime = runtime;
+};
+(function ()
+{
+	var behaviorProto = cr.behaviors.custom.prototype;
+	behaviorProto.Type = function(behavior, objtype)
+	{
+		this.behavior = behavior;
+		this.objtype = objtype;
+		this.runtime = behavior.runtime;
+	};
+	var behtypeProto = behaviorProto.Type.prototype;
+	behtypeProto.onCreate = function()
+	{
+	};
+	behaviorProto.Instance = function(type, inst)
+	{
+		this.type = type;
+		this.behavior = type.behavior;
+		this.inst = inst;
+		this.runtime = type.runtime;
+		this.dx = 0;
+		this.dy = 0;
+		this.cancelStep = 0;
+	};
+	var behinstProto = behaviorProto.Instance.prototype;
+	behinstProto.onCreate = function()
+	{
+		this.stepMode = this.properties[0];	// 0=None, 1=Linear, 2=Horizontal then vertical, 3=Vertical then horizontal
+		this.pxPerStep = this.properties[1];
+		this.enabled = (this.properties[2] !== 0);
+	};
+	behinstProto.saveToJSON = function ()
+	{
+		return {
+			"dx": this.dx,
+			"dy": this.dy,
+			"cancelStep": this.cancelStep,
+			"enabled": this.enabled,
+			"stepMode": this.stepMode,
+			"pxPerStep": this.pxPerStep
+		};
+	};
+	behinstProto.loadFromJSON = function (o)
+	{
+		this.dx = o["dx"];
+		this.dy = o["dy"];
+		this.cancelStep = o["cancelStep"];
+		this.enabled = o["enabled"];
+		this.stepMode = o["stepMode"];
+		this.pxPerStep = o["pxPerStep"];
+	};
+	behinstProto.getSpeed = function ()
+	{
+		return Math.sqrt(this.dx * this.dx + this.dy * this.dy);
+	};
+	behinstProto.getAngle = function ()
+	{
+		return Math.atan2(this.dy, this.dx);
+	};
+	function sign(x)
+	{
+		if (x === 0)
+			return 0;
+		else if (x < 0)
+			return -1;
+		else
+			return 1;
+	};
+	behinstProto.step = function (x, y, trigmethod)
+	{
+		if (x === 0 && y === 0)
+			return;
+		var startx = this.inst.x;
+		var starty = this.inst.y;
+		var sx, sy, prog;
+		var steps = Math.round(Math.sqrt(x * x + y * y) / this.pxPerStep);
+		if (steps === 0)
+			steps = 1;
+		var i;
+		for (i = 1; i <= steps; i++)
+		{
+			prog = i / steps;
+			this.inst.x = startx + x * prog;
+			this.inst.y = starty + y * prog;
+			this.inst.set_bbox_changed();
+			this.runtime.trigger(trigmethod, this.inst);
+			if (this.cancelStep === 1)
+			{
+				i--;
+				prog = i / steps;
+				this.inst.x = startx + x * prog;
+				this.inst.y = starty + y * prog;
+				this.inst.set_bbox_changed();
+				return;
+			}
+			else if (this.cancelStep === 2)
+			{
+				return;
+			}
+		}
+	};
+	behinstProto.tick = function ()
+	{
+		var dt = this.runtime.getDt(this.inst);
+		var mx = this.dx * dt;
+		var my = this.dy * dt;
+		var i, steps;
+		if ((this.dx === 0 && this.dy === 0) || !this.enabled)
+			return;
+		this.cancelStep = 0;
+		if (this.stepMode === 0)		// none
+		{
+			this.inst.x += mx;
+			this.inst.y += my;
+		}
+		else if (this.stepMode === 1)	// linear
+		{
+			this.step(mx, my, cr.behaviors.custom.prototype.cnds.OnCMStep);
+		}
+		else if (this.stepMode === 2)	// horizontal then vertical
+		{
+			this.step(mx, 0, cr.behaviors.custom.prototype.cnds.OnCMHorizStep);
+			this.cancelStep = 0;
+			this.step(0, my, cr.behaviors.custom.prototype.cnds.OnCMVertStep);
+		}
+		else if (this.stepMode === 3)	// vertical then horizontal
+		{
+			this.step(0, my, cr.behaviors.custom.prototype.cnds.OnCMVertStep);
+			this.cancelStep = 0;
+			this.step(mx, 0, cr.behaviors.custom.prototype.cnds.OnCMHorizStep);
+		}
+		this.inst.set_bbox_changed();
+	};
+	function Cnds() {};
+	Cnds.prototype.IsMoving = function ()
+	{
+		return this.dx != 0 || this.dy != 0;
+	};
+	Cnds.prototype.CompareSpeed = function (axis, cmp, s)
+	{
+		var speed;
+		switch (axis) {
+		case 0:		speed = this.getSpeed();	break;
+		case 1:		speed = this.dx;			break;
+		case 2:		speed = this.dy;			break;
+		}
+		return cr.do_cmp(speed, cmp, s);
+	};
+	Cnds.prototype.OnCMStep = function ()
+	{
+		return true;
+	};
+	Cnds.prototype.OnCMHorizStep = function ()
+	{
+		return true;
+	};
+	Cnds.prototype.OnCMVertStep = function ()
+	{
+		return true;
+	};
+	behaviorProto.cnds = new Cnds();
+	function Acts() {};
+	Acts.prototype.Stop = function ()
+	{
+		this.dx = 0;
+		this.dy = 0;
+	};
+	Acts.prototype.Reverse = function (axis)
+	{
+		switch (axis) {
+		case 0:
+			this.dx *= -1;
+			this.dy *= -1;
+			break;
+		case 1:
+			this.dx *= -1;
+			break;
+		case 2:
+			this.dy *= -1;
+			break;
+		}
+	};
+	Acts.prototype.SetSpeed = function (axis, s)
+	{
+		var a;
+		switch (axis) {
+		case 0:
+			a = this.getAngle();
+			this.dx = Math.cos(a) * s;
+			this.dy = Math.sin(a) * s;
+			break;
+		case 1:
+			this.dx = s;
+			break;
+		case 2:
+			this.dy = s;
+			break;
+		}
+	};
+	Acts.prototype.Accelerate = function (axis, acc)
+	{
+		var dt = this.runtime.getDt(this.inst);
+		var ds = acc * dt;
+		var a;
+		switch (axis) {
+		case 0:
+			a = this.getAngle();
+			this.dx += Math.cos(a) * ds;
+			this.dy += Math.sin(a) * ds;
+			break;
+		case 1:
+			this.dx += ds;
+			break;
+		case 2:
+			this.dy += ds;
+			break;
+		}
+	};
+	Acts.prototype.AccelerateAngle = function (acc, a_)
+	{
+		var dt = this.runtime.getDt(this.inst);
+		var ds = acc * dt;
+		var a = cr.to_radians(a_);
+		this.dx += Math.cos(a) * ds;
+		this.dy += Math.sin(a) * ds;
+	};
+	Acts.prototype.AcceleratePos = function (acc, x, y)
+	{
+		var dt = this.runtime.getDt(this.inst);
+		var ds = acc * dt;
+		var a = Math.atan2(y - this.inst.y, x - this.inst.x);
+		this.dx += Math.cos(a) * ds;
+		this.dy += Math.sin(a) * ds;
+	};
+	Acts.prototype.SetAngleOfMotion = function (a_)
+	{
+		var a = cr.to_radians(a_);
+		var s = this.getSpeed();
+		this.dx = Math.cos(a) * s;
+		this.dy = Math.sin(a) * s;
+	};
+	Acts.prototype.RotateAngleOfMotionClockwise = function (a_)
+	{
+		var a = this.getAngle() + cr.to_radians(a_);
+		var s = this.getSpeed();
+		this.dx = Math.cos(a) * s;
+		this.dy = Math.sin(a) * s;
+	};
+	Acts.prototype.RotateAngleOfMotionCounterClockwise = function (a_)
+	{
+		var a = this.getAngle() - cr.to_radians(a_);
+		var s = this.getSpeed();
+		this.dx = Math.cos(a) * s;
+		this.dy = Math.sin(a) * s;
+	};
+	Acts.prototype.StopStepping = function (mode)
+	{
+		this.cancelStep = mode + 1;
+	};
+	Acts.prototype.PushOutSolid = function (mode)
+	{
+		var a, ux, uy;
+		switch (mode) {
+		case 0:
+			a = this.getAngle();
+			ux = Math.cos(a);
+			uy = Math.sin(a);
+			this.runtime.pushOutSolid(this.inst, -ux, -uy, Math.max(this.getSpeed() * 3, 100));
+			break;
+		case 1:
+			this.runtime.pushOutSolidNearest(this.inst);
+			break;
+		case 2:
+			this.runtime.pushOutSolid(this.inst, 0, -1, Math.max(Math.abs(this.dy) * 3, 100));
+			break;
+		case 3:
+			this.runtime.pushOutSolid(this.inst, 0, 1, Math.max(Math.abs(this.dy) * 3, 100));
+			break;
+		case 4:
+			this.runtime.pushOutSolid(this.inst, -1, 0, Math.max(Math.abs(this.dx) * 3, 100));
+			break;
+		case 5:
+			this.runtime.pushOutSolid(this.inst, 1, 0, Math.max(Math.abs(this.dx) * 3, 100));
+			break;
+		}
+	};
+	Acts.prototype.PushOutSolidAngle = function (a)
+	{
+		a = cr.to_radians(a);
+		var ux = Math.cos(a);
+		var uy = Math.sin(a);
+		this.runtime.pushOutSolid(this.inst, ux, uy, Math.max(this.getSpeed() * 3, 100));
+	};
+	Acts.prototype.SetEnabled = function (en)
+	{
+		this.enabled = (en === 1);
+	};
+	behaviorProto.acts = new Acts();
+	function Exps() {};
+	Exps.prototype.Speed = function (ret)
+	{
+		ret.set_float(this.getSpeed());
+	};
+	Exps.prototype.MovingAngle = function (ret)
+	{
+		ret.set_float(cr.to_degrees(this.getAngle()));
+	};
+	Exps.prototype.dx = function (ret)
+	{
+		ret.set_float(this.dx);
+	};
+	Exps.prototype.dy = function (ret)
+	{
+		ret.set_float(this.dy);
+	};
+	behaviorProto.exps = new Exps();
+}());
+;
+;
 cr.behaviors.solid = function(runtime)
 {
 	this.runtime = runtime;
@@ -21454,20 +21893,25 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Function,
 	cr.plugins_.Mouse,
 	cr.plugins_.TiledBg,
-	cr.plugins_.Sprite,
-	cr.plugins_.Text,
 	cr.plugins_.Touch,
+	cr.plugins_.Text,
+	cr.plugins_.Sprite,
 	cr.behaviors.bound,
 	cr.behaviors.DragnDrop,
 	cr.behaviors.Turret,
 	cr.behaviors.solid,
+	cr.behaviors.Flash,
 	cr.behaviors.Pin,
+	cr.behaviors.custom,
 	cr.behaviors.Sin,
 	cr.behaviors.Fade,
 	cr.system_object.prototype.cnds.OnLayoutStart,
 	cr.system_object.prototype.acts.SetLayerVisible,
 	cr.plugins_.Sprite.prototype.acts.StopAnim,
 	cr.plugins_.Sprite.prototype.acts.SetAnimFrame,
+	cr.behaviors.Sin.prototype.acts.SetMovement,
+	cr.behaviors.Sin.prototype.acts.SetPeriod,
+	cr.behaviors.Sin.prototype.acts.SetActive,
 	cr.system_object.prototype.cnds.IsGroupActive,
 	cr.behaviors.Pin.prototype.acts.Pin,
 	cr.system_object.prototype.cnds.EveryTick,
@@ -21480,9 +21924,9 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.acts.SetVisible,
 	cr.system_object.prototype.acts.Wait,
 	cr.plugins_.Text.prototype.acts.Destroy,
+	cr.behaviors.Fade.prototype.acts.StartFade,
 	cr.plugins_.Text.prototype.acts.SetVisible,
 	cr.plugins_.Sprite.prototype.acts.AddInstanceVar,
-	cr.behaviors.Fade.prototype.acts.StartFade,
 	cr.plugins_.Touch.prototype.cnds.OnTapGestureObject,
 	cr.plugins_.Sprite.prototype.cnds.IsVisible,
 	cr.plugins_.Sprite.prototype.cnds.CompareInstanceVar,
@@ -21501,6 +21945,7 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.cnds.CompareX,
 	cr.plugins_.Sprite.prototype.exps.X,
 	cr.plugins_.Sprite.prototype.acts.SetFlipped,
+	cr.plugins_.Sprite.prototype.acts.SetMirrored,
 	cr.plugins_.Sprite.prototype.cnds.IsOverlappingOffset,
 	cr.system_object.prototype.acts.AddVar,
 	cr.plugins_.Sprite.prototype.cnds.IsOverlapping,
@@ -21517,5 +21962,6 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.acts.Spawn,
 	cr.plugins_.Mouse.prototype.cnds.IsOverObject,
 	cr.plugins_.Sprite.prototype.acts.SetScale,
-	cr.behaviors.DragnDrop.prototype.cnds.OnDragStart
+	cr.behaviors.DragnDrop.prototype.cnds.OnDragStart,
+	cr.plugins_.Mouse.prototype.acts.SetCursor
 ];};

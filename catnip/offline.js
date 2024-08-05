@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1722605808,
+	"version": 1722875695,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -32,7 +32,7 @@
 		"img/tiledbackground.png",
 		"img/sprite-sheet0.png",
 		"img/sprite2-sheet0.png",
-		"img/sprite3-sheet0.png",
+		"img/gato2-sheet0.png",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",
