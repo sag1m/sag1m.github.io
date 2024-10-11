@@ -655,7 +655,11 @@ var trabalhosVideo = ["0",
 
     '<iframe alt="Gerador de um website para fotografar, documentar e competir com cartas de suculentas. 2021" class="youtube" frameBorder="0" src="gerador/index.html"></iframe>',
 
-      '<iframe alt="Porposta VE" class="youtube" frameBorder="0" src="ve/VEweb1.png"></iframe>    '
+      '<iframe alt="Porposta VE" class="youtube" frameBorder="0" src="ve/VEweb1.png"></iframe>',
+
+        '<iframe alt="Porposta VE" class="youtube" frameBorder="0" src="catnip/index.html"></iframe>',
+
+        ''
 
       ]
 
