@@ -439,7 +439,7 @@ var descricoesWeb = ["0",
 
 'Proposta de website para a Vida Económica - Um website com notícias de várias revistas e jornal e ainda livraria.',
 
-'',
+'Demo (demonstração) de um jogo onde temos de controlar o ambiente com várias ferramentas e ações para cultivar a planta catnip.',
 
 '',
 '',
