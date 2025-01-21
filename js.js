@@ -332,7 +332,7 @@ bottomLeft.style.opacity = "1";
   }
   typeText();
 
-   var typing2 = "Carregando no topo superior esquerdo, em 'Migas', podes ver ainda mais aleatoriamente.";
+   var typing2 = "Para ver mais trabalhos, carrega no topo superior esquerdo em 'Migas' e depois vai carregando em 'Mais'";
    let i2 = 0;
    function typeText2() {
      if (i2 < typing2.length) {
@@ -354,7 +354,7 @@ bottomLeft.style.opacity = "1";
    }
    typeText3();
 
-   var typing4 = "Programei este site, escrevi a maior parte do código e ele está comentado";//yes it is. yes, lots of copy paste. but also lots of fun and misery
+   var typing4 = "Programei este site, escrevi a maior parte do código e ele está comentado. É preciso um ecrã grande para ver o site.";//yes it is. yes, lots of copy paste. but also lots of fun and misery
    let i4 = 0;
    function typeText4() {
      if (i4 < typing4.length) {
