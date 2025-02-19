@@ -51,7 +51,7 @@
 
 .letter-g {
   display: inline-block;
-  animation: rotate 500s linear infinite;
+  animation: rotate 900s linear infinite;
 }
 @keyframes rotate {
   0% {
@@ -62,7 +62,7 @@
   }
 }
 .letter-g2 {
-    animation: rotate 70s;
+    animation: rotate 400s;
 }
 
 

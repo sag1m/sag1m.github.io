@@ -76,6 +76,7 @@
     <div id="leftBar">
 
       <h1 ><p onclick="showWorkM(1)" id="botaoMais"><a >Mi<span class="g">g</span>as</a></p></h1>
+      <p style="position: relative;top: -50px;font-weight: 200;color: dark-grey;word-spacing: -5px;">(em atualização)</p>
 
 
 
@@ -91,11 +92,11 @@
             }
         </script>
         <div id="portfolioMenu" class="menu">
-      <div class="category"><h3>Vídeo</h3>
+      <div class="category"><h3 onclick="showWorkVMais(rando(1,10))" >Vídeo</h3>
           <div class="submenu">
               <div class="sub"><h4>Videoclipes</h4>
                   <div class="items">
-                      <div><p><a onclick="showWorkV(5)" onmouseover="showDescV(5)" onmouseout="hideDesc()">Amanhecer</a></p></div>
+                      <div><p><a onclick="showWorkV(4)" onmouseover="showDescV(4)" onmouseout="hideDesc()">Amanhecer</a></p></div>
                       <div><p><a onclick="showWorkV(2)" onmouseover="showDescV(2)" onmouseout="hideDesc()">Frank Ocean</a></p>
                       </div>
                       <div><p><a onclick="showWorkV(1)" onmouseover="showDescV(1)" onmouseout="hideDesc()">Daily Routine</a></p></div>
@@ -103,27 +104,28 @@
               </div>
               <div class="sub"><h4>Outros</h4>
                   <div class="items">
+                      <div><p><a onclick="showWorkV(5)" onmouseover="showDescV(5)" onmouseout="hideDesc()">Instalações VE</a></p></div>
                       <div><p><a onclick="showWorkV(3)" onmouseover="showDescV(3)" onmouseout="hideDesc()">Fé</a></p></div>
-                      <div><p><a onclick="showWorkV(6)" onmouseover="showDescV(6)" onmouseout="hideDesc()">Instalações VE</a></p></div>
+
                   </div>
               </div>
           </div>
       </div>
 
-      <div class="category"><h3>Imagem</h3>
+      <div class="category"><h3 onclick="showWorkIMais(rando(1,9))" >Imagem</h3>
           <div class="submenu">
             <div class="sub"><h4>Identidades</h4>
                 <div class="items">
-                    <div><p><a >Núcleo Inovação</p></a></div>
-                    <div><p><a >liVE</p></a></div>
-                    <div><p><a onclick="showWorkW(3)" onmouseover="showDescW(3)" onmouseout="hideDesc()">succulents</a></p></div>
-                    <div><p><a>ANAP</p></a></div>
+                    <div><p><a onclick="showWorkI(7)" onmouseover="showDescI(7)" onmouseout="hideDesc()" >Núcleo Inovação</p></a></div>
+                    <div><p><a  onclick="showWorkI(8)" onmouseover="showDescI(8)" onmouseout="hideDesc()">liVE</p></a></div>
+                    <div><p><a  onclick="showWorkI(5)" onmouseover="showDescI(5)" onmouseout="hideDesc()">succulents</a></p></div>
+                    <div><p><a onclick="showWorkI(4)" onmouseover="showDescI(4)" onmouseout="hideDesc()">ANAP</p></a></div>
 
                 </div>
             </div>
               <div class="sub"><h4>Fotografia</h4>
                   <div class="items">
-                      <div>  <p><a onclick="showWorkI(5)" onmouseover="showDescI(5)" onmouseout="hideDesc()">Panorâmica</a></p></div>
+                      <div>  <p><a onclick="showWorkI(3)" onmouseover="showDescI(3)" onmouseout="hideDesc()">Panorâmica</a></p></div>
                       <div><p><a onclick="showWorkI(6)" onmouseover="showDescI(6)" onmouseout="hideDesc()">Eventos</a></p></div>
                   </div>
               </div>
@@ -131,41 +133,41 @@
               <div class="sub"><h4>Outros</h4>
                   <div class="items">
                       <div><p><a onclick="showWorkI(1)" onmouseover="showDescI(1)" onmouseout="hideDesc()">Keith Haring</a></p></div>
-                      <div><p><a onclick="showWorkI(3)" onmouseover="showDescI(3)" onmouseout="hideDesc()">Spoof Ad</a></p></div>
+                      <div><p><a onclick="showWorkI(2)" onmouseover="showDescI(2)" onmouseout="hideDesc()">Spoof Ad</a></p></div>
                   </div>
               </div>
           </div>
       </div>
 
-      <div class="category"><h3>Web</h3>
+      <div class="category"><h3 onclick="showWorkWMais(rando(1,5))" >Web</h3>
           <div class="submenu">
               <div class="sub"><h4>UX</h4>
                   <div class="items">
-                      <div><p><a onclick="showWorkW(4)" onmouseover="showDescW(4)" onmouseout="hideDesc()">Vida Económica</a></p></div>
+                      <div><p><a onclick="showWorkW(5)" onmouseover="showDescW(5)" onmouseout="hideDesc()">site Vida Económica</a></p></div>
                   </div>
               </div>
               <div class="sub"><h4>Redes Sociais</h4>
                   <div class="items">
-                      <div><p><a onclick="showWorkO(4)" onmouseover="showDescO(4)" onmouseout="hideDesc()">Redes Sociais</a></p></div>
-                      <div><p><a >Vídeo VE</p></a></div>
+                      <div><p><a onclick="showWorkW(3)" onmouseover="showDescW(3)" onmouseout="hideDesc()">Posts</a></p></div>
+                      <div><p><a  onclick="showWorkW(4)" onmouseover="showDescW(4)" onmouseout="hideDesc()">vídeo jornal semanal</p></a></div>
                   </div>
               </div>
               <div class="sub"><h4>Gamification</h4>
                   <div class="items">
-                      <div><p><a onclick="showWorkW(5)" onmouseover="showDescW(5)" onmouseout="hideDesc()">Catnip Grower</a></p></div>
-                      <div><p><a >Succulents</p></a></div>
-                      <div><p><a onclick="showWorkW(2)" onmouseover="showDescW(2)" onmouseout="hideDesc()">Designer Week</a></p></div>
+                      <div><p><a onclick="showWorkW(6)" onmouseover="showDescW(6)" onmouseout="hideDesc()">Catnip Grower</a></p></div>
+                      <div><p><a  onclick="showWorkW(2)" onmouseover="showDescW(2)" onmouseout="hideDesc()">Succulents</p></a></div>
+                      <div><p><a onclick="showWorkW(1)" onmouseover="showDescW(1)" onmouseout="hideDesc()">Designer Week</a></p></div>
                   </div>
               </div>
           </div>
       </div>
 
-      <div class="category"><h3>Outros</h3>
+      <div class="category"><h3 onclick="showWorkOMais(rando(1,9))" >Outros</h3>
           <div class="submenu">
               <div class="sub"><h4>Publicações</h4>
                   <div class="items">
-                      <div><p><a onclick="showWorkO(3)" onmouseover="showDescO(3)" onmouseout="hideDesc()">Cafeína</a></p></div>
-                      <div><p><a onclick="showWorkO(2)" onmouseover="showDescO(2)" onmouseout="hideDesc()">Pharmakon</a></p></div>
+                      <div><p><a onclick="showWorkO(2)" onmouseover="showDescO(2)" onmouseout="hideDesc()">Cafeína</a></p></div>
+                      <div><p><a onclick="showWorkO(1)" onmouseover="showDescO(1)" onmouseout="hideDesc()">Pharmakon</a></p></div>
                       <div><p><a >Santa Casa</p></a></div>
                   </div>
               </div>

@@ -422,96 +422,65 @@ function uber1(){document.getElementById("uber").src = 'UberHugo.jpg';}
 //DESCRIÇÕES
 var descricoesVideo = ["0",
 
-//1 Supleemntos diários rotina diária
 '<p>Mystery Mammal - Data</p>Vídeo com o tema "Rotina Diária", em específico os suplementos alimentares.<br> Gravado com um telemóvel e uma lente.<br>2018',
-//2 frank ocean Kynetic Typography
-'<p>Frank Ocean - Self control</p>Kynetic Typography<br> Videoclipe só com tipografia cinética.<br>2020',
-//3 fé
-'<p>Fé</p>Vídeo artístico que trata a Fé.<br>Põe em igualdade rituais e crenças atuais de todo o mundo. <br> Trabalho de grupo com o Leandro Afonso.<br> 2020',
-//4 amanhecer
-'<p>Soft and Furious - Game On</p>Videoclipe com os temas Amanhecer e Solidão. Retrata uma rotina matinal, o despertar forçado e a preparação para sair de casa.<br>. 2021',
-//5 VE instalações
-'<p>Futuras Instalações VE: Estado Atual e Projeto</p>Vídeo para mostrar o estado atual (antigo cinema) das futuras instalações da Vida Económica. Gravei e editei, mas não fiz o 3D. <br>2024',
 
+'<p>Frank Ocean - Self control</p>Kynetic Typography<br> Videoclipe só com tipografia cinética.<br>2020',
+
+'<p>Fé</p>Vídeo artístico que trata a Fé.<br>Põe em igualdade rituais e crenças atuais de todo o mundo. <br> Trabalho de grupo com o Leandro Afonso.<br> 2020',
 
 '<p>Traffic</p>Exercício de Time-Lapse sobre o Trânsito no Porto - Como uma pequena ação individual dificulta a vida de milhares de pessoas. <br>2020',
 
+'<p>Soft and Furious - Game On</p>Videoclipe com os temas Amanhecer e Solidão. Retrata uma rotina matinal, o despertar forçado e a preparação para sair de casa.<br>. 2021',
 
-
-
+'<p>Futuras Instalações VE: Estado Atual e Projeto</p>Vídeo para mostrar o estado atual (antigo cinema) das futuras instalações da Vida Económica. Gravei e editei, mas não fiz o 3D. <br>2024',
 
 '',
 ]
 var descricoesImagem = ["0",
 
-// 1 keith haring
 '<p>Keith Haring Animated</p>Animações simples com obras de Keith Haring',
-
-// 2 Spoof ad Lunesta
-'<p>Lunesta Spoof Ad</p>Spoof ad do medicamento Lunesta. À esquerda é o original. Eu apenas mudei a ordem do texto - O que no original tem mais destaque, no meu tem menos importância.',
-
-// 3 Douro Panoramica fotografia
-'<p>Douro</p>Fotografia Panorâmica no Porto à beira rio.',
-
-  // 4 ANAP
-  '',
-  // 5 succulents
-  '',
-  // 6 Eventos
-'<p>Título</p>Fotografei e ajudei em vários eventos',
-  // 7 Nucleo Inovação
-  '',
-  // 8 liVE
-  '',
-  // 9 SHULGIN
-'<p>Alexander Shulgin</p>Ilustração do Alexander Shulgin. 2015',
-
-  '<p>Keith Haring Animated</p>Animações simples com obras de Keith Haring',
 
 '<p>Myprotein Spoof Ad</p>Spoof Ad da empresa MyProtein.',
 
+'<p>Lunesta Spoof Ad</p>Spoof ad do medicamento Lunesta. À esquerda é o original. Eu apenas mudei a ordem do texto - O que no original tem mais destaque, no meu tem menos importância.',
+
 '<p>Uber Hugo</p>Pixel Art Game<br> 1 frame de um possível jogo. <br>O jogador seria um estafeta da Uber que teria de entregar encomendas. Ganharia bónus ao arrancar retrovisores de carros.',
 
+'<p>Douro</p>Fotografia Panorâmica no Porto à beira rio.',
+
+'<p>Título</p>Fotografei e ajudei em vários eventos',
+
+'<p>Alexander Shulgin</p>Ilustração do Alexander Shulgin. 2015',
 
 ''
 
 
 ]
 var descricoesWeb = ["0",
-    // 1 Wed Designer Week game
-'<p>Designer Week</p>Protótipo para um jogo de escolhas, onde o jogador tem de acabar de programar um website controlando a sua ansiedade e energia.<br> A escolha de ações influencia o humor, que por sua vez influencia o sucesso dessas ações. <br> 2020.',
-
-  // 2 succulents gerador
-'<p>succulents Card Game</p>Gerador de um website para fotografar, documentar e competir com cartas de suculentas. <br>2021',
-
-    // 3 POSTS redes sociais
-'<p>Redes Sociais</p>Publicações para as Redes Sociais',
-
-    // 4 VÍDEOS  redes sociais
-'',
-
-    // 5 Site VE
-'<p>Vida Económica</p>Proposta de melhoria do website para a Vida Económica <br>- Um website com notícias de várias revistas e jornal e ainda livraria.<br>2024',
-
-    // 6 Catnip Grower
-'<p>Catnip Grower</p>Demo (demonstração) de um jogo onde temos de controlar o ambiente com várias ferramentas e ações para cultivar a planta catnip.<br>2024',
 
 '<p>CrossFest Festival</p>Website desenvolvido para um festival de música inventado<br> Baseado num cartaz construtivista Russo.<br> 2019',
 
-''
+'<p>Designer Week</p>Protótipo para um jogo de escolhas, onde o jogador tem de acabar de programar um website controlando a sua ansiedade e energia.<br> A escolha de ações influencia o humor, que por sua vez influencia o sucesso dessas ações. <br> 2020.',
 
+'<p>succulents Card Game</p>Gerador de um website para fotografar, documentar e competir com cartas de suculentas. <br>2021',
+
+'<p>Vida Económica</p>Proposta de melhoria do website para a Vida Económica <br>- Um website com notícias de várias revistas e jornal e ainda livraria.<br>2024',
+
+'<p>Catnip Grower</p>Demo (demonstração) de um jogo onde temos de controlar o ambiente com várias ferramentas e ações para cultivar a planta catnip.<br>2024',
+
+'',
+'',
 ]
 var descricoesOutros = ["0",
-
-// 1 Pharmakon
-'<p>Pharmakon fanzine</p>Fanzine Pharmakon com 3 números. <br>O tema são as substancias psicoativas principalmente ilegais. <br>2020',
-
-// 2 Publicação Cafeína
-'<p>Cafeína</p>Publicação artística sobre a Cafeína feita em Projeto de Impressão. <br>2020',
-
 '<p>Sobre o Teletexto</p>Pequeno texto de pesquisa para blog sobre o Teletexto.<br> 2020',
 
+'<p>Pharmakon</p>Fanzine Pharmakon com 3 números. <br>O tema são as substancias psicoativas principalmente ilegais. <br>2020',
 
+'<p>Cafeína</p>Publicação artística sobre a Cafeína feita em Projeto de Impressão. <br>2020',
+
+'<p>Redes Sociais</p>Publicações para as Redes Sociais',
+
+'<p>Logotipos</p>Logotipos desenvolvidos',
 ]
 
 
@@ -589,6 +558,8 @@ var descricoesRandom = ["0",
 
 //TRABALHOS------------------------------------
 
+
+//isto é para ignorar e deixar estar pra já
 var trabalhosRandom = ["0",'']
 
 
@@ -611,25 +582,25 @@ var trabalhosVideo = ["0",
   ];
 
   var trabalhosVideoMais = ["0",
-  // 1 BITTER SWEET
+  // BITTER SWEET
   '<iframe  class="youtube" src="https://drive.google.com/file/d/0BzyZCFqeaprXX0ZEQm41ZWp3YWc/preview" frameBorder="0"></iframe>',
-  // 2 SOUTH PARK
+  // SOUTH PARK
   '<iframe  class="youtube" src="https://www.youtube.com/embed/JbPIYozSnec?autoplay=1&enablejsapi=1&modestbranding=1&color=white&rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-  // 3 BLUE VELVET
+  // BLUE VELVET
   '<iframe  class="youtube" src="https://www.youtube.com/embed/nW8fLNO9OIA?autoplay=1&enablejsapi=1&modestbranding=1&color=white&rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-  // 4 NARRATIVA FOTOGRAFIAS
+  // NARRATIVA FOTOGRAFIAS
   '<iframe class="youtube" src="https://www.youtube.com/embed/KzEpSZU8hM4?autoplay=1&enablejsapi=1&modestbranding=1&color=white&rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-  // 5 MIGAS POWER POWDER
+  // MIGAS POWER POWDER
   '<iframe class="youtube" src="https://www.youtube.com/embed/k5pGgvFjRG4?autoplay=1&enablejsapi=1&modestbranding=1&color=white&rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-  // 6 MEDICINAS ALTERANATIAS TRAILER
+  // MEDICINAS ALTERANATIAS TRAILER
   '<iframe class="youtube" src="https://www.youtube.com/embed/baXdytNv-Sw?autoplay=1&enablejsapi=1&modestbranding=1&color=white&rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-  // 7 MEDICINAS ALTERANATIAS EP01
+  // MEDICINAS ALTERANATIAS EP01
   '<iframe class="youtube" src="https://www.youtube.com/embed/cyWPNYX1Gqg?autoplay=1&enablejsapi=1&modestbranding=1&color=white&rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-  // 8 TRAILER NIGHT OF THE LIVING DEAD
+  // TRAILER NIGHT OF THE LIVING DEAD
   '<iframe class="youtube" src="https://www.youtube.com/embed/ovsZWblt9L4?autoplay=1&enablejsapi=1&modestbranding=1&color=white&rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-  // 9 TRAFFIC
+  // TRAFFIC
   '<iframe alt="Vídeo Time Lapse sobre o Trânsito no Porto. 2020" class="youtube" src="https://www.youtube.com/embed/_c9i0oHCScg?autoplay=1&enablejsapi=1&modestbranding=1&color=white&rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" rel="0" allowfullscreen></iframe>',
-  // 10 GARY'S MOD
+  // GARY'S MOD
   '<iframe class="youtube" src="https://www.youtube.com/embed/YWswYVRZWjs?autoplay=1&enablejsapi=1&modestbranding=1&color=white&rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
 
 
@@ -661,6 +632,9 @@ var trabalhosVideo = ["0",
     // 8 liVE
     '<iframe alt="Eventos" class="youtube" frameBorder="0" src=""></iframe> ',
 
+    // 8 liVE
+    '<iframe alt="Shulgin" class="youtube" frameBorder="0" src="shulgin.png"></iframe> ',
+
 
 
 
@@ -668,25 +642,25 @@ var trabalhosVideo = ["0",
       ]
 
       var trabalhosImagemMais = ["0",
-          // 1Uber Hugo
+          //Uber Hugo
           '<img class="imagem" id="uber" onmouseover="uber2()" onmouseout="uber1()" src="UberHugo.jpg" alt="Pixel Art. Frame de um possível jogo. O jogador seria um estafeta da Uber que teria de entregar encomendas. Ganharia bónus ao arrancar retrovisores de carros. 2019">',
-          // 2Spoof Ad myprotein
+          //Spoof Ad myprotein
           '<img class="imagem" src="arte1.gif" alt="Spoof Ad da empresa MyProtein. 2019">',
-          // 3Shulgin ilustração
+          //Shulgin ilustração
           '<iframe alt="Ilustração do Alexander Shulgin. 2015" class="youtube" frameBorder="0" src="shulgin.png"></iframe> ',
-          // 4CAFFEINE imagem
+          //CAFFEINE imagem
           '<img class="imagem" src="caffeineSmall.jpg" alt="Cafeína">',
           //imagem digital antiga
           '<img class="imagem" src="flor.png" alt="Imagem digital que fiz no Paint.net antes de 2010. Das primeiras imagens que fiz e que consegui guardar até agora.">',
-          //  5PANORAMICA praia matosas
+          // PANORAMICA praia matosas
           '<div id="pan"><img class="height" src="PanWeb.jpg" alt="Fotografia Panorâmica tirada no Porto à beira mar. 2021"></div>',
-          // 6KEITH HARING
+          //KEITH HARING
           '<img class="imagem" src="arte3.gif" alt="Animação simples com obra de Keith Haring. 2019">',
-          // 7POESIA
+          //POESIA
           '<img class="imagem" src="poesia.jpg" alt="Poema Nota Discordante de Fernando Namora. 2018">',
-          // 8AMÉLIA
+          //AMÉLIA
           '<img class="imagem" src="ilustracao1.jpg" alt="AMÉLIA">',
-          // 9ÁBADO
+          //SÁBADO
           '<img class="imagem" src="ilustracao2.png" alt="SÁBADO">',
 
       '',
@@ -709,16 +683,16 @@ var trabalhosVideo = ["0",
     '<iframe alt="Gerador de um website para fotografar, documentar e competir com cartas de suculentas. 2021" class="youtube" frameBorder="0" src="gerador/index.html"></iframe>',
 
     // 3 POSTS redes sociais
-    '<iframe alt="Posts redes sociais Vida Económica" class="youtube" frameBorder="0" src="redes.html"></iframe>',
+    '<iframe alt="Posts Redes sociais Vida Económica" class="youtube" frameBorder="0" src="redes.html"></iframe>',
 
     // 4 VÍDEOS  redes sociais
-    '<iframe alt="Vídeo VE jornal semanal" class="youtube" frameBorder="0" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fvidaeconomica.pt%2Fvideos%2F652814070381021%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>',
+    '<iframe alt="Vídeo semanal jornal VE" class="youtube" frameBorder="0" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fvidaeconomica.pt%2Fvideos%2F652814070381021%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>',
 
     // 5 Site VE
     '<iframe alt="Porposta VE" class="youtube" frameBorder="0" src="ve/VEweb1.png"></iframe>',
 
     // 6 Catnip Grower
-    '<iframe alt="Catnnip Grower" class="youtube" frameBorder="0" src="catnip/index.html"></iframe>',
+    '<iframe alt="Catnip Grower" class="youtube" frameBorder="0" src="catnip/index.html"></iframe>',
 
 
 
@@ -728,15 +702,15 @@ var trabalhosVideo = ["0",
 
       var trabalhosWebMais = ["0",
 
-      // 1 INFOMEDIA
+      // INFOMEDIA
       '<iframe class="youtube" frameBorder="0" src="infomedia/FILE2404.html"></iframe>',
-      // 2 IDPC WEBSITE
+      // IDPC WEBSITE
       '<iframe class="youtube" frameBorder="0" src="DesignSocial/index.html"></iframe>',
-      // 3  POR FALAR NOUTRA COISA INFANTIL
+      // POR FALAR NOUTRA COISA INFANTIL
       '<iframe class="youtube" frameBorder="0" src="Blog/index.html"></iframe>',
-      // 4  SPACE DIMENSION
+      // SPACE DIMENSION
       '<iframe class="youtube" frameBorder="0" src="SpaceDimension/index.html"></iframe>',
-      // 5  CrossFest Festival
+      // CrossFest Festival
       '<iframe alt="Website desenvolvido para um festival de música inventado, baseado num cartaz construtivista Russo. 2019" class="youtube" frameBorder="0" src="Cross/index.html"></iframe>',
         ''
     ];
@@ -756,17 +730,17 @@ var trabalhosVideo = ["0",
   ]
 
     var trabalhosOutrosMais = ["0",
-    //1 teletexto
+    //teletexto
     '<iframe alt="Pequeno texto de pesquisa sobre o Teletexto. 2020" class="youtube" frameBorder="0" src="teletexto/index.html"></iframe>',
-    // 2 MILANO
+    // MILANO
     '<input id="fontest2" type="text" name="teste" value="fonte milano. escreve aqui">',
-    // 3 ROLLS ROYCE
+    // ROLLS ROYCE
     '<input id="fontest" type="text" name="teste" value="fonte rolls royce. escreve aqui.">',
-    // 4 PHARMAKON 3
+    // PHARMAKON 3
     '<iframe alt="Fanzine Pharmakon nº3. 2020" src="https://online.fliphtml5.com/dnvha/yolq/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="youtube" ></iframe>',
-    // 5 PHARMAKON 1
+    // PHARMAKON 1
     '<iframe alt="Fanzine Pharmakon nº1. 2020" src="https://online.fliphtml5.com/dnvha/smhq/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="youtube" ></iframe>',
-    // 6 IGREJA CERVEIRA
+    // IGREJA CERVEIRA
     '<iframe  class="youtube" src="https://www.youtube.com/embed/zzcbMYLfSfw?autoplay=1&enablejsapi=1&modestbranding=1&color=white&rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     ''
     ];
