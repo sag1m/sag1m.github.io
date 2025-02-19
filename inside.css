@@ -948,40 +948,6 @@ body {
 }*/
 
 
-.backgroundDark{
-  background-image:
-  radial-gradient(circle at 20% 40%, #000C1B, transparent),
-  radial-gradient(circle at 60% 80%, #1B0015, transparent);
-  /*url(../bg.jpg);*/
-
-  background-repeat: no-repeat, no-repeat;
-  background-position: 0 0, 100% 100%;
-  background-size: 100%, 250%;
-
-  animation: animateGradients 25s linear infinite alternate;
-}
-
-  @keyframes animateGradients {
-    0% {
-      background-position: 0% 0%, 100% 100%, center center;
-    }
-    20% {
-      background-position: 30% 10%, 70% 90%, center center;
-    }
-    40% {
-      background-position: 80% 70%, 20% 30%, center center;
-    }
-    60% {
-      background-position: 50% 90%, 50% 10%, center center;
-    }
-    80% {
-      background-position: 90% 30%, 10% 70%, center center;
-    }
-    100% {
-      background-position: 0% 0%, 100% 100%, center center;
-
-    }
-}
 
 
 
@@ -1013,8 +979,10 @@ body {
  }
 
  .insidepage{
-   max-height: 100vh;
-  overflow: scroll;
+   max-height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
  }
 
 #screenInside a {
@@ -1024,9 +992,8 @@ body {
 
 
    .insidepage img{
-     max-width: 20rem;
      margin-bottom: 2rem;
-     display: block;
+     /*display: block;*/
    }
 
 

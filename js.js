@@ -312,7 +312,7 @@ var mais = [
   ' <div id="typing-text"></div> ',
 
   //CÓPIA DO HTML:
-  '<div style="border-left:0.5px solid red; padding-left:10px"><p style="line-height:3rem;font-size:2rem">Olá<br>Sou o Miguel Sousa,<br>designer de comunicação multimédia. </p><p style="margin:10px 0 0 0;">Vê vários trabalhos neste site que programei.</p><span onclick="toggleCaixa()" style="cursor: pointer;" id="sobre">Ler mais⬇</span><div style="padding-top:3px;display:none" id="caixaTexto" class="caixa-texto"><p>Gosto de me cansar no ginásio. <br>Prefiro usar a bicicleta como meio de transporte.<br>Quando não chove, cultivo catnip para os meus gatos e suculentas.<br>Talvez passe demasiado tempo no computador.</p></div><br><br><p style="font-weight:700">Disponível para colaborar</p><p style="padding-bottom:1.5rem">Email:<a href="mailto:mnamoras@outlook.pt">mnamoras@outlook.pt</a></p><span id="darkButton">dark-mode&#9788</span></div>',
+  '<div style="border-left:0.5px solid red; padding-left:10px"><p style="line-height:3rem;font-size:2rem">Olá<br>Sou o Miguel Sousa,<br>designer de comunicação multimédia. </p><p style="margin:10px 0 0 0;">Vê vários trabalhos neste site que programei.</p><span onclick="toggleCaixa()" style="cursor: pointer;" id="sobre">Ler mais⬇</span><div style="padding-top:3px;display:none" id="caixaTexto" class="caixa-texto"><img style="height: 200px;position: absolute;left: 900px;top: 200px;"id=""src="test02.png"alt="Auto retrato sobre-exposto e demasiado editado"><p>Gosto de me cansar no ginásio. <br>Prefiro usar a bicicleta como meio de transporte.<br>Quando não chove, cultivo catnip para os meus gatos e suculentas.<br>Talvez passe demasiado tempo no computador.</p></div><br><br><p style="font-weight:700">Disponível para colaborar</p><p style="padding-bottom:1.5rem">Email:<a href="mailto:mnamoras@outlook.pt">mnamoras@outlook.pt</a></p><span id="darkButton">dark-mode&#9788</span></div>',
 
   //esta decsrição é uam página externa que permitirá mais lberdade de merda e parágrafos e coisas. mas afinal não funcionou bem, que trabalheira  pra fazer isto bem.:
   //'<iframe alt="Sobre" class="youtube" frameBorder="0" src="sobre.html"></iframe>',
@@ -509,7 +509,24 @@ var descricoesOutros = ["0",
 // 2 Publicação Cafeína
 '<p>Cafeína</p>Publicação artística sobre a Cafeína feita em Projeto de Impressão. <br>2020',
 
-'<p>Sobre o Teletexto</p>Pequeno texto de pesquisa para blog sobre o Teletexto.<br> 2020',
+// 3 Medicina Social
+'<p>Medicina Social</p>Paginação de uma edição da revista Medicina Social e captura (no Centro Hospitalar conde Ferreira) e edição de fotografias para vários artigos. ',
+
+
+
+
+
+// 4 Guias CRN
+'<p>Guia do Utente / Guia do Colaborador - Centro de Reabilitação do Norte</p>Paginação dos livretes, pesquisa e escolha de imagens stock e edição de fotografia',
+
+
+
+'<p></p>',
+'<p></p>',
+'<p></p>',
+
+'<p>Sobre o Teletexto</p>Pequeno texto de pesquisa para blog sobre o Teletexto.<br> 2020'
+
 
 
 ]
@@ -745,11 +762,19 @@ var trabalhosVideo = ["0",
     var trabalhosOutros = ["0",
 
 
+
+
     // 1 Pharmakon
     '<iframe alt="Fanzine Pharmakon com 3 números. O tema são substancias psicoativas principalmente ilegais. A nº2 foi todo escrito por mim. 2020" src="https://online.fliphtml5.com/dnvha/krhl/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="youtube" ></iframe>',
 
     // 2 Publicação Cafeína
     '<iframe alt="Publicação sobre a Cafeína feita em Projeto de Impressão. 2020" src="https://online.fliphtml5.com/dnvha/boah"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="youtube" ></iframe>',
+
+    // 3 Medicina Social
+    '<iframe alt="" src="medSoc.html" allowtransparency="true" class="youtube" ></iframe>',
+
+    // 4 Guias CRN
+    '<iframe alt="" src="CRN.html"  allowtransparency="true" class="youtube" ></iframe>',
 
 
     ''
