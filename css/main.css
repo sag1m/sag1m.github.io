@@ -269,14 +269,14 @@ textarea {
 
 
 a{
-  text-decoration: underline red 0.5px;
+  /*text-decoration: underline red 0.5px;*/
   color: inherit;
 }
 
 a:visited{color: grey;}
 
 a:hover{
-  text-decoration: underline red 1.5px;
+  text-decoration: underline red 0.5px;
   /*text-shadow: 0.6px 0px 0px #7ca8ff, -0.6px 0px 0px #ff7c7c;*/
 
 }
@@ -286,14 +286,14 @@ h1{
   font-weight: 100;
 
 
-  text-decoration: underline red 0.5px;
+/*  text-decoration: underline red 0.5px;*/
 
   margin-bottom: 3rem;
 }
 h2{
   font-size: 31px;
   font-weight: 300;
-  text-decoration: underline red 0.5px;
+  /*text-decoration: underline red 0.5px;*/
   margin-bottom: 2rem;
 }
 
@@ -343,10 +343,10 @@ h5{
 
 
 h1:hover{
-  text-decoration: underline red 1.5px;
+  text-decoration: underline red 0.5px;
 }
 h2:hover{
-  text-decoration: underline red 1.5px;
+  text-decoration: underline red 0.5px;
 }
 
 
