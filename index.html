@@ -44,11 +44,16 @@
   <link rel="preload" href="fonts/Inconsolata-M.ttf" as="font">
 
 
+  <style>
 
 
 
 
-  <!--<script src="//code.jivosite.com/widget/MyRzrFPptE" async></script>-->
+
+
+
+      </style>
+
 
 </head>
 
@@ -68,135 +73,183 @@
     <!--<h1 ><p id="botaoMais">Mi<span class="g">g</span>as</p></h1>-->
 
 
+    <div id="leftBar">
 
-
-<h1 ><p id="botaoMais">Mi<span class="g">g</span>as</p></h1>
-
-
-    <!--<h1 ><p id="botaoMais">Mi<span id="rotate"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 164 191" style="enable-background:new 0 0 164 191;" xml:space="preserve">
-    <g>
-	     <g>
-		     <path d="M144.9,45.9c-4.5-24-29.8-37.3-52.7-35C68,13.3,45.6,28,30.8,46.9C16.3,65.4,8.3,88.7,10.3,112.3
-			c2,23.1,12.4,46.1,30.9,60.6c21.2,16.6,49.5,13.3,72.5,2.3c20.8-10,38.2-28.7,43-51.7c5-23.8-2.9-48.5-23.2-62.7
-			c-19.3-13.5-45.9-13.2-65,0.5c-21.5,15.4-31.8,47.7-12.8,69.2c8.4,9.5,21.5,14.5,34,11.9c6.5-1.4,12.8-5.5,15.2-12
-			c2.2-5.9,1-12.8-3.8-17.1c-7.2-6.4-17.8,4.2-10.6,10.6c1.9,1.6-2,3.2-3.3,3.6c-3.8,1.2-8.1,0.6-11.8-0.9
-			c-6.8-2.8-12.1-8.9-13.9-15.9c-4.7-17.5,7.9-35.1,23.6-41.7c16.3-6.9,35.2-2.4,47.2,10.5c12.1,13.1,13.4,32.9,7.3,49
-			c-6.2,16.2-20.6,28.4-36.2,35.1c-17.4,7.4-38.7,9.7-54.1-3.2c-28.1-23.8-30.9-66.6-11.9-96.7c10.6-16.8,27.5-30.6,46.8-35.9
-			c18.5-5.1,42.3,0.9,46.3,22.3C132.3,59.3,146.7,55.3,144.9,45.9L144.9,45.9z"/>
-	     </g>
-      </g>
-      </svg></span>as</p></h1><object data="algerie.svg" type="image/svg+xml"></object>-->
+      <h1 ><p onclick="showWorkM(1)" id="botaoMais"><a >Mi<span class="g">g</span>as</a></p></h1>
 
 
 
-
-<!-- TOP RIGHT ..........................  -->
-    <div id="topRight">
-
-      <div class="trabalhos" id="listaMais">
-        <!--<p><a onclick="teste(0)">Teste</a></p>-->
-        <!--<p><a onclick="showWorkM(0)">Início</a></p>-->
-        <p><a onclick="showWorkM(2)">CV</a></p>
-        <p><a onclick="showWorkM(1)">Sobre</a></p>
-        <!-- MUITO IMPORTANTE ATUALIZAR ESTE NÚMERO SEMPRE QUE ADICIONO UM TRABALHO RANDOM!!!-->
-        <p><a onclick="randomWork(rando(1,26))">Mais</a></p>
-        <!--<p><a onclick="showWorkM(3)">VE</a></p>-->
-
+      <h2><p><a onclick="toggleMenu()">Portfolio</a></p></h2>
+      <script>
+            function toggleMenu() {
+                var menu = document.getElementById("portfolioMenu");
+                if (menu.style.display === "none" || menu.style.display === "") {
+                    menu.style.display = "block";
+                } else {
+                    menu.style.display = "none";
+                }
+            }
+        </script>
+        <div id="portfolioMenu" class="menu">
+      <div class="category"><h3>Vídeo</h3>
+          <div class="submenu">
+              <div class="sub"><h4>VideoClip</h4>
+                  <div class="items">
+                      <div><p><a onclick="showWorkV(5)" onmouseover="showDescV(5)" onmouseout="hideDesc()">Amanhecer</a></p></div>
+                      <div><p><a onclick="showWorkV(2)" onmouseover="showDescV(2)" onmouseout="hideDesc()">Frank Ocean</a></p>
+                      </div>
+                      <div><p><a onclick="showWorkV(1)" onmouseover="showDescV(1)" onmouseout="hideDesc()">Daily Routine</a></p></div>
+                  </div>
+              </div>
+              <div class="sub"><h4>Outros</h4>
+                  <div class="items">
+                      <div><p><a onclick="showWorkV(3)" onmouseover="showDescV(3)" onmouseout="hideDesc()">Fé</a></p></div>
+                      <div><p><a onclick="showWorkV(6)" onmouseover="showDescV(6)" onmouseout="hideDesc()">Instalações</a></p></div>
+                  </div>
+              </div>
+          </div>
       </div>
 
+      <div class="category"><h3>Imagem</h3>
+          <div class="submenu">
+            <div class="sub"><h4>Identidade</h4>
+                <div class="items">
+                    <div><p><a >Núcleo Inovação</p></a></div>
+                    <div><p><a >liVE</p></a></div>
+                    <div><p><a onclick="showWorkW(3)" onmouseover="showDescW(3)" onmouseout="hideDesc()">succulents</a></p></div>
+                    <div><p><a>ANAP</p></a></div>
 
-      <div class="trabalhos" id="listaVideo">
-          <!--ADICIONAR AQUI EM CIMA-->
-        <p><a onclick="showWorkV(6)" onmouseover="showDescV(6)" onmouseout="hideDesc()">Instalações</a></p>
-        <p><a onclick="showWorkV(5)" onmouseover="showDescV(5)" onmouseout="hideDesc()">Amanhecer</a></p>
-        <p><a onclick="showWorkV(4)" onmouseover="showDescV(4)" onmouseout="hideDesc()">Traffic</a></p>
-        <p><a onclick="showWorkV(3)" onmouseover="showDescV(3)" onmouseout="hideDesc()">Fé</a></p>
-        <p><a onclick="showWorkV(2)" onmouseover="showDescV(2)" onmouseout="hideDesc()">Frank Ocean</a></p>
-        <p><a onclick="showWorkV(1)" onmouseover="showDescV(1)" onmouseout="hideDesc()">Daily Routine</a></p>
+                </div>
+            </div>
+              <div class="sub"><h4>Fotografia</h4>
+                  <div class="items">
+                      <div>  <p><a onclick="showWorkI(5)" onmouseover="showDescI(5)" onmouseout="hideDesc()">Panorâmica</a></p></div>
+                      <div><p><a onclick="showWorkI(6)" onmouseover="showDescI(6)" onmouseout="hideDesc()">Eventos</a></p></div>
+                  </div>
+              </div>
+
+              <div class="sub"><h4>Outros</h4>
+                  <div class="items">
+                      <div><p><a onclick="showWorkI(1)" onmouseover="showDescI(1)" onmouseout="hideDesc()">Keith Haring</a></p></div>
+                      <div><p><a onclick="showWorkI(3)" onmouseover="showDescI(3)" onmouseout="hideDesc()">Spoof Ad</a></p></div>
+                  </div>
+              </div>
+          </div>
       </div>
 
-      <div class="trabalhos" id="listaImagem">
-        <!--ADICIONAR AQUI EM CIMA--> <!--CUIDADO!!!!! DEPOIS DO 5 VEM O 8  -->
-        <p><a onclick="showWorkI(5)" onmouseover="showDescI(5)" onmouseout="hideDesc()">Panorâmica</a></p>
-        <p><a onclick="showWorkI(4)" onmouseover="showDescI(4)" onmouseout="hideDesc()">Uber Hugo</a></p>
-        <p><a onclick="showWorkI(3)" onmouseover="showDescI(3)" onmouseout="hideDesc()">Spoof Ad</a></p>
-        <p><a onclick="showWorkI(2)" onmouseover="showDescI(2)" onmouseout="hideDesc()">Spoof Ad</a></p>
-        <p><a onclick="showWorkI(1)" onmouseover="showDescI(1)" onmouseout="hideDesc()">Keith Haring</a></p>
-        <p><a onclick="showWorkI(7)" onmouseover="showDescI(7)" onmouseout="hideDesc()">Shulgin</a></p>
-        <p><a onclick="showWorkI(6)" onmouseover="showDescI(6)" onmouseout="hideDesc()">|  Eventos</a></p>
+      <div class="category"><h3>Web</h3>
+          <div class="submenu">
+              <div class="sub"><h4>UX</h4>
+                  <div class="items">
+                      <div><p><a onclick="showWorkW(4)" onmouseover="showDescW(4)" onmouseout="hideDesc()">Vida Económica</a></p></div>
+                  </div>
+              </div>
+              <div class="sub"><h4>Redes Sociais</h4>
+                  <div class="items">
+                      <div><p><a onclick="showWorkO(4)" onmouseover="showDescO(4)" onmouseout="hideDesc()">Redes Sociais</a></p></div>
+                      <div><p><a >Vídeo VE</p></a></div>
+                  </div>
+              </div>
+              <div class="sub"><h4>Jogos</h4>
+                  <div class="items">
+                      <div><p><a onclick="showWorkW(5)" onmouseover="showDescW(5)" onmouseout="hideDesc()">Catnip Grower</a></p></div>
+                      <div><p><a >Succulents</p></a></div>
+                      <div><p><a onclick="showWorkW(2)" onmouseover="showDescW(2)" onmouseout="hideDesc()">Designer Week</a></p></div>
+                  </div>
+              </div>
+          </div>
       </div>
 
-      <div class="trabalhos" id="listaWeb">
-        <!--ADICIONAR AQUI EM CIMA-->
-        <p><a onclick="showWorkW(5)" onmouseover="showDescW(5)" onmouseout="hideDesc()">Catnip Grower</a></p>
-        <p><a onclick="showWorkW(4)" onmouseover="showDescW(4)" onmouseout="hideDesc()">Vida Económica</a></p>
-        <p><a onclick="showWorkW(3)" onmouseover="showDescW(3)" onmouseout="hideDesc()">succulents</a></p>
-        <p><a onclick="showWorkW(2)" onmouseover="showDescW(2)" onmouseout="hideDesc()">jogo WDW</a></p>
-        <p><a onclick="showWorkW(1)" onmouseover="showDescW(1)" onmouseout="hideDesc()">CrossFest</a></p>
-
+      <div class="category"><h3>Outros</h3>
+          <div class="submenu">
+              <div class="sub"><h4>Publicações</h4>
+                  <div class="items">
+                      <div><p><a onclick="showWorkO(3)" onmouseover="showDescO(3)" onmouseout="hideDesc()">Cafeína</a></p></div>
+                      <div><p><a onclick="showWorkO(2)" onmouseover="showDescO(2)" onmouseout="hideDesc()">Pharmakon</a></p></div>
+                      <div><p><a >Santa Casa</p></a></div>
+                  </div>
+              </div>
+          </div>
       </div>
-
-
-      <div class="trabalhos" id="listaOutros">
-        <!--ADICIONAR AQUI EM CIMA-->
-        <p><a onclick="showWorkO(5)" onmouseover="showDescO(5)" onmouseout="hideDesc()">Logos</a></p>
-        <p><a onclick="showWorkO(4)" onmouseover="showDescO(4)" onmouseout="hideDesc()">Redes Sociais</a></p>
-        <p><a onclick="showWorkO(3)" onmouseover="showDescO(3)" onmouseout="hideDesc()">Cafeína</a></p>
-        <p><a onclick="showWorkO(2)" onmouseover="showDescO(2)" onmouseout="hideDesc()">Pharmakon</a></p>
-        <p><a onclick="showWorkO(1)" onmouseover="showDescO(1)" onmouseout="hideDesc()">Teletexto</a></p>
-      </div>
-
-      <div id="descricao">
-
-      </div>
-
     </div>
 
 
+        <h2><p style="margin-top:20px"><a onclick="showWorkM(2)">CV</a></p></h2>
 
-<!-- BOTTOM LEFT ..........................  -->
-      <div id="categorias" style="opacity:0">
-        <p><a id="botaoVideo">Vídeo</a></p>
-        <p><a id="botaoImagem">Imagem</a></p>
-        <p><a id="botaoWeb">Web</a></p>
-        <p><a id="botaoOutros">Outros</a></p>
+
       </div>
 
 
 
 
-<!-- BOTTOM RIGHT ..........................  -->
+<!--<div id="titulo">
+  <p></p>
+
+
+</div>-->
       <div id="bottomRight">
+        <script>
+        function toggleCaixa() {
+            var caixa = document.getElementById("caixaTexto");
+            if (caixa.style.display === "none" || caixa.style.display   === "") {
+                caixa.style.display = "block";
+              } else {
+                caixa.style.display = "none";
+              }
+            }
+            </script>
+          <!--<div class="espacinho" id="typing-text"></div>
+          <div class="espacinho" id="typing-text2"></div>
+          <div class="espacinho" id="typing-text3"></div>-->
 
-        <a href="mailto:mnamoras@outlook.pt">mnamoras@outlook.pt</a>
 
-        <div class="espacinho" id="typing-text"></div>
-        <div class="espacinho" id="typing-text2"></div>
-        <div class="espacinho" id="typing-text3"></div>
-        <div class="espacinho" id="typing-text4"></div>
-        <div class="espacinho" id="typing-text5"></div>
+        <!--  <br><br>
 
+          <p>Olá</p>
+          <p>Sou o Miguel Sousa, um designer de comunicação multimédia. </p>
+          <p>Programei este site onde tenho vários trabalhos que fui fazendo.</p>
 
 
+          <span id="darkButton">dark-mode</span>
+
+          <span onclick="toggleCaixa()" style="cursor: pointer;" id="sobre">Ler mais  ⬇</span>
+          <div style="display:none" id="caixaTexto" class="caixa-texto">
+
+            <p>Gosto de me cansar no ginásio. <br>Prefiro usar a bicicleta como meio de transporte.<br> Passo tempo no computador e quando não chove cultivo plantas suculentas e catnip para os meus gatos.</p>
+          </div>
+
+
+
+              <br><br><br>
+          <p style="font-weight:700">Disponível para colaborar</p>
+          <p style="padding-bottom:1.5rem">Email:<a href="mailto:mnamoras@outlook.pt">mnamoras@outlook.pt</a></p>
+-->
+          </div>
+
+
+
+
+
+      <div id="descricao" style="display:hidden">
+        <p></p>
       </div>
-
-<div class="moving-background"></div>
-
-
-
-<div id="gradientContainer" class="gradientContainer"></div>
 
 
 
   </div>
 
+  <div class="moving-background"></div>
 
 
 
-<script src="rando.js"></script>
+  <div id="gradientContainer" class="gradientContainer"></div>
+
+
+
+
 <script src="js.js"></script>
-<script src="seed.js"></script>
+<script src="rando.js"></script>
+
 </body>
 
 </html>
