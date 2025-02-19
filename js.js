@@ -755,3 +755,6 @@ title.innerHTML = g.replace(
     gradientContainer.style.left = `${left}px`;
     gradientContainer.style.top = `${top}px`;
   });
+
+
+descricao.style = "display: none";
