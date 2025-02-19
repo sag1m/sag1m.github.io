@@ -690,7 +690,7 @@ var trabalhosVideo = ["0",
           // 2Spoof Ad myprotein
           '<img class="imagem" src="arte1.gif" alt="Spoof Ad da empresa MyProtein. 2019">',
           // 3Shulgin ilustração
-          '<iframe class="imagem" alt="Ilustração do Alexander Shulgin. 2015" class="youtube" frameBorder="0" src="shulgin.png"></iframe> ',
+          '<img class="imagem" alt="Ilustração do Alexander Shulgin. 2015" src="shulgin.png"> ',
           // 4CAFFEINE imagem
           '<img class="imagem" src="caffeineSmall.jpg" alt="Cafeína">',
           //imagem digital antiga
