@@ -21,6 +21,11 @@ var listaOutros = document.getElementById('listaOutros');
 
 
 //BOTOES.........................................
+/*
+
+
+
+
 
 varVideoSwitch = 0;
 botaoVideo.onclick = showVideo;
@@ -181,7 +186,7 @@ function showMais() {
   }
 }
 
-
+*/
 
 
 //LISTAS........................................................
@@ -286,8 +291,8 @@ var mais = [
 
   ' <div id="typing-text"></div> ',
 
-  //Esta descrição é simples:
-  '<p style="padding-bottom:1.5rem">Gosto de passar tempo no computador e andar de bicicleta, no Porto.</p>  <p style="padding-bottom:1.5rem">Disponível para Trabalhar.</p>   <p style="padding-bottom:1.5rem"><a href="mailto:mnamoras@outlook.pt">mnamoras@outlook.pt</a></p>   ',
+  //CÓPIA DO HTML:
+  '<p style="line-height:3rem;font-size:2rem">Olá<br>Sou o Miguel Sousa,<br>designer de comunicação multimédia. </p><p style="margin:10px 0 0 0;">Vê vários trabalhos que fiz neste site que programei.</p><span onclick="toggleCaixa()" style="cursor: pointer;" id="sobre">Ler mais⬇</span><div style="display:none" id="caixaTexto" class="caixa-texto"><p>Gosto de me cansar no ginásio. <br>Prefiro usar a bicicleta como meio de transporte.<br>Talvez passe demasiado tempo no computador.<br>Quando não chove cultivo plantas suculentas e catnip para os meus gatos.</p></div><br><br><p style="font-weight:700">Disponível para colaborar</p><p style="padding-bottom:1.5rem">Email:<a href="mailto:mnamoras@outlook.pt">mnamoras@outlook.pt</a></p><span id="darkButton">dark-mode&#9788</span>',
 
   //esta decsrição é uam página externa que permitirá mais lberdade de merda e parágrafos e coisas. mas afinal não funcionou bem, que trabalheira  pra fazer isto bem.:
   //'<iframe alt="Sobre" class="youtube" frameBorder="0" src="sobre.html"></iframe>',
@@ -297,7 +302,7 @@ var mais = [
   //'<iframe alt="CV" class="youtube" frameBorder="0" src="cv.pdf"></iframe>',
 
   //Este é o código do CV quando ele é uma imagem:
-  '<a alt="Carrega para ver o currículo" target="_blank" href="https://sag1m.github.io/cv.pdf"><img alt="Carrega para ver o currículo" class="imagem" style="" src="cv.png"></img></a>',
+  '<a alt="Carrega para ver o currículo" target="_blank" href="https://sag1m.github.io/cv.pdf"><img alt="Carrega para ver o currículo" class="imagem" style="maximum-height:100%;" src="cv.png"></img></a>',
 
 
 
@@ -309,9 +314,9 @@ var mais = [
 
 
 //esperar 2 segundos anets de aparecer os menus
-setTimeout(function() {
-bottomLeft.style.opacity = "1";
-}, 2000);
+//setTimeout(function() {
+//bottomLeft.style.opacity = "1";
+//}, 2000);
 
 
 
@@ -319,9 +324,11 @@ bottomLeft.style.opacity = "1";
 
 
 //TEXTO A SER ESCRITO!!!!!!!!!!!! o de cima e também o menu bottomLeft a aparecer
+
+/*
   var delay = 20; // em milisegundos
 
- var typing = "Aqui estão alguns trabalhos que fiz.";
+ var typing = "";
   let i = 0;
   function typeText() {
     if (i < typing.length) {
@@ -332,7 +339,7 @@ bottomLeft.style.opacity = "1";
   }
   typeText();
 
-   var typing2 = "Para ver mais trabalhos, carrega no topo superior esquerdo em 'Migas' e depois vai carregando em 'Mais'";
+   var typing2 = "Aqui podes encontrar vários trabalhos que fiz e o meu CV.";
    let i2 = 0;
    function typeText2() {
      if (i2 < typing2.length) {
@@ -343,7 +350,7 @@ bottomLeft.style.opacity = "1";
    }
    typeText2();
 
-   var typing3 = "Os trabalhos estão ordenados por categoria e por data, com uma pequena descrição que se lê pairando o rato sobre o título do trabalho.";
+   var typing3 = "";
    let i3 = 0;
    function typeText3() {
      if (i3 < typing3.length) {
@@ -354,7 +361,7 @@ bottomLeft.style.opacity = "1";
    }
    typeText3();
 
-   var typing4 = "Programei este site, escrevi a maior parte do código e ele está comentado. É preciso um ecrã grande para ver o site.";//yes it is. yes, lots of copy paste. but also lots of fun and misery
+   var typing4 = "Miguel Sousa";//yes it is. yes, lots of copy paste. but also lots of fun and misery
    let i4 = 0;
    function typeText4() {
      if (i4 < typing4.length) {
@@ -364,11 +371,11 @@ bottomLeft.style.opacity = "1";
      }
    }
    typeText4();
-
+*/
 
 
 //MOSTRAR TEXTO DE BOAS VINDAS LOGO QUANDO SE ABRE O WEBSITE (está inativo)
-//bottomRight.innerHTML = mais[0];
+bottomRight.innerHTML = mais[1];
 
 
 //AVISO AVISO BARRA BARRA CABEÇALHO HEADER cabecalho pub publicidade
@@ -395,35 +402,35 @@ function uber1(){document.getElementById("uber").src = 'UberHugo.jpg';}
 //DESCRIÇÕES
 var descricoesVideo = ["0",
 
-'Vídeo com o tema Rotina Diária, em específico os suplementos alimentares. Gravado com o telemóvel e uma lente. 2018',
+'<p>Título</p>Vídeo com o tema Rotina Diária, em específico os suplementos alimentares. Gravado com o telemóvel e uma lente. 2018',
 
-'Kynetic Typography - Videoclip só com tipografia cinética. 2020',
+'<p>Título</p>Kynetic Typography - Videoclip só com tipografia cinética. 2020',
 
-'Vídeo sobre a Fé. Põe em igualdade rituais e crenças atuais de todo o mundo. Trabalho de grupo com o Leandro Afonso. 2020',
+'<p>Título</p>Vídeo sobre a Fé. Põe em igualdade rituais e crenças atuais de todo o mundo. Trabalho de grupo com o Leandro Afonso. 2020',
 
-'Vídeo Time Lapse sobre o Trânsito no Porto. 2020',
+'<p>Título</p>Vídeo Time Lapse sobre o Trânsito no Porto. 2020',
 
-'Vídeo com os temas Amanhecer e Solidão. Trata uma rotina matinal. 2021',
+'<p>Título</p>Vídeo com os temas Amanhecer e Solidão. Trata uma rotina matinal. 2021',
 
-'Vídeo para mostrar o estado atual (antigo cinema) das futuras instalações da Vida Económica. Apenas fiz as partes da gravação e edição.',
+'<p>Título</p>Vídeo para mostrar o estado atual (antigo cinema) das futuras instalações da Vida Económica. Apenas fiz as partes da gravação e edição.',
 
 '',
 ]
 var descricoesImagem = ["0",
 
-'Animações simples com obras de Keith Haring',
+'<p>Título</p>Animações simples com obras de Keith Haring',
 
-'Spoof Ad da empresa MyProtein.',
+'<p>Título</p>Spoof Ad da empresa MyProtein.',
 
-'Spoof ad do medicamento Lunesta. À esquerda é o original. Eu apenas mudei a ordem do texto - O que no original tem mais destaque, no meu tem menos importância.',
+'<p>Título</p>Spoof ad do medicamento Lunesta. À esquerda é o original. Eu apenas mudei a ordem do texto - O que no original tem mais destaque, no meu tem menos importância.',
 
-'Pixel Art. 1 frame de um possível jogo. O jogador seria um estafeta da Uber que teria de entregar encomendas. Ganharia bónus ao arrancar retrovisores de carros.',
+'<p>Título</p>Pixel Art. 1 frame de um possível jogo. O jogador seria um estafeta da Uber que teria de entregar encomendas. Ganharia bónus ao arrancar retrovisores de carros.',
 
-'Fotografia Panorâmica no Porto à beira rio.',
+'<p>Título</p>Fotografia Panorâmica no Porto à beira rio.',
 
-'Fotografei e ajudei em vários eventos',
+'<p>Título</p>Fotografei e ajudei em vários eventos',
 
-'Ilustração do Alexamnder Shulgin. 2015',
+'<p>Título</p>Ilustração do Alexamnder Shulgin. 2015',
 
 ''
 
@@ -431,85 +438,85 @@ var descricoesImagem = ["0",
 ]
 var descricoesWeb = ["0",
 
-'Website desenvolvido para um festival de música inventado, baseado num cartaz construtivista Russo. 2019',
+'<p>Título</p>Website desenvolvido para um festival de música inventado, baseado num cartaz construtivista Russo. 2019',
 
-'Protótipo para um jogo de escolhas, onde o jogador tem de acabar de programar um website controlando a sua ansiedade e energia. 2020',
+'<p>Designer Week</p>Protótipo para um jogo de escolhas, onde o jogador tem de acabar de programar um website controlando a sua ansiedade e energia. 2020.',
 
-'Gerador de um website para fotografar, documentar e competir com cartas de suculentas. 2021',
+'<p>Título</p>Gerador de um website para fotografar, documentar e competir com cartas de suculentas. 2021',
 
-'Proposta de website para a Vida Económica - Um website com notícias de várias revistas e jornal e ainda livraria.',
+'<p>Título</p>Proposta de website para a Vida Económica - Um website com notícias de várias revistas e jornal e ainda livraria.',
 
-'Demo (demonstração) de um jogo onde temos de controlar o ambiente com várias ferramentas e ações para cultivar a planta catnip.',
+'<p>Título</p>Demo (demonstração) de um jogo onde temos de controlar o ambiente com várias ferramentas e ações para cultivar a planta catnip.',
 
 '',
 '',
 ]
 var descricoesOutros = ["0",
-'Pequeno texto de pesquisa para blog sobre o Teletexto. 2020',
+'<p>Título</p>Pequeno texto de pesquisa para blog sobre o Teletexto. 2020',
 
-'Fanzine Pharmakon com 3 números. O tema são substancias psicoativas principalmente ilegais. 2020',
+'<p>Título</p>Fanzine Pharmakon com 3 números. O tema são substancias psicoativas principalmente ilegais. 2020',
 
-'Publicação sobre a Cafeína feita em Projeto de Impressão. 2020',
+'<p>Título</p>Publicação sobre a Cafeína feita em Projeto de Impressão. 2020',
 
-'Publicações para as Redes Sociais',
+'<p>Título</p>Publicações para as Redes Sociais',
 
-'Logotipos desenvolvidos',
+'<p>Título</p>Logotipos desenvolvidos',
 ]
 
 
 var descricoesRandom = ["0",
 // 1
-'Pequeno vídeo que mostra uma disputa entre dois amigos por um doce. Trabalho de grupo. 2015',
+'<p>Título</p>Pequeno vídeo que mostra uma disputa entre dois amigos por um doce. Trabalho de grupo. 2015',
 // 2
-'Animação com imagens da série South Park, sem som. 2015',
+'<p>Título</p>Animação com imagens da série South Park, sem som. 2015',
 // 3
-'Remake de uma cena do filme Blue Velvvet de 1986. Trabalho de grupo. 2019',
+'<p>Título</p>Remake de uma cena do filme Blue Velvvet de 1986. Trabalho de grupo. 2019',
 // 4
-'Fonte Milano. Tivemos de desenhar uma fonte com base em 3 fontes diferentes.  Trabalho de grupo.',
+'<p>Título</p>Fonte Milano. Tivemos de desenhar uma fonte com base em 3 fontes diferentes.  Trabalho de grupo.',
 // 5
-'Fonte Feita a partir do logo da Rolls royce. Trabalho de grupo.',
+'<p>Título</p>Fonte Feita a partir do logo da Rolls royce. Trabalho de grupo.',
 // 6
-'Igreja de Cerveira modelala em 3D. A gravação do vídeo ficou com muitas falhas. 2014',
+'<p>Título</p>Igreja de Cerveira modelala em 3D. A gravação do vídeo ficou com muitas falhas. 2014',
 // 7
-'Fiz o som para este vídeo da inernet com recurso numa grande biblioteca de sons.',
+'<p>Título</p>Fiz o som para este vídeo da inernet com recurso numa grande biblioteca de sons.',
 // 8
-'Ilustração de personagem. A Amélia é uma pequena planta de chá que dá dicas sobre como fazer os melhores chás. 2019',
+'<p>Título</p>Ilustração de personagem. A Amélia é uma pequena planta de chá que dá dicas sobre como fazer os melhores chás. 2019',
 // 9
-'Ilustração para a capa da revista sábado. 2019',
+'<p>Título</p>Ilustração para a capa da revista sábado. 2019',
 // 10
-'Ilustração incompleta do Alexander Shulgin com citação dele. 2015 ',
+'<p>Título</p>Ilustração incompleta do Alexander Shulgin com citação dele. 2015 ',
 // 11
-'Infografia animada (Incompleto). A infografia deveria informar o número de horas no computador, o número de batidos bebidos e as horas a andar de bicicleta, por dia. 2018',
+'<p>Título</p>Infografia animada (Incompleto). A infografia deveria informar o número de horas no computador, o número de batidos bebidos e as horas a andar de bicicleta, por dia. 2018',
 // 12
-'Remake do website do IDPC, apenas numa página. Dá para carregar em "About" e em baixo em "Health", como exmeplo do seu funcionamento. 2019',
+'<p>Título</p>Remake do website do IDPC, apenas numa página. Dá para carregar em "About" e em baixo em "Health", como exmeplo do seu funcionamento. 2019',
 // 13
-'Remake do blog Por Falar Noutra Coisa. É suposto o wbsite ficar com um ar infantil. Website funciona em telemóvel. 2019',
+'<p>Título</p>Remake do blog Por Falar Noutra Coisa. É suposto o wbsite ficar com um ar infantil. Website funciona em telemóvel. 2019',
 // 14
-'Jogo HTML com 3 níveis. O jogador é um extra-terrestre que tem de apanhar moléculas de água para sobreviver e avançar no jogo, disparando e evitando óbstáculos. Trabalho de grupo com André Furtado. 2015?',
+'<p>Título</p>Jogo HTML com 3 níveis. O jogador é um extra-terrestre que tem de apanhar moléculas de água para sobreviver e avançar no jogo, disparando e evitando óbstáculos. Trabalho de grupo com André Furtado. 2015?',
 // 15
-'Pequena narrativa, exercício para Argumento Multimédia. 2017',
+'<p>Título</p>Pequena narrativa, exercício para Argumento Multimédia. 2017',
 // 16
-'Vídeo feito a partir de Stock Footage. Ensino a fazer a receita de batido "caseiro" que inventei. 2019',
+'<p>Título</p>Vídeo feito a partir de Stock Footage. Ensino a fazer a receita de batido "caseiro" que inventei. 2019',
 //17
-'Trailer do episódio 02 (Reiki) da série documemental Terapias Alternativas. Trabalho de grupo. 2014',
+'<p>Título</p>Trailer do episódio 02 (Reiki) da série documemental Terapias Alternativas. Trabalho de grupo. 2014',
 //18
-'Episódio 01 da série documental Terapias Alternativas. Trabalho de grupo. 2014.',
+'<p>Título</p>Episódio 01 da série documental Terapias Alternativas. Trabalho de grupo. 2014.',
 //19
-'Fotografia Panorâmica tirada no Porto à beira mar. 2021',
+'<p>Título</p>Fotografia Panorâmica tirada no Porto à beira mar. 2021',
 //20
-'Trailer para o filme Night of The Living Dead. Trabalho de grupo. 2019',
+'<p>Título</p>Trailer para o filme Night of The Living Dead. Trabalho de grupo. 2019',
 //21
-'Imagem de uma publicação sobre cafeína. Do lado esquerdo é uma fotografia de chá e do lado direito uma fotografia de cafeína pura. 2021',
+'<p>Título</p>Imagem de uma publicação sobre cafeína. Do lado esquerdo é uma fotografia de chá e do lado direito uma fotografia de cafeína pura. 2021',
 //22
-'Animação simples com obra de Keith Haring. 2019',
+'<p>Título</p>Animação simples com obra de Keith Haring. 2019',
 //23 POESIA
-'Poema  Nota Discordante  de Fernando Namora. 2018',
+'<p>Título</p>Poema  Nota Discordante  de Fernando Namora. 2018',
 //24 POESIA
-'Fanzine Pharmakon nº3. 2020',
+'<p>Título</p>Fanzine Pharmakon nº3. 2020',
 //25
-'Fanzine Pharmakon nº1. 2020',
+'<p>Título</p>Fanzine Pharmakon nº1. 2020',
 //26
-'Imagem digital que fiz no Paint.net antes de 2010. Das primeiras imagens que fiz e que consegui guardar até agora.',
+'<p>Título</p>Imagem digital que fiz no Paint.net antes de 2010. Das primeiras imagens que fiz e que consegui guardar até agora.',
 //27
 '',
 //28
@@ -679,11 +686,21 @@ var trabalhosVideo = ["0",
   ]
 
 
-//DARK MODE EXP. obrigado chatgpt
+
   var body = document.body;
+var title = document.querySelector('#botaoMais');
+var darkButton = document.querySelector('#darkButton');
 
+//G a girar, chatGPT thanks
 
-  body.addEventListener("dblclick", function() {
+var g = title.textContent;
+title.innerHTML = g.replace(
+  'g',
+  '<span class="letter-g">g</span>'
+);
+
+//DARK MODE EXP. obrigado chatgpt
+  darkButton.addEventListener("click", function() {
     body.classList.toggle("bodyDark");
     botaoMais.classList.toggle("botaoMaisDark");
     descricao.classList.toggle("descricaoDark");
@@ -694,16 +711,10 @@ var trabalhosVideo = ["0",
 
   });
 
-  //G a girar, chatGPT thanks
-  var title = document.querySelector('#botaoMais');
-  var g = title.textContent;
-  title.innerHTML = g.replace(
-    'g',
-    '<span class="letter-g">g</span>'
-  );
+
 
   //MUDAR FONTE COM JAVASCRUPTUNXO. e mexer mais rápido, que ainda nao funciona com,o queria. obrigado chatgpt
-  var hoverLetter = title.querySelector('.letter-g');
+/*var hoverLetter = title.querySelector('.letter-g');
   title.addEventListener('mouseenter', () => {
     hoverLetter.style.fontFamily = 'M';
     hoverLetter.classList.toggle("letter-g2");
@@ -711,10 +722,10 @@ var trabalhosVideo = ["0",
   title.addEventListener('mouseleave', () => {
     hoverLetter.style.fontFamily = 'Inconsolata';
     hoverLetter.classList.toggle("letter-g2");
-  });
+  });*/
 
   //LINK FICAR ATIVO QUANDO É CLICKADO.
-  var navLinks = document.querySelectorAll("#topRight a");
+/*  var navLinks = document.querySelectorAll("#topRight a");
   navLinks.forEach(link => {
     link.addEventListener('click', (event) => {
       event.preventDefault();
@@ -725,7 +736,7 @@ var trabalhosVideo = ["0",
 
       link.classList.add('active');
     });
-  });
+  });*/
 
 
 

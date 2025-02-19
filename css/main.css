@@ -1,4 +1,4 @@
-/* Obrigado professora Ana Isabel Carvalho e professor Ricardo Lafuente por este estrugido. E também pelo que me ensinaram, custou, mas curti totil*/
+
 
 /*! HTML5 Estrugido, uma versão light do HTML5 Boilerplate v7.2.0
     https://html5boilerplate.com
@@ -21,19 +21,6 @@
 
 
 
-
-
-
-
-/*METER UM RATO DECENTE - 2do*/
-  /*#mouse-pointer {
-           position: absolute;
-           top: 0;
-           left: 0;
-           width: 50px;
-           height: 50px;
-           background: url(your-image-url.png) no-repeat;
-         }*/
 
 
 
@@ -88,20 +75,15 @@ html {
   line-height: 1.4;
 }
 
-a{
-  font-weight: 300;
-  transition: 1s;
 
-}
-a:hover{
-  font-weight: 300;
-  text-shadow: 0.6px 0px 0px #7ca8ff, -0.6px 0px 0px #ff7c7c;
-  transition: 0s;
-}
+
+
+
+
 
 /*Links a ativar e a desativar no topRight*/
-a.active {text-shadow: 0.6px 0px 0px #7ca8ff, -0.6px 0px 0px #ff7c7c;font-weight: 300;}
-a:not(.active):hover {}
+/*a.active {text-shadow: 0.6px 0px 0px #7ca8ff, -0.6px 0px 0px #ff7c7c;font-weight: 300;}
+a:not(.active):hover {}*/
 
 
 
@@ -118,19 +100,20 @@ a:not(.active):hover {}
  */
 
  ::-moz-selection {
-   /*background: #222;
-   color: white;
-   text-shadow: none;*/
-   color: #0d018c;
-   background: none;
+   background: grey;
+   color: black;
+   text-shadow: none;
+   /*color: #0d018c;
+   background: none;*/
  }
 
  ::selection {
-   /*background: #222;
-   color: white;
-   text-shadow: none;*/
-    color: #0d018c;
-    background: none;
+   background: grey;
+   color: black;
+
+    text-shadow: none;
+    /*color: #0d018c;
+    background: none;*/
  }
 
 
@@ -262,37 +245,13 @@ textarea {
 
 
 
-
-
-   /*#cabecalho{
-     position: absolute;
-     width: 99.5%;
-     background-color: lightgrey;
-     padding: 3px;
-
-     font-family: 'Inconsolata', monospace;
-     color: black;
-
-     text-align: center;
-   }
-*/
-
 /*ECRA..............................................*/
 #screen{
   box-sizing: border-box;
   /*border: 1px solid #222;*/
-
-  display: grid;
-
-  grid-template-columns: 20% 80%;
-  grid-template-rows: 20% 80%;
-
-  height: 100vh;
-  min-height: 100vh;
-
-
+  /*height: 100vh;*/
+  /*min-height: 100vh;*/
   /*font-family: 'Inconsolata', monospace;*/
-
   font-family: "Source Code Pro", monospace;
   font-optical-sizing: auto;
   font-weight: <weight>;
@@ -303,51 +262,153 @@ textarea {
 
 }
 
-h3{
-  padding-bottom: 1rem;
+#leftBar{
+  padding: 10px;
 }
 
+
+
+a{
+  text-decoration: underline red 0.5px;
+  color: inherit;
+}
+
+a:visited{color: grey;}
+
+a:hover{
+  text-decoration: underline red 1.5px;
+  /*text-shadow: 0.6px 0px 0px #7ca8ff, -0.6px 0px 0px #ff7c7c;*/
+
+}
+
+h1{
+  font-size: 40px;
+  font-weight: 100;
+
+
+  text-decoration: underline red 0.5px;
+
+  margin-bottom: 3rem;
+}
+h2{
+  font-size: 31px;
+  font-weight: 300;
+  text-decoration: underline red 0.5px;
+  margin-bottom: 2rem;
+}
+
+h3{
+  font-size: 25px;font-weight: 300; color: red;
+}
+  h3:hover{text-decoration: none;cursor:pointer;}
+
+h4{
+  font-size: 18px;font-weight: 300; text-transform: uppercase;
+}
+  h4:hover{text-decoration: none;}
+
+h5{
+  font-size: 15px;font-weight: 300;
+}
+  h5:hover{text-decoration: none;}
+
+
+  .sub:hover h4 {
+    text-decoration: underline;
+    text-decoration-color: red;
+  }
+
+  .items a {
+    font-weight: 300;
+    text-decoration: none;
+  }
+  .items a::before {
+    content: "";
+    display: inline-block;
+    width: 3px;  /* Ajusta o tamanho do círculo */
+    height: 3px;
+    background-color: red;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    margin-right: 15px;
+
+  }
+
+  .items a:hover {
+    font-weight: 300;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+
+
+h1:hover{
+  text-decoration: underline red 1.5px;
+}
+h2:hover{
+  text-decoration: underline red 1.5px;
+}
+
+
+
+
+
+
+.menu {
+  display: none;
+            width: 250px;
+        }
+        .menu > .category {
+            padding: 10px;
+            transition: background 0.1s ease-in-out;
+        }
+        .submenu {
+            max-height: none;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .items {
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: max-height 0.4s ease-in-out 0.1s, opacity 0.4s ease-in-out 0.1s, transform 0.4s ease-in-out 0.1s;
+        }
+        .submenu > .sub {
+            padding: 10px;
+            padding-bottom: 10px;
+            transition: background 0.4s ease-in-out;
+        }
+        .sub:hover .items {
+            max-height: 300px;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .items div {
+            padding: 8px;
+            margin-bottom: 0;
+            transition: background 0.4s ease-in-out;
+        }
+
+
+
+
+
+
+
 #screen p{
-  padding-bottom: 10%;
+  /*padding-bottom: 10%;*/
 }
 
 
 
 /*TOP LEFT..................................*/
-#topLeft{
-
-}
-
-h1{
-  font-size: 3rem;
-  margin-top: auto;
-  margin-bottom: auto;
-  padding-left: 5vw;
-  /*text-align: center;
-  vertical-align: middle;*/
-  color: #222;
-
- /*transition: text-shadow 3s;*/
-
- animation: sombra 15s infinite;
- animation-delay: 1s;
- animation-direction: alternate;
- animation-timing-function:ease-out;
-}
-
 #rotate{
   transform: rotate(1deg);
     -ms-transform: rotate(1deg);
     -webkit-transform: rotate(1deg);
      display: inline-block;
-
-
-
-
    }
-
-
-
 @keyframes sombra {
   0%   {text-shadow: 0px 0px 0px #7ca8ff, 0px 0px 0px #ff7c7c;}
   1%  {text-shadow: 4px 0px 0px #7ca8ff, -4px 0px 0px #ff7c7c;}
@@ -356,50 +417,21 @@ h1{
   6% {text-shadow: 0px 0px 0px #7ca8ff, 0px 0px 0px #ff7c7c;}
 
 }
-#botaoMais{
-  font-weight: 300;
-}
+
 #botaoMais:hover{
-  text-shadow: 1.4px 0px 0px #7ca8ff, -1.4px 0px 0px #ff7c7c;
-  font-weight: 300;
+  /*text-shadow: 1.4px 0px 0px #7ca8ff, -1.4px 0px 0px #ff7c7c;*/
+  font-weight: 200;
+}
+h1 #botaoMais{
+ /*transition: text-shadow 3s;*/
+ animation: sombra 15s infinite;
+ animation-delay: 1s;
+ animation-direction: alternate;
+ animation-timing-function:ease-out;
+ font-size: 3rem;
 }
 
 
-/*.letter-g:hover{
-  font-weight: 400;
-  font-family: M;
-}*/
-
-
-
-/*
-img:hover{
-  animation: sombraImg 2s infinite;
-  animation-delay: 10s;
-  animation-direction: alternate;
-  animation-timing-function:ease-out;
-}
-@keyframes sombraImg {
-  0%   {box-shadow: 0px 0px 0px #7ca8ff, 0px 0px 0px #ff7c7c;}
-  10%  {box-shadow: 2px 0px 0px #7ca8ff, -3px 0px 0px #ff7c7c;}
-  30% {box-shadow: 0px 0px 0px #7ca8ff, 0px 0px 0px #ff7c7c;}
-  40%  {box-shadow: 1px 0px 0px #7ca8ff, -2px 0px 0px #ff7c7c;}
-  60% {box-shadow: 0px 0px 0px #7ca8ff, 0px 0px 0px #ff7c7c;}
-
-}*/
-
-
-/*
-p:hover{
-
-}
-#wait:hover{cursor:wait;}*/
-
-
-/*
-a:hover,p:hover{
-  cursor: default;
-}*/
 
 
 
@@ -407,66 +439,28 @@ a:hover,p:hover{
 
 
 
-/*BOTTOM LEFT.................................*/
-#categorias{
-  /*margin-top: auto;
-  margin-bottom: auto;*/
-  padding-left: 5vw;
-  padding-bottom: 5vh;
 
-  font-size: 2rem;
-  line-height: 6vh;
 
-  transition: opacity 1s ease-in-out;
-  opacity: 0;
-}
+
+
+
+
+
+
+
 
 
 
 
 /*TOP RIGHT.................................*/
-#topRight{
-  /*grid-column: 2;
-  grid-row: 1*/
-
-  margin-bottom: auto;
-  margin-top: auto;
-
-  position: relative;
-
-  /*white-space: nowrap;*/
-
-
-}
-
-#topRight p{
-  display: inline;
-  padding-right: 3rem;
-
-}
 
 
 
-#descricao{
-  position: absolute;
-  bottom:-5vh;
-  padding: 0.25rem 0;
-  /*  background-color: white; esta merda sobrepoem-se ao dark mode, ao contrario das outras coisas no dark mode, nao fgaço ideia porquê*/
-}
 
 
-.data{
-  margin-right: 1rem;
-  color: red;
-}
 
-.trabalhos{
-  font-size: 1.5rem;
-}
 
-.trabalhosDescricao{
-  font-size: 1rem;
-}
+
 
 #listaVideo, #listaImagem, #listaWeb, #listaOutros, #listaAudio, #listaMais{
   display: none;
@@ -475,12 +469,6 @@ a:hover,p:hover{
 
 /*bottom right.................................*/
 
-#bottomRight{
-  /*border-radius: 20px;
-  box-sizing: content-box;
-  background-color: rgba(255, 255, 255, 0.4);*/
-
-}
 
 #pan{
   height: 100%;
@@ -493,9 +481,7 @@ a:hover,p:hover{
   overflow-x: scroll;
 }
 
-#gridsobre{
 
-}
 
 
 
@@ -656,129 +642,6 @@ a:hover,p:hover{
 
 @media only screen and (max-width: 1000px) { /* estilos para ecrãs pequenos */
 
-
-  html {
-    font-size: 70%;
-    line-height: 2;
-    padding: 0;
-    margin: 0;
-  }
-
-  h1{
-    text-align: center;
-    padding: 0px;
-    padding-bottom: 25px;
-  }
-
-  #screen{
-    max-height: 100vh;
-    min-width: 100vw;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 6% 16% 10%;
-    box-sizing: border-box;
-}
-
-#screenInside{
-  max-height: 100vh;
-  min-width: 100vw;
-
-  box-sizing: border-box;
-}
-
-.insidepage{
-  height: 100vh;
- overflow: scroll;
-}
-
-
-#listaMais{
-  padding-bottom: 30px;
-}
-#listaAudio, #listaWeb, #listaVideo, #listaImagem, #listaOutros {
-  padding-bottom: 20px;
-}
-
-#categorias {
-  position:;
-  font-size: 200%;
-  padding: 0px;
-  margin: 0;
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  transition: opacity 1s ease-in-out;
-  opacity: 0;
-}
-
-#categorias p{
-  padding: 0;
-  margin:0;
-}
-
-#topRight a, #topRight p{
-  font-size: 100%;
-  padding: 0px;
-  margin: 0;
-}#topRight a{padding-right: 2rem;}
-
-#listaMais, #listaAudio, #listaWeb, #listaVideo, #listaImagem, #listaOutros {
-  text-align: center;
-}
-
-#topRight{
-    text-align: center;
-}
-
-#bottomRight{
-
-  text-align: center;
-
-}
-#categorias{
-  text-align: center;
-
-}
-
-
-
-
-
-
-#pan{
-  max-height: 64vh;
-}
-#pan2{
-  max-height: 64vh;
-}
-
-#gridsobre{
-
-}
-
-.janela{
-  height: 100%;
-  width: 100%;
-
-  frameBorder:0;
-}
-
-.imagem{
-  max-width: 100%;
-  max-width: 100%;
-  max-height: 100%;
-  max-height: 64vh;
-}
-
-.height{
-  max-height: 100%;
-}
-
-.youtube{
-  height:100%;
-  width: 100%;
-
-  frameBorder:0;
-}
 
 
 
@@ -967,9 +830,14 @@ body {
 
 .descricaoDark{
   color: lightgrey;
-  background-color: #161722;
+  background-color: rgba(1, 1, 1, 0.9);
+
 }
 
+#darkButton:hover{
+cursor: pointer;
+
+}
 /*.bottomRightDark{
   background-color: rgba(0, 0, 0, 0.28);
 }*/
@@ -1017,4 +885,125 @@ body {
 
 .espacinho{
   margin-bottom: 1.5rem;
+}
+
+
+
+
+
+#screen{
+          display: grid;
+          grid-template-columns: 200px 1fr;
+          grid-template-rows: auto 1fr auto;
+          gap: 10px;
+          height: 100vh;
+          padding: 10px;
+          box-sizing: border-box;
+}
+
+
+#leftBar{
+  box-sizing: border-box;
+  grid-row: span 3;
+  overflow:
+
+
+}
+
+#portfolioMenu{
+  overflow: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+}
+
+#titulo {
+    display: flex;
+    min-height: 50px;
+}
+
+#bottomRight{
+  grid-row: span 3;
+  line-height: 2rem;
+}
+
+#descricao {
+    /*display: flex;*/
+    font-size: 1.1rem;
+    min-height: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 210px;
+    width: 100%; /* Ou outro valor conforme necessário */
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px; /* Ajusta conforme necessário */
+}
+
+
+
+#descricao p:first-child {
+color:red;
+margin-bottom: 10px;
+font-weight: 300;
+font-size: 1.2rem;
+}
+/*DARK MODE*/
+
+.bodyDark {
+  background-color: #333;
+  color: #F8F8F8;
+}
+.botaoMaisDark{
+  color: white;
+}
+
+.descricaoDark{
+  background-color: rgba(1, 1, 1, 0.9);
+  color: white;
+
+
+}
+
+#darkButton:hover{
+cursor: pointer;
+
+}
+/*.bottomRightDark{
+  background-color: rgba(0, 0, 0, 0.28);
+}*/
+
+
+.backgroundDark{
+  background-image:
+  radial-gradient(circle at 20% 40%, #000C1B, transparent),
+  radial-gradient(circle at 60% 80%, #1B0015, transparent);
+  /*url(../bg.jpg);*/
+
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 0, 100% 100%;
+  background-size: 100%, 250%;
+
+  animation: animateGradients 25s linear infinite alternate;
+}
+
+  @keyframes animateGradients {
+    0% {
+      background-position: 0% 0%, 100% 100%, center center;
+    }
+    20% {
+      background-position: 30% 10%, 70% 90%, center center;
+    }
+    40% {
+      background-position: 80% 70%, 20% 30%, center center;
+    }
+    60% {
+      background-position: 50% 90%, 50% 10%, center center;
+    }
+    80% {
+      background-position: 90% 30%, 10% 70%, center center;
+    }
+    100% {
+      background-position: 0% 0%, 100% 100%, center center;
+
+    }
 }
