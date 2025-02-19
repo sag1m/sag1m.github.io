@@ -372,12 +372,12 @@ h2:hover{
             overflow: hidden;
             opacity: 0;
             transform: translateY(-10px);
-            transition: max-height 0.4s ease-in-out 0.1s, opacity 0.4s ease-in-out 0.1s, transform 0.4s ease-in-out 0.1s;
+            transition: max-height 0.1s ease-in-out 0.1s, opacity 0.1s ease-in-out 0.1s, transform 0.1s ease-in-out 0.1s;
         }
         .submenu > .sub {
             padding: 10px;
             padding-bottom: 10px;
-            transition: background 0.4s ease-in-out;
+            transition: background 0.1s ease-in-out;
         }
         .sub:hover .items {
             max-height: 300px;
@@ -387,7 +387,7 @@ h2:hover{
         .items div {
             padding: 8px;
             margin-bottom: 0;
-            transition: background 0.4s ease-in-out;
+            transition: background 0.1s ease-in-out;
         }
 
 
@@ -905,7 +905,6 @@ cursor: pointer;
 #leftBar{
   box-sizing: border-box;
   grid-row: span 3;
-  overflow:
 
 
 }

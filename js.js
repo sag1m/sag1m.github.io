@@ -292,7 +292,7 @@ var mais = [
   ' <div id="typing-text"></div> ',
 
   //CÓPIA DO HTML:
-  '<div style="border-left:0.5px solid red"><p style="line-height:3rem;font-size:2rem">Olá<br>Sou o Miguel Sousa,<br>designer de comunicação multimédia. </p><p style="margin:10px 0 0 0;">Vê vários trabalhos que fiz neste site que programei.</p><span onclick="toggleCaixa()" style="cursor: pointer;" id="sobre">Ler mais⬇</span><div style="display:none" id="caixaTexto" class="caixa-texto"><p>Gosto de me cansar no ginásio. <br>Prefiro usar a bicicleta como meio de transporte.<br>Talvez passe demasiado tempo no computador.<br>Quando não chove, cultivo catnip para os meus gatos e suculentas.</p></div><br><br><p style="font-weight:700">Disponível para colaborar</p><p style="padding-bottom:1.5rem">Email:<a href="mailto:mnamoras@outlook.pt">mnamoras@outlook.pt</a></p><span id="darkButton">dark-mode&#9788</span></div>',
+  '<div style="border-left:0.5px solid red; padding-left:10px"><p style="line-height:3rem;font-size:2rem">Olá<br>Sou o Miguel Sousa,<br>designer de comunicação multimédia. </p><p style="margin:10px 0 0 0;">Vê vários trabalhos que fiz neste site que programei.</p><span onclick="toggleCaixa()" style="cursor: pointer;" id="sobre">Ler mais⬇</span><div style="display:none" id="caixaTexto" class="caixa-texto"><p>Gosto de me cansar no ginásio. <br>Prefiro usar a bicicleta como meio de transporte.<br>Talvez passe demasiado tempo no computador.<br>Quando não chove, cultivo catnip para os meus gatos e suculentas.</p></div><br><br><p style="font-weight:700">Disponível para colaborar</p><p style="padding-bottom:1.5rem">Email:<a href="mailto:mnamoras@outlook.pt">mnamoras@outlook.pt</a></p><span id="darkButton">dark-mode&#9788</span></div>',
 
   //esta decsrição é uam página externa que permitirá mais lberdade de merda e parágrafos e coisas. mas afinal não funcionou bem, que trabalheira  pra fazer isto bem.:
   //'<iframe alt="Sobre" class="youtube" frameBorder="0" src="sobre.html"></iframe>',
@@ -402,35 +402,35 @@ function uber1(){document.getElementById("uber").src = 'UberHugo.jpg';}
 //DESCRIÇÕES
 var descricoesVideo = ["0",
 
-'<p>Título</p>Vídeo com o tema Rotina Diária, em específico os suplementos alimentares. Gravado com o telemóvel e uma lente. 2018',
+'<p>Mystery Mammal - Data</p>Vídeo com o tema "Rotina Diária", em específico os suplementos alimentares.<br> Gravado com um telemóvel e uma lente.<br>2018',
 
-'<p>Título</p>Kynetic Typography - Videoclip só com tipografia cinética. 2020',
+'<p>Frank Ocean - Self control</p>Kynetic Typography<br> Videoclipe só com tipografia cinética.<br>2020',
 
-'<p>Título</p>Vídeo sobre a Fé. Põe em igualdade rituais e crenças atuais de todo o mundo. Trabalho de grupo com o Leandro Afonso. 2020',
+'<p>Fé</p>Vídeo artístico que trata a Fé.<br>Põe em igualdade rituais e crenças atuais de todo o mundo. <br> Trabalho de grupo com o Leandro Afonso.<br> 2020',
 
-'<p>Título</p>Vídeo Time Lapse sobre o Trânsito no Porto. 2020',
+'<p>Traffic</p>Exercício de Time-Lapse sobre o Trânsito no Porto - Como uma pequena ação individual dificulta a vida de milhares de pessoas. <br>2020',
 
-'<p>Título</p>Vídeo com os temas Amanhecer e Solidão. Trata uma rotina matinal. 2021',
+'<p>Soft and Furious - Game On</p>Videoclipe com os temas Amanhecer e Solidão. Retrata uma rotina matinal, o despertar forçado e a preparação para sair de casa.<br>. 2021',
 
-'<p>Título</p>Vídeo para mostrar o estado atual (antigo cinema) das futuras instalações da Vida Económica. Apenas fiz as partes da gravação e edição.',
+'<p>Futuras Instalações VE: Estado Atual e Projeto</p>Vídeo para mostrar o estado atual (antigo cinema) das futuras instalações da Vida Económica. Gravei e editei, mas não fiz o 3D. <br>2024',
 
 '',
 ]
 var descricoesImagem = ["0",
 
-'<p>Título</p>Animações simples com obras de Keith Haring',
+'<p>Keith Haring Animated</p>Animações simples com obras de Keith Haring',
 
-'<p>Título</p>Spoof Ad da empresa MyProtein.',
+'<p>Myprotein Spoof Ad</p>Spoof Ad da empresa MyProtein.',
 
-'<p>Título</p>Spoof ad do medicamento Lunesta. À esquerda é o original. Eu apenas mudei a ordem do texto - O que no original tem mais destaque, no meu tem menos importância.',
+'<p>Lunesta Spoof Ad</p>Spoof ad do medicamento Lunesta. À esquerda é o original. Eu apenas mudei a ordem do texto - O que no original tem mais destaque, no meu tem menos importância.',
 
-'<p>Título</p>Pixel Art. 1 frame de um possível jogo. O jogador seria um estafeta da Uber que teria de entregar encomendas. Ganharia bónus ao arrancar retrovisores de carros.',
+'<p>Uber Hugo</p>Pixel Art Game<br> 1 frame de um possível jogo. <br>O jogador seria um estafeta da Uber que teria de entregar encomendas. Ganharia bónus ao arrancar retrovisores de carros.',
 
-'<p>Título</p>Fotografia Panorâmica no Porto à beira rio.',
+'<p>Douro</p>Fotografia Panorâmica no Porto à beira rio.',
 
 '<p>Título</p>Fotografei e ajudei em vários eventos',
 
-'<p>Título</p>Ilustração do Alexamnder Shulgin. 2015',
+'<p>Alexander Shulgin</p>Ilustração do Alexander Shulgin. 2015',
 
 ''
 
@@ -438,29 +438,29 @@ var descricoesImagem = ["0",
 ]
 var descricoesWeb = ["0",
 
-'<p>Título</p>Website desenvolvido para um festival de música inventado, baseado num cartaz construtivista Russo. 2019',
+'<p>CrossFest Festival</p>Website desenvolvido para um festival de música inventado<br> Baseado num cartaz construtivista Russo.<br> 2019',
 
-'<p>Designer Week</p>Protótipo para um jogo de escolhas, onde o jogador tem de acabar de programar um website controlando a sua ansiedade e energia. 2020.',
+'<p>Designer Week</p>Protótipo para um jogo de escolhas, onde o jogador tem de acabar de programar um website controlando a sua ansiedade e energia.<br> A escolha de ações influencia o humor, que por sua vez influencia o sucesso dessas ações. <br> 2020.',
 
-'<p>Título</p>Gerador de um website para fotografar, documentar e competir com cartas de suculentas. 2021',
+'<p>succulents Card Game</p>Gerador de um website para fotografar, documentar e competir com cartas de suculentas. <br>2021',
 
-'<p>Título</p>Proposta de website para a Vida Económica - Um website com notícias de várias revistas e jornal e ainda livraria.',
+'<p>Vida Económica</p>Proposta de melhoria do website para a Vida Económica <br>- Um website com notícias de várias revistas e jornal e ainda livraria.<br>2024',
 
-'<p>Título</p>Demo (demonstração) de um jogo onde temos de controlar o ambiente com várias ferramentas e ações para cultivar a planta catnip.',
+'<p>Catnip Grower</p>Demo (demonstração) de um jogo onde temos de controlar o ambiente com várias ferramentas e ações para cultivar a planta catnip.<br>2024',
 
 '',
 '',
 ]
 var descricoesOutros = ["0",
-'<p>Título</p>Pequeno texto de pesquisa para blog sobre o Teletexto. 2020',
+'<p>Sobre o Teletexto</p>Pequeno texto de pesquisa para blog sobre o Teletexto.<br> 2020',
 
-'<p>Título</p>Fanzine Pharmakon com 3 números. O tema são substancias psicoativas principalmente ilegais. 2020',
+'<p>Pharmakon</p>Fanzine Pharmakon com 3 números. <br>O tema são as substancias psicoativas principalmente ilegais. <br>2020',
 
-'<p>Título</p>Publicação sobre a Cafeína feita em Projeto de Impressão. 2020',
+'<p>Cafeína</p>Publicação artística sobre a Cafeína feita em Projeto de Impressão. <br>2020',
 
-'<p>Título</p>Publicações para as Redes Sociais',
+'<p>Redes Sociais</p>Publicações para as Redes Sociais',
 
-'<p>Título</p>Logotipos desenvolvidos',
+'<p>Logotipos</p>Logotipos desenvolvidos',
 ]
 
 
