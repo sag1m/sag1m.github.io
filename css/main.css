@@ -271,9 +271,13 @@ textarea {
 a{
   /*text-decoration: underline red 0.5px;*/
   color: inherit;
+  text-decoration: none;
+
 }
 
-a:visited{color: grey;}
+
+
+a:visited{/*color: grey;*/}
 
 a:hover{
   text-decoration: underline red 0.5px;
@@ -680,6 +684,7 @@ h1 #botaoMais{
   a,
   a:visited {
     text-decoration: underline;
+
   }
   a[href]:after {
     content: " (" attr(href) ")";
