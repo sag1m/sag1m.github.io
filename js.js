@@ -197,7 +197,7 @@ function showMais() {
 
 
   function showWorkM(value) {
-    descricao.innerHTML = [];
+    //descricao.innerHTML = [];
     bottomRight.innerHTML = mais[value];
 
   /*  botaoVideo.style = "font-weight: 300";
@@ -225,42 +225,42 @@ function showMais() {
 
 function showWorkV(value) {
     bottomRight.innerHTML = trabalhosVideo[value];
-    descricao.innerHTML = [];
+    //descricao.innerHTML = [];
     //descricao.innerHTML = descricoesVideo[value];
 }
 function showWorkVMais(value) {
     bottomRight.innerHTML = trabalhosVideoMais[value];
-    descricao.innerHTML = [];
+    //descricao.innerHTML = [];
     //descricao.innerHTML = descricoesVideo[value];
 }
 function showWorkI(value) {
     bottomRight.innerHTML = trabalhosImagem[value];
-    descricao.innerHTML = [];
+    //descricao.innerHTML = [];
     //descricao.innerHTML = descricoesImagem[value];
 }
 function showWorkIMais(value) {
     bottomRight.innerHTML = trabalhosImagemMais[value];
-    descricao.innerHTML = [];
+    //descricao.innerHTML = [];
     //descricao.innerHTML = descricoesImagem[value];
 }
 function showWorkW(value) {
     bottomRight.innerHTML = trabalhosWeb[value];
-    descricao.innerHTML = [];
+    //descricao.innerHTML = [];
     //descricao.innerHTML = descricoesWeb[value];
 }
 function showWorkWMais(value) {
     bottomRight.innerHTML = trabalhosWebMais[value];
-    descricao.innerHTML = [];
+    //descricao.innerHTML = [];
     //descricao.innerHTML = descricoesWeb[value];
 }
 function showWorkO(value) {
     bottomRight.innerHTML = trabalhosOutros[value];
-    descricao.innerHTML = [];
+    //descricao.innerHTML = [];
     //descricao.innerHTML = descricoesOutros[value];
 }
 function showWorkOMais(value) {
     bottomRight.innerHTML = trabalhosOutrosMais[value];
-    descricao.innerHTML = [];
+    //descricao.innerHTML = [];
     //descricao.innerHTML = descricoesOutros[value];
 }
 
