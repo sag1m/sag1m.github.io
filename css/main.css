@@ -19,7 +19,9 @@
 
 
 
-
+p{
+  cursor:crosshair;
+}
 
 
 
@@ -100,7 +102,7 @@ a:not(.active):hover {}*/
  */
 
  ::-moz-selection {
-   background: grey;
+   background: lightgrey;
    color: black;
    text-shadow: none;
    /*color: #0d018c;
@@ -108,10 +110,10 @@ a:not(.active):hover {}*/
  }
 
  ::selection {
-   background: grey;
+   background: lightgrey;
    color: black;
 
-    text-shadow: none;
+    /*text-shadow: red;*/
     /*color: #0d018c;
     background: none;*/
  }
@@ -307,7 +309,7 @@ h3{
   h3:hover{text-decoration: none;cursor:pointer;}
 
 h4{
-  font-size: 18px;font-weight: 300; text-transform: uppercase;
+  font-size: 18px;font-weight: 300; text-transform: uppercase; cursor: default;
 }
   h4:hover{text-decoration: none;}
 
@@ -319,7 +321,7 @@ h5{
 
   .sub:hover h4 {
     text-decoration: underline;
-    text-decoration-color: red;
+    text-decoration-color: #d72638;
   }
 
   .items a {
@@ -837,6 +839,7 @@ body {
   color: lightgrey;
   background-color: rgba(1, 1, 1, 0.9);
 
+
 }
 
 #darkButton:hover{
@@ -942,6 +945,9 @@ cursor: pointer;
     width: 100%; /* Ou outro valor conforme necessário */
     background-color: rgba(255, 255, 255, 0.9);
     padding: 30px; /* Ajusta conforme necessário */
+    line-height: 1.5rem;
+
+    max-width: 50vw;
 }
 
 

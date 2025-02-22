@@ -437,6 +437,15 @@ var descricoesVideo = ["0",
 //5 VE instalações
 '<p>Futuras Instalações VE: Estado Atual e Projeto</p>Vídeo para mostrar o estado atual (antigo cinema) das futuras instalações da Vida Económica. Gravei e editei, mas não fiz o 3D. <br>2024',
 
+'<p>Vigília MUBi Porto</p>Vídeo sobre a Vigília de 21 de novembro de 2021 em memória das centenas de vítimas nas estradas portuguesas (Em 2019 foram 626 mortes e 2168 feridos graves) organizado pela <a href="https://mubi.pt/porto/">MubiPorto</a> <br>2021',
+
+'<p></p>',
+
+'<p></p>',
+
+'<p></p>',
+
+'<p>Futuras Instalações VE: Estado Atual e Projeto</p>Vídeo para mostrar o estado atual (antigo cinema) das futuras instalações da Vida Económica. Gravei e editei, mas não fiz o 3D. <br>2024',
 
 '<p>Traffic</p>Exercício de Time-Lapse sobre o Trânsito no Porto - Como uma pequena ação individual dificulta a vida de milhares de pessoas. <br>2020',
 
@@ -624,6 +633,9 @@ var trabalhosVideo = ["0",
     '<iframe alt="Amanhecer 2021" class="youtube" src="https://www.youtube.com/embed/uD2AljAy5q0?autoplay=1&enablejsapi=1&modestbranding=1&color=white&rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" rel="0" allowfullscreen></iframe>',
   //5 VE instalações
     '<iframe  class="youtube" src="https://drive.google.com/file/d/1h7ufBJQZJVgWu7P2_joWXU8YIMiUmx_-/preview" frameBorder="0"></iframe>',
+
+  //6 mubi porto
+      '<iframe class="youtube" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmubi.porto%2Fvideos%2F313795297147345%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>',
 
 
       ''
