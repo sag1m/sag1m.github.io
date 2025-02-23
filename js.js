@@ -231,7 +231,8 @@ function showWorkV(value) {
 function showWorkVMais(value) {
     bottomRight.innerHTML = trabalhosVideoMais[value];
     //descricao.innerHTML = [];
-    //descricao.innerHTML = descricoesVideo[value];
+    descricao.style = "display: display";
+    descricao.innerHTML = descricoesVideo[value];
 }
 function showWorkI(value) {
     bottomRight.innerHTML = trabalhosImagem[value];
@@ -241,7 +242,8 @@ function showWorkI(value) {
 function showWorkIMais(value) {
     bottomRight.innerHTML = trabalhosImagemMais[value];
     //descricao.innerHTML = [];
-    //descricao.innerHTML = descricoesImagem[value];
+    descricao.style = "display: display";
+    descricao.innerHTML = descricoesImagem[value];
 }
 function showWorkW(value) {
     bottomRight.innerHTML = trabalhosWeb[value];
@@ -251,7 +253,8 @@ function showWorkW(value) {
 function showWorkWMais(value) {
     bottomRight.innerHTML = trabalhosWebMais[value];
     //descricao.innerHTML = [];
-    //descricao.innerHTML = descricoesWeb[value];
+    descricao.style = "display: display";
+    descricao.innerHTML = descricoesWeb[value];
 }
 function showWorkO(value) {
     bottomRight.innerHTML = trabalhosOutros[value];
@@ -261,6 +264,7 @@ function showWorkO(value) {
 function showWorkOMais(value) {
     bottomRight.innerHTML = trabalhosOutrosMais[value];
     //descricao.innerHTML = [];
+    descricao.style = "display: display";
     //descricao.innerHTML = descricoesOutros[value];
 }
 
@@ -316,7 +320,7 @@ var mais = [
   ' <div id="typing-text"></div> ',
 
   //CÓPIA DO HTML:
-  '<div style="border-left:0.5px solid red; padding-left:10px"><p style="line-height:3rem;font-size:2rem"><span id="O" style="font-weight:600;" >&#9786</span>lá<br>Sou o Miguel Sousa,<br>designer de comunicação multimédia. </p><p style="margin:10px 0 0 0;">Tenho vários trabalhos neste site que programei.</p><br><span onclick="toggleCaixa()" style="cursor: pointer;" id="sobre">&#11015 Ler mais </span> <span id="darkButton"> <span style="margin-left:20px;" >&#9788</span> dark-mode</span><div style="padding-top:3px;display:none" id="caixaTexto" class="caixa-texto"><img style="height: 200px;position: absolute;left: 900px;top: 200px;"id=""src="test02.png"alt="Auto retrato sobre-exposto e demasiado editado"><p>Gosto de me cansar no ginásio. <br>Prefiro usar a bicicleta como meio de transporte.<br>Quando não chove, cultivo catnip para os meus gatos e suculentas.<br>Talvez passe demasiado tempo no computador.</p></div><br><br><p style="font-weight:700">Disponível para colaborar</p><a style="text-decoration:;" href="mailto:mnamoras@outlook.pt" onmouseover="document.getElementById(&quot;coracao&quot;).innerHTML=&quot;❤&quot;" onmouseout="document.getElementById(&quot;coracao&quot;).innerHTML=&quot;✉&quot;"><span id="coracao">&#9993;</span> mnamoras@outlook.pt</a></div>',
+  '<div style="border-left:0.5px solid red; padding-left:10px"><p style="line-height:3rem;font-size:2rem"><span id="O" style="font-weight:600;" >&#9786</span>lá<br>Sou o Miguel Sousa,<br>designer de comunicação multimédia. </p><p style="margin:10px 0 0 0;">Tenho vários trabalhos neste site que programei.<br>Ainda estou a atualizar os trabalhos e o site.</p><br><span onclick="toggleCaixa()" style="cursor: pointer;" id="sobre">&#11015 Ler mais </span> <span id="darkButton"> <span style="margin-left:20px;" >&#9788</span> dark-mode</span><div style="padding-top:3px;display:none" id="caixaTexto" class="caixa-texto"><img style="height: 200px;position: absolute;left: 900px;top: 200px;"id=""src="test02.png"alt="Auto retrato sobre-exposto e demasiado editado"><p>Gosto de me cansar no ginásio. <br>Prefiro usar a bicicleta como meio de transporte.<br>Quando não chove, cultivo catnip para os meus gatos e suculentas.<br>Talvez passe demasiado tempo no computador.</p></div><br><br><p style="font-weight:700">Disponível para colaborar</p><a style="text-decoration:;" href="mailto:mnamoras@outlook.pt" onmouseover="document.getElementById(&quot;coracao&quot;).innerHTML=&quot;❤&quot;" onmouseout="document.getElementById(&quot;coracao&quot;).innerHTML=&quot;✉&quot;"><span id="coracao">&#9993;</span> mnamoras@outlook.pt</a></div>',
 
   //esta decsrição é uam página externa que permitirá mais lberdade de merda e parágrafos e coisas. mas afinal não funcionou bem, que trabalheira  pra fazer isto bem.:
   //'<iframe alt="Sobre" class="youtube" frameBorder="0" src="sobre.html"></iframe>',
