@@ -526,7 +526,7 @@ var descricoesWeb = ["0",
 '<p translate="no">succulents Card Game</p>Gerador de um website para fotografar, documentar e competir com cartas de suculentas. <br>2021',
 
     // 3 POSTS redes sociais
-'<p>Redes Sociais</p>Publicações para as Redes Sociais',
+'<p>Redes Sociais Vida Económica</p>Templates de vários tipos de post. Formações do mês, da semana, anúncios das formações, promoções do Livro da Semana, Citações de livros.<br>Criar posts, agendar posts, escrever e organizar textos e links.',
 
     // 4 VÍDEOS  redes sociais
 '<p>Vídeo semanal do jornal</p>Vídeo semanal que mostra alguns destaques do jornal vida Económica.<br>2024',
@@ -810,7 +810,7 @@ var trabalhosVideo = ["0",
     '<iframe alt="Gerador de um website para fotografar, documentar e competir com cartas de suculentas. 2021" class="youtube" frameBorder="0" src="gerador/index.html"></iframe>',
 
     // 3 POSTS redes sociais
-    '<iframe alt="Posts redes sociais Vida Económica" class="youtube" frameBorder="0" src="redes.html"></iframe>',
+    '<iframe alt="Redes sociais Vida Económica" class="youtube" frameBorder="0" src="redes.html"></iframe>',
 
     // 4 VÍDEOS  redes sociais
     '<iframe alt="Vídeo VE jornal semanal" class="youtube" frameBorder="0" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fvidaeconomica.pt%2Fvideos%2F652814070381021%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>',

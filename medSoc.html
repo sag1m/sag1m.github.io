@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="inside.css">
+  <link rel="stylesheet" href="css/main.css">
 
 
 
@@ -81,9 +81,11 @@
             <img alt="Spread da revista Medicina Social" src="scmp/med04.png" class="slide">
         </div>
 
-<br><br><br>
+<br>
 
-<div class="slideshow">
+
+
+<div style="zoom:0.6" class="slideshow">
     <img alt="Fotografia tirada no hospital Conde de Ferreira"  src="scmp/SCMPphoto_0000_Layer-9.png" class="slide">
     <img  alt="Fotografia tirada no hospital Conde de Ferreira" src="scmp/SCMPphoto_0001_Layer-8.png" class="slide">
     <img  alt="Fotografia tirada no hospital Conde de Ferreira" src="scmp/SCMPphoto_0002_Layer-7.png" class="slide">
@@ -95,7 +97,6 @@
     <img alt="Fotografia tirada no hospital Conde de Ferreira"  src="scmp/SCMPphoto_0008_Layer-1.png" class="slide">
 </div>
 
-<br><br><br><br>
 
 
 
@@ -108,42 +109,40 @@
 
 
 
-    <script>
-    function startSlideshow(slideshow) {
-        let index = 0;
-        const images = slideshow.querySelectorAll(".slide");
-        images[index].style.opacity = "1";
-        setInterval(() => {
-            images[index].style.opacity = "0";
-            index = (index + 1) % images.length;
-            images[index].style.opacity = "1";
-        }, 3000);
-    }
-
-    document.querySelectorAll(".slideshow").forEach(startSlideshow);
-    </script>
 
 
 
 
-
-
-
-
-<!--
-<div class="moving-background"></div>
-
-
-
-<div id="gradientContainer" class="gradientContainer"></div>-->
 
 
 </div>
   </div>
+  <script>
+    document.querySelectorAll('.slideshow').forEach(slideshow => {
+      slideshow.addEventListener('click', function() {
+        let visibleImage = this.querySelector('.slide[style*="opacity: 1"]');
+        if (visibleImage) {
+          window.open(visibleImage.src, '_blank');
+        }
+      });
+    });
+  </script>
 
 
+  <script>
+  function startSlideshow(slideshow) {
+      let index = 0;
+      const images = slideshow.querySelectorAll(".slide");
+      images[index].style.opacity = "1";
+      setInterval(() => {
+          images[index].style.opacity = "0";
+          index = (index + 1) % images.length;
+          images[index].style.opacity = "1";
+      }, 3000);
+  }
 
-
+  document.querySelectorAll(".slideshow").forEach(startSlideshow);
+  </script>
 <script src="rando.js"></script>
 <script src="js.js"></script>
 </body>

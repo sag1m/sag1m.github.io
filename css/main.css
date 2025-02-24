@@ -291,13 +291,13 @@ h1{
 
 /*  text-decoration: underline red 0.5px;*/
 
-  margin-bottom: 3rem;
+  margin-bottom: 0rem;
 }
 h2{
   font-size: 31px;
   font-weight: 300;
   /*text-decoration: underline red 0.5px;*/
-  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 h3{
@@ -388,7 +388,7 @@ h2:hover{
             transform: translateY(0);
         }
         .items div {
-            padding: 8px;
+            padding: 4px 10px 5px 10px;
             margin-bottom: 0;
             transition: background 0.1s ease-in-out;
         }
@@ -1008,3 +1008,69 @@ cursor: pointer;
 
     }
 }
+
+
+
+/*PÁGINA DOS TRABALHOS inside*/
+/*PÁGINAS SEPARADAS DE TRABALHOS*/
+
+.noBG{
+background: none;
+}
+
+#screenInside{
+  max-height: 100vh;
+  box-sizing: border-box;
+  font-family: Inconsolata;
+
+
+}
+#screenInside a {
+display: contents;
+}
+
+.insidepage{
+max-height: 100%;
+overflow-y: hidden;
+overflow-x: hidden;
+
+}
+
+
+.insidepage img{
+  margin-bottom: 2rem;
+  /*display: block;*/
+  max-width: 500px;
+}
+
+
+.insidepage h2{
+ /*margin-top: 2rem;*/
+ margin-bottom: 1rem;
+}
+
+.insidepage p{
+  padding-bottom: 1rem;
+}
+
+
+.slideshow {
+          position: relative;
+          width: 100%;
+          max-width: 600px;
+          height: 435px;
+          overflow: hidden;
+          margin-bottom: 2rem;
+          display: inline-block;
+          cursor: zoom-in;
+      }
+      .slide {
+          position: absolute;
+          opacity: 0;
+          transition: opacity 0.5s;
+          width: 100%;
+          /*height: 100%;*/
+      }
+      .slide:first-child {
+          opacity: 1;
+      }
