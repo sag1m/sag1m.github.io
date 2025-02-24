@@ -284,7 +284,7 @@ function showWorkOMais(value) {
     bottomRight.innerHTML = trabalhosOutrosMais[value];
     //descricao.innerHTML = [];
     descricao.style = "display: display";
-    //descricao.innerHTML = descricoesOutros[value];
+    descricao.innerHTML = descricoesOutrosMais[value];
 }
 
 
@@ -650,27 +650,20 @@ var descricoesWebMais = ["0",
 
 ]
 var descricoesOutrosMais = ["0",
-
 //1 teletexto
 '<p>Teletexto</p>Texto para post de blog sobre o teletexto.<br>Escrito por mim.<br> 2020',
-
   // 2 MILANO
 '<p translate="no">Milano</p>Fonte Milano.<br>Exercício onde tivemos de desenhar uma fonte com base em 3 fontes diferentes.<br>Trabalho de grupo.',
-
   // 3 ROLLS ROYCE
 '<p translate="no">Rolls Royce</p>Fonte Feita a partir do logo da Rolls Royce.<br>Trabalho de grupo.',
-
 // 4 PHARMAKON 3
 '<p translate="no">Pharmakon 3</p>Fanzine Pharmakon nº3. 2020',
-
 // 5 PHARMAKON 1
 '<p translate="no">Pharmakon 1</p>Fanzine Pharmakon nº1. 2020',
-
   // 6 IGREJA CERVEIRA
 '<p>Igreja de Cerveira 3D</p>Igreja de Cerveira modelada em 3D.<br>(A gravação do vídeo ficou com muitas falhas)<br> 2014',
 
-
-
+'',
 
 ]
 
@@ -875,9 +868,9 @@ var trabalhosVideo = ["0",
     //1 teletexto
     '<iframe alt="Pequeno texto de pesquisa sobre o Teletexto. 2020" class="youtube" frameBorder="0" src="teletexto/index.html"></iframe>',
     // 2 MILANO
-    '<input id="fontest2" type="text" name="teste" value="fonte milano. escreve aqui">',
+    '<input id="fontest2" type="text" name="teste" value="escreve aqui com a fonte milano">',
     // 3 ROLLS ROYCE
-    '<input id="fontest" type="text" name="teste" value="fonte rolls royce. escreve aqui.">',
+    '<input id="fontest" type="text" name="teste" value="escreve aqui com a fonte rolls royce">',
     // 4 PHARMAKON 3
     '<iframe alt="Fanzine Pharmakon nº3. 2020" src="https://online.fliphtml5.com/dnvha/yolq/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="youtube" ></iframe>',
     // 5 PHARMAKON 1
