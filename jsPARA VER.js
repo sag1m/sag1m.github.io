@@ -251,7 +251,7 @@ function showWorkVMais(value) {
     bottomRight.innerHTML = trabalhosVideoMais[value];
     //descricao.innerHTML = [];
     descricao.style = "display: display";
-    descricao.innerHTML = descricoesVideoMais[value];
+    descricao.innerHTML = descricoesVideo[value];
 }
 function showWorkI(value) {
     bottomRight.innerHTML = trabalhosImagem[value];
@@ -262,7 +262,7 @@ function showWorkIMais(value) {
     bottomRight.innerHTML = trabalhosImagemMais[value];
     //descricao.innerHTML = [];
     descricao.style = "display: display";
-    descricao.innerHTML = descricoesImagemMais[value];
+    descricao.innerHTML = descricoesImagem[value];
 }
 function showWorkW(value) {
     bottomRight.innerHTML = trabalhosWeb[value];
@@ -273,7 +273,7 @@ function showWorkWMais(value) {
     bottomRight.innerHTML = trabalhosWebMais[value];
     //descricao.innerHTML = [];
     descricao.style = "display: display";
-    descricao.innerHTML = descricoesWebMais[value];
+    descricao.innerHTML = descricoesWeb[value];
 }
 function showWorkO(value) {
     bottomRight.innerHTML = trabalhosOutros[value];
@@ -421,7 +421,7 @@ var mais = [
 */
 
 
-//apresentar texto de boas vindas
+//MOSTRAR TEXTO DE BOAS VINDAS LOGO QUANDO SE ABRE O WEBSITE (está inativo) (mas este codigo tem de estar ativo aparentemente)
 bottomRight.innerHTML = mais[1];
 
 
@@ -470,7 +470,7 @@ var descricoesVideo = ["0",
 
 '<p>Futuras Instalações VE: Estado Atual e Projeto</p>Vídeo para mostrar o estado atual (antigo cinema) das futuras instalações da Vida Económica. Gravei e editei, mas não fiz o 3D. <br>2024',
 
-
+'<p translate="no">Traffic</p>Exercício de Time-Lapse sobre o Trânsito no Porto - Como uma pequena ação individual dificulta a vida de milhares de pessoas. <br>2020',
 
 
 
@@ -537,7 +537,7 @@ var descricoesWeb = ["0",
     // 6 Catnip Grower
 '<p translate="no">Catnip Grower</p>Demo (demonstração) de um jogo onde temos de controlar o ambiente com várias ferramentas e ações para cultivar a planta catnip.<br>2024',
 
-
+'<p translate="no">CrossFest Festival</p>Website desenvolvido para um festival de música inventado<br> Baseado num cartaz construtivista Russo.<br> 2019',
 
 ''
 
@@ -556,13 +556,20 @@ var descricoesOutros = ["0",
 // 3 Medicina Social
 '<p translate="no">Medicina Social</p>Paginação de uma edição da revista Medicina Social e captura (no Centro Hospitalar conde Ferreira) e edição de fotografias para vários artigos. ',
 
+
+
+
+
 // 4 Guias CRN
-'<p translate="no">Guias CRN</p>Paginação dos livretes Guia do Utente e Guia do Colaborador do Centro de Reabilitação do Norte, pesquisa e escolha de imagens stock e edição de fotografia',
+'<p translate="no">Guia do Utente / Guia do Colaborador - Centro de Reabilitação do Norte</p>Paginação dos livretes, pesquisa e escolha de imagens stock e edição de fotografia',
 
 
 
 '<p></p>',
+'<p></p>',
+'<p></p>',
 
+'<p>Sobre o Teletexto</p>Pequeno texto de pesquisa para blog sobre o Teletexto.<br> 2020'
 
 
 
@@ -570,106 +577,79 @@ var descricoesOutros = ["0",
 
 var descricoesVideoMais = ["0",
 
-// 1 BITTER SWEET
-'<p lang="eng" translate="no">Bitter Sweet</p>Pequeno vídeo que mostra uma disputa entre dois amigos por um doce.<br> Trabalho de grupo.<br>2015',
-// 2 SOUTH PARK
-'<p lang="eng" translate="no">South Park animation</p>Exercício de Animação com imagens da série South Park (sem som.)<br>2015',
-// 3 BLUE VELVET
-'<p lang="und" translate="no">Blue Velvet remake</p>Remake de uma cena do filme Blue Velvet de 1986.<br> Trabalho de grupo. 2019',
-// 4 NARRATIVA FOTOGRAFIAS
-'<p>Onde meti a chave?</p>Pequena narrativa com fotografias, exercício para Argumento Multimédia. <br>2017',
-// 5 MIGAS POWER POWDER
-'<p lang="und" translate="no">Migas Power Powder advertising</p>Vídeo feito a partir de Stock Footage. Ensino a fazer a receita de batido "caseiro" que inventei.<br> 2019',
-// 6 MEDICINAS ALTERANATIAS TRAILER
-'<p><span  lang="und" translate="no">Terapias Alternativas</span> - trailer</p>Trailer do episódio 02 (Reiki) da série documemental <span  lang="und" translate="no">Terapias Alternativas</span>.<br> Trabalho de grupo.<br> 2014',
-// 7 MEDICINAS ALTERANATIAS EP01
-'<p><span  lang="und" translate="no">Terapias Alternativas</span> - Episódio 01</p>Episódio 01 da série documental <span  lang="und" translate="no">Terapias Alternativas</span>.<br> Trabalho de grupo. <br>2014.',
-// 8 TRAILER NIGHT OF THE LIVING DEAD
-'<p lang="und" translate="no">Trailer - Night of the Living Dead</p>Trailer para o filme <span lang="und" translate="no">Night of The Living Dead</span> com cenas do filme.<br> Trabalho de grupo.<br>2019',
-// 9 TRAFFIC
-'<p lang="und" translate="no">Traffic</p>Exercício de Time-Lapse sobre o Trânsito no Porto<br> - Como uma pequena ação individual dificulta a vida de milhares de pessoas. <br>2020',
-// 10 GARY'S MOD
-'<p lang="und" translate="no">GARYS MOD</p>Fiz o som para este vídeo da inernet com recurso numa grande biblioteca de sons.',
+// 1
+'<p>Título</p>Pequeno vídeo que mostra uma disputa entre dois amigos por um doce. Trabalho de grupo. 2015',
+// 2
+'<p>Título</p>Animação com imagens da série South Park, sem som. 2015',
+// 3
+'<p>Título</p>Remake de uma cena do filme Blue Velvvet de 1986. Trabalho de grupo. 2019',
+// 7
+'<p>Título</p>Fiz o som para este vídeo da inernet com recurso numa grande biblioteca de sons.',
+//
+'<p>Título</p>Pequena narrativa, exercício para Argumento Multimédia. 2017',
 
+// 16
+'<p>Título</p>Vídeo feito a partir de Stock Footage. Ensino a fazer a receita de batido "caseiro" que inventei. 2019',
 
+//17
+'<p>Título</p>Trailer do episódio 02 (Reiki) da série documemental Terapias Alternativas. Trabalho de grupo. 2014',
+//18
+'<p>Título</p>Episódio 01 da série documental Terapias Alternativas. Trabalho de grupo. 2014.',
 
-
-
-
-
+//20
+'<p>Título</p>Trailer para o filme Night of The Living Dead. Trabalho de grupo. 2019',
 
 ]
 var descricoesImagemMais = ["0",
 
-// 1Uber Hugo
-'<p lang="und" translate="no">Uber Hugo</p>Frame de um possível jogo de pixel art. <br>O jogador seria um estafeta da Uber que teria de entregar encomendas.<br> Ganharia bónus ao arrancar retrovisores de carros.',
-  // 2 Spoof Ad myprotein
-  '<p translate="no">Myprotein Spoof Ad</p>Spoof Ad da empresa MyProtein.',
-  // 3Shulgin ilustração
-'<p lang="und" translate="no">Alexander Shulgin</p>Ilustração do Alexander Shulgin com citação dele. 2015 ',
-  // 4CAFFEINE imagem
-'<p>Caffeine</p>Imagem de uma publicação sobre cafeína.<br>Do lado esquerdo é uma fotografia de chá e do lado direito uma fotografia de cafeína pura.<br>2021',
-//5 imagem digital antiga
-'<p>Flor</p>Imagem digital que fiz no Paint.net antes de 2010.<br>Das primeiras imagens que fiz e que consegui guardar até agora.',
-//6 PANORAMICA praia matosas
-'<p>Panorâmica Matosinhos</p>Fotografia Panorâmica tirada no Porto à beira-mar<br>2021',
-//7 KEITH HARING
-'<p>animação Keith Haring</p>Animação simples com obra de Keith Haring.<br>2019',
-//8 POESIA
-'<p lang="und" translate="no">Nota Discordante</p>Poema "Nota Discordante" de Fernando Namora.<br> 2018',
-//9 AMÉLIA
-'<p>Amélia</p>Ilustração de personagem.<br> A Amélia é uma pequena planta de chá que dá dicas sobre como fazer os melhores chás.<br> 2019',
-//10 sÁBADO
-'<p lang="und" translate="no">Sábado</p>Ilustração para a capa da revista Sábado.<br> 2019',
+// 8
+'<p>Título</p>Ilustração de personagem. A Amélia é uma pequena planta de chá que dá dicas sobre como fazer os melhores chás. 2019',
+// 9
+'<p>Título</p>Ilustração para a capa da revista sábado. 2019',
+// 10
+'<p>Título</p>Ilustração incompleta do Alexander Shulgin com citação dele. 2015 ',
+// 11
+//19
+'<p>Título</p>Fotografia Panorâmica tirada no Porto à beira mar. 2021',
+//21
+'<p>Título</p>Imagem de uma publicação sobre cafeína. Do lado esquerdo é uma fotografia de chá e do lado direito uma fotografia de cafeína pura. 2021',
+
+//23 POESIA
+'<p>Título</p>Poema  Nota Discordante  de Fernando Namora. 2018',
+
+//22
+'<p>Título</p>Animação simples com obra de Keith Haring. 2019',
+
+//26
+'<p>Título</p>Imagem digital que fiz no Paint.net antes de 2010. Das primeiras imagens que fiz e que consegui guardar até agora.',
 
 ]
-
-
-
-
-
-
-
-
-
-
 var descricoesWebMais = ["0",
-// 1 INFOMEDIA
-'<p>Infomedia</p>Infografia animada (Incompleto).<br>A infografia deveria informar o número de horas no computador, o número de batidos bebidos e as horas a andar de bicicleta, por dia.<br> 2018',
 
-  // 2 IDPC WEBSITE
-'<p>IDPC</p>Remake do website do IDPC, apenas da home page.<br>Dá para carregar em "About" e em baixo em "Health", como exemplo do seu funcionamento.<br>2019',
-      // 3  POR FALAR NOUTRA COISA INFANTIL
-'<p translate="no" lang="pt">Por Falar Noutra Coisa</p>Remake do blog <span translate="no" lang="pt">Por Falar Noutra Coisa</span>.<br>É suposto o wbsite ficar com um ar infantil.<br>Website funciona em telemóvel.<br>2019',
-      // 4  SPACE DIMENSION
-'<p lang="eng" translate="no">Space Dimension</p>Jogo web com 3 níveis.<br>O jogador é um extra-terrestre que tem de apanhar moléculas de água para sobreviver e avançar no jogo, disparando e evitando obstáculos. Trabalho de grupo com André Furtado.<br>2015?',
-      // 5  CrossFest Festival
-'<p translate="no">CrossFest Festival</p>Website desenvolvido para um festival de música inventado<br> Baseado num cartaz construtivista Russo.<br> 2019',
+'<p>Título</p>Infografia animada (Incompleto). A infografia deveria informar o número de horas no computador, o número de batidos bebidos e as horas a andar de bicicleta, por dia. 2018',
+
+// 12
+'<p>Título</p>Remake do website do IDPC, apenas numa página. Dá para carregar em "About" e em baixo em "Health", como exmeplo do seu funcionamento. 2019',
+// 13
+'<p>Título</p>Remake do blog Por Falar Noutra Coisa. É suposto o wbsite ficar com um ar infantil. Website funciona em telemóvel. 2019',
+// 14
+'<p>Título</p>Jogo HTML com 3 níveis. O jogador é um extra-terrestre que tem de apanhar moléculas de água para sobreviver e avançar no jogo, disparando e evitando óbstáculos. Trabalho de grupo com André Furtado. 2015?',
 
 
 
 ]
 var descricoesOutrosMais = ["0",
+// 4
+'<p>Título</p>Fonte Milano. Tivemos de desenhar uma fonte com base em 3 fontes diferentes.  Trabalho de grupo.',
+// 5
+'<p>Título</p>Fonte Feita a partir do logo da Rolls royce. Trabalho de grupo.',
+// 6
+'<p>Título</p>Igreja de Cerveira modelala em 3D. A gravação do vídeo ficou com muitas falhas. 2014',
 
-//1 teletexto
-'<p>Teletexto</p>Texto para post de blog sobre o teletexto.<br>Escrito por mim.<br> 2020',
-
-  // 2 MILANO
-'<p translate="no">Milano</p>Fonte Milano.<br>Exercício onde tivemos de desenhar uma fonte com base em 3 fontes diferentes.<br>Trabalho de grupo.',
-
-  // 3 ROLLS ROYCE
-'<p translate="no">Rolls Royce</p>Fonte Feita a partir do logo da Rolls Royce.<br>Trabalho de grupo.',
-
-// 4 PHARMAKON 3
-'<p translate="no">Pharmakon 3</p>Fanzine Pharmakon nº3. 2020',
-
-// 5 PHARMAKON 1
-'<p translate="no">Pharmakon 1</p>Fanzine Pharmakon nº1. 2020',
-
-  // 6 IGREJA CERVEIRA
-'<p>Igreja de Cerveira 3D</p>Igreja de Cerveira modelada em 3D.<br>(A gravação do vídeo ficou com muitas falhas)<br> 2014',
-
-
+//24 pharmakon 3
+'<p>Título</p>Fanzine Pharmakon nº3. 2020',
+//25 pharmakon 1
+'<p>Título</p>Fanzine Pharmakon nº1. 2020',
 
 
 ]
@@ -959,8 +939,3 @@ title.innerHTML = g.replace(
 
 
 descricao.style = "display: none";
-
-
-descricao.onmouseover = function() {
-  descricao.style.display = "none";
-};

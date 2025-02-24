@@ -824,21 +824,6 @@ body {
 */
 /*DARK MODE*/
 
-.bodyDark {
-  background-color: #333;
-  color: #F8F8F8;
-}
-.botaoMaisDark{
-  color: white;
-}
-
-.descricaoDark{
-  color: lightgrey;
-  background-color: rgba(1, 1, 1, 0.9);
-
-
-}
-
 #darkButton:hover{
 cursor: pointer;
 
@@ -939,14 +924,18 @@ cursor: pointer;
     font-size: 1.1rem;
     min-height: 40px;
     position: fixed;
-    bottom: 0;
-    left: 210px;
-    width: 100%; /* Ou outro valor conforme necessário */
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 30px; /* Ajusta conforme necessário */
+    bottom: 50px;
+    left: 270px;
+    width: 100%;
+    padding: 30px;
     line-height: 1.5rem;
-
     max-width: 50vw;
+
+}
+
+
+.descricao{
+      background-color: rgba(255, 255, 255, 0.9);
 }
 
 
@@ -964,12 +953,14 @@ font-size: 1.2rem;
   color: #F8F8F8;
 }
 .botaoMaisDark{
-  color: white;
+
+  background-color:black;
 }
 
 .descricaoDark{
   background-color: rgba(1, 1, 1, 0.9);
   color: white;
+
 
 
 }
