@@ -221,10 +221,29 @@ function showMais() {
 }
 
 
+//TENTATIVA DE PRELOAD APENAS NO PRIMEIRO ITEM
+
+var preloadedContent = {}; // Guarda o conteúdo pré-carregado
+function preloadWorkV(value) {
+    if (!preloadedContent[value]) {
+        let div = document.createElement("div");
+        div.innerHTML = trabalhosVideo[value]; // Gera o conteúdo sem mostrar
+        preloadedContent[value] = div.innerHTML; // Guarda na memória
+    }
+}
+
 
 
 function showWorkV(value) {
-    bottomRight.innerHTML = trabalhosVideo[value];
+//isto é para ter preload:
+  let container = document.getElementById("bottomRight");
+      container.innerHTML = preloadedContent[value] || trabalhosVideo[value]; // Mostra o conteúdo já carregado
+
+  //Isto é o funcional antes de tentar pre load:
+    //bottomRight.innerHTML = trabalhosVideo[value];
+
+
+    //Isto é muito antigo:
     //descricao.innerHTML = [];
     //descricao.innerHTML = descricoesVideo[value];
 }
@@ -320,7 +339,7 @@ var mais = [
   ' <div id="typing-text"></div> ',
 
   //CÓPIA DO HTML:
-  '<div style="border-left:0.5px solid red; padding-left:10px"><p style="line-height:3rem;font-size:2rem"><span id="O" style="font-weight:600;" >&#9786</span>lá<br>Sou o Miguel Sousa,<br>designer de comunicação multimédia. </p><p style="margin:10px 0 0 0;">Tenho vários trabalhos neste site que programei.<br>Ainda estou a atualizar os trabalhos e o site.</p><br><span onclick="toggleCaixa()" style="cursor: pointer;" id="sobre">&#11015 Ler mais </span> <span id="darkButton"> <span style="margin-left:20px;" >&#9788</span> dark-mode</span><div style="padding-top:3px;display:none" id="caixaTexto" class="caixa-texto"><img style="height: 200px;position: absolute;left: 900px;top: 200px;"id=""src="test02.png"alt="Auto retrato sobre-exposto e demasiado editado"><p>Gosto de me cansar no ginásio. <br>Prefiro usar a bicicleta como meio de transporte.<br>Quando não chove, cultivo catnip para os meus gatos e suculentas.<br>Talvez passe demasiado tempo no computador.</p></div><br><br><p style="font-weight:700">Disponível para colaborar</p><a style="text-decoration:;" href="mailto:mnamoras@outlook.pt" onmouseover="document.getElementById(&quot;coracao&quot;).innerHTML=&quot;❤&quot;" onmouseout="document.getElementById(&quot;coracao&quot;).innerHTML=&quot;✉&quot;"><span id="coracao">&#9993;</span> mnamoras@outlook.pt</a></div>',
+  '<div style="border-left:0.5px solid red; padding-left:10px"><p lang="und" translate="no" style="line-height:3rem;font-size:2rem"><span id="O" style="font-weight:600;" >&#9786</span>lá<br>Sou o Miguel Sousa,<br>designer de comunicação multimédia. </p><p style="margin:10px 0 0 0;">Tenho vários trabalhos neste site que programei.<br>Ainda estou a atualizar os trabalhos e o site.</p><br><span onclick="toggleCaixa()" style="cursor: pointer;" id="sobre">&#11015 Ler mais </span> <span id="darkButton"> <span style="margin-left:20px;" >&#9788</span> dark-mode</span><div style="padding-top:3px;display:none" id="caixaTexto" class="caixa-texto"><img style="height: 200px;position: absolute;left: 900px;top: 200px;"id=""src="test02.png"alt="Auto retrato sobre-exposto e demasiado editado"><p>Gosto de me cansar no ginásio. <br>Prefiro usar a bicicleta como meio de transporte.<br>Quando não chove, cultivo catnip para os meus gatos e suculentas.<br>Talvez passe demasiado tempo no computador.</p></div><br><br><p style="font-weight:700">Disponível para colaborar</p><a style="text-decoration:;" href="mailto:mnamoras@outlook.pt" onmouseover="document.getElementById(&quot;coracao&quot;).innerHTML=&quot;❤&quot;" onmouseout="document.getElementById(&quot;coracao&quot;).innerHTML=&quot;✉&quot;"><span id="coracao">&#9993;</span> mnamoras@outlook.pt</a></div>',
 
   //esta decsrição é uam página externa que permitirá mais lberdade de merda e parágrafos e coisas. mas afinal não funcionou bem, que trabalheira  pra fazer isto bem.:
   //'<iframe alt="Sobre" class="youtube" frameBorder="0" src="sobre.html"></iframe>',
@@ -431,13 +450,13 @@ function uber1(){document.getElementById("uber").src = 'UberHugo.jpg';}
 var descricoesVideo = ["0",
 
 //1 Supleemntos diários rotina diária
-'<p>Mystery Mammal - Data</p>Vídeo com o tema "Rotina Diária", em específico os suplementos alimentares.<br> Gravado com um telemóvel e uma lente.<br>2018',
+'<p translate="no">Mystery Mammal - Data</p>Vídeo com o tema "Rotina Diária", em específico os suplementos alimentares.<br> Gravado com um telemóvel e uma lente.<br>2018',
 //2 frank ocean Kynetic Typography
-'<p>Frank Ocean - Self control</p>Kynetic Typography<br> Videoclipe só com tipografia cinética.<br>2020',
+'<p translate="no">Frank Ocean - Self control</p>Kynetic Typography<br> Videoclipe só com tipografia cinética.<br>2020',
 //3 fé
-'<p>Fé</p>Vídeo artístico que trata a Fé.<br>Põe em igualdade rituais e crenças atuais de todo o mundo. <br> Trabalho de grupo com o Leandro Afonso.<br> 2020',
+'<p translate="no">Fé</p>Vídeo artístico que trata a Fé.<br>Põe em igualdade rituais e crenças atuais de todo o mundo. <br> Trabalho de grupo com o Leandro Afonso.<br> 2020',
 //4 amanhecer
-'<p>Soft and Furious - Game On</p>Videoclipe com os temas Amanhecer e Solidão. Retrata uma rotina matinal, o despertar forçado e a preparação para sair de casa.<br>. 2021',
+'<p translate="no">Soft and Furious - Game On</p>Videoclipe com os temas Amanhecer e Solidão. Retrata uma rotina matinal, o despertar forçado e a preparação para sair de casa.<br>. 2021',
 //5 VE instalações
 '<p>Futuras Instalações VE: Estado Atual e Projeto</p>Vídeo para mostrar o estado atual (antigo cinema) das futuras instalações da Vida Económica. Gravei e editei, mas não fiz o 3D. <br>2024',
 
@@ -451,7 +470,7 @@ var descricoesVideo = ["0",
 
 '<p>Futuras Instalações VE: Estado Atual e Projeto</p>Vídeo para mostrar o estado atual (antigo cinema) das futuras instalações da Vida Económica. Gravei e editei, mas não fiz o 3D. <br>2024',
 
-'<p>Traffic</p>Exercício de Time-Lapse sobre o Trânsito no Porto - Como uma pequena ação individual dificulta a vida de milhares de pessoas. <br>2020',
+'<p translate="no">Traffic</p>Exercício de Time-Lapse sobre o Trânsito no Porto - Como uma pequena ação individual dificulta a vida de milhares de pessoas. <br>2020',
 
 
 
@@ -462,10 +481,10 @@ var descricoesVideo = ["0",
 var descricoesImagem = ["0",
 
 // 1 keith haring
-'<p>Keith Haring Animated</p>Animações simples com obras de Keith Haring',
+'<p translate="no">Keith Haring Animated</p>Animações simples com obras de Keith Haring',
 
 // 2 Spoof ad Lunesta
-'<p>Lunesta Spoof Ad</p>Spoof ad do medicamento Lunesta. À esquerda é o original. Eu apenas mudei a ordem do texto - O que no original tem mais destaque, no meu tem menos importância.',
+'<p translate="no">Lunesta Spoof Ad</p>Spoof ad do medicamento Lunesta. À esquerda é o original. Eu apenas mudei a ordem do texto - O que no original tem mais destaque, no meu tem menos importância.',
 
 // 3 Douro Panoramica fotografia
 '<p>Douro</p>Fotografia Panorâmica no Porto à beira rio.',
@@ -481,13 +500,13 @@ var descricoesImagem = ["0",
   // 8 liVE
   '',
   // 9 SHULGIN
-'<p>Alexander Shulgin</p>Ilustração do Alexander Shulgin. 2015',
+'<p translate="no">Alexander Shulgin</p>Ilustração do Alexander Shulgin. 2015',
 
-  '<p>Keith Haring Animated</p>Animações simples com obras de Keith Haring',
+  '<p translate="no">Keith Haring Animated</p>Animações simples com obras de Keith Haring',
 
-'<p>Myprotein Spoof Ad</p>Spoof Ad da empresa MyProtein.',
+'<p translate="no">Myprotein Spoof Ad</p>Spoof Ad da empresa MyProtein.',
 
-'<p>Uber Hugo</p>Pixel Art Game<br> 1 frame de um possível jogo. <br>O jogador seria um estafeta da Uber que teria de entregar encomendas. Ganharia bónus ao arrancar retrovisores de carros.',
+'<p translate="no">Uber Hugo</p>Pixel Art Game<br> 1 frame de um possível jogo. <br>O jogador seria um estafeta da Uber que teria de entregar encomendas. Ganharia bónus ao arrancar retrovisores de carros.',
 
 
 ''
@@ -496,10 +515,10 @@ var descricoesImagem = ["0",
 ]
 var descricoesWeb = ["0",
     // 1 Wed Designer Week game
-'<p>Designer Week</p>Protótipo para um jogo de escolhas, onde o jogador tem de acabar de programar um website controlando a sua ansiedade e energia.<br> A escolha de ações influencia o humor, que por sua vez influencia o sucesso dessas ações. <br> 2020.',
+'<p translate="no">Designer Week</p>Protótipo para um jogo de escolhas, onde o jogador tem de acabar de programar um website controlando a sua ansiedade e energia.<br> A escolha de ações influencia o humor, que por sua vez influencia o sucesso dessas ações. <br> 2020.',
 
   // 2 succulents gerador
-'<p>succulents Card Game</p>Gerador de um website para fotografar, documentar e competir com cartas de suculentas. <br>2021',
+'<p translate="no">succulents Card Game</p>Gerador de um website para fotografar, documentar e competir com cartas de suculentas. <br>2021',
 
     // 3 POSTS redes sociais
 '<p>Redes Sociais</p>Publicações para as Redes Sociais',
@@ -508,12 +527,12 @@ var descricoesWeb = ["0",
 '',
 
     // 5 Site VE
-'<p>Vida Económica</p>Proposta de melhoria do website para a Vida Económica <br>- Um website com notícias de várias revistas e jornal e ainda livraria.<br>2024',
+'<p translate="no">Vida Económica</p>Proposta de melhoria do website para a Vida Económica <br>- Um website com notícias de várias revistas e jornal e ainda livraria.<br>2024',
 
     // 6 Catnip Grower
-'<p>Catnip Grower</p>Demo (demonstração) de um jogo onde temos de controlar o ambiente com várias ferramentas e ações para cultivar a planta catnip.<br>2024',
+'<p translate="no">Catnip Grower</p>Demo (demonstração) de um jogo onde temos de controlar o ambiente com várias ferramentas e ações para cultivar a planta catnip.<br>2024',
 
-'<p>CrossFest Festival</p>Website desenvolvido para um festival de música inventado<br> Baseado num cartaz construtivista Russo.<br> 2019',
+'<p translate="no">CrossFest Festival</p>Website desenvolvido para um festival de música inventado<br> Baseado num cartaz construtivista Russo.<br> 2019',
 
 ''
 
@@ -521,20 +540,20 @@ var descricoesWeb = ["0",
 var descricoesOutros = ["0",
 
 // 1 Pharmakon
-'<p>Pharmakon fanzine</p>Fanzine Pharmakon com 3 números. <br>O tema são as substancias psicoativas principalmente ilegais. <br>2020',
+'<p translate="no">Pharmakon fanzine</p>Fanzine Pharmakon com 3 números. <br>O tema são as substancias psicoativas principalmente ilegais. <br>2020',
 
 // 2 Publicação Cafeína
-'<p>Cafeína</p>Publicação artística sobre a Cafeína feita em Projeto de Impressão. <br>2020',
+'<p translate="no">Cafeína</p>Publicação artística sobre a Cafeína feita em Projeto de Impressão. <br>2020',
 
 // 3 Medicina Social
-'<p>Medicina Social</p>Paginação de uma edição da revista Medicina Social e captura (no Centro Hospitalar conde Ferreira) e edição de fotografias para vários artigos. ',
+'<p translate="no">Medicina Social</p>Paginação de uma edição da revista Medicina Social e captura (no Centro Hospitalar conde Ferreira) e edição de fotografias para vários artigos. ',
 
 
 
 
 
 // 4 Guias CRN
-'<p>Guia do Utente / Guia do Colaborador - Centro de Reabilitação do Norte</p>Paginação dos livretes, pesquisa e escolha de imagens stock e edição de fotografia',
+'<p translate="no">Guia do Utente / Guia do Colaborador - Centro de Reabilitação do Norte</p>Paginação dos livretes, pesquisa e escolha de imagens stock e edição de fotografia',
 
 
 
