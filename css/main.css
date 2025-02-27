@@ -413,12 +413,12 @@ h2:hover{
      display: inline-block;
    }
 @keyframes sombra {
-  0%   {text-shadow: 0px 0px 0px #7ca8ff, 0px 0px 0px #ff7c7c;}
-  1%  {text-shadow: 4px 0px 0px #7ca8ff, -4px 0px 0px #ff7c7c;}
-  3% {text-shadow: 0px 0px 0px #7ca8ff, 0px 0px 0px #ff7c7c;}
-  4%  {text-shadow: 3px 0px 0px #7ca8ff, -3px 0px 0px #ff7c7c;}
-  6% {text-shadow: 0px 0px 0px #7ca8ff, 0px 0px 0px #ff7c7c;}
-
+  0%   {text-shadow: 0px 0px 0px #17f3ff, 0px 0px 0px red;}
+  1%  {text-shadow: 3px 0px 0px #17f3ff, -3px 0px 0px red;}
+  2% {text-shadow: 0px 0px 0px #17f3ff, 0px 0px 0px red;}
+  5%  {text-shadow: 1px 0px 0px #17f3ff, -1px 0px 0px red;}
+  6% {text-shadow: 0px 0px 0px #17f3ff, 0px 0px 0px red;}
+  8% {text-shadow: 0px 0px 0px #17f3ff, 0px 0px 0px red;}
 }
 
 #botaoMais:hover{
@@ -428,7 +428,7 @@ h2:hover{
 h1 #botaoMais{
  /*transition: text-shadow 3s;*/
  animation: sombra 15s infinite;
- animation-delay: 1s;
+ animation-delay: 0.5s;
  animation-direction: alternate;
  animation-timing-function:ease-out;
  font-size: 3rem;
