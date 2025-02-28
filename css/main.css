@@ -108,9 +108,16 @@ a:not(.active):hover {}*/
    background: none;*/
  }
 
+ h1 a::selection{
+   color: white;
+ }
+ h1 span::selection{
+   color: white;
+ }
+
  ::selection {
-   background: black;
-   color: var(--cor-borda);
+   background: var(--cor-borda);
+   color: black;
 
     /*text-shadow: red;*/
     /*color: #0d018c;
@@ -906,6 +913,15 @@ cursor: pointer;
   color: var(--cor-borda);
 }
 
+.dark img::selection {
+  background: var(--cor-borda);
+  color: var(--cor-borda);
+
+   /*text-shadow: red;*/
+   /*color: #0d018c;
+   background: none;*/
+}
+
 
 
 
@@ -998,9 +1014,15 @@ font-weight: 400;
   color: #F8F8F8;
 }
 .bodyDark ::selection {
-  background: white;
+  background: var(--cor-borda);
+  color: white;
+}
+.bodyDark img::selection {
+  background: var(--cor-borda);
   color: var(--cor-borda);
 }
+
+
 .botaoMaisDark{
 
   /*background-color:black;*/
@@ -1072,6 +1094,7 @@ cursor: pointer;
 a:hover #coracao {
     color: var(--cor-borda);
   }
+
 
 
 

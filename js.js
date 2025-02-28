@@ -926,7 +926,10 @@ darkButton.addEventListener("click", function() {
   descricao.classList.toggle("descricaoDark");
   body.classList.toggle("backgroundDark");
   bottomRight.classList.toggle("bottomRightDark");
-  gradientContainer.classList.toggle("gradientContainerDark");});
+  gradientContainer.classList.toggle("gradientContainerDark");
+
+
+});
 
 
 
