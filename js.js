@@ -517,7 +517,7 @@ var descricoesImagem = ["0",
   // 4 ANAP
   '<p>Associação Nacional de Atlteats de Patinagem</p>Logotipo para a ANAP de Portugal<br>',
   // 5 succulents
-  '<p>succulents</p>succulents <br>',
+  '<p>succulents</p>logotipo para um site para gerar, colecionar e competir com cartas de plantas suculentas<br>',
   // 6 Eventos
 '<p>Eventos e Notícias</p>Fotografei e ajudei em eventos como iCARe ALUMNI, QSP Summit, ... Fotografei entrevistas, apresentações, conferências de imprensa...  ',
   // 7 Nucleo Inovação
