@@ -72,6 +72,8 @@ html {
   font-size: 100%;
   line-height: 1.4;
 
+
+
 }
 
 
@@ -265,6 +267,8 @@ textarea {
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
+
+
 }
 
 
@@ -363,8 +367,10 @@ h5{
 
 
 
-h1:hover{
-  text-decoration: underline var(--cor-borda) 0.5px;
+h1 a:hover{
+  cursor: text;
+  text-decoration: none;
+  /*text-decoration: underline var(--cor-borda) 0.5px;*/
 }
 h2:hover{
   text-decoration: underline var(--cor-borda) 0.5px;
@@ -779,6 +785,8 @@ body{
   background-size: 100%, 250%;
 
   animation: animateGradients 25s linear infinite alternate;
+
+
 
 }
 

@@ -74,10 +74,19 @@
     <div id="leftBar">
 
       <h1>
-  <a href="#" lang="und" translate="no" onclick="showWorkM(1); hideDesc()" id="botaoMais">
+  <a href="https://sag1m.github.io/" lang="und" translate="no" id="botaoMais">
     Mi<span class="g">g</span>as
   </a>
 </h1>
+<!--ENQUANTO NÃO FUNCIONA O JAVASCRIPT NA JANELA, DESATIVEI O LINK EM MIGHAS
+<h1>
+<a href="#" lang="und" translate="no" onclick="showWorkM(1); hideDesc()" id="botaoMais">
+Mi<span class="g">g</span>as
+</a>
+</h1>-->
+
+
+
       <!--<p style="position: relative;top: 0px;font-weight: 100;color:grey;word-spacing: -15px;">(em atualização)</p>-->
 
 
@@ -242,6 +251,32 @@
               }
             }
             </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const imagens = ["pool.gif", "ciia.jpg", "natal25.gif","QSP.jpg", "patins25.gif", "dourobike.jpg","bike25.gif",];
+    let index = 0;
+    const imgElement = document.querySelector(".polaroide img");
+
+    function trocarImagem() {
+        index = (index + 1) % imagens.length;
+        imgElement.src = imagens[index];
+    }
+    setInterval(trocarImagem, 5000);
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
           <!--<div class="espacinho" id="typing-text"></div>
           <div class="espacinho" id="typing-text2"></div>
           <div class="espacinho" id="typing-text3"></div>-->
