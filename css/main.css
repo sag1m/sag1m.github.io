@@ -287,13 +287,11 @@ a:hover{
 
 h1{
   font-size: 40px;
-  font-weight: 100;
-
-
+  font-weight: 300;
 /*  text-decoration: underline red 0.5px;*/
-
   margin-bottom: 0rem;
 }
+
 h2{
   font-size: 31px;
   font-weight: 300;
@@ -434,7 +432,7 @@ h2:hover{
 
 #botaoMais:hover{
   /*text-shadow: 1.4px 0px 0px #7ca8ff, -1.4px 0px 0px #ff7c7c;*/
-  font-weight: 200;
+  /*font-weight: 200;*/
 }
 h1 #botaoMais{
  /*transition: text-shadow 3s;*/
@@ -443,6 +441,7 @@ h1 #botaoMais{
  animation-direction: alternate;
  animation-timing-function:ease-out;
  font-size: 3rem;
+ color: var(--cor-borda);
 }
 
 

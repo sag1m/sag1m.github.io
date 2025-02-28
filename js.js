@@ -1040,7 +1040,7 @@ setInterval(atualizarProgresso, 50); // Atualiza a cor a cada 50ms (20 FPS)
 //Imagem da polaroide a mudar
 
 document.addEventListener("DOMContentLoaded", function () {
-    const imagens = ["pool.gif", "ciia.jpg", "QSP.jpg", "dourobike.jpg",];
+    const imagens = ["pool.gif", "ciia.jpg", "natal25.gif","QSP.jpg", "patins25.gif", "dourobike.jpg","bike25.gif",];
     let index = 0;
     const imgElement = document.querySelector(".polaroide img");
 
