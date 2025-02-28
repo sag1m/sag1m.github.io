@@ -284,7 +284,7 @@ textarea {
 
 #leftBar{
   padding: 10px;
-  
+
 
 
 
@@ -786,9 +786,11 @@ h1 #botaoMais{
 
 /*BACKGROUND*/
 body{
+  background-color: white;
   background-image:
-  radial-gradient(circle at 20% 40%, #F4FBFF, transparent),
-  radial-gradient(circle at 60% 80%, #FFE8E8, transparent);
+  radial-gradient(circle at 20% 40%, color-mix(in srgb, var(--cor-borda) 3%, transparent), transparent),
+  radial-gradient(circle at 60% 80%, color-mix(in srgb, var(--cor-borda) 2%, transparent), transparent);
+
   /*url(../bg.jpg);*/
 
   background-repeat: no-repeat, no-repeat
@@ -871,18 +873,7 @@ cursor: pointer;
 }*/
 
 
-.backgroundDark{
-  background-image:
-  radial-gradient(circle at 20% 40%, #000C1B, transparent),
-  radial-gradient(circle at 60% 80%, #1B0015, transparent);
-  /*url(../bg.jpg);*/
 
-  background-repeat: no-repeat, no-repeat;
-  background-position: 0 0, 100% 100%;
-  background-size: 100%, 250%;
-
-  animation: animateGradients 25s linear infinite alternate;
-}
 
   @keyframes animateGradients {
     0% {
@@ -1056,11 +1047,11 @@ cursor: pointer;
 
 
 .backgroundDark{
+  background-color: black;
   background-image:
-  radial-gradient(circle at 20% 40%, #000C1B, transparent),
-  radial-gradient(circle at 60% 80%, #1B0015, transparent);
-  /*url(../bg.jpg);*/
-
+    radial-gradient(circle at 20% 40%, color-mix(in srgb, var(--cor-borda) 10%, transparent), transparent),
+    radial-gradient(circle at 60% 80%, color-mix(in srgb, var(--cor-borda) 5%, transparent), transparent);
+    /*url(../bg.jpg);*/
   background-repeat: no-repeat, no-repeat;
   background-position: 0 0, 100% 100%;
   background-size: 100%, 250%;
