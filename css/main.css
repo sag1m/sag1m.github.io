@@ -1082,7 +1082,7 @@ a:hover #coracao {
               width: 100%;
               height: auto;
               object-fit: cover;
-              /*filter: grayscale(100%);*/
+              filter: grayscale(90%);
           }
 
           .filtro {
@@ -1101,7 +1101,10 @@ a:hover #coracao {
 
 
 
+/*svg:hover{
+  fill:var(--cor-borda);
 
+}*/
 
 
 
