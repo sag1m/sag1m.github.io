@@ -115,6 +115,15 @@ a:not(.active):hover {}*/
     background: none;*/
  }
 
+ img::selection {
+   background: var(--cor-borda);
+   color: var(--cor-borda);
+
+    /*text-shadow: red;*/
+    /*color: #0d018c;
+    background: none;*/
+ }
+
 
  p, p:hover{
    cursor: text;
@@ -1121,9 +1130,7 @@ background: none;
 }
 
 #screenInside{
-  max-height: 100vh;
-  box-sizing: border-box;
-  font-family: Inconsolata;
+
 
 
 }
@@ -1133,9 +1140,13 @@ display: contents;
 
 .insidepage{
 max-height: 100%;
-overflow-y: hidden;
-overflow-x: hidden;
 
+}
+
+#embeb{
+  max-height: 100vh;
+  box-sizing: border-box;
+  font-family: Inconsolata;
 }
 
 
