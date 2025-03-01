@@ -691,7 +691,7 @@ body {
 /*DARK MODE*/
 
 #darkButton:hover{
-cursor: pointer;
+/*cursor: pointer;*/
 
 }
 /*.bottomRightDark{
@@ -724,24 +724,8 @@ cursor: pointer;
 }
 
 
-.dark::-moz-selection {
-  background: black;
-  color: var(--cor-borda);
-  text-shadow: none;}
 
-.dark::selection {
-  background: black;
-  color: var(--cor-borda);
-}
 
-.dark img::selection {
-  background: var(--cor-borda);
-  color: var(--cor-borda);
-
-   /*text-shadow: red;*/
-   /*color: #0d018c;
-   background: none;*/
-}
 
 
 
@@ -758,7 +742,7 @@ cursor: pointer;
 #screen{
           display: grid;
           grid-template-columns: 200px 1fr;
-          grid-template-rows: auto 1fr auto;
+          /*grid-template-rows: auto 1fr auto;*/
           gap: 10px;
           height: 100vh;
           padding: 10px;
@@ -768,7 +752,7 @@ cursor: pointer;
 
 #leftBar{
   box-sizing: border-box;
-  grid-row: span 3;
+  /*grid-row: span 3;*/
 
 
 }
@@ -787,7 +771,7 @@ cursor: pointer;
 }
 
 #bottomRight{
-  grid-row: span 3;
+  /*grid-row: span 3;*/
   line-height: 2rem;
   padding-left: 5px;
   overflow: auto;
@@ -845,6 +829,13 @@ font-weight: 500;
   background: var(--cor-borda);
   color: var(--cor-borda);
 }
+.bodyDark h1 a::selection{
+  color: black;
+}
+.bodyDark h1 span::selection{
+  color: black;
+}
+
 
 
 .botaoMaisDark{
@@ -1172,16 +1163,16 @@ max-height: 100%;
 @media only screen and (max-width: 1000px) { /* estilos para ecrãs pequenos */
 
 
-  #screen{
+  #leftBar{
     zoom:0.8;
 }
-#screen p, #screen a, h4{
+#leftBar p, #leftBar a, h4{
   zoom:1.1;
 }
 
 
-#screen p:hover, #screen a:hover, h4:hover{
-  zoom:1.2;
+#leftBar p:hover, #leftBar a:hover, h4:hover{
+  /*zoom:1.2;*/
 }
 
 #bottomRight{
@@ -1280,4 +1271,20 @@ html{
   h3 {
     break-after: avoid;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#down{
+grid-column: 2;
 }
