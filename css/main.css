@@ -1001,7 +1001,15 @@ a:hover #coracao {
 
 .simbolo{
   padding-right: 8px;
+  /*color: var(--cor-borda);*/
 }
+
+
+
+
+
+
+
 
 /*PÁGINA DOS TRABALHOS inside*/
 /*PÁGINAS SEPARADAS DE TRABALHOS*/
@@ -1011,8 +1019,9 @@ background: none;
 }
 
 #screenInside{
-
-
+  font-family: SUSE;
+  overflow: auto;
+  height: 100vh;
 
 }
 #screenInside a {
@@ -1024,10 +1033,17 @@ max-height: 100%;
 
 }
 
+.insidepage a img:hover{
+  cursor: zoom-in;
+}
+
+
+
+/*isto é para as imagens e coisas que ficam no javascript*/
 #embeb{
   max-height: 100vh;
   box-sizing: border-box;
-  font-family: Inconsolata;
+  font-family: SUSE;
 }
 
 
