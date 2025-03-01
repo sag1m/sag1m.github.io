@@ -30,16 +30,23 @@
   <!-- favicon base: 32x32px deve estar na raiz do site, para garantir que os browsers antigos o vão mostrar -->
   <link rel="shortcut icon" href="favicon.ico">
 
+
+
+
+
+
+
   <!--vou meter o link da google porque nao esta a funiconar doutra forma no github-->
+  <!--
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <!--<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700;900&display=swap" rel="stylesheet">-->
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+-->
+
+
 
 
   <link href="fonts/Inconsolata-Variable.ttf" rel="stylesheet">
@@ -47,8 +54,10 @@
   <link href="fonts/Inconsolata-M.ttf" rel="stylesheet">
   <link rel="preload" href="fonts/Inconsolata-M.ttf" as="font">
 
-  <link rel="preload" href="fonts/SUSE-VariableFont_wght.ttf" as="font">
-  <link href="fonts/SUSE-VariableFont_wght.ttf" rel="stylesheet">
+
+<!--<link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">-->
+<link rel="preload" href="fonts/SUSE-VariableFont_wght.ttf" as="font">
+<link href="fonts/SUSE-VariableFont_wght.ttf" rel="stylesheet">
 
 
 
@@ -78,17 +87,23 @@
 
     <div id="leftBar">
 
-      <h1>
+
+  <!--ESTE É SÓ UM LINK PARA A MESMA PÁGINA. desaconcewlhado.-->
+  <h1>
   <a href="https://sag1m.github.io/" lang="und" translate="no" id="botaoMais">
     Mi<span class="g">g</span>as
   </a>
 </h1>
-<!--ENQUANTO NÃO FUNCIONA O JAVASCRIPT NA JANELA, DESATIVEI O LINK EM MIGHAS
+
+
+<!--
 <h1>
-<a href="#" lang="und" translate="no" onclick="showWorkM(1); hideDesc()" id="botaoMais">
+<a lang="und" translate="no" onclick="showWorkM(1); hideDesc()" id="botaoMais">
 Mi<span class="g">g</span>as
 </a>
-</h1>-->
+</h1>
+-->
+
 
 <p style="display:none">Portfólio multimédia do designer de comunicação Miguel Sousa (Migas, ou Miguel de Sousa) com CV - currículo. Design de Comunicação, Porto, Portugal. Design de Comunicação, Design gráfico, UX, UI, multimedia. </p>
 <p style="display:none">O próximo parágrafo é só um teste sem importancia, não fui eu que escrevi nem sequer li o texto.</p>
@@ -269,42 +284,6 @@ Mi<span class="g">g</span>as
 
 </div>-->
       <div id="bottomRight">
-
-
-
-
-
-        <script>
-        function toggleCaixa() {
-            var caixa = document.getElementById("caixaTexto");
-            if (caixa.style.display === "none" || caixa.style.display   === "") {
-                caixa.style.display = "block";
-              } else {
-                caixa.style.display = "none";
-              }
-            }
-            </script>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const imagens = ["pool.gif", "ciia.jpg", "natal25.gif","QSP.jpg", "patins25.gif", "dourobike.jpg","bike25.gif",];
-    let index = 0;
-    const imgElement = document.querySelector(".polaroide img");
-
-    function trocarImagem() {
-        index = (index + 1) % imagens.length;
-        imgElement.src = imagens[index];
-    }
-    setInterval(trocarImagem, 5000);
-});
-</script>
-
-
-
-
-
-
-
-
 
 
 

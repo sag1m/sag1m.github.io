@@ -256,14 +256,15 @@ textarea {
   src: url("../milan.otf") format("opentype");
 }
 
-.suse-font {
-  font-family: "SUSE", serif;
+
+
+@font-face {
+  font-family: "SUSE";
+  font-weight: 100 900;
   font-optical-sizing: auto;
-  font-weight: <weight>;
   font-style: normal;
+  src: url("../fonts/SUSE-VariableFont_wght.ttf") format("truetype");
 }
-
-
 /* ==========================================================================
    Colocar aqui os estilos do site
    ========================================================================== */
@@ -277,7 +278,7 @@ textarea {
   /*min-height: 100vh;*/
   /*font-family: 'Inconsolata', monospace;*/
   /*font-family: "Source Code Pro", monospace;*/
-  font-family: "SUSE", serif;
+  font-family: "SUSE", "Inconsolata", monospace;
   font-optical-sizing: auto;
   font-style: normal;
 
@@ -921,7 +922,7 @@ a:hover #coracao {
               justify-content: center;
               align-items: center;*/
               border: 10px solid;
-              border-color: rgba(255, 255, 255, 1);
+              border-color: rgba(255, 255, 255, 0.8);
               box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
               background: rgba(255, 255, 255, 1);
 
@@ -977,7 +978,9 @@ a:hover #coracao {
 
 
 
-
+.caixa-texto{
+  font-weight: 200;
+}
 
 
 
