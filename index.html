@@ -140,15 +140,21 @@ Mi<span class="g">g</span>as
 
       <h2><a style="cursor:pointer;" onclick="toggleMenu()">Portfólio</a></h2>
       <script>
-            function toggleMenu() {
-                var menu = document.getElementById("portfolioMenu");
-                if (menu.style.display === "none" || menu.style.display === "") {
-                    menu.style.display = "block";
-                } else {
-                    menu.style.display = "none";
-                }
-            }
-        </script>
+    function toggleMenu() {
+        var menu = document.getElementById("portfolioMenu");
+        if (menu.style.display === "none" || menu.style.display === "") {
+            menu.style.display = "block";
+            setTimeout(function() {
+                menu.classList.add("show");
+            }, 10); // Adiciona a classe para transitar a opacidade
+        } else {
+            menu.classList.remove("show");
+            setTimeout(function() {
+                menu.style.display = "none";
+            }, 100); // Aguarda o tempo da transição antes de esconder
+        }
+    }
+</script>
         <div id="portfolioMenu" class="menu">
 
           <div class="category"><h3 onclick="showWorkWMais(rando(1,5))" >Web</h3>

@@ -102,24 +102,23 @@ a:not(.active):hover {}*/
  * Mudar esta cor de fundo de seleção de acordo com o esquema de cores do site.
  */
 
- ::-moz-selection {
+ /*::-moz-selection {
    background: black;
    color: var(--cor-borda);
    text-shadow: none;
-   /*color: #0d018c;
-   background: none;*/
- }
+ }*/
 
  h1 a::selection{
-   color: white;
+   color: black;
  }
  h1 span::selection{
-   color: white;
+   color: black;
  }
 
  ::selection {
    background: var(--cor-borda);
-   color: black;
+   color: white;
+
 
     /*text-shadow: red;*/
     /*color: #0d018c;
@@ -597,6 +596,13 @@ h1 #botaoMais{
 
 
 
+
+
+
+
+
+
+
 .hover-letter {
   font-family: "M";
   font-weight: 400;
@@ -755,7 +761,6 @@ body {
   box-sizing: border-box;
   /*grid-row: span 3;*/
 
-
 }
 
 #portfolioMenu{
@@ -764,7 +769,18 @@ body {
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* Internet Explorer 10+ */
 
+           display: none;
+           opacity: 0;
+           transition: opacity 0.1s ease-in-out;
+     }
+       #portfolioMenu.show {
+           display: block;
+           opacity: 1;
+
 }
+
+
+
 
 #titulo {
     display: flex;
@@ -824,17 +840,17 @@ font-weight: 500;
 }
 .bodyDark ::selection {
   background: var(--cor-borda);
-  color: white;
+  color: black;
 }
 .bodyDark img::selection {
   background: var(--cor-borda);
   color: var(--cor-borda);
 }
 .bodyDark h1 a::selection{
-  color: black;
+  color: white;
 }
 .bodyDark h1 span::selection{
-  color: black;
+  color: white;
 }
 
 
@@ -979,11 +995,13 @@ a:hover #coracao {
 
 
 .caixa-texto{
-  font-weight: 200;
+  font-weight: 300;
+  line-height: 2.5rem;
 }
 
-
-
+.simbolo{
+  padding-right: 8px;
+}
 
 /*PÁGINA DOS TRABALHOS inside*/
 /*PÁGINAS SEPARADAS DE TRABALHOS*/
