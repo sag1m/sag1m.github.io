@@ -88,6 +88,8 @@
     <div id="leftBar">
 
 
+
+
   <!--ESTE É SÓ UM LINK PARA A MESMA PÁGINA. desaconcewlhado.-->
   <h1>
   <a style="cursor" href="https://sag1m.github.io/" lang="und" translate="no" id="botaoMais">
@@ -105,8 +107,8 @@ Mi<span class="g">g</span>as
 
 
 
-<p style="display:none">Portfólio multimédia do designer de comunicação Miguel Sousa (Migas, ou Miguel de Sousa) com CV - currículo. Design de Comunicação, Porto, Portugal. Design de Comunicação, Design gráfico, UX, UI, multimedia. </p>
-<p style="display:none">O próximo parágrafo é só um teste sem importancia, não fui eu que escrevi nem sequer li o texto.</p>
+<p style="display:none">Portfólio multimédia do designer de comunicação Miguel Sousa (Migas, ou Miguel de Sousa) com CV - currículo. Design de Comunicação, Porto, Portugal. Design de Comunicação, Design gráfico, UX, UI, multimédia. </p>
+<p style="display:none">Os parágrafos que se seguem são só um teste sem importância, não fui eu que escrevi nem sequer li o texto.</p>
 <p style="display:none">Criatividade, ritmo e interação definem o trabalho desenvolvido em design de comunicação, multimédia e experiências digitais. Com uma abordagem estratégica e estética, cada projeto é pensado para captar atenção, envolver audiências e transmitir mensagens de forma clara e impactante.
 </p>
 <p style="display:none">A fusão entre imagem, som e movimento dá origem a soluções dinâmicas para branding, UX/UI, animação, vídeo, desenvolvimento web e experiências interativas. A aplicação de cores, formas e composições equilibradas garante identidade visual forte, adaptada a diferentes suportes e contextos.
@@ -374,7 +376,14 @@ Mi<span class="g">g</span>as
 
 
 
+<script>document.getElementById('botaoMais').addEventListener('mouseover', function() {
+  document.getElementById('screen').style.filter = 'blur(3px)';
+  document.getElementById('screen').style.transition = 'filter 1s ease';
+});
 
+document.getElementById('botaoMais').addEventListener('mouseout', function() {
+  document.getElementById('screen').style.filter = 'none';
+});</script>
 
 
 <script src="js.js"></script>
