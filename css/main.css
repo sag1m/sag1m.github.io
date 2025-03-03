@@ -795,7 +795,7 @@ body {
 }
 
 #bottomRight{
-  /*grid-row: span 3;*/
+  grid-row: span 3;
   line-height: 2rem;
   padding-left: 5px;
   overflow: auto;
@@ -1125,6 +1125,37 @@ max-height: 100%;
 
 
 
+      /*Cookies*/
+      #cookie-consent{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: opacity 0.5s;
+        z-index: 9999;
+        padding: 15px;
+        text-align: center;
+        font-size: 14px;
+
+          border-top: solid 2px var(--cor-borda);
+          backdrop-filter: blur(10px);
+
+          background-color: rgba(200, 200, 200, 0.8);
+          color: #222;
+
+      }
+
+
+
+
+
+
+
+
+
+      /*#down{
+      grid-column: 2;
+      }*/
 
 
 
@@ -1325,41 +1356,4 @@ html{
   h3 {
     break-after: avoid;
   }
-}
-
-
-
-
-
-
-/*Cookies*/
-#cookie-consent{
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transition: opacity 0.5s;
-  z-index: 9999;
-  padding: 15px;
-  text-align: center;
-  font-size: 14px;
-
-    border-top: solid 2px var(--cor-borda);
-    backdrop-filter: blur(10px);
-
-    background-color: rgba(200, 200, 200, 0.8);
-    color: #222;
-
-}
-
-
-
-
-
-
-
-
-
-#down{
-grid-column: 2;
 }
