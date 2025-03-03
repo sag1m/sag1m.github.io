@@ -1138,7 +1138,7 @@ max-height: 100%;
         font-size: 14px;
 
           border-top: solid 2px var(--cor-borda);
-          backdrop-filter: blur(10px);
+          backdrop-filter: blur(4px);
 
           background-color: rgba(200, 200, 200, 0.8);
           color: #222;
