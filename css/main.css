@@ -877,7 +877,7 @@ font-weight: 500;
   background-color: rgba(1, 1, 1, 0.9);
 
 }
-.bodyDark svg path{
+.bodyDark #popup svg path{
   fill: var(--cor-borda);
 
 }
