@@ -477,7 +477,7 @@ var descricoesVideo = ["0",
 //1 Supleemntos diários rotina diária
 '<p translate="no">Mystery Mammal - Data</p>Vídeo com o tema "Rotina Diária", em específico os suplementos alimentares.<br> Gravado com um telemóvel e uma lente.<br>2018',
 //2 frank ocean Kynetic Typography
-'<p translate="no">Frank Ocean - Self control</p>Kynetic Typography<br> Videoclipe só com tipografia cinética.<br>2020',
+'<p translate="no">Frank Ocean - Self Control</p>Kynetic Typography<br> Videoclipe só com tipografia cinética.<br>2020',
 //3 fé
 '<p translate="no">Fé</p>Vídeo artístico que trata a Fé.<br>Põe em igualdade rituais e crenças atuais de todo o mundo. <br> Trabalho de grupo com o Leandro Afonso.<br> 2020',
 //4 amanhecer
@@ -512,7 +512,7 @@ var descricoesImagem = ["0",
 '<p>Keith Haring animado</p>Animações simples com obras de Keith Haring',
 
 // 2 Spoof ad Lunesta
-'<p translate="no">Lunesta Spoof Ad</p>Spoof ad do medicamento Lunesta. À esquerda é o original. Eu apenas mudei a ordem do texto - O que no original tem mais destaque, no meu tem menos importância.',
+'<p translate="no">Lunesta Spoof Ad</p>Spoof ad do medicamento Lunesta. À esquerda é o original. Mas no meu, à direita, inverti a hierarquia do texto - O que no original tem mais destaque, no meu tem menos importância.',
 
 // 3 Douro Panoramica fotografia
 '<p>Douro</p>Fotografia Panorâmica no Porto à beira rio.',
@@ -600,25 +600,25 @@ var descricoesOutros = ["0",
 var descricoesVideoMais = ["0",
 
 // 1 BITTER SWEET
-'<p lang="eng" translate="no">Bitter Sweet</p>Pequeno vídeo que mostra uma disputa entre dois amigos por um doce.<br> Trabalho de grupo.<br>2015',
+'<p lang="eng" translate="no">Bitter Sweet<span id="n">1/10</span></p>Pequeno vídeo que mostra uma disputa entre dois amigos por um doce.<br> Trabalho de grupo.<br>2015',
 // 2 SOUTH PARK
-'<p lang="eng" translate="no">South Park animation</p>Exercício de Animação com imagens da série South Park (sem som.)<br>2015',
+'<p lang="eng" translate="no">South Park<span id="n">2/10</span></p>Exercício de Animação com imagens da série South Park (sem som.)<br>2015',
 // 3 BLUE VELVET
-'<p lang="und" translate="no">Blue Velvet remake</p>Remake de uma cena do filme Blue Velvet de 1986.<br> Trabalho de grupo. 2019',
+'<p lang="eng">Blue Velvet remake<span id="n">3/10</span></p>Remake de uma cena do filme Blue Velvet de 1986.<br> Trabalho de grupo. 2019',
 // 4 NARRATIVA FOTOGRAFIAS
-'<p>Onde meti a chave?</p>Pequena narrativa com fotografias, exercício para Argumento Multimédia. <br>2017',
+'<p>Onde meti a chave?<span id="n">4/10</span></p>Pequena narrativa com fotografias, exercício para Argumento Multimédia. <br>2017',
 // 5 MIGAS POWER POWDER
-'<p lang="und" translate="no">Migas Power Powder advertising</p>Vídeo feito a partir de Stock Footage. Ensino a fazer a receita de batido "caseiro" que inventei.<br> 2019',
+'<p lang="eng">Migas Power Powder<span id="n">5/10</span></p>Vídeo feito a partir de Stock Footage. Ensino a fazer a receita de batido "caseiro" que inventei.<br> 2019',
 // 6 MEDICINAS ALTERANATIAS TRAILER
-'<p><span  lang="und" translate="no">Terapias Alternativas</span> - trailer</p>Trailer do episódio 02 (Reiki) da série documemental <span  lang="und" translate="no">Terapias Alternativas</span>.<br> Trabalho de grupo.<br> 2014',
+'<p><span  lang="pt" translate="no">Terapias Alternativas</span> | trailer<span id="n">6/10</span></p>Trailer do episódio 02 (Reiki) da série documemental <span  lang="und" translate="no">Terapias Alternativas</span>.<br> Trabalho de grupo.<br> 2014',
 // 7 MEDICINAS ALTERANATIAS EP01
-'<p><span  lang="und" translate="no">Terapias Alternativas</span> - Episódio 01</p>Episódio 01 da série documental <span  lang="und" translate="no">Terapias Alternativas</span>.<br> Trabalho de grupo. <br>2014.',
+'<p><span  lang="pt" translate="no">Terapias Alternativas</span> | Episódio 01<span id="n">7/10</span></p>Episódio 01 da série documental <span  lang="und" translate="no">Terapias Alternativas</span>.<br> Trabalho de grupo. <br>2014.',
 // 8 TRAILER NIGHT OF THE LIVING DEAD
-'<p lang="und" translate="no">Trailer - Night of the Living Dead</p>Trailer para o filme <span lang="und" translate="no">Night of The Living Dead</span> com cenas do filme.<br> Trabalho de grupo.<br>2019',
+'<p lang="eng" translate="no">Night of the Living Dead<span id="n">8/10</span></p>Trailer para o filme <span lang="eng">Night of The Living Dead</span> com cenas do filme.<br> Trabalho de grupo.<br>2019',
 // 9 TRAFFIC
-'<p lang="und" translate="no">Traffic</p>Exercício de Time-Lapse sobre o Trânsito no Porto<br> - Como uma pequena ação individual dificulta a vida de milhares de pessoas. <br>2020',
+'<p lang="eng">Traffic<span id="n">9/10</span></p>Exercício de Time-Lapse sobre o Trânsito no Porto<br>Como uma pequena ação individual dificulta a vida de dezenas/centenas de pessoas. <br>2020',
 // 10 GARY'S MOD
-'<p lang="und" translate="no">GARYS MOD</p>Fiz o som para este vídeo da inernet com recurso numa grande biblioteca de sons.',
+'<p lang="und" translate="no">GARYS MOD<span id="n">10/10</span></p>Fiz o som para este vídeo da inernet com recurso numa grande biblioteca de sons.',
 
 
 
@@ -1145,6 +1145,26 @@ document.getElementById('botaoMais').addEventListener('mouseout', function() {
 });
 
 
+
+
+
+
+
+
+
+
+
+// Aguardar 2 minutos (120 segundos) antes de mostrar o pop-up
+    setTimeout(function() {
+        document.getElementById('popup').style.display = 'block';
+        document.getElementById('screen').classList.add('blurred');  // Adiciona o efeito de desfocar o fundo
+    }, 120000);
+
+    // Fechar o pop-up
+    document.getElementById('close-btn').onclick = function() {
+        document.getElementById('popup').style.display = 'none';
+        document.getElementById('screen').classList.remove('blurred');  // Remove o desfoque do fundo
+    };
 
 
 

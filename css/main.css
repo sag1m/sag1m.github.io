@@ -838,6 +838,15 @@ font-weight: 500;
 }
 
 
+#descricao #n{
+  /*  float: right;
+    color: black;
+    font-size: larger;
+    font-weight: 100;
+    color: rgba(128, 128, 128, 0.4);*/
+    opacity: 0;
+
+}
 
 /*DARK MODE*/
 
@@ -864,6 +873,11 @@ font-weight: 500;
 
 }
 
+.bodyDark #popup{
+  background-color: rgba(1, 1, 1, 0.9);
+;
+
+}
 
 
 .botaoMaisDark{
@@ -876,6 +890,7 @@ font-weight: 500;
   color: white;
 
 }
+
 
 .mozDark{
   background: white;
@@ -1019,6 +1034,120 @@ a:hover #coracao {
   padding-right: 8px;
   /*color: var(--cor-borda);*/
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.blurred {
+            filter: blur(5px);
+            transition: filter 0.1s ease;
+        }
+
+        /* Estilo do pop-up */
+        .popup {
+          font-family: SUSE;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            background: rgba(255, 255, 255, 0.9);
+
+            padding: 20px;
+            /*border-radius: 10px;*/
+            box-shadow:
+              0 4px 15px rgba(0, 0, 0, 0.15),
+              0 0px 1px var(--cor-borda)
+              ;
+            z-index: 1000;
+            display: none;
+            width: 500px;
+            text-align: center;
+
+            line-height: 35px;
+        }
+
+        #popup p:first-child {
+            font-size: 20px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+
+        }
+
+        .popup p {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .popup button {
+            background-color: var(--cor-borda);
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            /*border-radius: 5px;*/
+            margin-bottom: 10px;
+        }
+
+        .popup button:hover {
+            background-color: var(--cor-borda);
+            filter: brightness(0.8);
+            text-decoration: none;
+        }
+
+        .popup a {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--cor-borda);
+            text-decoration: none;
+        }
+
+        /* Estilo do X */
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+            font-size: 20px;
+            color: #777;
+        }
+
+        .close-btn:hover {
+            color: var(--cor-borda);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
