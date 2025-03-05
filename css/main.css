@@ -875,7 +875,20 @@ font-weight: 500;
 
 .bodyDark #popup{
   background-color: rgba(1, 1, 1, 0.9);
-;
+
+}
+.bodyDark svg path{
+  fill: var(--cor-borda);
+
+}
+.bodyDark #popup button{
+  background-color: rgba(1, 1, 1, 0.9);
+  color: white;
+
+}
+.bodyDark #popup button:hover{
+  background-color: var(--cor-borda);
+  color: white;
 
 }
 
@@ -1076,8 +1089,10 @@ a:hover #coracao {
             width: 500px;
             text-align: center;
 
-            line-height: 35px;
+            line-height: 30px;
         }
+
+
 
         #popup p:first-child {
             font-size: 20px;
@@ -1087,16 +1102,21 @@ a:hover #coracao {
         }
 
         .popup p {
-            font-size: 14px;
+            font-size: 16px;
             margin-bottom: 15px;
         }
 
+        #linkedin{
+          font-size: 14px;
+        }
+
         .popup button {
-            background-color: var(--cor-borda);
+          background-color: white;
             font-size: 20px;
             font-weight: 600;
-            color: white;
+            color: var(--cor-borda);
             border: none;
+            border: solid 1px var(--cor-borda);
             padding: 10px 20px;
             cursor: pointer;
             /*border-radius: 5px;*/
@@ -1105,8 +1125,9 @@ a:hover #coracao {
 
         .popup button:hover {
             background-color: var(--cor-borda);
-            filter: brightness(0.8);
+            /*filter: brightness(0.8);*/
             text-decoration: none;
+            color: white;
         }
 
         .popup a {
@@ -1114,6 +1135,10 @@ a:hover #coracao {
             margin-top: 10px;
             color: var(--cor-borda);
             text-decoration: none;
+        }
+
+        .popup svg path{
+          fill:var(--cor-borda);
         }
 
         /* Estilo do X */
