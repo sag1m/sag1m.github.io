@@ -1194,7 +1194,7 @@ document.getElementById('botaoMais').addEventListener('mouseout', function() {
 
 
 
-// Aguardar 2 minutos (120 segundos) antes de mostrar o pop-up de contactar
+// Aguardar
     setTimeout(function() {
         document.getElementById('popup').style.display = 'block';
         document.getElementById('screen').classList.add('blurred');  // Adiciona o efeito de desfocar o fundo

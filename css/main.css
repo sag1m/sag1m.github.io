@@ -873,8 +873,13 @@ font-weight: 500;
 
 }
 
-.bodyDark #popup{
-  background-color: rgba(1, 1, 1, 0.9);
+.bodyDark .popup{
+  background-color: rgba(1, 1, 1, 0.8);
+
+  box-shadow:
+    0 4px 15px rgba(255, 255, 255, 0.2),
+    0 0px 120px -60px var(--cor-borda)
+    ;
 
 }
 .bodyDark #popup svg path{
@@ -882,7 +887,7 @@ font-weight: 500;
 
 }
 .bodyDark #popup button{
-  background-color: rgba(1, 1, 1, 0.9);
+  background-color: transparent;
   color: white;
 
 }
@@ -1082,7 +1087,7 @@ a:hover #coracao {
             /*border-radius: 10px;*/
             box-shadow:
               0 4px 15px rgba(0, 0, 0, 0.15),
-              0 0px 1px var(--cor-borda)
+              0 0px 120px -60px var(--cor-borda)
               ;
             z-index: 1000;
             display: none;
@@ -1111,7 +1116,7 @@ a:hover #coracao {
         }
 
         .popup button {
-          background-color: white;
+          background-color: transparent;
             font-size: 20px;
             font-weight: 600;
             color: var(--cor-borda);
