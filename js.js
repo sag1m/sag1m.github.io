@@ -512,7 +512,7 @@ var descricoesImagem = ["0",
 '<p>Keith Haring animado</p>Animações simples com obras de Keith Haring',
 
 // 2 Spoof ad Lunesta
-'<p translate="no">Lunesta Spoof Ad</p>Spoof ad do medicamento Lunesta. À esquerda é o original. Mas no meu, à direita, inverti a hierarquia do texto - O que no original tem mais destaque, no meu tem menos importância.',
+'<p translate="no">Lunesta Spoof Ad</p>Spoof ad do medicamento Lunesta.<br> À esquerda é o original. Mas no meu, à direita, inverti a hierarquia do texto:<br>O que no original tem mais destaque, no meu tem menos importância.',
 
 // 3 Douro Panoramica fotografia
 '<p>Douro</p>Fotografia Panorâmica no Porto à beira rio.',
@@ -780,7 +780,7 @@ var trabalhosVideo = ["0",
     '<img class="imagem" src="arte2.gif" alt="Animação de obra de Keith Haring. 2019?">',
 
     // 2 Spoof ad Lunesta
-    '<a href="lunestacompaison.png" target="_blank"><img class="imagem" src="lunestacompaison.png" alt="Spoof Ad do medicamento Lunesta (à esquerda é o original). Eu mudei a ordem do texto - Aquilo que no original tem mais destaque, no meu tem menos importância. 2019"></a>',
+    '<a href="lunestacompaison.png" target="_blank"><img style="cursor:zoom-in" class="imagem" src="lunestacompaison.png" alt="Spoof Ad do medicamento Lunesta (à esquerda é o original). Eu mudei a ordem do texto - Aquilo que no original tem mais destaque, no meu tem menos importância. 2019"></a>',
 
     // 3 Douro Panoramica fotografia
     '<div id="pan"><img class="height" src="PanSmall.jpg" alt="Fotografia Panorâmica tirada no Porto à beira rio. 2021"></div>',
@@ -1212,7 +1212,7 @@ document.getElementById('botaoMais').addEventListener('mouseout', function() {
     setTimeout(function() {
         document.getElementById('popup').style.display = 'block';
         document.getElementById('screen').classList.add('blurred');  // Adiciona o efeito de desfocar o fundo
-    }, 100000);
+    }, 1); //100000
 
     // Fechar o pop-up
     document.getElementById('close-btn').onclick = function() {
