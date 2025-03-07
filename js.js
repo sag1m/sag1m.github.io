@@ -631,13 +631,13 @@ var descricoesVideoMais = ["0",
 var descricoesImagemMais = ["0",
 
 // 1Uber Hugo
-'<p lang="und" translate="no">Uber Hugo</p>Frame de um possível jogo de pixel art. <br>O jogador seria um estafeta da Uber que teria de entregar encomendas.<br> Ganharia bónus ao arrancar retrovisores de carros.',
+'<p lang="und">Uber Hugo</p>Frame de um possível jogo de pixel art. <br>O jogador seria um estafeta da Uber que teria de entregar encomendas.<br> Ganharia bónus ao arrancar retrovisores de carros.',
   // 2 Spoof Ad myprotein
   '<p translate="no">Myprotein Spoof Ad</p>Spoof Ad da empresa MyProtein.',
   // 3Shulgin ilustração
-'<p lang="und" translate="no">Alexander Shulgin</p>Ilustração do Alexander Shulgin com citação dele. 2015 ',
+'<p>Alexander Shulgin</p>Ilustração do Alexander Shulgin com citação dele. 2015 ',
   // 4CAFFEINE imagem
-'<p>Caffeine</p>Imagem de uma publicação sobre cafeína.<br>Do lado esquerdo é uma fotografia de chá e do lado direito uma fotografia de cafeína pura.<br>2021',
+'<p lang="eng">Caffeine</p>Imagem de uma publicação sobre cafeína.<br>Do lado esquerdo é uma fotografia de chá e do lado direito uma fotografia de cafeína pura.<br>2021',
 //5 imagem digital antiga
 '<p>Flor</p>Imagem digital que fiz no Paint.net antes de 2010.<br>Das primeiras imagens que fiz e que consegui guardar até agora.',
 //6 PANORAMICA praia matosas
@@ -645,11 +645,16 @@ var descricoesImagemMais = ["0",
 //7 KEITH HARING
 '<p>animação Keith Haring</p>Animação simples com obra de Keith Haring.<br>2019',
 //8 POESIA
-'<p lang="und" translate="no">Nota Discordante</p>Poema "Nota Discordante" de Fernando Namora.<br> 2018',
+'<p>Nota Discordante</p>Poema "Nota Discordante" de Fernando Namora.<br> 2018',
 //9 AMÉLIA
 '<p>Amélia</p>Ilustração de personagem.<br> A Amélia é uma pequena planta de chá que dá dicas sobre como fazer os melhores chás.<br> 2019',
 //10 sÁBADO
-'<p lang="und" translate="no">Sábado</p>Ilustração para a capa da revista Sábado.<br> 2019',
+'<p>Sábado</p>Ilustração para a capa da revista Sábado.<br> 2019',
+
+//11
+'<p>Fotografias Medicina Social</p>Fotografias tiradas no Hospital Conde Ferreira para a revista Medicina Social da SCMP.',
+
+
 
 ]
 
@@ -814,18 +819,21 @@ var trabalhosVideo = ["0",
           '<img class="imagem" alt="Ilustração do Alexander Shulgin. 2015" src="shulgin.png"> ',
           // 4CAFFEINE imagem
           '<img class="imagem" src="caffeineSmall.jpg" alt="Cafeína">',
-          //imagem digital antiga
+          //5 imagem digital antiga
           '<img class="imagem" src="flor.png" alt="Imagem digital que fiz no Paint.net antes de 2010. Das primeiras imagens que fiz e que consegui guardar até agora.">',
-          //  5PANORAMICA praia matosas
+          // 6 PANORAMICA praia matosas
           '<div id="pan"><img class="height" src="PanWeb.jpg" alt="Fotografia Panorâmica tirada no Porto à beira mar. 2021"></div>',
-          // 6KEITH HARING
+          // 7 KEITH HARING
           '<img class="imagem" src="arte3.gif" alt="Animação simples com obra de Keith Haring. 2019">',
-          // 7POESIA
+          // 8 POESIA
           '<img class="imagem" src="poesia.jpg" alt="Poema Nota Discordante de Fernando Namora. 2018">',
-          // 8AMÉLIA
+          // 9 8AMÉLIA
           '<img class="imagem" src="ilustracao1.jpg" alt="AMÉLIA">',
-          // 9ÁBADO
+          // 10 ÁBADO
           '<img class="imagem" src="ilustracao2.png" alt="SÁBADO">',
+          // 11 SCMP
+          '<img class="imagem" src="medsoc.png" alt="Fotografias tiradas no Hospital Conde Ferreira para a revista Medicina Social da SCMP."><br><a onclick="showWorkO(3)" style="cursor:pointer" >Ver revista Medicina Social</p></a>',
+
 
       '',
       '',
@@ -876,9 +884,8 @@ var trabalhosVideo = ["0",
       '<iframe class="youtube" frameBorder="0" src="SpaceDimension/index.html"></iframe>',
       // 5  CrossFest Festival
       '<iframe alt="Website desenvolvido para um festival de música inventado, baseado num cartaz construtivista Russo. 2019" class="youtube" frameBorder="0" src="Cross/index.html"></iframe>',
-
       //6 Pharmakons
-      '<p>Imagem da Coleção</p><img class="imagem" src="ph1.png" alt="imagem da coleção Pharmakons na WAX Blockchain">    <p>Imagem de perfil</p><img class="imagem" src="ph2.png" alt="imagem de perfil da coleção Pharmakons na WAX Blockchain">     ',
+      '<p>Logotipo da Coleção</p><img class="imagem" src="ph1.png" alt="imagem da coleção Pharmakons na WAX Blockchain">    <p>Imagem de perfil</p><img class="imagem" src="ph2.png" alt="imagem de perfil da coleção Pharmakons na WAX Blockchain">     ',
 
 
 
@@ -898,7 +905,14 @@ var trabalhosVideo = ["0",
     '<iframe alt="Publicação sobre a Cafeína feita em Projeto de Impressão. 2020" src="https://online.fliphtml5.com/dnvha/boah"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="youtube" ></iframe>',
 
     // 3 Medicina Social
-    '<iframe alt="" src="medSoc.html" allowtransparency="true" class="youtube" ></iframe>',
+    //'<iframe alt="" src="medSoc.html" allowtransparency="true" class="youtube" ></iframe>',
+
+
+    '<div id="med"><p>Impressões de teste da revista</p><a href="print01.png"><img style="height:400px" alt="Impressão para testa da revista Medicina Social" src="print01.png"></a><a href="print02.png"><img alt="Impressão para testa da revista Medicina Social" src="print02.png"></a><br><p>Spreads da revista</p><a href="scmp/med01.png"><img alt="Spread da revista Medicina Social" src="scmp/med01.png"></a><br><a href="scmp/med02.png"><img alt="Spread da revista Medicina Social" src="scmp/med02.png"></a><br><a href="scmp/med03.png"><img alt="Spread da revista Medicina Social" src="scmp/med03.png"></a><br><a href="scmp/med04.png"><img alt="Spread da revista Medicina Social" src="scmp/med04.png"></a><br><br><a onclick="showWorkIMais(11)" style="cursor:pointer" >Ver fotografias tiradas para a  Medicina Social</p></a><br></div><br>',
+
+
+
+
 
     // 4 Guias CRN
     '<iframe alt="" src="CRN.html"  allowtransparency="true" class="youtube" ></iframe>',
@@ -1159,13 +1173,13 @@ setTimeout(function() {
         consent.style.opacity = "0";
         setTimeout(function() {
             consent.remove();
-        }, 1500);
+        }, 2000);
     }
     document.getElementById("close-cookie").onclick = removeConsent;
     consent.onmouseover = removeConsent;
 
     setTimeout(removeConsent, 10000);
-}, 12000);//12000
+}, 10000);//12000
 
 
 
