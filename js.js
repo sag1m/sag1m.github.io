@@ -653,7 +653,8 @@ var descricoesImagemMais = ["0",
 
 //11
 '<p>Fotografias Medicina Social</p>Fotografias tiradas no Hospital Conde Ferreira para a revista Medicina Social da SCMP.',
-
+//12
+'<p>Postal de Natal</p>Tentei fotografar um postal de Natal alusivo às Bicicletas.<br>2022',
 
 
 ]
@@ -801,9 +802,7 @@ var trabalhosVideo = ["0",
 
 
     //9 Bicicleta cartaz
-
-    '<iframe alt="Cartaz sobre Segurança Rodoviária" class="youtube" frameBorder="0" src="bikeC.pdf"></iframe> ',
-
+    '<a style="cursor:zoom-in; target="blank" href="bikeC.pdf"><img class="imagem" src="poster.png" alt="Poster sobre Sugurança Rodoviária em Velocípedes"></a>',
 
 
 
@@ -833,7 +832,8 @@ var trabalhosVideo = ["0",
           '<img class="imagem" src="ilustracao2.png" alt="SÁBADO">',
           // 11 SCMP
           '<img class="imagem" src="medsoc.png" alt="Fotografias tiradas no Hospital Conde Ferreira para a revista Medicina Social da SCMP."><br><a onclick="showWorkO(3)" style="cursor:pointer" >Ver revista Medicina Social</p></a>',
-
+          //12 Natal Bicicleta
+          '<img class="imagem" src="natal.png" alt="Postal de Natal alusivo às bicicletas.">',
 
       '',
       '',
@@ -908,7 +908,7 @@ var trabalhosVideo = ["0",
     //'<iframe alt="" src="medSoc.html" allowtransparency="true" class="youtube" ></iframe>',
 
 
-    '<div id="med"><p>Impressões de teste da revista</p><a href="print01.png"><img style="height:400px" alt="Impressão para testa da revista Medicina Social" src="print01.png"></a><a href="print02.png"><img alt="Impressão para testa da revista Medicina Social" src="print02.png"></a><br><p>Spreads da revista</p><a href="scmp/med01.png"><img alt="Spread da revista Medicina Social" src="scmp/med01.png"></a><br><a href="scmp/med02.png"><img alt="Spread da revista Medicina Social" src="scmp/med02.png"></a><br><a href="scmp/med03.png"><img alt="Spread da revista Medicina Social" src="scmp/med03.png"></a><br><a href="scmp/med04.png"><img alt="Spread da revista Medicina Social" src="scmp/med04.png"></a><br><br><a onclick="showWorkIMais(11)" style="cursor:pointer" >Ver fotografias tiradas para a  Medicina Social</p></a><br></div><br>',
+    '<div id="med"><p>Impressões de teste da revista</p><a target="blank" href="print01.png"><img style="height:400px" alt="Impressão para testa da revista Medicina Social" src="print01.png"></a><a target="blank" href="print02.png"><img alt="Impressão para testa da revista Medicina Social" src="print02.png"></a><br><p>Spreads da revista</p><a target="blank" href="scmp/med01.png"><img alt="Spread da revista Medicina Social" src="scmp/med01.png"></a><br><a target="blank" href="scmp/med02.png"><img alt="Spread da revista Medicina Social" src="scmp/med02.png"></a><br><a target="blank" href="scmp/med03.png"><img alt="Spread da revista Medicina Social" src="scmp/med03.png"></a><br><a target="blank" href="scmp/med04.png"><img alt="Spread da revista Medicina Social" src="scmp/med04.png"></a><br><br><a onclick="showWorkIMais(11)" style="cursor:pointer" >Ver fotografias tiradas para a  Medicina Social</p></a><br></div><br>',
 
 
 
