@@ -1212,7 +1212,7 @@ document.getElementById('botaoMais').addEventListener('mouseout', function() {
     setTimeout(function() {
         document.getElementById('popup').style.display = 'block';
         document.getElementById('screen').classList.add('blurred');  // Adiciona o efeito de desfocar o fundo
-    }, 1); //100000
+    }, 100000); //100000
 
     // Fechar o pop-up
     document.getElementById('close-btn').onclick = function() {
