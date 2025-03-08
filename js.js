@@ -655,6 +655,11 @@ var descricoesImagemMais = ["0",
 '<p>Fotografias Medicina Social</p>Fotografias tiradas no Hospital Conde Ferreira para a revista Medicina Social da SCMP.',
 //12
 '<p>Postal de Natal</p>Tentei fotografar um postal de Natal alusivo às Bicicletas.<br>2022',
+//13
+'<p>Office Space</p>Poster para o filme Office Space.',
+
+
+
 
 
 ]
@@ -802,7 +807,7 @@ var trabalhosVideo = ["0",
 
 
     //9 Bicicleta cartaz
-    '<a style="cursor:zoom-in; target="blank" href="bikeC.pdf"><img class="imagem" src="poster.png" alt="Poster sobre Sugurança Rodoviária em Velocípedes"></a>',
+    '<a target="_blank" style="cursor:zoom-in;" href="bikeC.pdf"><img class="imagem" src="poster.png" alt="Poster sobre Sugurança Rodoviária em Velocípedes"></a>',
 
 
 
@@ -821,9 +826,10 @@ var trabalhosVideo = ["0",
           //5 imagem digital antiga
           '<img class="imagem" src="flor.png" alt="Imagem digital que fiz no Paint.net antes de 2010. Das primeiras imagens que fiz e que consegui guardar até agora.">',
           // 6 PANORAMICA praia matosas
-          '<div id="pan"><img class="height" src="PanWeb.jpg" alt="Fotografia Panorâmica tirada no Porto à beira mar. 2021"></div>',
+          '<div  id="pan"><img class="height" src="PanWeb.jpg" alt="Fotografia Panorâmica tirada no Porto à beira mar. 2021"></div>',
+
           // 7 KEITH HARING
-          '<img class="imagem" src="arte3.gif" alt="Animação simples com obra de Keith Haring. 2019">',
+          '<img class="imagem" src="arte3.gif" alt="Animação simples com obra de Keith Haring. 2019"> ',
           // 8 POESIA
           '<img class="imagem" src="poesia.jpg" alt="Poema Nota Discordante de Fernando Namora. 2018">',
           // 9 8AMÉLIA
@@ -834,6 +840,9 @@ var trabalhosVideo = ["0",
           '<img class="imagem" src="medsoc.png" alt="Fotografias tiradas no Hospital Conde Ferreira para a revista Medicina Social da SCMP."><br><a onclick="showWorkO(3)" style="cursor:pointer" >Ver revista Medicina Social</p></a>',
           //12 Natal Bicicleta
           '<img class="imagem" src="natal.png" alt="Postal de Natal alusivo às bicicletas.">',
+          //13 Office Space
+          '<img class="imagem" src="OS.jpg" alt="Poster para o filme Office Space">',
+
 
       '',
       '',
