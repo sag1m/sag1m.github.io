@@ -944,7 +944,7 @@ var trabalhosVideo = ["0",
     // 6 IGREJA CERVEIRA
     '<iframe  class="youtube" src="https://www.youtube.com/embed/zzcbMYLfSfw?autoplay=1&enablejsapi=1&modestbranding=1&color=white&rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     //paciência
-    '<div style="cursor:waiting; text-align: center; font-family: sans-serif; font-size: 18px; margin-top: 20px;"><p>A carregar, aguarde</p><img width="30px" height:30px src="https://usagif.com/wp-content/uploads/loading-96.gif" alt="Loading..." style="margin-top: 10px;"></div>'
+    '<div style="cursor:wait; text-align: center; font-family: sans-serif; font-size: 18px; margin-top: 45vh; opacity: 70%"><p>A carregar, aguarde</p><img width="30px" height:30px src="https://usagif.com/wp-content/uploads/loading-96.gif" alt="Loading..." style="margin-top: 10px;"></div>'
 
 
 
