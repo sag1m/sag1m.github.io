@@ -705,8 +705,8 @@ var descricoesOutrosMais = ["0",
 '<p translate="no">Pharmakon 1</p>Fanzine Pharmakon nº1. 2020',
   // 6 IGREJA CERVEIRA
 '<p>Igreja de Cerveira 3D</p>Igreja de Cerveira modelada em 3D.<br>(A gravação do vídeo ficou com muitas falhas)<br> 2014',
-
-'',
+//7 paciência
+'<p>A Paciência é uma Virtude</p>Copiado da internet, pela graça.',
 
 ]
 
@@ -943,7 +943,12 @@ var trabalhosVideo = ["0",
     '<iframe alt="Fanzine Pharmakon nº1. 2020" src="https://online.fliphtml5.com/dnvha/smhq/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="youtube" ></iframe>',
     // 6 IGREJA CERVEIRA
     '<iframe  class="youtube" src="https://www.youtube.com/embed/zzcbMYLfSfw?autoplay=1&enablejsapi=1&modestbranding=1&color=white&rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-    ''
+    //paciência
+    '<div style="cursor:waiting; text-align: center; font-family: sans-serif; font-size: 18px; margin-top: 20px;"><p>A carregar, aguarde</p><img width="30px" height:30px src="https://usagif.com/wp-content/uploads/loading-96.gif" alt="Loading..." style="margin-top: 10px;"></div>'
+
+
+
+
     ];
 
 
