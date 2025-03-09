@@ -1,5 +1,6 @@
 body {
-    font-family: ;
+    font-family: Zain;
+    font-size: 20px;
     margin: 0;
     padding: 0;
     background: rgb(20,15,17);
@@ -8,6 +9,70 @@ body {
     align-items: center;
 }
 
+.zain-extralight {
+  font-family: "Zain", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.zain-light {
+  font-family: "Zain", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.zain-regular {
+  font-family: "Zain", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.zain-bold {
+  font-family: "Zain", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.zain-extrabold {
+  font-family: "Zain", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.zain-black {
+  font-family: "Zain", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.zain-light-italic {
+  font-family: "Zain", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.zain-regular-italic {
+  font-family: "Zain", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+
+h1{
+  margin: 0;
+  text-align: center;
+  color: lightgrey;
+}
+
+#top p{
+
+  margin:0;
+  color: grey;
+}
+#top p:last-child{
+  color: lightgrey;
+}
 
 .container {
 
@@ -15,6 +80,8 @@ body {
     padding: 20px;
     max-width: 80%;
 }
+
+
 .item {
   background: rgb(61,61,61);
 background: radial-gradient(circle, rgba(61,61,61,1) 0%, rgba(38,38,38,1) 100%);
@@ -46,14 +113,15 @@ background: radial-gradient(circle, rgba(61,61,61,1) 0%, rgba(38,38,38,1) 100%);
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    color: white;
+    color: lightgrey;
 }
 .heart.liked {
     color: pink;
 }
 .description {
     padding: 10px 0;
-    color: white;
+    color: #f0f0f0;
+    font-size: 22px;
     text-align: left;
     border-radius: 5px;
 
@@ -78,16 +146,16 @@ background: radial-gradient(circle, rgba(61,61,61,1) 0%, rgba(38,38,38,1) 100%);
     width: 100%;
     padding: 15px;
     border: none;
-    background: white;
+    background: grey;
     border-radius: 20px;
-    color: black; /* Cor do texto */
+    color: white; /* Cor do texto */
     font-size: 16px;
     font-family: ;
     outline: none;
     box-sizing: border-box;
 }
 .comment-section input::placeholder {
-    color: grey; /* Cor do placeholder */
+    color: black; /* Cor do placeholder */
 }
 
 
@@ -120,7 +188,7 @@ background: radial-gradient(circle, rgba(61,61,61,1) 0%, rgba(38,38,38,1) 100%);
 /*BARRA NO TOPO*/
 #top{
   color:white;
-  text-align: left;
+
 }
 
 /*BOTAO DO SCROLL PARA CIMA*/
@@ -218,4 +286,34 @@ content: url('img/i.svg');
 }
 .share-buttons-container a.whatsapp {
 content: url('img/w.svg');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) { /* estilos para ecrãs pequenos */
+
+/*  .image{
+    max-height: 300px;
+  }
+  .item{
+    max-height: 300px;
+  }*/
+
+
+
+
 }
