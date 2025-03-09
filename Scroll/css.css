@@ -59,7 +59,8 @@ body {
 
 
 
-h1{
+#top p:first{
+  font-size: 24px;
   margin: 0;
   text-align: center;
   color: lightgrey;
