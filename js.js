@@ -689,7 +689,7 @@ var descricoesWebMais = ["0",
 // 6 Pharmakons
 '<p>Pharmakons</p>Coleção de NFTs na WAX Blockchain, onde as pessoas compraram e trocam NFTs de vários fármacos.  ',
 // 7 scrolll
-'<p>Scrolll</p>Um site com um feed aborrecido onde se pode fazer scroll infinito, para educar o cérebro a não gostar de scrolling',
+'<p>Scrolll</p>Um site com um feed aborrecido e não estimulante mas relaxante. Pode-se fazer scroll infinito, para educar o cérebro a não gostar de scrolling',
 
 
 
@@ -708,7 +708,7 @@ var descricoesOutrosMais = ["0",
   // 6 IGREJA CERVEIRA
 '<p>Igreja de Cerveira 3D</p>Igreja de Cerveira modelada em 3D.<br>(A gravação do vídeo ficou com muitas falhas)<br> 2014',
 //7 paciência
-'<p>A Paciência é uma Virtude</p>Copiado da internet, pela graça.',
+'<p>Paciência</p>Copiado da internet, só pela graça.',
 
 ]
 
@@ -897,7 +897,7 @@ var trabalhosVideo = ["0",
       '<iframe alt="Website desenvolvido para um festival de música inventado, baseado num cartaz construtivista Russo. 2019" class="youtube" frameBorder="0" src="Cross/index.html"></iframe>',
       //6 Pharmakons
       '<p>Logotipo da Coleção</p><img class="imagem" src="ph1.png" alt="imagem da coleção Pharmakons na WAX Blockchain">    <p>Imagem de perfil</p><img class="imagem" src="ph2.png" alt="imagem de perfil da coleção Pharmakons na WAX Blockchain">     ',
-//scrolll
+//7 scrolll
   '<iframe class="youtube" frameBorder="0" src="scrolll/index.html"></iframe>',
 
 
@@ -947,7 +947,7 @@ var trabalhosVideo = ["0",
     '<iframe alt="Fanzine Pharmakon nº1. 2020" src="https://online.fliphtml5.com/dnvha/smhq/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="youtube" ></iframe>',
     // 6 IGREJA CERVEIRA
     '<iframe  class="youtube" src="https://www.youtube.com/embed/zzcbMYLfSfw?autoplay=1&enablejsapi=1&modestbranding=1&color=white&rel=0&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-    //paciência
+    //7 paciência
     '<div style="cursor:wait; text-align: center; font-family: sans-serif; font-size: 18px; margin-top: 45vh; opacity: 70%"><p>A carregar, aguarde</p><img width="30px" height:30px src="https://usagif.com/wp-content/uploads/loading-96.gif" alt="Loading..." style="margin-top: 10px;"></div>'
 
 
