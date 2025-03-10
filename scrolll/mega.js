@@ -4,7 +4,7 @@ function rando(a, b) {
 
 
 
-const content = document.getElementById("content");
+const content2 = document.getElementById("content2");
 
 function createItem() {
     const item = document.createElement("div");
@@ -23,7 +23,7 @@ function createItem() {
 
     const description = document.createElement("div");
     description.className = "description";
-    description.textContent = descricoes[rando(0, descricoes.length - 1)];
+    description.textContent = megadescricoes[rando(0, megadescricoes.length - 1)];
 
 
 
@@ -40,7 +40,7 @@ function createItem() {
 
 function loadMore() {
     for (let i = 0; i < 20; i++) {
-        content.appendChild(createItem());
+        content2.appendChild(createItem());
     }
 }
 
@@ -52,6 +52,19 @@ function handleScroll() {
 
 window.addEventListener("scroll", handleScroll);
 loadMore();
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
