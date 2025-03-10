@@ -275,3 +275,26 @@ scrollToTopBtn.addEventListener("click", function () {
         behavior: "smooth"
     });
 });
+
+
+
+
+
+
+
+//POPUP Premium
+setTimeout(() => {
+    document.getElementById("premiumPopup").style.display = "block";
+    document.getElementById("overlayBlock").style.display = "block";
+}, 25000);
+
+function closePremiumPopup() {
+    document.getElementById("premiumPopup").style.display = "none";
+    document.getElementById("overlayBlock").style.display = "none";
+}
+
+function subscribePremium() {
+    alert("Lamentamos, mas este serviço não está disponível no seu país. Tente mais tarde.");
+    document.getElementById("premiumPopup").style.display = "none";
+    document.getElementById("overlayBlock").style.display = "none";
+}
