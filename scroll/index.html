@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta property="og:title" content="Scroll" />
+<meta property="og:description" content="Página onde podes fazer scroll infinito. Relaxa sem estimular até não quereres fazer mais scroll." />
+  <meta property="og:image" content="www.sag1m.github.io/scroll/img/OG.png">
+
+   <link rel="stylesheet" href="css.css">
+
+
+   <!-- Favicon e ícones -->
+    <!-- 144 x 144 px - iPad 3a geração com ecrã de alta resolução (retina) -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/144.png">
+    <!-- 114 x 114px - iPhone com ecrã de alta resolução (retina) -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/114.png">
+    <!-- 72 x 72 px - iPad 1a e 2a geração -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/72.png">
+    <!-- 57 x 57px - iPhone, iPod Touch, e Android 2.1+ -->
+    <link rel="apple-touch-icon-precomposed" href="img/57.png">
+    <!-- favicon base: 32x32px deve estar na raiz do site, para garantir que os browsers antigos o vão mostrar -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+  <div id="top">
+    <div id="logo">
+      <img src="img/logo.png"></img>
+      <h1>Scroll sem estímulos</h1><span id="mostrar-info" style="font-size: 23px;cursor:pointer;color:grey">&#9432;</span>
+      </div>
+
+    <p>São <span id="horas"></span> e estás aqui há <span id="tempo-no-site"></span>.</p>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<div id="Info" style="display: none; padding-top: 10px; max-width: 500px; color:lightgrey">
+  (em desenvolvimento)<br>
+Aqui podes fazer scroll à vontade. Não é estimulante, não há surpresas.<br>
+Podes fazer gosto e escrever comentários, ninguém vai ver.<br>
+  Criado por <a href="https://sag1m.github.io/">Migas</a><br>
+  Imagens grátis de <a href="https://pixabay.com/">Pixabay</a><br>
+  Partilha com toda a gente.
+</div>
+
+<script>
+  document.getElementById('mostrar-info').addEventListener('click', function() {
+    var infoDiv = document.getElementById('Info');
+    if (infoDiv.style.display === 'none') {
+      infoDiv.style.display = 'block';
+      infoDiv.style.opacity = 0;
+      infoDiv.style.transition = 'opacity 0.5s ease-in-out';
+      setTimeout(function() {
+        infoDiv.style.opacity = 1;
+      }, 10);
+    } else {
+      infoDiv.style.opacity = 0;
+      setTimeout(function() {
+        infoDiv.style.display = 'none';
+      }, 500); // Espera a animação acabar antes de ocultar
+    }
+  });
+</script>
+
+    <div class="container" id="content"></div>
+
+
+
+
+
+
+    <button id="scrollToTopBtn" class="scroll-to-top-btn">&#8593;</button>
+
+
+    <script src="js.js"></script>
+    <script src="rando.js"></script>
+</body>
+</html>
