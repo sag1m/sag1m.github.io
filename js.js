@@ -688,6 +688,8 @@ var descricoesWebMais = ["0",
 
 // 6 Pharmakons
 '<p>Pharmakons</p>Coleção de NFTs na WAX Blockchain, onde as pessoas compraram e trocam NFTs de vários fármacos.  ',
+// 7 scrolll
+'<p>Scrolll</p>Um site com um feed aborrecido onde se pode fazer scroll infinito, para educar o cérebro a não gostar de scrolling',
 
 
 
@@ -895,6 +897,8 @@ var trabalhosVideo = ["0",
       '<iframe alt="Website desenvolvido para um festival de música inventado, baseado num cartaz construtivista Russo. 2019" class="youtube" frameBorder="0" src="Cross/index.html"></iframe>',
       //6 Pharmakons
       '<p>Logotipo da Coleção</p><img class="imagem" src="ph1.png" alt="imagem da coleção Pharmakons na WAX Blockchain">    <p>Imagem de perfil</p><img class="imagem" src="ph2.png" alt="imagem de perfil da coleção Pharmakons na WAX Blockchain">     ',
+//scrolll
+  '<iframe class="youtube" frameBorder="0" src="scrolll/index.html"></iframe>',
 
 
 
