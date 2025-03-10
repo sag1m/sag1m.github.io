@@ -65,6 +65,9 @@ function createItem() {
     const image = document.createElement("div");
     image.className = "image";
     image.style.backgroundImage = `url(${imagens[rando(0, imagens.length - 1)]})`;
+    image.addEventListener("click", () => {
+        heart.classList.toggle("liked");
+    });
 
     const icons = document.createElement("div");
     icons.className = "icons";
