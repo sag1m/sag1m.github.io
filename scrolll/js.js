@@ -6,6 +6,12 @@ function rando(a, b) {
 
 const content = document.getElementById("content");
 
+
+
+
+
+
+
 function createItem() {
     const item = document.createElement("div");
     item.className = "item";
