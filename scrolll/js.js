@@ -214,3 +214,15 @@ function subscribePremium() {
     document.getElementById("premiumPopup").style.display = "none";
     document.getElementById("overlayBlock").style.display = "none";
 }
+
+
+
+//MOSTRA CIENCIA
+function mostrarCiencia() {
+  var cienciaDiv = document.getElementById("ciencia");
+  if (cienciaDiv.style.display === "none") {
+    cienciaDiv.style.display = "block";
+  } else {
+    cienciaDiv.style.display = "none";
+  }
+}

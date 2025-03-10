@@ -88,6 +88,43 @@ text-align: center;
   color: lightgrey;
 }
 
+
+#ciencia{
+  padding:35px;
+  width: 70%;
+  max-width: 900px;
+  position: absolute;
+  background-color: grey;
+  color: white;
+  font-size: 20px;
+
+  column-count: 2;
+  column-gap: 40px;
+  text-align: justify;
+  top: 280px;
+
+}
+
+#ciencia p::first-letter {
+  font-size: 45px;
+  font-weight: 300;
+  color: white;
+  float: left;
+  margin-right: 8px;
+  line-height: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .container {
 
     width: 500px;
