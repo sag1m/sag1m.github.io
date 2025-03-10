@@ -64,6 +64,10 @@ body {
     gap: 20px; /* Espaço entre imagem e texto */
     margin: 10px 0;
 }
+.hidden {
+    display: none;
+}
+
 h1{
   margin: 0;
   text-align: center;
@@ -126,6 +130,10 @@ background: radial-gradient(circle, rgba(61,61,61,1) 0%, rgba(38,38,38,1) 100%);
     cursor: pointer;
     color: lightgrey;
 }
+.icon:hover {
+
+}
+
 .heart.liked {
     color: pink;
 }
@@ -189,6 +197,20 @@ background: radial-gradient(circle, rgba(61,61,61,1) 0%, rgba(38,38,38,1) 100%);
 
 .icon.heart.liked {
     animation: pulse 0.3s ease;
+}
+
+@keyframes ober {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.icon:hover{
 }
 
 .icon.heart {
@@ -298,7 +320,6 @@ content: url('img/i.svg');
 .share-buttons-container a.whatsapp {
 content: url('img/w.svg');
 }
-
 
 
 
