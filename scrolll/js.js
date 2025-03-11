@@ -241,7 +241,7 @@ function closePremiumPopup() {
 }
 
 function subscribePremium() {
-    alert("Lamentamos, mas este serviço não está disponível no seu país. Tente mais tarde.");
+    alert("Lamentamos, mas este serviço não está disponível no seu país.");
     document.getElementById("premiumPopup").style.display = "none";
     document.getElementById("overlayBlock").style.display = "none";
 }
