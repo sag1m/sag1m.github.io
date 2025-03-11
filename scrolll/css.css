@@ -79,6 +79,10 @@ h1{
   width: 26px;
 }
 
+#top{
+  display: contents;
+}
+
 #top p{
 text-align: center;
   margin:0;
