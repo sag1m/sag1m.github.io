@@ -226,3 +226,25 @@ function mostrarCiencia() {
     cienciaDiv.style.display = "none";
   }
 }
+
+
+
+//MAIS INFO MOSTRAR OCULTAR SHOW INFO
+document.getElementById('mostrar-info').addEventListener('click', function() {
+  var infoDiv = document.getElementById('Info');
+  var mostrarInfo = document.getElementById('mostrar-info');
+  if (infoDiv.style.display === 'none') {
+    infoDiv.style.display = 'block';
+    infoDiv.style.opacity = 0;
+    infoDiv.style.transition = 'opacity 0.5s ease-in-out';
+    mostrarInfo.style.animation = 'none';
+    setTimeout(function() {
+      infoDiv.style.opacity = 1;
+    }, 10);
+  } else {
+    infoDiv.style.opacity = 0;
+    setTimeout(function() {
+      infoDiv.style.display = 'none';
+    }, 500); // Espera a animação acabar antes de ocultar
+  }
+});
