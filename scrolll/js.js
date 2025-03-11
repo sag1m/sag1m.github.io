@@ -96,7 +96,35 @@ function createItem() {
     input.type = "text";
     input.placeholder = "Escrever comentário";
 
+    // Botão de desativar
+    const deactivateButton = document.createElement("button");
+    deactivateButton.className = "deactivate-button";
+    deactivateButton.textContent = "➲"; // ou outro símbolo
+
+    // Função para desativar o input
+    function deactivateInput() {
+        input.disabled = true; // Desativa o input
+        input.style.background = "transparent"; // Torna o fundo transparente
+        deactivateButton.disabled = true; // Desativa o botão
+        deactivateButton.style.opacity = "0.5"; // Torna o botão semi-transparente para indicar que está desativado
+    }
+
+    // Evento para desativar o campo de input quando o botão for clicado
+    deactivateButton.addEventListener("click", (e) => {
+        e.stopPropagation(); // Impede que o clique se propague e feche o campo
+        deactivateInput();
+    });
+
+    // Evento para desativar o campo ao pressionar Enter
+    input.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+            deactivateInput();
+        }
+    });
+
+    // Colocar o botão de desativar à direita do campo de input
     commentSection.appendChild(input);
+    commentSection.appendChild(deactivateButton);
 
     commentIcon.addEventListener("click", () => {
         commentSection.classList.toggle("active");
@@ -113,6 +141,9 @@ function createItem() {
 
     return item;
 }
+
+
+
 
 function loadMore() {
     for (let i = 0; i < 5; i++) {
