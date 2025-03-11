@@ -94,13 +94,15 @@ text-align: center;
 
 
 #ciencia{
+  line-height: 19px;
   padding:35px;
   width: 70%;
   max-width: 900px;
   position: absolute;
   background-color: grey;
-  color: white;
+  color: black;
   font-size: 20px;
+    font-weight: 300;
 
   column-count: 2;
   column-gap: 40px;
@@ -111,11 +113,15 @@ text-align: center;
 
 #ciencia p::first-letter {
   font-size: 45px;
-  font-weight: 300;
-  color: white;
+  font-weight: 400;
+  color: black;
   float: left;
   margin-right: 8px;
   line-height: 1;
+}
+
+#ciencia p:first-child {
+  margin-top:0;
 }
 
 
@@ -479,20 +485,14 @@ content: url('img/w.svg');
 
 
 
+
+
+
+
+
+
+
 @media only screen and (max-width: 1000px) { /* estilos para ecrãs pequenos */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
