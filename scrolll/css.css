@@ -201,7 +201,7 @@ background: radial-gradient(circle, rgba(61,61,61,1) 0%, rgba(38,38,38,1) 100%);
 
 .comment-section {
     display: none;
-    margin-top: 5px;
+    margin-top: -12px;
 }
 
 .comment-section.active {
