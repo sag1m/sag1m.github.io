@@ -179,7 +179,7 @@ background: radial-gradient(circle, rgba(61,61,61,1) 0%, rgba(38,38,38,1) 100%);
     color: pink;
 }
 .description {
-    padding: 10px 0;
+    padding: 0px 0;
     color: #f0f0f0;
     font-size: 22px;
     text-align: left;
