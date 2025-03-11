@@ -201,7 +201,7 @@ background: radial-gradient(circle, rgba(61,61,61,1) 0%, rgba(38,38,38,1) 100%);
 
 .comment-section {
     display: none;
-    margin-top: -12px;
+    margin-top: -19px;
 }
 
 .comment-section.active {
@@ -211,7 +211,7 @@ background: radial-gradient(circle, rgba(61,61,61,1) 0%, rgba(38,38,38,1) 100%);
 .comment-section input {
 
     width: 85%;
-    padding: 15px;
+    padding: 9px 15px;
     border: none;
     background: grey;
     border-radius: 20px;

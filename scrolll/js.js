@@ -106,7 +106,7 @@ function createItem() {
         input.disabled = true; // Desativa o input
         input.style.background = "transparent"; // Torna o fundo transparente
         deactivateButton.disabled = true; // Desativa o botão
-        deactivateButton.style.opacity = "0.5"; // Torna o botão semi-transparente para indicar que está desativado
+        deactivateButton.style.opacity = "0"; // Torna o botão semi-transparente para indicar que está desativado
     }
 
     // Evento para desativar o campo de input quando o botão for clicado
