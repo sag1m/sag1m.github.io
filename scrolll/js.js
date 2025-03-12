@@ -99,7 +99,7 @@ function createItem() {
     // Botão de desativar
     const deactivateButton = document.createElement("button");
     deactivateButton.className = "deactivate-button";
-    deactivateButton.textContent = "➲"; // ou outro símbolo
+    deactivateButton.textContent = "✔"; // ou outro símbolo
 
     // Função para desativar o input
     function deactivateInput() {

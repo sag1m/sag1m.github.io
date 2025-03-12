@@ -168,12 +168,7 @@ background: radial-gradient(circle, rgba(61,61,61,1) 0%, rgba(38,38,38,1) 100%);
   padding-right: 15px;
   padding-top: 10px;
     font-size: 30px;
-    /*width: 60px;*/
-    /*height: 40px;*/
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     cursor: pointer;
     color: lightgrey;
 }
@@ -222,6 +217,8 @@ background: radial-gradient(circle, rgba(61,61,61,1) 0%, rgba(38,38,38,1) 100%);
     font-size: 20px;
 font-family: Zain;
 
+    margin-top: 32px;
+
 
 }
 .comment-section input::placeholder {
@@ -239,12 +236,13 @@ font-family: Zain;
     background-color: transparent;
     border: none;
     color: grey;
-    font-size: 50px;
+    font-size: 40px;
     cursor: pointer;
     padding-left: 10px;
     position: relative;
     top: 12px;
     left: 10px;
+    padding-top:11px;
 }
 
 .comment-section input:disabled {
@@ -257,12 +255,15 @@ font-family: Zain;
 
 @keyframes pulse {
     0% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.7; transform: scale(1.001); }
+    50% { opacity: 0.2; transform: scale(1.001); }
     100% { opacity: 1; transform: scale(1); }
 }
 
 #mostrar-info {
-    animation: pulse 5s infinite ease-in-out;
+    animation: pulse 3s infinite ease-in-out;
+    color: white;
+    font-size: 15px;
+    cursor:pointer;
 }
 
 
@@ -469,6 +470,7 @@ content: url('img/w.svg');
             cursor: pointer;
             margin-top: 10px;
             font-size: 16px;
+                margin-bottom: 20px;
         }
         .premium-popup button:first-child {
           margin:0;
