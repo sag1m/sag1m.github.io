@@ -519,6 +519,274 @@ content: url('img/w.svg');
 
 
 
+
+
+
+
+
+
+
+
+
+
+              .top-bar {
+                height: 65px;
+                          display: flex;
+                          justify-content: space-between;
+                          align-items: center;
+                          background-color: black;
+                          /*padding: 10px 50px;*/
+
+                          width: 100%;
+                      }
+
+                      .top-bar button {
+                        background: none;
+                          color: #000;
+                          border: none;
+                          padding: 8px 12px;
+                          cursor: pointer;
+                          font-weight: bold;
+                          border-radius: 5px;
+                          margin: 0 20px;
+                      }
+
+                      .top-bar img {
+                          height: 35px;
+                      }
+
+
+
+
+                      .number{
+                        color: white;
+
+                        bottom: 18px;
+                        left: 80px;
+                        font-size: 24px;
+                        background-color: grey;
+                        padding: 5px;
+                        border-radius: 20px;
+                        opacity: 0.6;
+
+                            position: relative;
+                             z-index: 1; /* Mantém atrás do botão */
+                      }
+
+
+
+                      #hoverButton{
+                        padding:20px;
+                        z-index: 9999;
+                      }
+
+                      #time{
+                        width:150px;
+
+                        display: none;
+                        position: absolute;
+
+                        border-radius: 20px;
+                        padding: 10px;
+                        right: 0px;
+                        top: 77px;
+
+
+
+                        background-color: black;
+                          color: lightgrey;
+                          font-weight: 300;
+                          line-height: 20px;
+
+                      }
+                      #time p{
+                        margin:10px;
+
+                      }
+
+
+
+                      .popup {
+                        position: absolute;
+                        left: 20px;;
+                        top: 60px;
+
+                          width: 460px;
+                          background-color: #111;
+                          padding: 20px;
+                          border-radius: 10px;
+                          margin: 0 0;
+
+                          line-height: 22px;
+                          font-weight: 300;
+                          color: white;
+                      }
+
+                      .popup-header {
+                        text-align: center;
+                        padding: 10px;
+                          display: flex;
+                          justify-content: space-between;
+                          font-size: 18px;
+                          padding-bottom: 10px;
+                          background-color: #3f3f3f;
+                          border-radius: 20px;
+
+                      }
+
+                      .colors {
+                          display: flex;
+                          align-items: center;
+                      }
+
+                      .color-option {
+                          width: 20px;
+                          height: 20px;
+                          border-radius: 50%;
+                          margin-left: 5px;
+                          border: 1px solid #fff;
+                      }
+
+                      .dark { background-color: #000; }
+                      .light { background-color: #ccc; }
+                      .pastel { background-color: pink; }
+
+
+
+
+
+
+                          .popup-content {
+                            margin-top: 30px;
+                          }
+
+                      .popup-content p {
+
+                          font-size: ;
+                          margin: 0 0 10px 0;
+                      }
+
+                      .science-link {
+                          color: white;
+                          text-decoration: underline;
+
+                      }
+
+
+
+
+
+
+
+                      .premium-section {
+                          text-align: center;
+                          margin-top: 20px;
+                      }
+
+                      .premium-section img {
+                          margin: 0 0 -25px 0;
+                      }
+
+                      .premium-title {
+                          color: #ffcc00;
+                          font-size: ;
+                          font-weight: bold;
+                          text-decoration: underline;
+                      }
+
+                      .offer {
+                          font-size: 25px;
+                          line-height: 20px;
+                          font-weight: 900;
+                          color: #fff;
+                          display: inline-block;
+                          padding: 5px 10px;
+                          transform: rotate(-5deg);
+                          margin-top: -5px;
+                      }
+                      .offer-details {
+                        font-weight: 200;
+                        font-size: 19px;
+                      }
+
+
+
+
+
+
+
+
+
+
+
+
+                      .extras {
+                          line-height: 20px;
+                          margin-top: 20px;
+                      }
+
+                      .experiment-link {
+                          color: white;
+                          text-decoration: underline;
+                          font-weight: 400;
+                      }
+
+
+
+
+
+
+
+
+                      .footer {
+                        line-height: 18px;
+                          text-align: left;
+                          font-size: ;
+
+                          padding-top: 10px;
+                          margin-top: 20px;
+                      }
+
+                      .footer p{ margin:0;}
+
+                      .brand {
+                          font-size: 20px;
+
+                      }
+
+                      .footer a {
+                          color: white;
+                          text-decoration: underline;
+                      }
+
+                      .blur{
+                        filter: blur(2.5px);
+}
+
+
+
+
+
+
+
+
+
+hr{
+  margin: 30px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1000px) { /* estilos para ecrãs pequenos */
 
 

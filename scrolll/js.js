@@ -167,6 +167,28 @@ loadMore();
 
 
 //HORAS DO SITE
+
+//HORAS, TEMPO, CRONOMETRO, CONTADOR
+function formatarTempo(segundos) {
+    let h = Math.floor(segundos / 3600);
+    let m = Math.floor((segundos % 3600) / 60);
+    let s = segundos % 60;
+    return (
+        String(h).padStart(2, '0') + ":" +
+        String(m).padStart(2, '0') + ":" +
+        String(s).padStart(2, '0')
+    );
+}
+
+let tempo = parseInt(localStorage.getItem("tempo_total")) || 0;
+document.getElementById("total").textContent = formatarTempo(tempo);
+
+setInterval(() => {
+    tempo++;
+    localStorage.setItem("tempo_total", tempo);
+    document.getElementById("total").textContent = formatarTempo(tempo);
+}, 1000);
+
 // Mostrar as horas atuais
 function mostrarHoras() {
     const horasSpan = document.getElementById("horas");
@@ -189,7 +211,7 @@ function mostrarTempoNoSite() {
     segundos = segundos % 60;
     minutos = minutos % 60;
 
-    tempoNoSiteSpan.textContent = `${minutos} minutos e ${segundos} segundos`;
+    tempoNoSiteSpan.textContent = `${minutos}m ${segundos} s`;
 }
 
 // Atualizar as horas e o tempo no site a cada segundo
@@ -201,6 +223,12 @@ setInterval(() => {
 // Inicializar
 mostrarHoras();
 mostrarTempoNoSite();
+
+
+
+
+
+
 
 //BOTÃO PARA SUBIR SCROLL
 // Obter o botão
@@ -214,7 +242,6 @@ window.onscroll = function () {
         scrollToTopBtn.style.display = "none";
     }
 };
-
 // Função para fazer o scroll até o topo
 scrollToTopBtn.addEventListener("click", function () {
     window.scrollTo({
@@ -233,7 +260,7 @@ scrollToTopBtn.addEventListener("click", function () {
 setTimeout(() => {
     document.getElementById("premiumPopup").style.display = "block";
     document.getElementById("overlayBlock").style.display = "block";
-}, 25000);
+}, 100000);
 
 function closePremiumPopup() {
     document.getElementById("premiumPopup").style.display = "none";
@@ -260,8 +287,15 @@ function mostrarCiencia() {
 
 
 
+function mostrarAlertaScrollPremium() {
+    alert("Infelizmente tem de subscrever o ScrollPremium para usar esta opção.");
+}
+
+
+
 //MAIS INFO MOSTRAR OCULTAR SHOW INFO
 document.getElementById('mostrar-info').addEventListener('click', function() {
+  
   var infoDiv = document.getElementById('Info');
   var mostrarInfo = document.getElementById('mostrar-info');
   if (infoDiv.style.display === 'none') {
@@ -278,4 +312,60 @@ document.getElementById('mostrar-info').addEventListener('click', function() {
       infoDiv.style.display = 'none';
     }, 500); // Espera a animação acabar antes de ocultar
   }
+});
+
+
+
+
+
+
+
+
+
+
+
+const timings = document.getElementById("hoverButton");
+const timeShow = document.getElementById("time");
+
+timings.addEventListener("mouseenter", () => {
+  timeShow.style.display = "block";
+});
+
+timings.addEventListener("mouseleave", () => {
+  timeShow.style.display = "none";
+});
+
+timeShow.addEventListener("mouseenter", () => {
+  timeShow.style.display = "block"; // Mantém visível se o rato entrar nele
+});
+
+timeShow.addEventListener("mouseleave", () => {
+  timeShow.style.display = "none"; // Esconde quando o rato sair
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+window.addEventListener('scroll', function() {
+    if (document.body.scrollHeight > 20000) {
+        document.body.style.filter = 'grayscale(100%)';
+    } else {
+        document.body.style.filter = 'none';
+    }
 });
