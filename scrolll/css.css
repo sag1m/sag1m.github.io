@@ -564,7 +564,7 @@ content: url('img/w.svg');
                         bottom: 18px;
                         left: 80px;
                         font-size: 24px;
-                        background-color: grey;
+                        rgba(200, 200, 200, 0.2)
                         padding: 5px;
                         border-radius: 20px;
                         opacity: 0.6;
@@ -604,6 +604,25 @@ content: url('img/w.svg');
 
                       }
 
+                    #notificationDiv{
+                      width:150px;
+
+                      display: none;
+                      position: absolute;
+
+                      border-radius: 20px;
+                      padding: 10px;
+                      right: 0px;
+                      top: 77px;
+
+
+
+                      background-color: black;
+                        color: lightgrey;
+                        font-weight: 300;
+                        line-height: 20px;
+                    }
+
 
 
                       .popup {
@@ -624,7 +643,7 @@ content: url('img/w.svg');
 
                       .popup-header {
                         text-align: center;
-                        padding: 10px;
+                        padding: 17px;
                           display: flex;
                           justify-content: space-between;
                           font-size: 18px;
@@ -640,16 +659,19 @@ content: url('img/w.svg');
                       }
 
                       .color-option {
-                          width: 20px;
-                          height: 20px;
-                          border-radius: 50%;
-                          margin-left: 5px;
-                          border: 1px solid #fff;
+                        width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-left: 9px;
                       }
 
-                      .dark { background-color: #000; }
-                      .light { background-color: #ccc; }
-                      .pastel { background-color: pink; }
+                      .dark { background: rgb(61,61,61);
+background: linear-gradient(90deg, rgba(61,61,61,1) 0%, rgba(33,33,33,1) 100%); }
+                      .light { background: rgb(172,172,172);
+background: radial-gradient(90deg, rgba(172,172,172,1) 0%, rgba(226,226,226,1) 100%);}
+                      .pastel { background: rgb(232,217,231);
+background: linear-gradient(90deg, rgba(232,217,231,1) 0%, rgba(248,173,255,1) 100%);
+ }
 
 
 

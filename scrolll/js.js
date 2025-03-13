@@ -295,13 +295,13 @@ function mostrarAlertaScrollPremium() {
 
 //MAIS INFO MOSTRAR OCULTAR SHOW INFO
 document.getElementById('mostrar-info').addEventListener('click', function() {
-  
+
   var infoDiv = document.getElementById('Info');
   var mostrarInfo = document.getElementById('mostrar-info');
   if (infoDiv.style.display === 'none') {
     infoDiv.style.display = 'block';
     infoDiv.style.opacity = 0;
-    infoDiv.style.transition = 'opacity 0.5s ease-in-out';
+    infoDiv.style.transition = 'opacity 0.1s ease-in-out';
     mostrarInfo.style.animation = 'none';
     setTimeout(function() {
       infoDiv.style.opacity = 1;
@@ -344,6 +344,28 @@ timeShow.addEventListener("mouseleave", () => {
 });
 
 
+
+
+
+
+const notifications = document.getElementById("notificationButton");
+const notificationDiv = document.getElementById("notificationDiv");
+
+notifications.addEventListener("mouseenter", () => {
+  notificationDiv.style.display = "block";
+});
+
+notifications.addEventListener("mouseleave", () => {
+  notificationDiv.style.display = "none";
+});
+
+timeShow.addEventListener("mouseenter", () => {
+  notificationDiv.style.display = "block"; // Mantém visível se o rato entrar nele
+});
+
+timeShow.addEventListener("mouseleave", () => {
+  notificationDiv.style.display = "none"; // Esconde quando o rato sair
+});
 
 
 
