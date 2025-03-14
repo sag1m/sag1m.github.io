@@ -860,11 +860,12 @@ background: none;
 }
 
 .container{
-  width: 100%;
+  width: 90%;
   background: none;
-  max-width: 100%;
+  max-width: 95%;
   padding:0;
   margin: auto;
+  text-align: center;
 }
 
 .icons{
