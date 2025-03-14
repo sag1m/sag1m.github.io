@@ -350,6 +350,7 @@ font-family: Zain;
 
 #Info{
   line-height: 25px;
+    max-width: fit-content;
 
 }
 
@@ -553,10 +554,12 @@ content: url('img/w.svg');
                         background: none;
                           color: #000;
                           border: none;
-                          padding: 8px 12px;
+
                           cursor: pointer;
                           font-weight: bold;
                           border-radius: 5px;
+
+
                           margin: 0 20px;
                       }
 
