@@ -387,7 +387,7 @@ font-family: Zain;
   margin-bottom:10px;
 }
 #Info p:first-child {
-  margin-top: 15px;0;
+  margin-top: 15px;
 }
 
 
@@ -633,7 +633,8 @@ content: url('img/w.svg');
 
 
 
-                        background-color: black;
+                        background: rgb(31,31,31);
+background: linear-gradient(90deg, rgba(46,46,46,1)0%, rgba(31,31,31,0.9)100%);
                           color: lightgrey;
                           font-weight: 300;
                           line-height: 20px;
@@ -645,6 +646,8 @@ content: url('img/w.svg');
                       }
 
                     #notificationDiv{
+                      background: rgb(31,31,31);
+background: linear-gradient(90deg, rgba(46,46,46,1)0%, rgba(31,31,31,0.9)100%);
                       width:150px;
 
                       display: none;
@@ -685,7 +688,7 @@ background: linear-gradient(90deg, rgba(31,31,31,0.9724264705882353) 0%, rgba(46
 
 
 
-                            
+
 
 
                       }
