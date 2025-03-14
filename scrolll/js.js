@@ -308,6 +308,7 @@ document.getElementById('mostrar-info').addEventListener('click', function() {
   var infoDiv = document.getElementById('Info');
   var pathElement = document.getElementById('SVGRepo_iconCarrier')?.querySelector('path');
   var mostrarInfo = document.getElementById('mostrar-info');
+  var logo1 = document.getElementById('logo1');
 
   if (infoDiv.style.display === 'none') {
     infoDiv.style.cssText = 'display:block; opacity:0; transition:opacity 0s ease-in-out';
@@ -315,12 +316,21 @@ document.getElementById('mostrar-info').addEventListener('click', function() {
     mostrarInfo.style.animation = 'none'; // Parar a animação
     if (pathElement) pathElement.style.fill = 'white';
     setTimeout(() => infoDiv.style.opacity = 1, 10);
+
+    if (logo1) logo1.style.display = 'none';
   } else {
     infoDiv.style.opacity = 0;
     setTimeout(() => infoDiv.style.display = 'none', 500);
     if (pathElement) pathElement.style.fill = '#bebebe';
+
+    if (logo1) logo1.style.display = 'flex';
   }
 });
+
+
+
+
+
 
 
 
