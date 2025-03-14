@@ -863,6 +863,7 @@ background: none;
   width: 100%;
   background: none;
   max-width: 100%;
+  padding:0;
 }
 
 .icons{
@@ -873,8 +874,14 @@ background: none;
 }
 
 
+.comment-section {
+    margin-top: 0;
+    padding: 0 10px;
+}
 
-
+.comment-section.active {
+    display: block;
+}
 
 
 
