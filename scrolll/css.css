@@ -115,7 +115,7 @@ text-align: center;
   column-count: 2;
   column-gap: 40px;
   text-align: justify;
-  top: 354px;
+  top: 400px;
 
 }
 
@@ -854,7 +854,9 @@ font-size: 20px;
   font-weight: 300;
 
 column-count: 1;
-top: 500px;}
+
+top: 600px;
+overflow-y: scroll;}
 
 
 
