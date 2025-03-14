@@ -864,6 +864,7 @@ background: none;
   background: none;
   max-width: 100%;
   padding:0;
+  margin: auto;
 }
 
 .icons{
