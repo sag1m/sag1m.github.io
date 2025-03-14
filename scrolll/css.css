@@ -853,6 +853,28 @@ top: 354px;}
 
 
 
+.item {
+
+padding:0;
+background: none;
+}
+
+.container{
+  width: 100%;
+  background: none;
+  max-width: 100%;
+}
+
+.icons{
+  padding:0  20px;
+}
+.description{
+    padding:0  20px;
+}
+
+
+
+
 
 
 
