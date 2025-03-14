@@ -845,6 +845,7 @@ margin-top:20px;
 
 padding:25px;
 width: 90%;
+max-height:70vh;
 max-width: 900px;
 position: absolute;
 background-color: grey;
@@ -853,7 +854,7 @@ font-size: 20px;
   font-weight: 300;
 
 column-count: 1;
-top: 354px;}
+top: 500px;}
 
 
 
