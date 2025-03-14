@@ -874,6 +874,7 @@ background: none;
   padding:0;
   margin: auto;
   text-align: center;
+  user-select: none;
 }
 
 .icons{
@@ -939,6 +940,21 @@ background: none;
         .comment-section.active {
             display: block;
             text-align: left;
+        }
+
+
+        img::selection{
+          user-select: none;
+
+  background: none;
+}
+.container::selection{
+  background: none;
+  user-select: none;
+}
+
+
+
         }
 
 
