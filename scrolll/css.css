@@ -831,5 +831,10 @@ hr{
 @media only screen and (max-width: 1000px) { /* estilos para ecrãs pequenos */
 
 
+#topNotf{
+  display: none;
+  filter: opacity(0);
+}
+
 
 }
