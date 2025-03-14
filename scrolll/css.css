@@ -102,6 +102,8 @@ text-align: center;
 
 
 #ciencia{
+  cursor:pointer;
+
   line-height: 19px;
   padding:35px;
   width: 70%;
@@ -119,6 +121,8 @@ text-align: center;
 
 }
 
+
+
 #ciencia p::first-letter {
   font-size: 45px;
   font-weight: 400;
@@ -131,7 +135,18 @@ text-align: center;
 #ciencia p:first-child {
   margin-top:0;
 }
+#ciencia p:last-child{
+  text-align: right;
+  font-size: 20px;
+  font-weight: 300;
+}
+#ciencia p:last-child::first-letter{
+  float:none;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0;
 
+}
 
 
 
@@ -640,12 +655,14 @@ content: url('img/w.svg');
 
 
                       .popup {
+                        background: rgb(31,31,31);
+background: linear-gradient(90deg, rgba(31,31,31,0.9724264705882353) 0%, rgba(46,46,46,1) 100%);
+
                         position: absolute;
                         left: 0;
                         top: 0px;
 
                           width: 460px;
-                          background-color: #111;
                           padding: 20px;
                           border-radius: 10px;
                           margin: 0 0;
@@ -702,7 +719,7 @@ background: linear-gradient(90deg, rgba(232,217,231,1) 0%, rgba(248,173,255,1) 1
                           }
 
                       .popup-content p {
-
+                          color: white;
                           font-size: ;
                           margin: 0 0 10px 0;
                       }
@@ -780,7 +797,7 @@ background: linear-gradient(90deg, rgba(232,217,231,1) 0%, rgba(248,173,255,1) 1
 
 
                       .footer {
-                        line-height: 18px;
+                        line-height: 11px;
                           text-align: left;
                           font-size: ;
 
@@ -852,7 +869,6 @@ margin-top:20px;
 
 padding:25px;
 width: 90%;
-max-height:70vh;
 max-width: 900px;
 position: absolute;
 background-color: grey;
@@ -862,8 +878,9 @@ font-size: 20px;
 
 column-count: 1;
 
-top: 600px;
-overflow-y: scroll;}
+top: 400px;
+
+}
 
 
 
@@ -918,15 +935,8 @@ background: none;
 
 
         .comment-section input {
-
-
-
-
             padding: 7px 15px;
-
             margin-top: 12px;
-
-
         }
 
 
@@ -950,6 +960,10 @@ background: none;
         }
 
 
+
+
+
+
         img::selection{
           user-select: none;
 
@@ -962,8 +976,8 @@ background: none;
 
 
 
+
+
+
+
         }
-
-
-
-}

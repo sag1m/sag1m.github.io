@@ -284,6 +284,16 @@ function mostrarCiencia() {
     cienciaDiv.style.display = "none";
   }
 }
+document.getElementById("ciencia").addEventListener("click", function() {
+
+if (this.style.display === "none") {}
+else {this.style.display = "none";}
+
+
+
+
+
+});
 
 
 
@@ -295,25 +305,22 @@ function mostrarAlertaScrollPremium() {
 
 //MAIS INFO MOSTRAR OCULTAR SHOW INFO
 document.getElementById('mostrar-info').addEventListener('click', function() {
-
   var infoDiv = document.getElementById('Info');
+  var pathElement = document.getElementById('SVGRepo_iconCarrier')?.querySelector('path');
   var mostrarInfo = document.getElementById('mostrar-info');
+
   if (infoDiv.style.display === 'none') {
-    infoDiv.style.display = 'block';
-    infoDiv.style.opacity = 0;
-    infoDiv.style.transition = 'opacity 0s ease-in-out';
-    mostrarInfo.style.animation = 'none';
-    setTimeout(function() {
-      infoDiv.style.opacity = 1;
-    }, 10);
+    infoDiv.style.cssText = 'display:block; opacity:0; transition:opacity 0s ease-in-out';
+    mostrarInfo.style.fill = 'white';
+    mostrarInfo.style.animation = 'none'; // Parar a animação
+    if (pathElement) pathElement.style.fill = 'white';
+    setTimeout(() => infoDiv.style.opacity = 1, 10);
   } else {
     infoDiv.style.opacity = 0;
-    setTimeout(function() {
-      infoDiv.style.display = 'none';
-    }, 500); // Espera a animação acabar antes de ocultar
+    setTimeout(() => infoDiv.style.display = 'none', 500);
+    if (pathElement) pathElement.style.fill = '#bebebe';
   }
 });
-
 
 
 
