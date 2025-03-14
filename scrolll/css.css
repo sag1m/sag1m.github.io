@@ -836,5 +836,24 @@ hr{
   filter: opacity(0);
 }
 
+#ciencia{
+
+padding:25px;
+width: 90%;
+max-width: 900px;
+position: absolute;
+background-color: grey;
+color: black;
+font-size: 20px;
+  font-weight: 300;
+
+column-count: 1;
+top: 354px;}
+
+
+
+
+
+
 
 }
