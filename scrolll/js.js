@@ -311,7 +311,7 @@ document.getElementById('mostrar-info').addEventListener('click', function() {
   var logo1 = document.getElementById('logo1');
 
   if (infoDiv.style.display === 'none') {
-    infoDiv.style.cssText = 'display:block; opacity:0; transition:opacity 0s ease-in-out';
+    infoDiv.style.cssText = 'display:block; opacity:0;';
     mostrarInfo.style.fill = 'white';
     mostrarInfo.style.animation = 'none'; // Parar a animação
     if (pathElement) pathElement.style.fill = 'white';
@@ -320,7 +320,7 @@ document.getElementById('mostrar-info').addEventListener('click', function() {
     if (logo1) logo1.style.display = 'none';
   } else {
     infoDiv.style.opacity = 0;
-    setTimeout(() => infoDiv.style.display = 'none', 500);
+    setTimeout(() => infoDiv.style.display = 'none', 1);
     if (pathElement) pathElement.style.fill = '#bebebe';
 
     if (logo1) logo1.style.display = 'flex';
