@@ -301,7 +301,7 @@ document.getElementById('mostrar-info').addEventListener('click', function() {
   if (infoDiv.style.display === 'none') {
     infoDiv.style.display = 'block';
     infoDiv.style.opacity = 0;
-    infoDiv.style.transition = 'opacity 0.1s ease-in-out';
+    infoDiv.style.transition = 'opacity 0s ease-in-out';
     mostrarInfo.style.animation = 'none';
     setTimeout(function() {
       infoDiv.style.opacity = 1;
@@ -382,12 +382,11 @@ timeShow.addEventListener("mouseleave", () => {
 
 
 
-
-
+/*
 window.addEventListener('scroll', function() {
     if (document.body.scrollHeight > 20000) {
         document.body.style.filter = 'grayscale(100%)';
     } else {
         document.body.style.filter = 'none';
     }
-});
+});*/
