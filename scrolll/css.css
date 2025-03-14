@@ -7,6 +7,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+        scrollbar-width: none;
+
+
 }
 
 
@@ -111,22 +115,16 @@ text-align: center;
 
 
 #ciencia{
-  cursor:pointer;
 
-  line-height: 19px;
-  padding:35px;
-  width: 70%;
-  max-width: 900px;
-  position: absolute;
-  background-color: grey;
-  color: black;
+  color: lightgrey;
   font-size: 20px;
     font-weight: 300;
+    text-align: justify;
+        cursor: -webkit-zoom-out;
+        max-height: 250px;
+        overflow: auto;
+            scrollbar-width: none;
 
-  column-count: 2;
-  column-gap: 40px;
-  text-align: justify;
-  top: 400px;
 
 }
 
@@ -135,10 +133,11 @@ text-align: center;
 #ciencia p::first-letter {
   font-size: 45px;
   font-weight: 400;
-  color: black;
+  color: grey;
   float: left;
   margin-right: 8px;
   line-height: 1;
+  cursor:
 }
 
 #ciencia p:first-child {
@@ -354,6 +353,7 @@ font-family: Zain;
     padding: 10px 15px;
     font-size: 40px;
     cursor: pointer;
+    z-index: 2;
 
     /*box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);*/
 }
@@ -375,6 +375,18 @@ font-family: Zain;
 #Info{
   line-height: 25px;
     max-width: fit-content;
+        max-height: 95vh;
+        overflow: auto;
+        scrollbar-width: none;
+
+        margin-bottom: 30px;
+
+
+}
+
+
+
+#contenscroll{
 
 }
 
@@ -387,7 +399,7 @@ font-family: Zain;
   margin-bottom:10px;
 }
 #Info p:first-child {
-  margin-top: 15px;
+  margin-top: 15px;0;
 }
 
 
@@ -565,7 +577,7 @@ content: url('img/w.svg');
               .top-bar {
                 height: 65px;
 
-
+                position: fixed;
                           display: flex;
                           justify-content: space-between;
                           align-items: center;
@@ -621,10 +633,11 @@ content: url('img/w.svg');
                       }
 
                       #time{
+                        position: fixed;
                         width:150px;
 
                         display: none;
-                        position: absolute;
+
 
                         border-radius: 20px;
                         padding: 10px;
@@ -633,8 +646,7 @@ content: url('img/w.svg');
 
 
 
-                        background: rgb(31,31,31);
-background: linear-gradient(90deg, rgba(46,46,46,1)0%, rgba(31,31,31,0.9)100%);
+                        background-color: black;
                           color: lightgrey;
                           font-weight: 300;
                           line-height: 20px;
@@ -643,11 +655,10 @@ background: linear-gradient(90deg, rgba(46,46,46,1)0%, rgba(31,31,31,0.9)100%);
                       #time p{
                         margin:10px;
 
+
                       }
 
                     #notificationDiv{
-                      background: rgb(31,31,31);
-background: linear-gradient(90deg, rgba(46,46,46,1)0%, rgba(31,31,31,0.9)100%);
                       width:150px;
 
                       display: none;
@@ -664,13 +675,14 @@ background: linear-gradient(90deg, rgba(46,46,46,1)0%, rgba(31,31,31,0.9)100%);
                         color: lightgrey;
                         font-weight: 300;
                         line-height: 20px;
+                        position: fixed;
                     }
 
 
 
                       .popup {
                         background: rgb(31,31,31);
-background: linear-gradient(90deg, rgba(31,31,31,0.9724264705882353) 0%, rgba(46,46,46,1) 100%);
+background: linear-gradient(90deg, rgba(31,31,31,0.99) 0%, rgba(46,46,46,1) 100%);
 
                         position: absolute;
                         left: 0;
@@ -685,10 +697,11 @@ background: linear-gradient(90deg, rgba(31,31,31,0.9724264705882353) 0%, rgba(46
                           font-weight: 300;
                           color: #d0d0d0;
 
+                          z-index: 3;
 
 
 
-
+                              position: fixed;
 
 
                       }
@@ -751,6 +764,7 @@ background: linear-gradient(90deg, rgba(232,217,231,1) 0%, rgba(248,173,255,1) 1
                       .science-link {
                           color: white;
                           text-decoration: underline;
+                        cursor: -webkit-zoom-in;
 
                       }
 
@@ -889,7 +903,7 @@ button, a, img {
 margin-top:20px;
 }
 
-#ciencia{
+/*#ciencia{
 
 padding:25px;
 width: 90%;
@@ -904,7 +918,7 @@ column-count: 1;
 
 top: 400px;
 
-}
+}*/
 
 
 
