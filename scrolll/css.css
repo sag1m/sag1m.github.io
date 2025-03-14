@@ -836,6 +836,11 @@ hr{
   filter: opacity(0);
 }
 
+
+#mostrar-info {
+margin-top:10px;
+}
+
 #ciencia{
 
 padding:25px;
@@ -878,12 +883,60 @@ background: none;
 
 .comment-section {
     margin-top: 0;
-    padding: 0 10px;
+    padding: 0 0px;
 }
 
-.comment-section.active {
-    display: block;
+
+.image{
+  max-height: 50vh;
 }
+
+
+.top-bar {
+  height: 35px;
+  margin: 0;
+        }
+
+        #logo{
+            margin: 0;
+        }
+
+        #logo img {
+           height: 35px;
+        }
+
+
+        .comment-section input {
+
+
+
+
+            padding: 7px 15px;
+
+            margin-top: 12px;
+
+
+        }
+
+
+        .deactivate-button {
+            background-color: transparent;
+            border: none;
+            color: grey;
+            font-size: 25px;
+            cursor: pointer;
+            padding-left: 0;
+            position: relative;
+            top: 12px;
+            left: 10px;
+            padding-top:0px;
+            float: right;
+        }
+
+        .comment-section.active {
+            display: block;
+            text-align: left;
+        }
 
 
 
