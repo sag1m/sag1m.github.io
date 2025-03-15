@@ -100,21 +100,27 @@
 
 
         <div class="popup-header">
-            <div  style="color:white" class="language">Idioma<br>
-                <span  style="cursor:pointer;font-weight:400">PT | <a style="cursor:not-allowed;color:#d0d0d0" onclick="alert('Sorry, that is only available with ScrolllPremium'); return false;">ENG</a></span>
+
+            <div style="color:white" class="language">Idioma<br>
+                <span  style="cursor:default;font-weight:400">PT</span>
+              </span><a style="cursor:not-allowed;color:#d0d0d0" onclick="alert('Sorry, that is only available with ScrolllPremium'); return false;">ENG</a></span>
             </div>
+
             <div>
                 <div  style="color:white">Cores</div>
                 <div class="colors">
-                <span style="cursor:pointer" class="color-option dark"></span>
+                <span style="cursor:default" class="color-option dark"></span>
                 <span style="cursor:not-allowed;" onclick="mostrarAlertaScrollPremium()"  class="color-option light"></span>
                 <span style="cursor:not-allowed;" onclick="mostrarAlertaScrollPremium()"  class="color-option pastel"></span>
               </div>
             </div>
+
             <div class="feed-options">
                 <span style="color:white">Feed</span><br>
-                <span style="cursor:not-allowed;font-weight:400;" onclick="mostrarAlertaScrollPremium()" >Zen | Aborrecido | Natureza</span>
+                <div id="optFeed">
+                <span style="cursor:default;font-weight:400;">Zen</span> <span style="cursor:not-allowed;font-weight:400;" onclick="mostrarAlertaScrollPremium()" >Aborrecido</span> <span style="cursor:not-allowed;font-weight:400;" onclick="mostrarAlertaScrollPremium()" >Natureza</span></div>
             </div>
+
         </div>
 
 
