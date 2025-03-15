@@ -65,11 +65,22 @@
 
       <br><br><br>
 
+
       <div id="time">
-      <p><div style="text-align:center" id="horas"></div><p>
-        Sessão atual<br><span style="font-weight:400;" id="tempo-no-site"></span></p>
-      <p>Scrolll Total<br><span id="total">00:00:00</span></p>
+          <p><div style="text-align:center" class="horas"></div></p>
+          <p>Sessão atual<br><span style="font-weight:400;" class="tempo-no-site"></span></p>
+          <p>Scroll Total<br><span class="total">00:00:00</span></p>
       </div>
+
+
+
+
+
+
+
+
+
+
 
       <div id="notificationDiv">
 
@@ -95,7 +106,11 @@
           </div>
 
 
-
+          <div id="time-duplicado">
+            <p><div style="text-align:center" class="horas"></div></p>
+              <p>Sessão atual<br><span style="font-weight:400;color:white" class="tempo-no-site">00:00:00</span></p>
+              <p>Scroll Total<br><span class="total">00:00:00</span></p>
+          </div>
 
 
 
@@ -115,13 +130,41 @@
               </div>
             </div>
 
+
+
+            <div id="music">
+              Música <br>
+
+              <button id="togglePlay">▶</button>
+
+            <audio id="radio" src="https://ice6.somafm.com/groovesalad-256-mp3"></audio>
+          </div>
+          <script>
+              const radio = document.getElementById("radio");
+              const button = document.getElementById("togglePlay");
+
+              button.addEventListener("click", () => {
+                  if (radio.paused) {
+                      radio.play();
+                      button.textContent = "⏸";
+                  } else {
+                      radio.pause();
+                      button.textContent = "▶";
+                  }
+              });
+          </script>
+
+
+
+
             <div class="feed-options">
                 <span style="color:white">Feed</span><br>
                 <div id="optFeed">
-                <span style="cursor:default;font-weight:400;">Zen</span> <span style="cursor:not-allowed;font-weight:400;" onclick="mostrarAlertaScrollPremium()" >Aborrecido</span> <span style="cursor:not-allowed;font-weight:400;" onclick="mostrarAlertaScrollPremium()" >Natureza</span></div>
+                <span style="cursor:default;font-weight:400;">A</span> <span style="cursor:not-allowed;font-weight:400;" onclick="mostrarAlertaScrollPremium()" >B</span> <span style="cursor:not-allowed;font-weight:400;" onclick="mostrarAlertaScrollPremium()" >C</span></div>
             </div>
 
         </div>
+
 
 
 
@@ -195,7 +238,8 @@
 
             <p><span>Supervisão Científica/Artística:</span> <a target="_blank" href="https://sag1m.github.io">Dr. Migas de Sousa</a></p>
             <p><span>Imagens/Vídeos:</span> <a target="_blank" href="https://pexels.com">Pexels</a></p>
-            <p><span>Financiamento</span>: <span style="cursor:not-allowed;color: white;" class="blur">کارپوریشن افقی ڈیزائن
+            <p><span>Música: </span><a style="" target="_blank" alt="Soma.fm Drone Zone" href="https://somafm.com/dronezone/index.html">SomaFM</a></p>
+            <p><span>Financiamento</span>: <span style="cursor:not-allowed;color: white;text-decoration:underline;" class="blur">کارپوریشن افقی ڈیزائن
 </span></p>
             <br>  <a style="float: right;color:lightgrey;" href="mailto:lol@scrolll.pt">lol@scrolll.pt</a><br>
 

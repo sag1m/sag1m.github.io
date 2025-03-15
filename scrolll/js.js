@@ -168,53 +168,47 @@ loadMore();
 
 //HORAS DO SITE
 
-//HORAS, TEMPO, CRONOMETRO, CONTADOR
+// Função para formatar o tempo em HH:MM:SS
 function formatarTempo(segundos) {
     let h = Math.floor(segundos / 3600);
     let m = Math.floor((segundos % 3600) / 60);
     let s = segundos % 60;
-    return (
-        String(h).padStart(2, '0') + ":" +
-        String(m).padStart(2, '0') + ":" +
-        String(s).padStart(2, '0')
-    );
+    return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
 }
 
+// Recuperar tempo total do localStorage
 let tempo = parseInt(localStorage.getItem("tempo_total")) || 0;
-document.getElementById("total").textContent = formatarTempo(tempo);
+document.querySelectorAll(".total").forEach(el => el.textContent = formatarTempo(tempo));
 
 setInterval(() => {
     tempo++;
     localStorage.setItem("tempo_total", tempo);
-    document.getElementById("total").textContent = formatarTempo(tempo);
+    document.querySelectorAll(".total").forEach(el => el.textContent = formatarTempo(tempo));
 }, 1000);
 
-// Mostrar as horas atuais
+// Função para mostrar as horas atuais
 function mostrarHoras() {
-    const horasSpan = document.getElementById("horas");
     const data = new Date();
     const horas = data.getHours().toString().padStart(2, '0');
     const minutos = data.getMinutes().toString().padStart(2, '0');
-    const segundos = data.getSeconds().toString().padStart(2, '0');
 
-    horasSpan.textContent = `${horas}:${minutos}`;
+    document.querySelectorAll(".horas").forEach(el => el.textContent = `${horas}:${minutos}`);
 }
-// Mostrar o tempo que o utilizador está no site
+
+// Função para calcular o tempo de sessão
 let tempoInicio = Date.now();
 function mostrarTempoNoSite() {
-    const tempoNoSiteSpan = document.getElementById("tempo-no-site");
     let tempoPassado = Date.now() - tempoInicio;
     let segundos = Math.floor(tempoPassado / 1000);
     let minutos = Math.floor(segundos / 60);
-    let horas = Math.floor(minutos / 60);
 
     segundos = segundos % 60;
     minutos = minutos % 60;
 
-    tempoNoSiteSpan.textContent = `${minutos}m ${segundos} s`;
+    document.querySelectorAll(".tempo-no-site").forEach(el => el.textContent = `${minutos}m ${segundos}s`);
 }
 
-// Atualizar as horas e o tempo no site a cada segundo
+// Atualizar horas e tempo de sessão a cada segundo
 setInterval(() => {
     mostrarHoras();
     mostrarTempoNoSite();
@@ -223,6 +217,7 @@ setInterval(() => {
 // Inicializar
 mostrarHoras();
 mostrarTempoNoSite();
+
 
 
 

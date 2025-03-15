@@ -114,6 +114,14 @@ text-align: center;
   color: lightgrey;
 }
 
+#music{color:white;}
+#music button{
+  border: none;
+  background: none;
+  color: lightgrey;
+  cursor: pointer;
+}
+
 
 #ciencia{
 
@@ -658,6 +666,13 @@ content: url('img/w.svg');
 
                       }
 
+
+                      #time-duplicado{
+
+display: none;
+
+                      }
+
                     #notificationDiv{
                       width:150px;
 
@@ -716,11 +731,11 @@ background: linear-gradient(90deg, rgba(31,31,31,1) 0%, rgba(46,46,46,1) 100%);
 
                       .popup-header {
                         text-align: center;
-                        padding: 17px;
+                        padding:  10px 17px;
                           display: flex;
                           justify-content: space-between;
                           font-size: 18px;
-                          padding-bottom: 10px;
+                          /*padding-bottom: 10px;*/
                           background-color: #3f3f3f;
                           border-radius: 20px;
 
@@ -912,7 +927,7 @@ button, a, img {
 
 
 #mostrar-info {
-margin-top:20px;
+margin-top:30px;
 }
 
 /*#ciencia{
@@ -1023,19 +1038,43 @@ background: none;
 
 .language, .colors,#optFeed
  {
-  display: flex;
-  flex-direction: column;
+/*  display: flex;*/
+
 }
 
 
-.color-option {
-margin-bottom: 4px;
+/*.color-option {
+margin-bottom: 4px;}*/
 
 
 
 #contenscroll{
 
 }
+#time-duplicado{
+  line-height:
+  text-align: center;
+  display: flex;
+
+align-content: center;
+justify-content: space-around;
+
+margin-right: 45px;
+
+line-height: 17px;
+margin-bottom:10px;
+}
+
+#time p{
+  margin:10px;
+
+
+}
+
+
+
+
+
 
 
 
