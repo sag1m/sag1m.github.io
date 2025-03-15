@@ -89,7 +89,7 @@ justify-content: center
     display: none;
 }
 
-h1{
+h1, h2{
   margin: 0;
   text-align: center;
   color: lightgrey;
@@ -495,7 +495,7 @@ content: url('img/w.svg');
 
 
         }
-        .premium-popup h2 {
+        .premium-popup h3 {
             margin: 10px 0;
             font-size: 20px;
             color: 	#a67c00;
