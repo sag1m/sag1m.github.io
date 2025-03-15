@@ -390,7 +390,13 @@ timeShow.addEventListener("mouseleave", () => {
 
 
 
+const scrollDiv = document.getElementById("ciencia");
 
+function autoScroll() {
+  scrollDiv.scrollBy(0, 1); // Rola 1px para baixo
+}
+
+setInterval(autoScroll, 500); // Ajusta a velocidade do scroll (maior valor = mais lento)
 
 
 

@@ -121,16 +121,23 @@ text-align: center;
     font-weight: 300;
     text-align: justify;
         cursor: -webkit-zoom-out;
-        max-height: 250px;
+        max-height: 260px;
         overflow: auto;
             scrollbar-width: none;
+
+
 
 
 }
 
 
+#last{
+  color:grey;
 
-#ciencia p::first-letter {
+}
+
+
+#textoC p::first-letter {
   font-size: 45px;
   font-weight: 400;
   color: grey;
@@ -139,20 +146,11 @@ text-align: center;
   line-height: 1;
   cursor:
 }
-
-#ciencia p:first-child {
-  margin-top:0;
-}
-#ciencia p:last-child{
+#last p{
   text-align: right;
   font-size: 20px;
   font-weight: 300;
-}
-#ciencia p:last-child::first-letter{
-  float:none;
-  font-size: 20px;
-  font-weight: 300;
-  margin: 0;
+  text-align: right;
 
 }
 
@@ -682,7 +680,7 @@ content: url('img/w.svg');
 
                       .popup {
                         background: rgb(31,31,31);
-background: linear-gradient(90deg, rgba(31,31,31,0.99) 0%, rgba(46,46,46,1) 100%);
+background: linear-gradient(90deg, rgba(31,31,31,1) 0%, rgba(46,46,46,1) 100%);
 
                         position: absolute;
                         left: 0;
@@ -887,6 +885,18 @@ button, a, img {
   user-select: none;
   outline: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
