@@ -912,8 +912,9 @@ button, a, img {
 
 
 
-
-
+#topNotf2{
+display: none;
+}
 
 
 
@@ -923,6 +924,24 @@ button, a, img {
 #topNotf{
   display: none;
   filter: opacity(0);
+}
+
+#topNotf2{
+  display: flex;
+  float: right;
+  filter: opacity(1);
+}
+
+#topNotf2 button {
+  background: none;
+    color: #000;
+    border: none;
+
+    cursor: pointer;
+    font-weight: bold;
+
+
+    margin: 0;
 }
 
 
@@ -1052,7 +1071,7 @@ margin-bottom: 4px;}*/
 
 }
 #time-duplicado{
-  line-height:
+  font-size: 16px;
   text-align: center;
   display: flex;
 
@@ -1062,7 +1081,7 @@ justify-content: space-around;
 margin-right: 45px;
 
 line-height: 17px;
-margin-bottom:10px;
+margin-bottom:5px;
 }
 
 #time p{
