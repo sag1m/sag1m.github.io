@@ -385,6 +385,8 @@ timeShow.addEventListener("mouseleave", () => {
 
 
 
+
+
 const scrollDiv = document.getElementById("ciencia");
 
 function autoScroll() {

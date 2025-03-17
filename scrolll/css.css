@@ -912,7 +912,7 @@ button, a, img {
 
 
 #donate-button-container{
-  float: right;
+
 }
 
 
@@ -940,9 +940,44 @@ display: none;
 }
 
 #topNotf2{
+  filter: opacity(1);
+
+
+        display: block;
+
+        position: fixed;
+top: 22px;
+right: 50px;
+
+display: none;
+
+}
+
+#topNotf2 .number{
+    left: 39px;
+}
+
+#notificationDiv{
+  width:150px;
+
   display: none;
-  float: right;
-  filter: opacity(1);}
+  position: absolute;
+
+  border-radius: 20px;
+  padding: 10px;
+  right: 0px;
+  top: 77px;
+
+
+
+  background-color: black;
+    color: lightgrey;
+    font-weight: 300;
+    line-height: 20px;
+    position: fixed;
+}
+
+
 
 
 #topNotf2 button {
@@ -1094,20 +1129,31 @@ margin-bottom: 4px;}*/
   text-align: center;
   display: flex;
 
-align-content: center;
-justify-content: space-around;
 
-margin-right: 45px;
+justify-content: center;
+
 
 line-height: 17px;
-margin-bottom:5px;
+
+display: none;
+
+
+
 }
 
 #time p{
   margin:10px;
+  padding: 0 10px;
 
 
 }
+
+#time div{
+
+  padding: 0 10px;
+  pmargin: 0 10px;
+}
+
 
 
 #hoverButton{
