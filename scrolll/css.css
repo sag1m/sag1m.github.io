@@ -927,10 +927,10 @@ display: none;
 }
 
 #topNotf2{
-  display: flex;
+  display: none;
   float: right;
-  filter: opacity(1);
-}
+  filter: opacity(1);}
+
 
 #topNotf2 button {
   background: none;
@@ -942,6 +942,10 @@ display: none;
 
 
     margin: 0;
+}
+
+.top-bar{
+
 }
 
 
@@ -1091,7 +1095,10 @@ margin-bottom:5px;
 }
 
 
+#hoverButton{
+  padding:0px;
 
+}
 
 
 
