@@ -911,10 +911,23 @@ button, a, img {
 
 
 
+#donate-button-container{
+  float: right;
+}
+
+
+
 
 #topNotf2{
 display: none;
 }
+
+
+
+
+
+
+
 
 
 
@@ -947,6 +960,8 @@ display: none;
 .top-bar{
 
 }
+
+
 
 
 #mostrar-info {
