@@ -925,6 +925,23 @@ display: none;
 
 
 
+.iconfacebook, .iconinstagram{
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background-size: cover;
+          margin: 2px;
+          margin-bottom: 10px;
+      }
+      .iconfacebook {
+        background: url('https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg') no-repeat center/contain;
+      }
+      .iconinstagram {
+        background: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png') no-repeat center/contain;
+      }
+
+
+
 
 
 
