@@ -564,6 +564,9 @@ var descricoesWeb = ["0",
     // 6 Catnip Grower
 '<p translate="no">Catnip Grower</p>Demo (demonstração) de um jogo onde temos de controlar o ambiente com várias ferramentas e ações para cultivar a planta catnip.<br>2024',
 
+// 7 scrolll
+'<p>Scrolll</p>Um site com um feed aborrecido e não estimulante mas relaxante. Pode-se fazer scroll infinito, para educar o cérebro a não gostar de scrolling',
+
 
 
 ''
@@ -688,8 +691,8 @@ var descricoesWebMais = ["0",
 
 // 6 Pharmakons
 '<p>Pharmakons</p>Coleção de NFTs na WAX Blockchain, onde as pessoas compraram e trocam NFTs de vários fármacos.  ',
-// 7 scrolll
-'<p>Scrolll</p>Um site com um feed aborrecido e não estimulante mas relaxante. Pode-se fazer scroll infinito, para educar o cérebro a não gostar de scrolling',
+''
+
 
 
 
@@ -877,6 +880,9 @@ var trabalhosVideo = ["0",
     // 6 Catnip Grower
     '<iframe alt="Catnnip Grower" class="youtube" frameBorder="0" src="catnip/index.html"></iframe>',
 
+    //7 scrolll
+      '<iframe class="youtube" frameBorder="0" src="https://scrolll.pt"></iframe>',
+
 
 
         ''
@@ -896,9 +902,7 @@ var trabalhosVideo = ["0",
       // 5  CrossFest Festival
       '<iframe alt="Website desenvolvido para um festival de música inventado, baseado num cartaz construtivista Russo. 2019" class="youtube" frameBorder="0" src="Cross/index.html"></iframe>',
       //6 Pharmakons
-      '<p>Logotipo da Coleção</p><img class="imagem" src="ph1.png" alt="imagem da coleção Pharmakons na WAX Blockchain">    <p>Imagem de perfil</p><img class="imagem" src="ph2.png" alt="imagem de perfil da coleção Pharmakons na WAX Blockchain">     ',
-//7 scrolll
-  '<iframe class="youtube" frameBorder="0" src="scrolll/index.html"></iframe>',
+      '<p>Logotipo da Coleção</p><img class="imagem" src="ph1.png" alt="imagem da coleção Pharmakons na WAX Blockchain">    <p>Imagem de perfil</p><img class="imagem" src="ph2.png" alt="imagem de perfil da coleção Pharmakons na WAX Blockchain">     '
 
 
 

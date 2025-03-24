@@ -2,15 +2,7 @@ function rando(a, b) {
     return Math.floor(Math.random() * (b - a + 1) + a);
 }
 
-
-
 const content = document.getElementById("content");
-
-
-
-
-
-
 
 function createItem() {
     const item = document.createElement("div");
@@ -41,50 +33,6 @@ function createItem() {
     shareIcon.className = "icon share";
     shareIcon.innerHTML = "&#9993;";
 
-    // Criar um container para os botões de partilhar
-    const shareButtonsContainer = document.createElement("div");
-    shareButtonsContainer.className = "share-buttons-container";
-    shareButtonsContainer.style.display = "none";  // Inicialmente invisível
-
-    const platforms = [
-        { name: "Facebook", url: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`, iconClass: "facebook" },
-        { name: "Instagram", url: `https://www.instagram.com/?url=${encodeURIComponent(window.location.href)}`, iconClass: "instagram" },
-        { name: "WhatsApp", url: `https://api.whatsapp.com/send?text=${encodeURIComponent(window.location.href)}`, iconClass: "whatsapp" }
-    ];
-
-    platforms.forEach(platform => {
-        const link = document.createElement("a");
-        link.href = platform.url;
-        link.target = "_blank";
-        link.className = platform.iconClass;  // Adiciona a classe correspondente ao ícone
-        shareButtonsContainer.appendChild(link);
-    });
-
-    // Adicionar o container ao item quando o ícone de partilhar for clicado
-    shareIcon.addEventListener("click", (e) => {
-        e.stopPropagation();  // Evitar que o clique se propague
-
-        if (shareButtonsContainer.style.display === "none") {
-            e.target.parentElement.appendChild(shareButtonsContainer);
-            shareButtonsContainer.style.display = "flex";
-
-            // Posicionar o container de botões ao lado do ícone
-            const rect = e.target.getBoundingClientRect();
-            shareButtonsContainer.style.position = "absolute";
-            shareButtonsContainer.style.top = `${rect.top + window.scrollY + 15}px`;
-            shareButtonsContainer.style.left = `${rect.left + rect.width - 4}px`;
-        } else {
-            shareButtonsContainer.style.display = "none";
-        }
-    });
-
-    // Fechar os botões de partilhar ao clicar fora do ícone
-    window.addEventListener("click", (event) => {
-        if (!event.target.closest('.icon.share')) {
-            shareButtonsContainer.style.display = "none";
-        }
-    });
-
     const description = document.createElement("div");
     description.className = "description";
     description.textContent = descricoes[rando(0, descricoes.length - 1)];
@@ -96,36 +44,30 @@ function createItem() {
     input.type = "text";
     input.placeholder = "Escrever comentário";
 
-    // Botão de desativar
     const deactivateButton = document.createElement("button");
     deactivateButton.className = "deactivate-button";
-    deactivateButton.textContent = "✔"; // ou outro símbolo
+    deactivateButton.textContent = "✔";
 
-    // Função para desativar o input
     function deactivateInput() {
-        input.disabled = true; // Desativa o input
-        input.style.background = "transparent"; // Torna o fundo transparente
-        deactivateButton.disabled = true; // Desativa o botão
-        deactivateButton.style.opacity = "0"; // Torna o botão semi-transparente para indicar que está desativado
+        input.disabled = true;
+        input.style.background = "transparent";
+        deactivateButton.disabled = true;
+        deactivateButton.style.opacity = "0";
     }
 
-    // Evento para desativar o campo de input quando o botão for clicado
     deactivateButton.addEventListener("click", (e) => {
-        e.stopPropagation(); // Impede que o clique se propague e feche o campo
+        e.stopPropagation();
         deactivateInput();
     });
 
-    // Evento para desativar o campo ao pressionar Enter
     input.addEventListener("keydown", (e) => {
         if (e.key === "Enter") {
             deactivateInput();
         }
     });
 
-    // Colocar o botão de desativar à direita do campo de input
     commentSection.appendChild(input);
     commentSection.appendChild(deactivateButton);
-
     commentIcon.addEventListener("click", () => {
         commentSection.classList.toggle("active");
     });
@@ -142,9 +84,6 @@ function createItem() {
     return item;
 }
 
-
-
-
 function loadMore() {
     for (let i = 0; i < 5; i++) {
         content.appendChild(createItem());
@@ -152,16 +91,30 @@ function loadMore() {
 }
 
 function handleScroll() {
-    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
-        loadMore();
-    }
+    const items = document.querySelectorAll(".item");
+    let closestItem = items[0];
+    let minDistance = Math.abs(items[0].getBoundingClientRect().top);
+
+    items.forEach(item => {
+        let distance = Math.abs(item.getBoundingClientRect().top);
+        if (distance < minDistance) {
+            minDistance = distance;
+            closestItem = item;
+        }
+    });
+
+    window.scrollTo({
+        top: closestItem.offsetTop,
+        behavior: "smooth"
+    });
 }
 
-window.addEventListener("scroll", handleScroll);
-loadMore();
+window.addEventListener("scroll", () => {
+    clearTimeout(window.scrollTimeout);
+    window.scrollTimeout = setTimeout(handleScroll, 100);
+});
 
-
-
+window.addEventListener("load", loadMore);
 
 
 
