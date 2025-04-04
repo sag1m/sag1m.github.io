@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: sag1m.github.io
-Token: 119ee59064b39e3b092a891d1c90d9e633558ef98d6ae7e6be5ea5e8c19505f4
